@@ -1,0 +1,38 @@
+---
+
+const links = [
+  // { label: "Home", href: "/" },
+  { label: "Web-Development", href: "/" },
+  { label: "Writing", href: "/" },
+  // { label: "Case Studies", href: "/#case-studies" },
+  // { label: "Writing", href: "/#writing" },
+  // { label: "Contact", href: "/#contact" },
+];
+
+// const links = [
+// { label: "Web Development", href: "/" },
+// { label: "Writing", href: "/" },
+// { label: "Websites", href: "/" },
+// { label: "Package Rates", href: "/" },
+// { label: "Contact", href: "/contact" },
+// ];
+---
+<header class="border-b-2 border-black bg-coral fixed top-0 z-50 w-[100%] pt-4">
+  <nav class="pl-5 pr-5 pt-1 h-[100%] grid grid-cols-2">
+    <div class="flex justify-start items-end py-3 pl-1">
+      <div id="logo" class="text-4xl font-bold ">
+        <a href="/">Laughing Coyote Dev</a>
+      </div>
+    </div>
+    <ul class="flex justify-end items-end text-3xl py-3">
+      {links.map((link) => (
+        <a class="mx-5"  href={link.href}>
+          <li>{link.label}</li>
+          </a>
+          ))}
+        </ul>
+        <!-- ?DROPDOWN FOR BOTH WEB DEV AND WRITING PGS,  INSTEAD OF HAMBURGER?? -->
+      </nav>
+    </header>
+
+export default Header;
