@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import Coyote from "../../../public/images/coyote.png";
+---
+
+<section id="*/" class="">
+      <div id="" class="2xl:pt-[120px] pt-[90px]">
+        <div class="grid 2xl:grid-cols-2 grid-cols-1 h-screen">
+          <section class="2xl:px-5 px-1 flex items-center ">
+            <div class="w-full lg:pl-[70px] px-5">
+              <div class="py-1 mb-1">
+                <h1 class="md:text-5xl text-4xl py-1 my-1 font-bold">
+                  Laughing Coyote Dev
+                </h1>
+                <p class="text-lg pl-1 pt-1">
+                  A subscription website service for busy small-businesses
+                  owners.
+                </p>  
+              </div>
+              {/* <p class="pb-5">
+               Why should you prefer a custom-made
+                website, when you can simply use wix or wordpress? Because a
+                custom website fits your business, personality, goals... and you
+                alone.
+              </p> */}
+
+              <ul class="md:text-lg text-md pt-1">
+                <li>
+                  <b>-</b> Increased potential customers, easier to find on
+                  Google
+                </li>
+                <li>
+                  {" "}
+                  <b>-</b> The ablity to tell your story and brand
+                </li>
+                <li>
+                  {" "}
+                  <b>-</b> Peace of mind... for business owners who {"don't"}{" "}
+                  have time to build with software
+                </li>
+                <li>
+                  {" "}
+                  <b>-</b> A custom website that fits your business,
+                  personality, goals... and you alone.
+                </li>
+              </ul>
+
+              <div class="p-1 mt-5 text-parchment text-lg">
+                <button class="dropshadow-lg bg-teal hover:text-white mr-1 px-2 py-1 dropshadow-md">
+                  <a href="/#about">About</a>
+                </button>
+                <button class="dropshadow-lg bg-carribean hover:text-orange ml-1 px-2 py-1 dropshadow-md">
+                  <a href="/#contact">Contact</a>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="pt-[25px]">
+            <Image src={Coyote} alt="" class="" />
+          </section>
+        </div>
+      </div>
+    </section>

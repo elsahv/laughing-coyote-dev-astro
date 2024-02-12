@@ -1,34 +1,17 @@
   ---
   import MainLayout from '../layouts/MainLayout.astro'
-  import { getCollection} from 'astro:content'
-  import type { CollectionEntry} from 'astro:content'
-  import SearchForm from '../components/SearchForm.astro'
-  import ArticleCard from '../components/ArticleCard.astro';
-  import MostRecentArticle from '../components/MostRecentArticle.astro';
-  import { HOMEPAGE_ARTICLE_LIMIT} from '../constants'
-  import Hero from '../components/Hero.astro';
-  import About from '../components/About.astro';
-  import Templates from '../components/Templates.astro';
-  import CaseStudies from '../components/CaseStudies.astro';
-  import PkgRates from '../components/PkgRates.astro';
-  import Contact from '../components/Contact.astro';
-
-  const allBlogArticles: CollectionEntry<'blog'>[] = (await getCollection('blog'))
-    .sort((a:CollectionEntry<'blog'>, b:CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-  const mostRecentArticle: CollectionEntry<'blog'> = allBlogArticles[0]
-
-  const otherArticles: CollectionEntry<'blog'>[] = allBlogArticles.slice(1)
+  import Hero from '../components/sections/Hero.astro';
+  import About from '../components/sections/About.astro';
+  import Packages from '../components/sections/Packages.astro';
+  import Contact from '../components/sections/Contact.astro';
+import Websites from '../components/sections/Websites.astro';
   ---
-      
- <MainLayout>
-    <Hero />
-    <!-- <= HOW IT WORKS-->
-    <Templates />
-    <!-- <li>PRICING</li> -->
-    <CaseStudies />
-    <About />        
-    <!-- <li>BLOG</li> -->
-    <PkgRates />
-    <Contact />
+  
+  
+  <MainLayout>
+      <Hero />    
+          <About />
+            <Packages />
+                <Websites />   
+                <Contact />      
   </MainLayout>
