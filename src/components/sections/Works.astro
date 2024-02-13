@@ -1,0 +1,69 @@
+    ---
+import { Image } from "astro:assets"
+import Img1 from "../../../public/screenshots/hoveyroofing.png";
+import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
+
+const caseStudies = [
+  {
+    title: "HoveyRoofing",
+    img: Img1,
+    img1: Img1,
+    p: "Lorem, i pit totam aut exercitationem hic odndis or sit amet consectetur adipisicing elit. Ullam consequuntur voluptatibus aliquam sint dicta nihil perferendis illo!",
+    url: "https://hoveyroofing.com",
+  },
+  {
+    title: "Generations Backflow",
+    img: Img2,
+    p: "Lorem, i Ullam consequunt lam consequuntur voluptatibus aliquam sint dicta n  dicta nihil perferendis illo!",
+    url: "https://ie-backflow-ixj3fuw24-elsahv.vercel.app/",
+  },
+];
+
+---
+
+<section id="websites-section" class="bg-test1">
+        <div class="bg-test2">
+          <h2 class="text-5xl underline font-bold">
+          Featured Works
+          </h2>
+            <p class="">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              quo atque fuga. Corporis doloremque sit minus, asperiores quia
+              velit inventore nostrum! Dicta alias corporis numquam.
+            </p>
+        </div>
+      <div class="my-3 pt-[50px]">
+        {caseStudies.map((item) => (
+          <div class="">
+            <div class="">
+              <a href={item.url}>
+                <div class="hover:opacity-80">
+                  <div id="title" class="pl-1 pb-1 flex items-center"> 
+                    <h2 class="font-medium text-3xl">{item.title}</h2>
+                  </div>
+
+                <div class="bg-test2">
+                  <Image
+                    class="bg-carribean border border-black"
+                    src={item.img}
+                    alt=""
+                    //  width={800}
+                  />
+                </div>
+              </a>
+            </div>
+            <p class="dropshadow-2xl font-medium w-3/4 pl-2 pt-1">
+              {item.p}
+            </p>
+          </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    </section>
+
+          <!--    //todo CaseStudies- ROOF, BACKFLOW... EACH WITH TESTIMONIAL -->
+            <!-- //todo Gallery: What LC IS CURRENTLY WORKING ON -->
+              <!-- //todo -FAQs -->
+              <!-- //todo <Templates /> -->
+              <!-- //todo <li>PRICING</li> -->

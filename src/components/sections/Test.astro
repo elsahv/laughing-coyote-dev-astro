@@ -1,0 +1,83 @@
+---
+import {Image} from "astro:assets";
+import Img1 from "../../../public/screenshots/hoveyroofing.png";
+import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
+---
+<div class="">
+    <section id="about1" class=" h-[100%]">
+      <div class="flex 2xl:flex-row flex-col justify-end text-onyx">
+        <div class=" text-right">
+          <h2 class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[200px]">
+          HoveyRoofing
+          </h2>
+          <div class="">
+          <p class="bg-test1 pl-5 ml-5  max-w-lg">
+            This is a made up fish expo website. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Delectus quaerat labore quod, iure
+            nihil dolorum at nesciunt? Quibusdam quasi natus repudiandae in
+            repellat animi, vitae velit modi, sunt, ipsam facilis.
+          </p>
+          <br />
+          <p class="bg-test1 pl-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            ea ipsam corrupti suscipit sapiente quisquam odit dolorum totam ad
+          </p>
+        </div>
+          <!-- *BTN WRAPPER -->
+          <div class="flex justify-end gap-4">
+            <button class="bg-teal text-white p-2 my-5 drop-shadow-lg">
+              <a href="">Here's a button!</a>
+            </button>
+            <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
+              <a href="">Here's another button!</a>
+            </button>
+          </div>
+        </div>
+        <div class="2xl:m-0 sm:ml-[50px] p-5">
+          <Image
+            src={Img1}
+            alt=""
+            class="universal-img w-[75%]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about2" class=" h-[100%] pt-[50px] pb-[250px]">
+      <div class="flex 2xl:flex-row-reverse flex-col justify-center text-onyx">
+        <div class="2xl:w-1/2 w-3/4 2xl:px-[150px] md:pl-[25px] sm:px-1 ml-5 2xl:text-lg sm:text-2xl">
+          <h2 class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[200px]">
+            Generations Backflow
+          </h2>
+          <div >
+          <p class="">
+            This is a made up fish expo website. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Delectus quaerat labore quod, iure
+            nihil dolorum at nesciunt? Quibusdam quasi natus repudiandae in
+            repellat animi, vitae velit modi, sunt, ipsam facilis.
+          </p>
+          <br />
+          <p class="max-w-96">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            ea ipsam corrupti suscipit sapiente quisquam odit dolorum totam ad
+          </p>
+        </div>
+          <div class="flex gap-4">
+            <button class="bg-teal text-white p-2 my-5 drop-shadow-lg">
+              <a href="">Here's a button!</a>
+            </button>
+            <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
+              <a href="">Here's another button!</a>
+            </button>
+          </div>
+        </div>
+        <div class="w-1/2 2xl:m-0 sm:ml-[50px] p-5">
+          <Image
+            src={Img2}
+            alt=""
+            class=" w-[75%]"
+          />
+        </div>
+      </div>
+    </section>
+  </div>
