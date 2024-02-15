@@ -1,8 +1,9 @@
-eh journal- 2/15: "Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."
+- eh journal- 2/15:
 
-"I realize that creating test components and starting 'new drafts' as opposed to deleting previous versions makes better progress."
-
-"does tailwind have a grid-template-areas option? I've had to refresh my memory with using vanilla css!"
+-"Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."
+-"I realize that creating test components and starting 'new drafts' as opposed to deleting previous versions makes better progress."
+-"does tailwind have a grid-template-areas option? I've had to refresh my memory with using vanilla css!"
+-just found out an adapter is needed for using astro with vercel: https://docs.astro.build/en/guides/server-side-rendering/
 
 - 2/15
 - "simplify the website process": about, CTA, contact
