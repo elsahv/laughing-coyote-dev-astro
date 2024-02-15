@@ -1,69 +1,150 @@
-    ---
-import { Image } from "astro:assets"
+---
+// const websites = [
+//   {
+//     title: "HoveyRoofing",
+//     p: "fdsffdsof fkdfjdskljillum, ducimus ad vero repellenor sit amet consectetur or sit amet consectetur or sit amet consectetur dus kfdsljkdf jklsdjflksdjfl jlk",
+//   },
+//   {
+//     title: "Generations Backflow",
+//     p: "fdsffdsof fkdfjdskljillum, ducimus ad vero repellenor sit amet consectetur or sit amet consectetur or sit amet consectetur dus kfdsljkdf jklsdjflksdjfl jl",
+//   },
+// ];
+import { Image } from "astro:assets";
 import Img1 from "../../../public/screenshots/hoveyroofing.png";
 import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
-
-const caseStudies = [
-  {
-    title: "HoveyRoofing",
-    img: Img1,
-    img1: Img1,
-    p: "Lorem, i pit totam aut exercitationem hic odndis or sit amet consectetur adipisicing elit. Ullam consequuntur voluptatibus aliquam sint dicta nihil perferendis illo!",
-    url: "https://hoveyroofing.com",
-  },
-  {
-    title: "Generations Backflow",
-    img: Img2,
-    p: "Lorem, i Ullam consequunt lam consequuntur voluptatibus aliquam sint dicta n  dicta nihil perferendis illo!",
-    url: "https://ie-backflow-ixj3fuw24-elsahv.vercel.app/",
-  },
-];
-
 ---
 
-<section id="websites-section" class="bg-test1">
-        <div class="bg-test2">
-          <h2 class="text-5xl underline font-bold">
-          Featured Works
-          </h2>
-            <p class="">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              quo atque fuga. Corporis doloremque sit minus, asperiores quia
-              velit inventore nostrum! Dicta alias corporis numquam.
-            </p>
+<>
+  <section
+    id="works-wrapper"
+    class="flex justify-center items-center orange h-screen mt-[105px]"
+  >
+    <div id="container" class="">
+      <!-- todo: COME BACK TO v -->
+      <!-- <div id="dynamic-grid">
+    {
+      websites.map((item) => (
+        <div class="flex">
+          <h2>{item.title}</h2>
         </div>
-      <div class="my-3 pt-[50px]">
-        {caseStudies.map((item) => (
-          <div class="">
-            <div class="">
-              <a href={item.url}>
-                <div class="hover:opacity-80">
-                  <div id="title" class="pl-1 pb-1 flex items-center"> 
-                    <h2 class="font-medium text-3xl">{item.title}</h2>
-                  </div>
+      ))
+    }
+  </div> -->
+      <!-- todo: COME BACK TO ^ -->
 
-                <div class="bg-test2">
-                  <Image
-                    class="bg-carribean border border-black"
-                    src={item.img}
-                    alt=""
-                    //  width={800}
-                  />
-                </div>
-              </a>
-            </div>
-            <p class="dropshadow-2xl font-medium w-3/4 pl-2 pt-1">
-              {item.p}
-            </p>
-          </div>
-          </div>
-        ))}
+      <style>
+        .gridTemplateAreas {
+          display: grid;
+          grid-gap: 1em;
+          grid-template-areas:
+            "A B"
+            "C D";
+        }
+
+        @media screen and (max-width: 800px) {
+          .gridTemplateAreas {
+            display: grid;
+            grid-template-areas:
+              "A"
+              "B"
+              "D"
+              "C";
+          }
+        }
+
+        #sq-1 {
+          grid-area: A;
+        }
+        #sq-2 {
+          grid-area: B;
+        }
+        #sq-3 {
+          grid-area: C;
+        }
+        #sq-4 {
+          grid-area: D;
+        }
+        #content-container {
+          margin: 50px;
+        }
+      </style>
+
+      <div class="bg-test2 w-1/2 ml-[50px] mt-[150px] pb-5 p-5">
+        <h2 class="text-5xl underline font-bold">Featured Works</h2>
+        <p class="pt-5">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
+          atque fuga. Corporis doloremque sit minus, asperiores quia velit
+          inventore nostrum! Dicta alias corporis numquam.
+        </p>
       </div>
-    </div>
-    </section>
 
-          <!--    //todo CaseStudies- ROOF, BACKFLOW... EACH WITH TESTIMONIAL -->
-            <!-- //todo Gallery: What LC IS CURRENTLY WORKING ON -->
-              <!-- //todo -FAQs -->
-              <!-- //todo <Templates /> -->
-              <!-- //todo <li>PRICING</li> -->
+      <!-- GRID v -->
+      <div id="grid" class="gridTemplateAreas test2 p-[50px] mt-[50px]">
+        <!-- *SQ-1 -->
+        <div id="sq-1" class="test1 pl-1">
+          <div id="content-container">
+            <h2
+              class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[50px]"
+            >
+              HoveyRoofing
+            </h2>
+            <p class="">
+              1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              maiores cupiditate non illum, ducimus ad vero repellendus
+              accusamus iure quod? Praesentium vel, non vero ex optio recusandae
+              nulla maxime dolorum!
+            </p>
+
+            <div id="btn-wrapper" class="flex gap-4">
+              <button class="bg-teal text-white p-2 my-5 drop-shadow-lg">
+                <a href="">Here's a button!</a>
+              </button>
+              <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
+                <a href="">Here's another button!</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- *SQ-2 -->
+        <div id="sq-2" class="lavender">
+          <Image src={Img1} alt="" class="h-full border border-black" />
+        </div>
+
+        <!-- *SQ-3 -->
+        <div id="sq-3" class="pt-[150px]">
+          <Image src={Img2} alt="" class="h-full border border-black" />
+        </div>
+
+        <!-- *SQ-4 -->
+        <div id="sq-4" class="teal pl-1 pt-[150px]">
+          <div id="content-container">
+            <h2
+              class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[50px]"
+            >
+              Generations Backflow
+            </h2>
+            <p class="">
+              1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              maiores cupiditate non illum, ducimus ad vero repellendus
+              accusamus iure quod? Praesentium vel, non vero ex optio recusandae
+              nulla maxime dolorum!
+            </p>
+            <div class="flex gap-4">
+              <button
+                id="btn-wrapper"
+                class="bg-teal text-white p-2 my-5 drop-shadow-lg"
+              >
+                <a href="">Here's a button!</a>
+              </button>
+              <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
+                <a href="">Here's another button!</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GRID  ^  -->
+    </div>
+  </section>
+</>

@@ -1,54 +1,53 @@
 ---
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 import SelfImg from "../../../public/images/self.jpg";
 ---
-<section id="about-section" class="bg-test1">
-  <!-- todo:ABOUT ME -->
-    <div class="my-5">
-        <div id="img-wrapper" class="w-1/2 flex justify-center">
-          <Image
-            class="w-[400px] bg-onyx py-1 pl-1 pr-2 drop-shadow-md border border-black"
-            src={SelfImg}
-            alt=""
-          />
-        </div>
-        <div id="about-me" class="p-5 mt-[55px] text-lg">
-          <div class="bg-teal text-lavender border border-black p-5 w-1/2">
-            <h2 class="mt-5 text-3xl underline">About</h2>
-            <p class="pt-">
-              Hi there, and welcome! {"I'm"} Elsa, and I love creating colorful
-              and unconventional websites.
-            </p>{" "}
-            {/* //?<-- LINK TO PORTFOLIO?*/}
-            <p class="">
-              As someone who has started a creative career from the ground up, I
-              know what its like to be overwhelmed with figuring out web design,
-              selling strategies, and marketing.
-            </p>
-          </div>
 
-          <div class="bg-test2 border border-black mt-[50px] p-3 w-1/2">
-            <p class="">
-              This was what Laughing Coyote Dev was created for, to save you
-              some headaches that come with learning about:
-            </p>
-            <ul>
-              <li class="">- how to design a website</li>
-              <li class="">- how to pick a domain and use hosting</li>
-              <li class="">
-                - and etc! See
-                <a href="/#services" class="pl-1 underline">
-                  services below!
-                </a>
-              </li>
-            </ul>
-          </div>
+<section id="about" class="pt-5 mt-[100px]">
+  <div class="my-5">
+    <div class="flex mr-5">
+      <div id="img-wrapper" class="w-1/2 flex justify-center">
+        <Image
+          class="w-[400px] bg-onyx py-1 pl-1 pr-2 drop-shadow-md border border-black"
+          src={SelfImg}
+          alt=""
+        />
+      </div>
+      <div id="about-me" class="p-5 mt-[55px] text-lg">
+        <div class="bg-teal text-lavender border border-black p-5 w-1/2">
+          <h2 class="mt-5 text-3xl underline">About</h2>
+          <p class="pt-">
+            Hi there, and welcome! {"I'm"} Elsa, and I love creating colorful and
+            unconventional websites.
+          </p>{" "}
+          {/* //?<-- LINK TO PORTFOLIO?*/}
+          <p class="">
+            As someone who has started a creative career from the ground up, I
+            know what its like to be overwhelmed with figuring out web design,
+            selling strategies, and marketing.
+          </p>
         </div>
 
-        {/* 3 //todo later: MAKE VISIBLE WHEN MORE CONTENT v*/}
+        <div class="bg-test2 border border-black mt-[50px] p-3 w-1/2">
+          <p class="">
+            This was what Laughing Coyote Dev was created for, to save you some
+            headaches that come with learning about:
+          </p>
+          <ul>
+            <li class="">- how to design a website</li>
+            <li class="">- how to pick a domain and use hosting</li>
+            <li class="">
+              - and etc! See
+              <a href="/#services" class="pl-1 underline"> services below!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-       <!-- todo: how it works -->
-      {/* <Dynamic_GridSqs
+      {/* 3 //todo later: MAKE VISIBLE WHEN MORE CONTENT v*/}
+    </div>
+    {
+      /* <Dynamic_GridSqs
               containerStyles="dropshadow-lg"
               Headline="4 STEP PROCESS- How it works!"
 
@@ -63,13 +62,7 @@ import SelfImg from "../../../public/images/self.jpg";
 
               SQtitle4="Launch Phase"  
               SQparagraph4="final review and Q&A--> move local website to live server, hosting, client training--> final payment"
-              /> //todo later: MAKE VISIBLE WHEN MORE CONTENT */}
-
-                   <!--todo: what LC Dev does? -->
-                   
-                   <!--todo: Benefits of LC -->
-
-       
-  </section>
-
-
+              /> //todo later: MAKE VISIBLE WHEN MORE CONTENT */
+    }
+  </div>
+</section>
