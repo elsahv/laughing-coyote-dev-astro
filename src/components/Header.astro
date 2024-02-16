@@ -9,15 +9,15 @@ const links = [
 ---
 
 <header
-  class="border-teal border-b-2 bg-black opacity-80 text-parchment w-[100%] pt-4"
+  class="fixed top-0 z-50 border-teal border-b-2 bg-black opacity-80 text-parchment w-[100%]"
 >
-  <nav class="pl-5 pr-5 pt-1 h-[100%] grid grid-cols-2 pb-3">
+  <nav class="pl-5 pr-5 pt-1 grid grid-cols-2 text-2xl">
     <div class="flex justify-start items-end py-3 pl-1">
-      <div id="logo" class="text-4xl font-bold">
+      <div id="logo" class="font-bold">
         <a href="/">Laughing Coyote Dev</a>
       </div>
     </div>
-    <ul class="flex justify-end items-end text-3xl py-3">
+    <ul class="flex justify-end items-end py-3">
       {
         links.map((link) => (
           <a class="mx-5" href={link.href}>
