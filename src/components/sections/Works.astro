@@ -15,10 +15,7 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
 ---
 
 <>
-  <section
-    id="works-wrapper"
-    class="flex justify-center items-center orange h-screen mt-[205px]"
-  >
+  <section id="works-wrapper" class="flex justify-center items-center">
     <div id="container" class="">
       <!-- todo: COME BACK TO v -->
       <!-- <div id="dynamic-grid">
@@ -35,13 +32,13 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
       <style>
         .gridTemplateAreas {
           display: grid;
-          grid-gap: 1em;
+          grid-gap: 2em;
           grid-template-areas:
             "A B"
             "C D";
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1024px) {
           .gridTemplateAreas {
             display: grid;
             grid-template-areas:
@@ -65,24 +62,32 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
           grid-area: D;
         }
         #content-container {
-          margin: 50px;
+          /* margin: 50px; */
         }
       </style>
 
-      <div class="bg-test2 w-1/2 ml-[50px] mt-[150px] pb-5 p-5">
-        <h2 class="text-5xl underline font-bold">Featured Works</h2>
-        <p class="pt-5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
-          atque fuga. Corporis doloremque sit minus, asperiores quia velit
-          inventore nostrum! Dicta alias corporis numquam.
-        </p>
+      <div
+        id="section-banner"
+        class="border border-black bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] p-[35px]"
+      >
+        <h2 class="text-5xl w-1/4 font-bold">Featured Works</h2>
+        <div class="bg-">
+          <p class="pt-1 pl-1 w-3/4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
+            atque fuga. Corporis doloremque sit minus, asperiores quia velit
+            inventore nostrum! Dicta alias corporis numquam.
+          </p>
+        </div>
       </div>
 
       <!-- GRID v -->
-      <div id="grid" class="gridTemplateAreas test2 p-[50px] mt-[50px]">
+      <div
+        id="grid"
+        class="gridTemplateAreas test2 2xl:p-[50px] p-1 mt-[50px] 2xl:mx-[90px] mx-5"
+      >
         <!-- *SQ-1 -->
-        <div id="sq-1" class="test1 pl-1">
-          <div id="content-container">
+        <div id="sq-1" class="test1 pl-1 pt-[55px]">
+          <div id="content-container" class="2xl:p-[50px]">
             <h2
               class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[50px]"
             >
@@ -112,18 +117,25 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
         </div>
 
         <!-- *SQ-3 -->
-        <div id="sq-3" class="pt-[150px]">
+        <div id="sq-3" class="2xl:pt-[150px]">
           <Image src={Img2} alt="" class="h-full border border-black" />
         </div>
 
         <!-- *SQ-4 -->
-        <div id="sq-4" class="teal pl-1 pt-[150px]">
+        <div id="sq-4" class="bg- pt-[150px] 2xl:pl-[50px]">
           <div id="content-container">
             <h2
               class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[50px]"
             >
               Generations Backflow
             </h2>
+            <p class="">
+              1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              maiores cupiditate non illum, ducimus ad vero repellendus
+              accusamus iure quod? Praesentium vel, non vero ex optio recusandae
+              nulla maxime dolorum!
+            </p>
+
             <p class="">
               1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
               maiores cupiditate non illum, ducimus ad vero repellendus
