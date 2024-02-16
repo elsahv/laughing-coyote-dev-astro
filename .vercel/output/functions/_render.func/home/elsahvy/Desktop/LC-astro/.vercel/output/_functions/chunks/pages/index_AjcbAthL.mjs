@@ -1,20 +1,9 @@
 /* empty css                          */
-import { c as createAstro, d as createComponent, r as renderTemplate, m as maybeRenderHead, f as renderComponent, l as Fragment } from '../astro_vlHRU2XH.mjs';
+import { c as createAstro, d as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead, l as Fragment } from '../astro_vlHRU2XH.mjs';
 import 'kleur/colors';
-import { $ as $$MainLayout } from './404_X1XBbYla.mjs';
+import { $ as $$MainLayout } from './404_P1fQemTH.mjs';
 import { $ as $$Image } from './generic_uPrcRsqo.mjs';
 /* empty css                          */
-
-const $$Astro$2 = createAstro();
-const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
-  Astro2.self = $$Contact;
-  return renderTemplate`<!-- import ContactForm from "../ContactForm"; --><!--//todo: SELLING CTA COMP-->${maybeRenderHead()}<section id="contact-section" class=""> <div class="px-5 md:px-10"> <div class="mx-auto w-full max-w-7xl"> <div class="py-16 md:py-24 lg:py-32"> <div class="grid items-center max-[991px]:justify-items-start grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-20"> <div class="border-black rounded max-[991px]:max-w-[720px]"> <div class="p-5"> <h2 class="font-bold mb-2 text-3xl md:text-5xl">
-Contact
-</h2> <div class="ml-0 mr-0 mt-4 max-w-[528px]"> <p class="max-[479px] text-lg">Lets work together!</p> </div> <div class="mb-8 max-w-[480px] text-lg"> <p class="max-[479px]:text-sm">
-Looking forward to hearing from you!
-</p> </div> </div> </div> ${renderComponent($$result, "Fragment", Fragment, {}, {})} </div> </div> </div> </div> </section>`;
-}, "/home/elsahvy/Desktop/LC-astro/src/components/sections/Contact.astro", void 0);
 
 const Img1 = new Proxy({"src":"/_astro/hoveyroofing.ANkwSKWm.png","width":1897,"height":935,"format":"png"}, {
 						get(target, name, receiver) {
@@ -79,7 +68,7 @@ const $$Astro = createAstro();
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
-  return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": ($$result2) => renderTemplate`    ${renderComponent($$result2, "Works", $$Works, {})} ${renderComponent($$result2, "Contact", $$Contact, {})}   ` })}`;
+  return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": ($$result2) => renderTemplate`    ${renderComponent($$result2, "Works", $$Works, {})}    ` })}`;
 }, "/home/elsahvy/Desktop/LC-astro/src/pages/index.astro", void 0);
 
 const $$file = "/home/elsahvy/Desktop/LC-astro/src/pages/index.astro";
