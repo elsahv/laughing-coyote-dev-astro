@@ -1,7 +1,7 @@
 - eh journal-
   -2/16
   -things are really clicking into place today!!
-  -added much more content to each section, been speeding up on making progress this past week.
+  -added much more content to each section, been speeding up on making progress this past week!
 
 **TODO**:
 _button wrapper_
