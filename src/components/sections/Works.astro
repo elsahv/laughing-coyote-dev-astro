@@ -12,23 +12,12 @@
 import { Image } from "astro:assets";
 import Img1 from "../../../public/screenshots/hoveyroofing.png";
 import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
+import Card from "../Card.astro";
 ---
 
 <>
-  <section id="works-wrapper" class="flex justify-center items-center">
+  <div id="works-wrapper" class="flex justify-center items-center">
     <div id="container" class="">
-      <!-- todo: COME BACK TO v -->
-      <!-- <div id="dynamic-grid">
-    {
-      websites.map((item) => (
-        <div class="flex">
-          <h2>{item.title}</h2>
-        </div>
-      ))
-    }
-  </div> -->
-      <!-- todo: COME BACK TO ^ -->
-
       <style>
         .gridTemplateAreas {
           display: grid;
@@ -68,16 +57,14 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
 
       <div
         id="section-banner"
-        class="border border-black bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] p-[35px]"
+        class="border border-black bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
       >
-        <h2 class="text-5xl w-1/4 font-bold">Featured Works</h2>
-        <div class="bg-">
-          <p class="pt-1 pl-1 w-3/4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
-            atque fuga. Corporis doloremque sit minus, asperiores quia velit
-            inventore nostrum! Dicta alias corporis numquam.
-          </p>
-        </div>
+        <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
+        <p class="pt-1 pl-1 w-3/">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
+          atque fuga. Corporis doloremque sit minus, asperiores quia velit
+          inventore nostrum! Dicta alias corporis numquam.
+        </p>
       </div>
 
       <!-- GRID v -->
@@ -85,6 +72,10 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
         id="grid"
         class="gridTemplateAreas test2 2xl:p-[50px] p-1 mt-[50px] 2xl:mx-[90px] mx-5"
       >
+        <!-- todo: CREATE CARD COMPONENT v-->
+        <Card />
+        <!-- todo: CREATE CARD COMPONENT ^-->
+
         <!-- *SQ-1 -->
         <div id="sq-1" class="test1 pl-1 pt-[55px]">
           <div id="content-container" class="2xl:p-[50px]">
@@ -101,11 +92,15 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
             </p>
 
             <div id="btn-wrapper" class="flex gap-4">
-              <button class="bg-teal text-white p-2 my-5 drop-shadow-lg">
-                <a href="">Here's a button!</a>
+              <button
+                class="hover:text-lavender bg-teal text-white p-2 my-5 drop-shadow-lg"
+              >
+                <a href="">case study</a>
               </button>
-              <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
-                <a href="">Here's another button!</a>
+              <button
+                class="hover:text-lavender bg-orange text-white p-2 my-5 drop-shadow-lg"
+              >
+                <a href="https://hoveyroofing.com">visit site</a>
               </button>
             </div>
           </div>
@@ -113,12 +108,20 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
 
         <!-- *SQ-2 -->
         <div id="sq-2" class="lavender">
-          <Image src={Img1} alt="" class="h-full border border-black" />
+          <Image
+            src={Img1}
+            alt=""
+            class="h-full dropshadow-2xl border border-black rounded"
+          />
         </div>
 
         <!-- *SQ-3 -->
         <div id="sq-3" class="2xl:pt-[150px]">
-          <Image src={Img2} alt="" class="h-full border border-black" />
+          <Image
+            src={Img2}
+            alt=""
+            class="dropshadow-2xl rounded h-full border border-black"
+          />
         </div>
 
         <!-- *SQ-4 -->
@@ -145,12 +148,12 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
             <div class="flex gap-4">
               <button
                 id="btn-wrapper"
-                class="bg-teal text-white p-2 my-5 drop-shadow-lg"
+                class="hover:text-lavender rounded bg-teal text-white p-2 my-5 drop-shadow-lg"
               >
-                <a href="">Here's a button!</a>
+                <a href="">case study</a>
               </button>
               <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
-                <a href="">Here's another button!</a>
+                <a href="">visit site</a>
               </button>
             </div>
           </div>
@@ -158,5 +161,5 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
       </div>
       <!-- GRID  ^  -->
     </div>
-  </section>
+  </div>
 </>

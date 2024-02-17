@@ -1,11 +1,17 @@
 ---
+import Contact from "./sections/Contact.astro";
+
 const today = new Date();
 ---
 
 <footer
   class="relative bottom-0 bg-teal text-center w-full border-t-2 border-black mt-5"
 >
-  <div>made by Elsa Hovey</div>
+  <section id="contact">
+    <Contact />
+  </section>
+
+  <!-- <div>made by Elsa Hovey</div> -->
   <div class="">
     Copyright &copy; {today.getFullYear()}
   </div>

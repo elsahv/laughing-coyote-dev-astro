@@ -1,102 +1,20 @@
 ---
-import temp1 from "../../../public/screenshots/site1.png";
-import temp2 from "../../../public/screenshots/site2.png";
-import temp3 from "../../../public/screenshots/site3.png";
-import { Image } from "astro:assets";
 
-const templates = [
-  {
-    id: 1,
-    title: "A. business card layout",
-    siteImg: temp1,
-    p: "Perfect starter for a business starting out. Voluptates commodi pariatur modi saepe assumenda accu sdam hic? Velit dolore ullam aliquam suscipit.",
-    url: "https://template-left-nav-journal-layout-1.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "B. Three page/ components",
-    siteImg: temp2,
-    p: "A three page template with all important things covered. Lorem iaepe assumenda accusamus cupiditate, eum doloribus atque explicabo adipisci consequatur quos quibusdam hic? Velit dolore ullam aliquam suscipit.",
-    url: "https://lc-fish-expo-demo.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "C. single pg journal",
-    siteImg: temp3,
-    p: "A single pg portfolio which covers all three comp, perfect for online art studio, or journal. Lorem iaepe assumenda accusamus cupiditate, eum doloribus atque explicabo adipisci consequatur quos quibusdam hic? Velit dolore ullam aliquam suscipit.",
-    url: "https://template-left-nav-journal-layout-1.vercel.app/",
-  },
-];
 ---
 
-<!-- -Subscription benefits --><!-- TODO COMPS --><!-- //* 10/3: TEMPLATES ADDED TO PACKAGES -->
-<section id="packages-section" class="">
-  <div id="section-wrapper" class="p-auto flex justify-center">
-    <div id="section-container" class="">
-      <div class="2xl:p-5 p-1">
-        <h2 class="font-semibold 2xl:text-4xl text-3xl">
-          Which website would be best for my business?
-        </h2>
-        <p class="pt-1 pl-1 pb-5 my-1">
-          Sometimes it can be difficult to settle on a design, or page layout.
-          Laughing Coyote takes away this dilemna by offering three select
-          templates. Each one is customizable.
-        </p>
-      </div>
-      <div id="grid-container" class="2xl:px-5 px-1">
-        <div
-          id="grid"
-          class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-16 gap-8"
-        >
-          {
-            templates.map((template) => (
-              <div
-                id="sq"
-                class="rounded text-onyx border border-black bg-lavender"
-              >
-                <div id="top-bar-container" class="flex pl-3 pt-3">
-                  <h2 class="2xl:text-lg text-medium capitalize font-semibold">
-                    {template.title}
-                  </h2>
-                  <a
-                    class="hover:opacity-80 hover:ease-in duration-300 text-2xl pl-1"
-                    href={template.url}
-                  >
-                    {/* file open icon*/}
-                  </a>
-                </div>
+<div
+  id="section-banner"
+  class="border border-black bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
+>
+  <h2 class="2xl:text-5xl text-4xl font-bold">Simple &amp; Fixed Pricing</h2>
+  <p class="pt-1 pl-1 w-3/">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo atque
+    fuga. Corporis doloremque sit minus, asperiores quia velit inventore
+    nostrum! Dicta alias corporis numquam.
+  </p>
+</div>
 
-                <a
-                  class="hover:opacity-80 hover:ease-in duration-300 text-2xl pl-1"
-                  href={template.url}
-                >
-                  <Image
-                    class="border-t border-b border-black"
-                    src={template.siteImg}
-                    alt=""
-                  />
-                </a>
-
-                <div id="paragraph-container" class="p-3">
-                  <p class="md:text-md text-sm">{template.p}</p>
-                </div>
-                {/* //todo later: ADD SLUG TO DESCRIBE WEBSITES MORE IN DETAIL v */}
-                {/* <div id="bottom-bar-container" class="p-3">
-        <div id="sm-container" class="flex">
-      <div class="text-parchment bg-onyx py-1 px-2 text-sm">View Template</div>
-      </div>
-      </div> */}
-                {/* //todo later: ADD SLUG TO DESCRIBE WEBSITES MORE IN DETAIL ^ */}
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="package-rates" class="">
+<div id="package-rates" class="bg- text-black">
   <div
     class="mx-auto flex w-full max-w-7xl flex-col items-center px-5 py-16 md:px-10 md:py-24 lg:py-32"
   >
@@ -236,7 +154,5 @@ const templates = [
     <p>30 days money-back guarantee</p>
     <p>limited time: low fee!</p>
   </div>
+  <!-- <div id="what-we-offer">value, why LC is worth it</div> -->
 </div>
-
-<!-- -what we provide -->
-<!-- TODO COMPS -->

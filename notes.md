@@ -1,5 +1,15 @@
-- eh journal- 2/15:
+- eh journal-
+  -2/16
+  -things are really clicking into place today!!
+  -added much more content to each section, been speeding up on making progress this past week.
 
+**TODO**:
+_button wrapper_
+_website case study slug_
+IP- create card component for websites\_
+_create universal rounded border style_
+
+-2/15:
 -"Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."
 -"I realize that creating test components and starting 'new drafts' as opposed to deleting previous versions makes better progress."
 -"does tailwind have a grid-template-areas option? I've had to refresh my memory with using vanilla css!"

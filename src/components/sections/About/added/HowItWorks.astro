@@ -1,0 +1,45 @@
+---
+const items = [
+  {
+    num: 1,
+    title: "Discovery phase",
+    p: "phone calls, meetings, consultations.... research, planning, scheduling... develop site structure/sitemap ex:10 hours x $50/hr=$500. -What does the user want? -how to make brand provide value?",
+  },
+  {
+    num: 2,
+    title: "Creative Phase",
+    p: "  sitemap, wireframe site--> mockup first draft--> mockup revised, final draft",
+  },
+  {
+    num: 3,
+    title: "Development Phase",
+    p: " set up vercel temp--> convert mockups into code--> go over temp with client --> final revisions",
+  },
+  {
+    num: 4,
+    title: "Launch Phase",
+    p: " final review and Q&A--> move local website to live server, hosting,client training--> final payment",
+  },
+];
+---
+
+<section id="how-it-works">
+  <div id="wrapper" class="p-4 mt-5">
+    <div id="container">
+      <h1 class="text-2xl py-2">How it works!</h1>
+      <div class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        {
+          items.map((item) => (
+            <div id="sq" class="p-2 border border-black">
+              <h3 class="font-bold">
+                {item.num}
+                {item.title}
+              </h3>
+              <p class="">{item.p}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

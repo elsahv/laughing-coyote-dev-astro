@@ -1,10 +1,10 @@
 ---
 const links = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/#about-section" },
-  { label: "Websites", href: "/#websites-section" },
-  { label: "Packages", href: "/#packages-section" },
-  { label: "Contact", href: "/#contact-section" },
+  // { label: "Home", href: "/" },
+  { label: "About", href: "/#about" },
+  { label: "Featured Works", href: "/#featured-works" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Contact", href: "/#contact" },
 ];
 ---
 
@@ -15,11 +15,11 @@ const links = [
         <a href="/">Laughing Coyote Dev</a>
       </div>
     </div>
-    <ul class="flex justify-end items-end py-3">
+    <ul class="flex justify-end items-end py-3 opacity-90">
       {
         links.map((link) => (
           <a class="mx-5" href={link.href}>
-            <li>{link.label}</li>
+            <li class=" hover:text-teal drop-shadow-2xl">{link.label}</li>
           </a>
         ))
       }
