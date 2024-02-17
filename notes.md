@@ -6,8 +6,9 @@
 **TODO**:
 _button wrapper_
 _website case study slug_
-IP- create card component for websites\_
+IP- create card component for websites
 _create universal rounded border style_
+IP- fix live domain error
 
 -2/15:
 -"Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."

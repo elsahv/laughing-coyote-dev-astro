@@ -1,18 +1,23 @@
 ---
-// const websites = [
-//   {
-//     title: "HoveyRoofing",
-//     p: "fdsffdsof fkdfjdskljillum, ducimus ad vero repellenor sit amet consectetur or sit amet consectetur or sit amet consectetur dus kfdsljkdf jklsdjflksdjfl jlk",
-//   },
-//   {
-//     title: "Generations Backflow",
-//     p: "fdsffdsof fkdfjdskljillum, ducimus ad vero repellenor sit amet consectetur or sit amet consectetur or sit amet consectetur dus kfdsljkdf jklsdjflksdjfl jl",
-//   },
-// ];
 import { Image } from "astro:assets";
 import Img1 from "../../../public/screenshots/hoveyroofing.png";
 import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
 import Card from "../Card.astro";
+
+const items = [
+  {
+    title: "Hovey Roofing",
+    p: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+    image:
+      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "Generations Backflow",
+    p: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+    image:
+      "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
 ---
 
 <>
@@ -73,8 +78,32 @@ import Card from "../Card.astro";
         class="gridTemplateAreas test2 2xl:p-[50px] p-1 mt-[50px] 2xl:mx-[90px] mx-5"
       >
         <!-- todo: CREATE CARD COMPONENT v-->
-        <Card />
+        <!-- <div class="bg-test1">
+          {
+            items.map((item) => (
+              // <Card />
+              <div id="flex" class="flex">
+                <div id="content-wrapper" class="">
+                  <h3 class="text-2xl font-bold">{item.title}</h3>
+                  <p>{item.p}</p>
+                </div>
+                <div id="id-wrapper" class="">
+                  <img src={item.image} alt="" />
+                </div>
+              </div>
+            ))
+          }
+        </div> -->
+
         <!-- todo: CREATE CARD COMPONENT ^-->
+
+        <!-- * order ref v -->
+        <!-- <div class="flex justify-between ...">
+          <div class="">01</div>
+          <div class="order-last">02</div>
+          <div class="order-first">03</div>
+        </div> -->
+        <!-- * order ref ^ -->
 
         <!-- *SQ-1 -->
         <div id="sq-1" class="test1 pl-1 pt-[55px]">
