@@ -1,15 +1,22 @@
 - eh journal-
-  -2/16
-  -things are really clicking into place today!!
-  -added much more content to each section, been speeding up on making progress this past week!
 
 **TODO**:
 _button wrapper_
 _website case study slug_
-IP- create card component for websites
-_create universal rounded border style_
+IP- create universal rounded border style
+
+COME BACK TO--> IP- create card component for websites
 
 - DONE-fix live domain error
+
+---
+
+2/18
+-rm case study CTA button for now, at least until there is more content.
+
+-2/16
+-things are really clicking into place today!!
+-added much more content to each section, been speeding up on making progress this past week!
 
 -2/15:
 -"Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."
