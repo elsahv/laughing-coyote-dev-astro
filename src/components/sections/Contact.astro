@@ -1,4 +1,23 @@
-<!-- import ContactForm from "../ContactForm"; --><!--//todo: SELLING CTA COMP-->
+---
+const items = [
+  {
+    title: "instagram",
+    img: "https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png",
+    link: "https://instagram.com",
+  },
+  {
+    title: "facebook",
+    img: "https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png",
+    link: "https://facebook.com",
+  },
+  {
+    title: "linkedIn",
+    img: "https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png",
+    link: "https://linkedIn.com",
+  },
+];
+---
+
 <div id="" class="bg-teal text-parchment">
   <div class="px-5 md:px-10">
     <div class="mx-auto w-full max-w-7xl">
@@ -27,21 +46,30 @@
             </div>
           </div>
           <>
-            {/* <ContactForm />*/}
             <div class="">
-              <h1 class="text-3xl">lets connect</h1>
-              <ul>
-                <li>insta icon</li>
-                <li>linkedin icon</li>
-                <li>email icon</li>
-              </ul>
+              <h1 class="text-3xl text-onyx">lets connect</h1>
+              <div
+                class="flex justify-center bg-test2 px-1 py-2 dropshadow-2xl my-3 border border-black rounded"
+              >
+                {
+                  items.map((item) => (
+                    <div class="hover:opacity-70">
+                      <a href={item.link}>
+                        <img src={item.img} alt="" height="45px" width="45px" />
+                      </a>
+                    </div>
+                  ))
+                }
+              </div>
+              <!-- TODO v -->
               <!-- <h3 class="text-2xl">About Me</h3> -->
-
               <!-- <div id="grid" class="grid grid-cols-2"> -->
               <!-- <div id="left-sq" class="bg-test1"> -->
               <p>
                 LC dev was created by
-                <span class="font-bold">
+                <span
+                  class="pl-1 font-bold text-onyx underline hover:text-black"
+                >
                   <a
                     href="https://elsahovey.com"
                     target="_blank"

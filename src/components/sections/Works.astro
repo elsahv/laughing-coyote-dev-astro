@@ -2,22 +2,22 @@
 import { Image } from "astro:assets";
 import Img1 from "../../../public/screenshots/hoveyroofing.png";
 import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
-import Card from "../Card.astro";
+// import Card from "../Card.astro";
 
-const items = [
-  {
-    title: "Hovey Roofing",
-    p: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
-    image:
-      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Generations Backflow",
-    p: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
-    image:
-      "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-];
+// const items = [
+//   {
+//     title: "Hovey Roofing",
+//     p: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+//     image:
+//       "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   },
+//   {
+//     title: "Generations Backflow",
+//     p: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+//     image:
+//       "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//   },
+// ];
 ---
 
 <>
@@ -62,7 +62,7 @@ const items = [
 
       <div
         id="section-banner"
-        class="border border-black bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
+        class="_PrimaryBorder bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
       >
         <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
         <p class="pt-1 pl-1 w-3/">
@@ -81,7 +81,7 @@ const items = [
         <!-- <div class="bg-test1">
           {
             items.map((item) => (
-              // <Card />
+              // <Card /> 
               <div id="flex" class="flex">
                 <div id="content-wrapper" class="">
                   <h3 class="text-2xl font-bold">{item.title}</h3>
@@ -140,17 +140,13 @@ const items = [
           <Image
             src={Img1}
             alt=""
-            class="h-full dropshadow-2xl border border-black rounded"
+            class="h-full dropshadow-2xl _ShadowBorder"
           />
         </div>
 
         <!-- *SQ-3 -->
         <div id="sq-3" class="2xl:pt-[150px]">
-          <Image
-            src={Img2}
-            alt=""
-            class="dropshadow-2xl rounded h-full border border-black"
-          />
+          <Image src={Img2} alt="" />
         </div>
 
         <!-- *SQ-4 -->
