@@ -1,49 +1,29 @@
 ---
 import { Image } from "astro:assets";
-import Img1 from "../../../public/screenshots/hoveyroofing.png";
-import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
+// import Img1 from "../../../public/screenshots/hoveyroofing.png";
+// import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
+
+import Github from "../../../public/images/icons/github.png";
+
+const items = [
+  {
+    title: "Hovey Roofing",
+    p: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+    image:
+      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "Generations Backflow",
+    p: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+    image:
+      "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
 ---
 
 <>
   <div id="works-wrapper" class="flex justify-center items-center">
     <div id="container" class="">
-      <style>
-        .gridTemplateAreas {
-          display: grid;
-          grid-gap: 2em;
-          grid-template-areas:
-            "A B"
-            "C D";
-        }
-
-        @media screen and (max-width: 1024px) {
-          .gridTemplateAreas {
-            display: grid;
-            grid-template-areas:
-              "A"
-              "B"
-              "D"
-              "C";
-          }
-        }
-
-        #sq-1 {
-          grid-area: A;
-        }
-        #sq-2 {
-          grid-area: B;
-        }
-        #sq-3 {
-          grid-area: C;
-        }
-        #sq-4 {
-          grid-area: D;
-        }
-        #content-container {
-          /* margin: 50px; */
-        }
-      </style>
-
       <div
         id="section-banner"
         class="_PrimaryBorder bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
@@ -59,75 +39,47 @@ import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
       <!-- GRID v -->
       <div
         id="grid"
-        class="gridTemplateAreas test2 2xl:p-[50px] p-1 mt-[50px] 2xl:mx-[90px] mx-5"
+        class="px-5 grid grid-cols-2 gap-y-5 gap-x-2 p-5 mx-5 h-screen"
       >
-        <!-- *SQ-1 -->
-        <div id="sq-1" class="test1 pl-1 pt-[55px]">
-          <div id="content-container" class="2xl:p-[50px]">
-            <h2
-              class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[50px]"
-            >
-              HoveyRoofing
-            </h2>
-            <p class="">
-              1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              maiores cupiditate non illum, ducimus ad vero repellendus
-              accusamus iure quod? Praesentium vel, non vero ex optio recusandae
-              nulla maxime dolorum!
-            </p>
-
-            <div id="btn-wrapper" class="flex gap-4">
-              <button
-                class="hover:text-lavender bg-orange text-white p-2 my-5 drop-shadow-lg"
+        {
+          items.map((item) => (
+            <div id="flex" class="">
+              <div
+                id="card-wrapper"
+                class="bg-onyx rounded-lg border border-black"
               >
-                <a href="https://hoveyroofing.com">visit site</a>
-              </button>
+                <h3 class="text-4xl font-bold py-2 px-3 text-test2 bg-teal">
+                  {item.title}
+                </h3>
+                <div
+                  id="img-wrapper"
+                  class="opacity-80 hover:opacity-100 border-black border-t border-b"
+                >
+                  <div class="p-5" id="img-container">
+                    <img src={item.image} alt="" />
+                  </div>
+                </div>
+                <div id="p-wrapper">
+                  <div id="p-grid" class="bg-onyx p-2 grid grid-cols-6">
+                    <p class="col-span-5 text-parchment pl-3 pb-1">{item.p}</p>
+                    <div
+                      id="btn-padding-container"
+                      class="flex justify-center items-center bg-"
+                    >
+                      <button class="mx-1 w-1/2 h-1/2 mt-2 col-span-1 rounded px-1 bg-teal hover:bg-test2 hover:text-black text-test2 text-md">
+                        visit site
+                      </button>
+
+                      <button class="w-1/2 h-1/2 col-span-1 rounded mt-2 px-5 py-1 bg-teal hover:bg-test2 text-md flex justify-center">
+                        <Image src={Github} alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- *SQ-2 -->
-        <div id="sq-2" class="lavender">
-          <Image
-            src={Img1}
-            alt=""
-            class="h-full dropshadow-2xl _ShadowBorder"
-          />
-        </div>
-
-        <!-- *SQ-3 -->
-        <div id="sq-3" class="2xl:pt-[150px]">
-          <Image src={Img2} alt="" />
-        </div>
-
-        <!-- *SQ-4 -->
-        <div id="sq-4" class="bg- pt-[150px] 2xl:pl-[50px]">
-          <div id="content-container">
-            <h2
-              class="text-black font-bold 2xl:text-4xl sm:text-5xl 2xl:my-5 lg:mt-5 sm:mt-[50px]"
-            >
-              Generations Backflow
-            </h2>
-            <p class="">
-              1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              maiores cupiditate non illum, ducimus ad vero repellendus
-              accusamus iure quod? Praesentium vel, non vero ex optio recusandae
-              nulla maxime dolorum!
-            </p>
-
-            <p class="">
-              1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              maiores cupiditate non illum, ducimus ad vero repellendus
-              accusamus iure quod? Praesentium vel, non vero ex optio recusandae
-              nulla maxime dolorum!
-            </p>
-            <div class="flex gap-4">
-              <button class="bg-orange text-white p-2 my-5 drop-shadow-lg">
-                <a href="">visit site</a>
-              </button>
-            </div>
-          </div>
-        </div>
+          ))
+        }
       </div>
       <!-- GRID  ^  -->
     </div>

@@ -3,7 +3,8 @@
 **TODO**:
 _button wrapper_
 _website case study slug_
-IP- create universal rounded border style
+
+IP- create universal-rounded-border style
 
 COME BACK TO--> IP- create card component for websites
 
@@ -13,6 +14,7 @@ COME BACK TO--> IP- create card component for websites
 
 2/18
 -rm case study CTA button for now, at least until there is more content.
+-"I'm trying to document more often to make better progress"
 
 -2/16
 -things are really clicking into place today!!
