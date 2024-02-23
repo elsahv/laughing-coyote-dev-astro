@@ -48,14 +48,16 @@ const templates = [
         >
           {
             templates.map((template) => (
-              // Card
-              <div id="sq" class="rounded border _PrimaryBorder bg-papaya">
+              <div
+                id="sq"
+                class="rounded border _PrimaryBorder bg-papaya opacity-80 hover:opacity-100"
+              >
                 <div id="top-bar-container" class="flex pl-3 pt-3">
                   <h2 class="2xl:text-lg text-medium capitalize font-semibold">
                     {template.title}
                   </h2>
                   <a
-                    class="hover:opacity-80 hover:ease-in duration-300 text-2xl pl-1"
+                    class=" hover:ease-in duration-300 text-2xl pl-1"
                     href={template.url}
                   >
                     {/* file open icon*/}
@@ -63,7 +65,7 @@ const templates = [
                 </div>
 
                 <a
-                  class="hover:opacity-80 hover:ease-in duration-300 text-2xl pl-1"
+                  class="hover:ease-in duration-300 text-2xl pl-1"
                   href={template.url}
                 >
                   <Image
