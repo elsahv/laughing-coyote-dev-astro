@@ -14,7 +14,9 @@ const { title, image, url, paragraph } = Astro.props as Props;
       class="opacity-80 hover:opacity-100 border-black border-t border-b"
     >
       <div class="p-" id="img-container">
-        <img src={image} alt="" />
+        <a href={url} alt="">
+          <img src={image} alt="" />
+        </a>
       </div>
     </div>
 

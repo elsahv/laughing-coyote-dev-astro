@@ -2,10 +2,10 @@
 
 **TODO**:
 _button wrapper_
-_website case study slug_
 
 IP- create universal-rounded-border style
-COME BACK TO--> IP- create card component for websites
+COME BACK TO--> IP- create card component for templates
+COME BACK TO--> EVENTUALLY- website case study slug
 
 ---
 
