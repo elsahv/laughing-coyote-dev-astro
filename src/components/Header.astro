@@ -11,15 +11,20 @@ const links = [
 <header class="dropshadow-2xl text-onyx pt-1">
   <nav class="font-bold pl-5 pr-5 pt-1 grid grid-cols-2 text-2xl">
     <div class="flex justify-start items-end py-3 pl-1">
-      <div id="logo" class="text-3xl">
+      <div
+        id="logo"
+        class="text-3xl bg-teal text-parchment border border-black p-3 rounded"
+      >
         <a href="/">Laughing Coyote Dev</a>
       </div>
     </div>
-    <ul class="flex justify-end items-end py-3 opacity-90">
+    <ul class="flex justify-end items-end py-3">
       {
         links.map((link) => (
           <a class="mx-5" href={link.href}>
-            <li class=" hover:opacity-100 drop-shadow-2xl">{link.label}</li>
+            <li class="opacity-90 hover:opacity-100 drop-shadow-2xl">
+              {link.label}
+            </li>
           </a>
         ))
       }

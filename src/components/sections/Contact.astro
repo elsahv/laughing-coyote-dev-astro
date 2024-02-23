@@ -49,13 +49,21 @@ const items = [
             <div class="">
               <h1 class="text-3xl text-onyx">lets connect</h1>
               <div
-                class="flex justify-center bg-test2 px-1 py-2 dropshadow-2xl my-3 border border-black rounded"
+                class="flex justify-center px-1 py-2 dropshadow-2xl my-3 border border-test2 rounded"
               >
                 {
                   items.map((item) => (
-                    <div class="hover:opacity-70">
-                      <a href={item.link}>
-                        <img src={item.img} alt="" height="45px" width="45px" />
+                    <div class="hover:opacity-70 ">
+                      <a class="" href={item.link}>
+                        <div class="">
+                          <img
+                            src={item.img}
+                            alt=""
+                            height="45px"
+                            width="45px"
+                            class=""
+                          />
+                        </div>
                       </a>
                     </div>
                   ))

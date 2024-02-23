@@ -1,90 +1,58 @@
 ---
-import { Image } from "astro:assets";
-// import Img1 from "../../../public/screenshots/hoveyroofing.png";
-// import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
-
-import Github from "../../../public/images/icons/github.png";
-import OpenFile from "../../../public/images/icons/openFile.png";
+import Card from "../../components/Card.astro";
 
 const items = [
   {
     title: "Hovey Roofing",
-    p: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+    paragraph:
+      "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
     image:
       "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     title: "Generations Backflow",
-    p: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+    paragraph:
+      "3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
     image:
       "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
+
+export interface Props {
+  title: string;
+  // url: any;
+  image: any;
+}
 ---
 
-<>
-  <div id="works-wrapper" class="flex justify-center items-center">
-    <div id="container" class="">
-      <div
-        id="section-banner"
-        class="_PrimaryBorder bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
-      >
-        <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
-        <p class="pt-1 pl-1">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
-          atque fuga. Corporis doloremque sit minus, asperiores quia velit
-          inventore nostrum! Dicta alias corporis numquam.
-        </p>
-      </div>
+<div id="works-wrapper" class="flex justify-center items-center">
+  <div id="container" class="">
+    <div
+      id="section-banner"
+      class="_PrimaryBorder bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
+    >
+      <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
+      <p class="pt-1 pl-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
+        atque fuga. Corporis doloremque sit minus, asperiores quia velit
+        inventore nostrum! Dicta alias corporis numquam.
+      </p>
+    </div>
 
-      <div id="grid-wrapper" class="pl-5 mt-[50px] ml-5">
-        <div
-          id="grid"
-          class="pl-[50px] grid grid-cols-2 gap-y-5 gap-x-2 m-5 h-screen"
-        >
-          {
-            items.map((item) => (
-              <div id="flex" class="">
-                <div
-                  id="card-wrapper"
-                  class="bg-  rounded-lg border-2 border-black"
-                >
-                  <h3 class="text-4xl font-bold py-2 px-3 text-test2 bg-teal">
-                    {item.title}
-                  </h3>
-                  <div
-                    id="img-wrapper"
-                    class="opacity-80 hover:opacity-100 border-black border-t border-b"
-                  >
-                    <div class="p-" id="img-container">
-                      <img src={item.image} alt="" />
-                    </div>
-                  </div>
-                  <div id="p-wrapper" class="p-1">
-                    <div id="p-grid" class="p-2 grid grid-cols-6">
-                      <p class="col-span-5 bg-test p-1 text-onyx pl-3 pb-1">
-                        {item.p}
-                      </p>
-                      <div
-                        id="btn-container-padding"
-                        class="flex justify-center pl-4 space-x-2"
-                      >
-                        <button class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 px-3 py-1 bg-teal text-md flex justify-center">
-                          <Image src={OpenFile} alt="" />
-                        </button>
-
-                        <button class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 px-3 py-1 bg-teal text-md flex justify-center">
-                          <Image src={Github} alt="" />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+    <div id="grid-wrapper" class="pl-5 mt-[50px] ml-5">
+      <div id="grid" class="pl-[50px] grid grid-cols-2 gap-y-5 gap-x-2 m-5">
+        {
+          items.map((item) => (
+            <div id="flex" class="">
+              <Card
+                title={item.title}
+                image={item.image}
+                paragraph={item.paragraph}
+              />
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>
-</>
+</div>
