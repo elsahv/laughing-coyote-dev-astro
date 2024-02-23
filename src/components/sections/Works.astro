@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 // import Img2 from "../../../public/screenshots/designs/fish-expo-demo.png";
 
 import Github from "../../../public/images/icons/github.png";
+import OpenFile from "../../../public/images/icons/openFile.png";
 
 const items = [
   {
@@ -29,59 +30,61 @@ const items = [
         class="_PrimaryBorder bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
       >
         <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
-        <p class="pt-1 pl-1 w-3/">
+        <p class="pt-1 pl-1">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
           atque fuga. Corporis doloremque sit minus, asperiores quia velit
           inventore nostrum! Dicta alias corporis numquam.
         </p>
       </div>
 
-      <!-- GRID v -->
-      <div
-        id="grid"
-        class="px-5 grid grid-cols-2 gap-y-5 gap-x-2 p-5 mx-5 h-screen"
-      >
-        {
-          items.map((item) => (
-            <div id="flex" class="">
-              <div
-                id="card-wrapper"
-                class="bg-onyx rounded-lg border border-black"
-              >
-                <h3 class="text-4xl font-bold py-2 px-3 text-test2 bg-teal">
-                  {item.title}
-                </h3>
+      <div id="grid-wrapper" class="pl-5 mt-[50px] ml-5">
+        <div
+          id="grid"
+          class="pl-[50px] grid grid-cols-2 gap-y-5 gap-x-2 m-5 h-screen"
+        >
+          {
+            items.map((item) => (
+              <div id="flex" class="">
                 <div
-                  id="img-wrapper"
-                  class="opacity-80 hover:opacity-100 border-black border-t border-b"
+                  id="card-wrapper"
+                  class="bg-  rounded-lg border-2 border-black"
                 >
-                  <div class="p-5" id="img-container">
-                    <img src={item.image} alt="" />
+                  <h3 class="text-4xl font-bold py-2 px-3 text-test2 bg-teal">
+                    {item.title}
+                  </h3>
+                  <div
+                    id="img-wrapper"
+                    class="opacity-80 hover:opacity-100 border-black border-t border-b"
+                  >
+                    <div class="p-" id="img-container">
+                      <img src={item.image} alt="" />
+                    </div>
                   </div>
-                </div>
-                <div id="p-wrapper">
-                  <div id="p-grid" class="bg-onyx p-2 grid grid-cols-6">
-                    <p class="col-span-5 text-parchment pl-3 pb-1">{item.p}</p>
-                    <div
-                      id="btn-padding-container"
-                      class="flex justify-center items-center bg-"
-                    >
-                      <button class="mx-1 w-1/2 h-1/2 mt-2 col-span-1 rounded px-1 bg-teal hover:bg-test2 hover:text-black text-test2 text-md">
-                        visit site
-                      </button>
+                  <div id="p-wrapper" class="p-1">
+                    <div id="p-grid" class="p-2 grid grid-cols-6">
+                      <p class="col-span-5 bg-test p-1 text-onyx pl-3 pb-1">
+                        {item.p}
+                      </p>
+                      <div
+                        id="btn-container-padding"
+                        class="flex justify-center pl-4 space-x-2"
+                      >
+                        <button class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 px-3 py-1 bg-teal text-md flex justify-center">
+                          <Image src={OpenFile} alt="" />
+                        </button>
 
-                      <button class="w-1/2 h-1/2 col-span-1 rounded mt-2 px-5 py-1 bg-teal hover:bg-test2 text-md flex justify-center">
-                        <Image src={Github} alt="" />
-                      </button>
+                        <button class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 px-3 py-1 bg-teal text-md flex justify-center">
+                          <Image src={Github} alt="" />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
-      <!-- GRID  ^  -->
     </div>
   </div>
 </>

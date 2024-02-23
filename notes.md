@@ -8,8 +8,6 @@ IP- create universal-rounded-border style
 
 COME BACK TO--> IP- create card component for websites
 
-- DONE-fix live domain error
-
 ---
 
 2/18
