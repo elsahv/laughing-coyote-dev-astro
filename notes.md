@@ -3,9 +3,9 @@
 **TODO**:
 _button wrapper_
 
-- \*IP- SAMPLE TEMPLATES AND FEATURED WORKS-
-- dynamic card
-- slug
+- --- SAMPLE TEMPLATES AND FEATURED WORKS --- -
+- 1 \*IP- dynamic card- START WITH CONST ITEMS ARRAY
+- 2 slug: USE EH-CARD, PORTFOLIO
 
 ## -COME BACK TO- create universal-rounded-border style
 

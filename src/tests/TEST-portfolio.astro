@@ -1,0 +1,57 @@
+---
+import { Image } from "astro:assets";
+import TestImage from "../../public/images/image4.png";
+import TestImage1 from "../../public/images/image5.png";
+import Github from "../../public/images/icons/github.png";
+import OpenFile from "../../public/images/icons/openFile.png";
+
+const items = [
+  {
+    title: "Hovey Roofing",
+    image: TestImage1,
+    paragraph:
+      "1-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+  },
+  {
+    title: "Generations Backflow",
+    image: TestImage,
+    paragraph:
+      "222- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+  },
+];
+---
+
+<!--  --><!-- DYNAMIC CARD COMPONENT FOR TEMPLATES/ FEATURED WORKS -->
+<div id="grid-wrapper" class="">
+  <div id="grid" class="grid grid-cols-2 gap-4">
+    {
+      items.map((item) => (
+        <div id="sq" class="mx-[85px] rounded-lg border-2 border-black">
+          <h3 id="card-title" class="p-3 text-3xl">
+            {item.title}
+          </h3>
+          <div id="img">
+            <Image src={item.image} alt="" class="" />
+          </div>
+          <div id="p-wrapper" class="py-1 pl-2">
+            <div id="p-grid" class="p-2 grid grid-cols-6">
+              <p class="col-span-5 p-1 text-onyx pl-3 pb-1">{item.paragraph}</p>
+
+              <div
+                id="btn-container-padding"
+                class="flex justify-center space-x-2  px-3"
+              >
+                <button class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 p-1 bg-teal text-md flex justify-center">
+                  <Image src={Github} alt="" width={100} />
+                </button>
+                <button class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 p-1 bg-teal text-md flex justify-center">
+                  <Image src={OpenFile} alt="" width={100} />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
