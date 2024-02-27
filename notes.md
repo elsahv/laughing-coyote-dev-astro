@@ -1,14 +1,15 @@
-- eh journal-
-
 **TODO**:
 _button wrapper_
 
 - --- SAMPLE TEMPLATES AND FEATURED WORKS --- -
 - 1 \*IP- dynamic card- START WITH CONST ITEMS ARRAY
-- 2 slug: USE EH-CARD, PORTFOLIO
+- 2 case studies slug: USE EH-CARD, PORTFOLIO
 
-## -COME BACK TO- create universal-rounded-border style
+## -1 COME BACK TO- create universal-rounded-border style
 
+## -2 COME BACK TO- components/sections/About/added/Templates <--- cards are now universal (2/26)
+
+-eh journal-
 2/18
 -rm case study CTA button for now, at least until there is more content.
 -"I'm trying to document more often to make better progress"

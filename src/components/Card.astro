@@ -6,27 +6,25 @@ import OpenFile from "../../public/images/icons/openFile.png";
 const { title, image, url, paragraph } = Astro.props as Props;
 ---
 
-<div id="card-wrapper" class="bg- rounded-lg border-2 border-black">
+<div id="card-wrapper" class="bg- rounded-lg">
   <div id="card-container">
-    <h3 class="text-4xl font-bold py-2 px-3 text-test2 bg-teal">{title}</h3>
     <div
       id="img-wrapper"
       class="opacity-80 hover:opacity-100 border-black border-t border-b"
     >
-      <div class="p-" id="img-container">
-        <a href={url} alt="">
-          <img src={image} alt="" />
-        </a>
-      </div>
+      <a href={url} alt="">
+        <img src={image} alt="" class="rounded border-2 border-black" />
+      </a>
     </div>
+    <h3 class="text-4xl font-bold text-onyx py-2 pl-1">{title}</h3>
 
-    <div id="p-wrapper" class="p-1">
-      <div id="p-grid" class="p-2 grid grid-cols-6">
-        <p class="col-span-5 bg-test p-1 text-onyx pl-3 pb-1">
+    <div id="p-wrapper" class="p-1 bg-test">
+      <div id="p-grid" class="grid grid-cols-6">
+        <p class="col-span-5 bg-test text-onyx pl-1 pb-1">
           {paragraph}
         </p>
 
-        <div
+        <!-- <div
           id="btn-container-padding"
           class="flex justify-center pl-4 space-x-2"
         >
@@ -41,7 +39,7 @@ const { title, image, url, paragraph } = Astro.props as Props;
           >
             <Image src={Github} alt="" />
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

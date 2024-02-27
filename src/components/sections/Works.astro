@@ -31,10 +31,10 @@ export interface Props {
   <div id="container" class="">
     <div
       id="section-banner"
-      class="_PrimaryBorder bg-papaya rounded-bl-lg rounded-tl-lg text-black drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
+      class="rounded-bl-lg rounded-tl-lg text-onyx drop-shadow-lg ml-[50px] mt-[150px] 2xl:p-[35px] p-5"
     >
       <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
-      <p class="pt-1 pl-1">
+      <p class="pt-1 pl-1 text-2xl">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
         atque fuga. Corporis doloremque sit minus, asperiores quia velit
         inventore nostrum! Dicta alias corporis numquam.
@@ -42,10 +42,10 @@ export interface Props {
     </div>
 
     <div id="grid-wrapper" class="pl-5 mt-[50px] ml-5">
-      <div id="grid" class="pl-[50px] grid grid-cols-2 gap-y-5 gap-x-2 m-5">
+      <div id="flex" class="flex pl-[50px] gap-5 m-5">
         {
           items.map((item) => (
-            <div id="flex" class="">
+            <div id="flex" class="bg-test">
               <Card
                 title={item.title}
                 image={item.image}

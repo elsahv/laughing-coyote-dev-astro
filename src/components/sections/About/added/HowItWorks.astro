@@ -1,47 +1,60 @@
 ---
+import Card from "../../../Card.astro";
+
 const items = [
   {
-    num: 1,
     title: "Discovery phase",
-    p: "phone calls, meetings, consultations.... research, planning, scheduling... develop site structure/sitemap ex:10 hours x $50/hr=$500. -What does the user want? -how to make brand provide value?",
+    paragraph:
+      "phone calls, meetings, consultations.... research, planning, scheduling... develop site structure/sitemap ex:10 hours x $50/hr=$500. -What does the user want? -how to make brand provide value?",
+    image:
+      "https://images.pexels.com/photos/15406244/pexels-photo-15406244/free-photo-of-stars-in-cosmos.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    num: 2,
     title: "Creative Phase",
-    p: "  sitemap, wireframe site--> mockup first draft--> mockup revised, final draft",
+    paragraph:
+      "  sitemap, wireframe site--> mockup first draft--> mockup revised, final draft",
+    image:
+      "https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
+
   {
-    num: 3,
     title: "Development Phase",
-    p: " set up vercel temp--> convert mockups into code--> go over temp with client --> final revisions",
+    paragraph:
+      " set up vercel temp--> convert mockups into code--> go over temp with client --> final revisions",
+    image:
+      "https://images.pexels.com/photos/1227497/pexels-photo-1227497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    num: 4,
     title: "Launch Phase",
-    p: " final review and Q&A--> move local website to live server, hosting,client training--> final payment",
+    paragraph:
+      " final review and Q&A--> move local website to live server, hosting,client training--> final payment",
+    image:
+      "https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
+
+export interface Props {
+  title: string;
+  url: any;
+  image: any;
+}
 ---
 
-<section id="how-it-works" class="py-5 my-5">
-  <div id="wrapper" class="p-4 mt-5">
-    <div id="container" class="pt-5 mt-5">
-      <h1 class="text-2xl py-2">How it works!</h1>
-      <div class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-        {
-          items.map((item) => (
-            <div id="sq" class="p-2 border border-black rounded-md">
-              <h3 class="font-bold">
-                {item.num}
-                {item.title}
-              </h3>
-              <p class="">{item.p}</p>
-            </div>
-          ))
-        }
-      </div>
+<section id="how-it-works" class="py-5 my-5 bg-test1">
+  <div id="grid-wrapper" class="">
+    <div id="flex" class="flex gap-4">
+      {
+        items.map((item) => (
+          <Card
+            title={item.title}
+            paragraph={item.paragraph}
+            image={item.image}
+          />
+        ))
+      }
     </div>
   </div>
+  <!-- todo COME BACK TO v
   <div
     id="additional info-TBD"
     class="_PrimaryBorder rounded p-3 m-5 py-5 mt-[50px]"
@@ -77,5 +90,6 @@ const items = [
     amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
     numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
     officia.
-  </div>
+  </div> 
+<!-- todo COME BACK TO ^ -->
 </section>
