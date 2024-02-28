@@ -1,9 +1,9 @@
 ---
-import { Image } from "astro:assets";
-import TestImage from "../../public/images/image4.png";
-import TestImage1 from "../../public/images/image5.png";
-import Github from "../../public/images/icons/github.png";
-import OpenFile from "../../public/images/icons/openFile.png";
+// import { Image } from "astro:assets";
+// import TestImage from "../../public/images/image4.png";
+// import TestImage1 from "../../public/images/image5.png";
+// import Github from "../../public/images/icons/github.png";
+// import OpenFile from "../../public/images/icons/openFile.png";
 import Card from "../../../Card.astro";
 
 const items = [
@@ -32,8 +32,8 @@ const items = [
 ---
 
 <!--  --><!-- DYNAMIC CARD COMPONENT FOR TEMPLATES/ FEATURED WORKS -->
-<div id="grid-wrapper" class="">
-  <div id="flex" class="flex gap-4">
+<div id="grid-wrapper" class="md:p-5 m-1 md:m-5 p-1">
+  <div id="flex" class="flex 2xl:flex-row flex-col gap-4">
     {
       items.map((item) => (
         <Card

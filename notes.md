@@ -5,11 +5,18 @@ _button wrapper_
 - 1 \*IP- dynamic card- START WITH CONST ITEMS ARRAY
 - 2 case studies slug: USE EH-CARD, PORTFOLIO
 
-## -1 COME BACK TO- create universal-rounded-border style
-
-## -2 COME BACK TO- components/sections/About/added/Templates <--- cards are now universal (2/26)
-
 -eh journal-
+2/27
+-dynamic card works nicely using: SellingPt, HowItWorks, Works component
+
+## COME BACK TO- list journal posts in .md files in order- conditional btn which lists oldest or most recent posts
+
+## COME BACK TO- -move 3 templates file to later, when new content is decided
+
+## COME BACK TO- create universal-rounded-border style
+
+## COME BACK TO- components/sections/About/added/Templates <--- cards are now universal (2/26)
+
 2/18
 -rm case study CTA button for now, at least until there is more content.
 -"I'm trying to document more often to make better progress"

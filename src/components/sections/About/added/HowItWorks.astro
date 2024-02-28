@@ -40,9 +40,12 @@ export interface Props {
 }
 ---
 
-<section id="how-it-works" class="py-5 my-5 bg-test1">
-  <div id="grid-wrapper" class="">
-    <div id="flex" class="flex gap-4">
+<section id="how-it-works" class="py-5 my-5">
+  <div id="grid-wrapper" class="flex justify-center">
+    <div
+      id="grid"
+      class="grid md:grid-cols-2 grid-cols-1 gap-5 max-w-screen-xl py-4"
+    >
       {
         items.map((item) => (
           <Card
@@ -54,42 +57,13 @@ export interface Props {
       }
     </div>
   </div>
-  <!-- todo COME BACK TO v
-  <div
+  <!-- <div
     id="additional info-TBD"
-    class="_PrimaryBorder rounded p-3 m-5 py-5 mt-[50px]"
+    class="_PrimaryBorder rounded p-3 mx-5 py-5 my-[50px]"
   >
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero amet
-    quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-    amet quisquam repudiandae, numquam veritatis itaque id mollitia sequi! Iure
-    numquam unde, accusamus assumenda veniam nobis ab nihil fugiat. Inventore,
-    officia.
-  </div> 
-<!-- todo COME BACK TO ^ -->
+    nventore, officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Libero amet quisquam repudiandae, numquam veritatis itaque id mollitia
+    sequi! Iure numquam unde, accusamus assumenda veniam nobis ab nihil fugiat.
+    Inventore, offv
+  </div> -->
 </section>
