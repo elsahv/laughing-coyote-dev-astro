@@ -6,7 +6,7 @@
 const { title, image, url, paragraph } = Astro.props as Props;
 ---
 
-<div id="card-wrapper" class="bg- rounded-lg">
+<div id="card-wrapper" class="bg- rounded-lg py-5">
   <div id="card-container">
     <div
       id="img-wrapper"
@@ -16,13 +16,15 @@ const { title, image, url, paragraph } = Astro.props as Props;
         <img src={image} alt="" class="w-full rounded border-2 border-black" />
       </a>
     </div>
-    <h3 class="text-4xl font-bold text-onyx py-2 pl-1">{title}</h3>
 
-    <div id="p-wrapper" class="p-1 bg-test">
-      <div id="p-grid" class="grid grid-cols-6">
-        <p class="col-span-5 bg-test text-onyx pl-1 pb-1">
-          {paragraph}
-        </p>
+    <div class="pl-3 pt-2 py-1 bg-">
+      <h3 class="md:text-4xl text-3xl font-bold text-">{title}</h3>
+      <div id="p-wrapper" class="p-1 bg-test">
+        <div id="p-grid" class="grid grid-cols-">
+          <p class="col-span-5 bg-test text-onyx">
+            {paragraph}
+          </p>
+        </div>
 
         <!-- <div
           id="btn-container-padding"
@@ -39,7 +41,12 @@ const { title, image, url, paragraph } = Astro.props as Props;
           >
             <Image src={Github} alt="" />
           </button>
-        </div> -->
+        </div> - 
+      </div>
+    </div>
+  </div>
+</div>
+-->
       </div>
     </div>
   </div>

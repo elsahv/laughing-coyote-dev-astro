@@ -31,7 +31,7 @@ export interface Props {
   <div id="container" class="">
     <div
       id="section-banner"
-      class="rounded-bl-lg rounded-tl-lg text-onyx drop-shadow-lg ml-[80px] mt-[150px] 2xl:p-[35px] p-5"
+      class="bg-parchment text-onyx rounded-bl-lg rounded-tl-lg border border-black rounded drop-shadow-lg 2xl:ml-[80px] mt-[150px] mb-[50px] 2xl:p-[35px] p-5"
     >
       <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
       <p class="pt-1 pl-1 text-2xl">
@@ -41,8 +41,11 @@ export interface Props {
       </p>
     </div>
 
-    <div id="grid-wrapper" class="pl-5 mt-[50px] ml-5">
-      <div id="flex" class="flex pl-[50px] gap-5 m-5">
+    <div id="grid-wrapper" class="bg-test 2xl:pl-5 2xl:ml-5">
+      <div
+        id="flex"
+        class="flex md:flex-row flex-col 2xl:pl-[50px] pl-1 gap-5 m-5"
+      >
         {
           items.map((item) => (
             <div id="flex" class="bg-test">

@@ -1,5 +1,6 @@
 **TODO**:
 _button wrapper_
+_useState moonburger_
 
 - --- SAMPLE TEMPLATES AND FEATURED WORKS --- -
 - 1 \*IP- dynamic card- START WITH CONST ITEMS ARRAY
@@ -42,3 +43,10 @@ TUT: 226:00- https://www.youtube.com/watch?v=XoIHKO6AkoM&t=1018s
 
 _FOR REVIEW_
 *https://docs.astro.build/en/core-concepts/astro-components/*
+
+- MAIN FOCUS:
+- HERO
+- ABOUT
+- WORK- talk about each websites SELL BY STORY: CATEGORIZED, SPECIALIZED, AND UNIQUE BRAND SECTIONS
+- PACKAGES- focus on CTA, Hero, Contact… quality over quantity
+- CONTACT

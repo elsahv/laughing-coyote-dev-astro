@@ -33,7 +33,10 @@ const items = [
 
 <!--  --><!-- DYNAMIC CARD COMPONENT FOR TEMPLATES/ FEATURED WORKS -->
 <div id="grid-wrapper" class="md:p-5 m-1 md:m-5 p-1">
-  <div id="flex" class="flex 2xl:flex-row flex-col gap-4">
+  <div class="my-5 py-3 flex justify-center bg-">
+    <h2 class="text-5xl px-5 py-2 font-bold max-w-sm">Templates</h2>
+  </div>
+  <div id="flex" class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
     {
       items.map((item) => (
         <Card
