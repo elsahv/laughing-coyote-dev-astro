@@ -4,47 +4,48 @@
 // import TestImage1 from "../../public/images/image5.png";
 // import Github from "../../public/images/icons/github.png";
 // import OpenFile from "../../public/images/icons/openFile.png";
-import Card from "../../../Card.astro";
+// import Card from "../../../Card.astro";
 
-const items = [
-  {
-    title: "A. business card layout",
-    image:
-      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    paragraph:
-      "1-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
-  },
-  {
-    title: "B. Three page/ components",
-    image:
-      "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600",
-    paragraph:
-      "222- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
-  },
-  {
-    title: "C. single pg journal",
-    image:
-      "https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&w=600",
-    paragraph:
-      "222- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
-  },
-];
+// const items = [
+//   {
+//     title: "A. business card layout",
+//     image:
+//       "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//     paragraph:
+//       "1-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+//   },
+//   {
+//     title: "B. Three page/ components",
+//     image:
+//       "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600",
+//     paragraph:
+//       "222- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+//   },
+//   {
+//     title: "C. single pg journal",
+//     image:
+//       "https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&w=600",
+//     paragraph:
+//       "222- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores cupiditate non illum, ducimus ad vero repellendus accusamus iure quod? Praesentium vel, non vero ex optio recusandae nulla maxime dolorum!",
+//   },
+// ];
+// ---
+
+// <!--  --><!-- DYNAMIC CARD COMPONENT FOR TEMPLATES/ FEATURED WORKS -->
+// <div id="grid-wrapper" class="md:p-5 m-1 md:m-5 p-1">
+//   <div class="my-5 py-3 flex justify-center bg-">
+//     <h2 class="text-5xl px-5 py-2 font-bold max-w-sm">Templates</h2>
+//   </div>
+//   <div id="flex" class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+//     {
+//       items.map((item) => (
+//         <Card
+//           title={item.title}
+//           paragraph={item.paragraph}
+//           image={item.image}
+//         />
+//       ))
+//     }
+//   </div>
+// </div>
 ---
-
-<!--  --><!-- DYNAMIC CARD COMPONENT FOR TEMPLATES/ FEATURED WORKS -->
-<div id="grid-wrapper" class="md:p-5 m-1 md:m-5 p-1">
-  <div class="my-5 py-3 flex justify-center bg-">
-    <h2 class="text-5xl px-5 py-2 font-bold max-w-sm">Templates</h2>
-  </div>
-  <div id="flex" class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-    {
-      items.map((item) => (
-        <Card
-          title={item.title}
-          paragraph={item.paragraph}
-          image={item.image}
-        />
-      ))
-    }
-  </div>
-</div>
