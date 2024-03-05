@@ -9,6 +9,8 @@
   _COMPLETE-MOVE HTTPS IMGS FROM LC TO EH,_
   _COMPLETE-USE OG WORKS IMGS IMPORTS_
 
+## COME BACK TO- Templates and About Sections: currently using const array, will eventually use Work sections md/ layout in future.
+
 -
 -
 -

@@ -52,11 +52,11 @@ export interface Props {
     >
       {
         items.map((item) => (
-          <Card
-            title={item.title}
-            paragraph={item.paragraph}
-            image={item.image}
-          />
+          <div>
+            <h2>{item.title}</h2>
+            <img src={item.image} alt="" />
+            <p>{item.paragraph}</p>
+          </div>
         ))
       }
     </div>
