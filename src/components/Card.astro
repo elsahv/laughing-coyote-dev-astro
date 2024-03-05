@@ -1,54 +1,36 @@
 ---
-// import { Image } from "astro:assets";a
-// import Github from "../../public/images/icons/github.png";
-// import OpenFile from "../../public/images/icons/openFile.png";
+export interface Props {
+  title: string;
+  url: any;
+  siteImg: any;
+}
 
-// const { title, image, url, paragraph } = Astro.props as Props;
+const { title, siteImg, url } = Astro.props as Props;
 ---
 
-<div class="">card</div>
-<!-- <div id="card-wrapper" class="bg- rounded-lg py-5">
+<div id="card-wrapper" class="rounded-lg py-5">
   <div id="card-container">
     <div
       id="img-wrapper"
       class="opacity-80 hover:opacity-100 border-black border-t border-b"
     >
-      <a href={url} alt="">
-        <img src={image} alt="" class="w-full rounded border-2 border-black" />
+      <a href={url}>
+        <img
+          src={siteImg}
+          alt=""
+          class="w-full rounded border-2 border-black"
+        />
       </a>
     </div>
 
     <div class="pl-3 pt-2 py-1 bg-">
       <h3 class="md:text-4xl text-3xl font-bold text-">{title}</h3>
-      <div id="p-wrapper" class="p-1 bg-test">
-        <div id="p-grid" class="grid grid-cols-">
-          <p class="col-span-5 bg-test text-onyx">
-            {paragraph}
-          </p>
-        </div> -->
-
-<!-- <div
-          id="btn-container-padding"
-          class="flex justify-center pl-4 space-x-2"
-        >
-          <button
-            class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 px-3 py-1 bg-teal text-md flex justify-center"
-          >
-            <Image src={OpenFile} alt="" />
-          </button>
-
-          <button
-            class="opacity-80 hover:opacity-100 border border-black w-1/2 h-1/2 col-span-1 rounded mt-2 px-3 py-1 bg-teal text-md flex justify-center"
-          >
-            <Image src={Github} alt="" />
-          </button>
-        </div> - 
+      <div id="p-grid" class="grid grid-cols-6">
+        <p class="col-span-5 bg-test text-onyx">
+          <!-- {paragraph} -->
+          sfsfssf
+        </p>
       </div>
     </div>
   </div>
 </div>
--->
-<!-- </div>
-    </div>
-  </div>
-</div> -->

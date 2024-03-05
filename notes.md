@@ -1,14 +1,22 @@
-**TODO**:
-_button wrapper_
-_useState moonburger_
+-3/5/24
+-IP:MOVE TEST TO REAL COMP
+-IP:APPLY CARDS, MARKDOWN TO: TEMPLATE AND ABOUT SECTION
 
-- --- SAMPLE TEMPLATES AND FEATURED WORKS --- -
-- 1 \*IP- dynamic card- START WITH CONST ITEMS ARRAY
-- 2 case studies slug: USE EH-CARD, PORTFOLIO
+- todo: button wrapper
+- todo useState moonburger
 
--eh journal-
-2/27
--dynamic card works nicely using: SellingPt, HowItWorks, Works component
+  _COMPLETE-MOVE HTTPS IMGS FROM LC TO EH,_
+  _COMPLETE-USE OG WORKS IMGS IMPORTS_
+
+-
+-
+-
+-
+-
+-
+- -eh journal-
+  2/27
+  -dynamic card works nicely using: SellingPt, HowItWorks, Works component
 
 ## COME BACK TO- list journal posts in .md files in order- conditional btn which lists oldest or most recent posts
 

@@ -1,16 +1,32 @@
 ---
-import SellingPt from "./added/SellingPt.astro";
-// import HowItWorks from "./added/HowItWorks.astro";
-// import Templates from "./added/Templates.astro";
+import HowItWorks from "./HowItWorks.astro";
+import Templates from "./Templates.astro";
 ---
 
 <div id="" class="flex justify-center px-5">
   <div id="container" class="">
     <div id="padding" class="">
-      <SellingPt />
-      <!-- <HowItWorks /> -->
+      <div id="selling-pt" class="py-5 my-5">
+        <div class="border border-black rounded-md mt-[50px] p-5">
+          <!-- <h2 class="font-bold text-5xl">About</h2> -->
+          <p class="text-2xl py-1 my-1">
+            This was what Laughing Coyote Dev was created for, to save you some
+            headaches that come with learning about:
+          </p>
+          <ul class="text-xl">
+            <li class="">- how to design a website</li>
+            <li class="">- how to pick a domain and use hosting</li>
+            <li class="">
+              - and etc! See
+              <a href="/#services" class="pl-1 underline"> services below!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <HowItWorks />
     </div>
-    <!-- <Templates /> -->
+    <Templates />
     <!-- * MOVED TO CONTACT SECTION -> <AboutMe /> -->
   </div>
 </div>

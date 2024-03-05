@@ -1,0 +1,25 @@
+---
+import Card from "./Card.astro";
+const allWorks = await Astro.glob("../../../pages/works/*.md");
+---
+
+<>
+  <div id="grid-wrapper" class="bg-test 2xl:pl-5 2xl:ml-5">
+    <div
+      id="flex"
+      class="bg-test1 flex justify-center md:flex-row flex-col 2xl:pl-[50px] pl-1 gap-5 m-5"
+    >
+      {
+        allWorks.map((website) => (
+          <div class="">
+            <Card
+              title={website.frontmatter.title}
+              url={website.url}
+              siteImg={website.frontmatter.image.url}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</>
