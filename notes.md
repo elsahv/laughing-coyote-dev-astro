@@ -1,6 +1,5 @@
--3/5/24
--IP:MOVE TEST TO REAL COMP
--IP:APPLY CARDS, MARKDOWN TO: TEMPLATE AND ABOUT SECTION
+-3/5/24 (use for git commits!!)
+-CURRENTLY:APPLY TEST 2ND CARD FOR TEMPLATE AND ABOUT SECTION
 
 - todo: button wrapper
 - todo useState moonburger
@@ -9,7 +8,7 @@
   _COMPLETE-MOVE HTTPS IMGS FROM LC TO EH,_
   _COMPLETE-USE OG WORKS IMGS IMPORTS_
 
-## COME BACK TO- Templates and About Sections: currently using const array, will eventually use Work sections md/ layout in future.
+## COME BACK TO- Templates and About Sections: currently using const array, will eventually use Work sections md/ layout in future. Also will create new card component for each maps
 
 -
 -

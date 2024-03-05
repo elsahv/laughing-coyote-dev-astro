@@ -8,10 +8,10 @@ export interface Props {
 const { title, siteImg, url } = Astro.props as Props;
 ---
 
-<div id="card-container" class="rounded-lg py-5">
+<div id="card-container" class="rounded-lg py-5 w-full">
   <div
     id="img-wrapper"
-    class="w-[600px] opacity-80 hover:opacity-100 border-black border-t border-b"
+    class="w-full opacity-80 hover:opacity-100 border-black border-t border-b"
   >
     <a href={url}>
       <img src={siteImg} alt="" class="w-full rounded border-2 border-black" />

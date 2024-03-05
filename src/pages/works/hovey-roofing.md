@@ -1,17 +1,37 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "Laughing Coyote Dev"
-pubDate: 2024-02-01
-description: "currently a freelancing blog"
+title: "hoveyroofing"
+pubDate: 2022-07-01
+description: "a future Morongo Basin community website"
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/15707992/pexels-photo-15707992/free-photo-of-portrait-of-coyote.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  alt: "laughing coyote dev website"
-websiteUrl: "https://laughingcoyote.dev"
-githubUrl: "https://laughingcoyote.dev"
+  url: "https://hoveyroofing.com/assets/sliderImg1-f08cf62e.jpg"
+  alt: "The full Astro logo."
+websiteUrl: ""
+githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
+
+<!--
+# My First Blog Post
+
+Published on: 2022-07-01
+
+Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+
+## What I've accomplished
+
+1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+
+2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+
+3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+
+## What's next
+
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+ -->
 
 # Telling the story of a website involves _highlighting_ its **inception, purpose, evolution, and impact**. Here's how you could go about it:
 
@@ -34,5 +54,3 @@ tags: ["astro", "blogging", "learning in public"]
 **Future Outlook**: Conclude by sharing the website's vision for the future. What are its goals and aspirations moving forward? How does it plan to continue evolving and making an impact in the years to come?
 
 By weaving these elements together, you can effectively _tell the story of a website, providing insight into its journey, purpose, and significance_.
-
----

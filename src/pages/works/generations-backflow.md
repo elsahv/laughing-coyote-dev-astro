@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "The Running Quail"
+title: "Generations Backflow"
 pubDate: 2022-07-01
-description: "a future Morongo Basin community website"
+description: ""
 author: "Astro Learner"
 image:
-  url: "https://images.pexels.com/photos/1294137/pexels-photo-1294137.jpeg"
-  alt: "The Running Quail"
+  url: "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  alt: "The full Astro logo."
 websiteUrl: ""
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
