@@ -4,6 +4,7 @@
 
 - todo: button wrapper
 - todo useState moonburger
+- todo style /home/elsahvy/Desktop/Tmp/tmp--LC-astro/src/layouts/MarkdownPostLayout.astro
 
   _COMPLETE-MOVE HTTPS IMGS FROM LC TO EH,_
   _COMPLETE-USE OG WORKS IMGS IMPORTS_
