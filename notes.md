@@ -1,5 +1,5 @@
 -3/5/24 (use for git commits!!)
--CURRENTLY:APPLY TEST 2ND CARD FOR TEMPLATE AND ABOUT SECTION
+-CURRENTLY:move testcard to Card- 2ND CARD FOR TEMPLATE AND ABOUT SECTION
 
 - todo: button wrapper
 - todo useState moonburger

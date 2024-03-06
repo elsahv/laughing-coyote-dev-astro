@@ -21,7 +21,7 @@ const allWorks = await Astro.glob("../../../pages/works/*.md");
       <div id="grid-wrapper" class="bg-test 2xl:pl-5 2xl:ml-5 px-[50px]">
         <div
           id="flex"
-          class="flex justify-center md:flex-row flex-col 2xl:pl-[50px] pl-1 gap-5 m-5"
+          class="flex justify-center xl:flex-row flex-col 2xl:pl-[50px] pl-1 gap-5 m-5"
         >
           {
             allWorks.map((website) => (
@@ -30,6 +30,7 @@ const allWorks = await Astro.glob("../../../pages/works/*.md");
                   title={website.frontmatter.title}
                   url={website.url}
                   siteImg={website.frontmatter.image.url}
+                  description={website.frontmatter.description}
                 />
               </div>
             ))

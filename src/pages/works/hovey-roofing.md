@@ -1,9 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "hoveyroofing"
+title: "Hoveyroofing"
 pubDate: 2022-07-01
-description: "a future Morongo Basin community website"
+description:
+  "a future Morongo Basin community website.  Corporis doloremque sit minus, asperiores quia velit
+  inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
   url: "https://hoveyroofing.com/assets/sliderImg1-f08cf62e.jpg"

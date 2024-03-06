@@ -3,7 +3,8 @@ layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
 title: "Generations Backflow"
 pubDate: 2022-07-01
-description: ""
+description: "sfsfsfsfs  Corporis doloremque sit minus, asperiores quia velit
+  inventore nostrum! Dicta alias corporis numquam."
 author: "Astro Learner"
 image:
   url: "https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

@@ -3,9 +3,10 @@ export interface Props {
   title: string;
   url: any;
   siteImg: any;
+  description: string;
 }
 
-const { title, siteImg, url } = Astro.props as Props;
+const { title, siteImg, url, description } = Astro.props as Props;
 ---
 
 <div id="card-container" class="rounded-lg py-5 w-full">
@@ -18,13 +19,22 @@ const { title, siteImg, url } = Astro.props as Props;
     </a>
   </div>
 
-  <div class="pl-3 pt-2 py-1 bg-">
+  <div class="pt-2 py-1 bg-">
     <h3 class="md:text-4xl text-3xl font-bold text-">{title}</h3>
-    <div id="p-grid" class="grid grid-cols-6">
-      <p class="col-span-5 bg-test text-onyx">
-        <!-- {paragraph} -->
-        sfsfssf
-      </p>
+    <p class="bg-test text-onyx">
+      {description}
+    </p>
+    <div
+      id="button_wrapper-flex"
+      class="my-5 2xl:w-1/3 w-full flex space-x-3 text-parchment"
+    >
+      <button class="w-1/ rounded px-2 py-1 bg-teal border border-black"
+        >Case study</button
+      >
+
+      <button class="w-1/4 rounded p-1 bg-test2 text-black border border-black"
+        >visit site</button
+      >
     </div>
   </div>
 </div>
