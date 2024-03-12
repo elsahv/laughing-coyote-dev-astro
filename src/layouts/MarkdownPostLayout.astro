@@ -1,41 +1,36 @@
 ---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
 const { frontmatter } = Astro.props;
 ---
 
-<div id="" class="bg-parchment text-onyx">
-  <div id="back-btn-wrapper" class="pl-[72px] ml-0 pt-5 text-lg bg-munsell">
-    <a href="/" class="underline hover:text-white">
-      {"<---"} back to home
-    </a>
-  </div>
-  <div
-    id="post-header-grid"
-    class="grid 2xl:grid-cols-2 grid-cols-1 bg-munsell drop-shadow-xl"
-  >
-    <div id="left-sq" class="flex items-center 2xl:justify-center bg-teal">
+<Header />
+<div id="" class="px-[100px] text-onyx bg-parchment">
+  <div id="post-header-grid" class="h-screen grid 2xl:grid-cols-2 grid-cols-1">
+    <div id="left-sq" class="bg-test flex items-center 2xl:justify-center">
       <div class="2xl:pr-5 ml-2 py-2 px-5 my-[50px] w-3/4">
         <h1 class="md:text-5xl text-3xl pb-2 mt-1 text-onyx">
           {frontmatter.title}
         </h1>
+        <slot />
         <p class="md:text-2xl pl-1 pt-1 pr-3 text-onyx opacity-75">
           {frontmatter.paragraph}
         </p>
       </div>
     </div>
     <div
-      id="left-sq"
-      class="flex items-center bg-onyx border border-rosyBrown dropshadow-2xl"
+      id="right-sq"
+      class="flex items-center border border-rosyBrown dropshadow-2xl"
     >
-      <a href={frontmatter.websiteUrl}>
-        <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="" />
+      <a href={frontmatter.websiteUrl} class="border border-black">
+        <img
+          src={frontmatter.image.url}
+          alt={frontmatter.image.alt}
+          class="max-w-4xl p-[50px]"
+        />
       </a>
     </div>
   </div>
-  <div
-    id="body-content"
-    class="text-munsel mt-[45px] 2xl:ml-[450px] lg:ml-[250px] ml-5 mr-[50px] mb-[55px] text-black"
-  >
-    <p class="text-2xl font-bold">{frontmatter.pubDate.slice(0, 10)}</p>
-    <slot />
-  </div>
 </div>
+<Footer />
