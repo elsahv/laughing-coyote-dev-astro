@@ -1,25 +1,17 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/sections/Hero.astro";
 import About from "../components/sections/About/index.astro";
-import Works from "../components/sections/Works/index.astro";
-import Pricing from "../components/sections/Pricing.astro";
+import CTA from "../components/sections/CTA/index.astro";
+import Contact from "../components/sections/Contact/index.astro";
+import TestDynamic from "../components/sections/TestDynamic/index.astro";
 ---
 
 <MainLayout>
-  <section id="/">
-    <Hero />
-  </section>
+  <!-- <About />
+  <CTA />
+  <Contact /> -->
 
-  <section id="about">
-    <About />
-  </section>
-
-  <section id="test-featured-works">
-    <Works />
-  </section>
-
-  <section id="pricing">
-    <Pricing />
-  </section>
+  <>
+    <TestDynamic />
+  </>
 </MainLayout>

@@ -1,12 +1,15 @@
--3/5/24 (use for git commits!!)
+4/9/24- PASS PROPS, create About, CTA, CONTACT for: /homepage, /web-dev, /writing
+
+- 4/2/24
+  1.ABOUT[Hero(first impressions to customer), extra content]- , about business
+  2.CTA (Packages)- what do you want customer to do?
+  3.CONTACT
+
 -CURRENTLY:move testcard to Card- 2ND CARD FOR TEMPLATE AND ABOUT SECTION
 
 - todo: button wrapper
 - todo useState moonburger
 - todo style /home/elsahvy/Desktop/Tmp/tmp--LC-astro/src/layouts/MarkdownPostLayout.astro
-
-  _COMPLETE-MOVE HTTPS IMGS FROM LC TO EH,_
-  _COMPLETE-USE OG WORKS IMGS IMPORTS_
 
 ## COME BACK TO- Templates and About Sections: currently using const array, will eventually use Work sections md/ layout in future. Also will create new card component for each maps
 

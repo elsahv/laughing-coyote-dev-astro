@@ -5,14 +5,16 @@ import TestMoonburger from "../tests/testMoonburger.astro";
 
 const links = [
   // { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Works", href: "/#works" },
-  { label: "Pricing", href: "/#pricing" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Web Development", href: "/web-development" },
+  { label: "Writing", href: "/writing" },
+  // { label: "Pricing", href: "/#pricing" },
+  // { label: "Contact", href: "/#contact" },
 ];
 ---
 
-<header class="dropshadow-2xl text-onyx pt-1 sticky top-0 bg-parchment z-50">
+<header
+  class="dropshadow-2xl bg-parchment text-onyx pt-1 sticky top-0 bg- z-50"
+>
   <nav
     class="font-bold md:pb-[50px] pb-1 pl-5 md:pr-5 pr-1 pt-1 grid md:grid-cols-2 grid-cols-1 text-2xl"
   >
@@ -33,7 +35,7 @@ const links = [
         {
           links.map((link) => (
             <a class="mx-5" href={link.href}>
-              <li class="2xl:pt-5 pt-1 underline opacity-90 hover:opacity-100 drop-shadow-2xl">
+              <li class="2xl:pt-5 pt-1 opacity-90 hover:opacity-100 drop-shadow-2xl">
                 {link.label}
               </li>
             </a>
