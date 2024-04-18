@@ -1,35 +1,15 @@
-4/9/24- PASS PROPS, create About, CTA, CONTACT for: /homepage, /web-dev, /writing
+- 4/13
+  1."simple and minimalist"
+  2."modern" 3. no BS... straight to the point
 
 - 4/2/24
   1.ABOUT[Hero(first impressions to customer), extra content]- , about business
   2.CTA (Packages)- what do you want customer to do?
   3.CONTACT
 
--CURRENTLY:move testcard to Card- 2ND CARD FOR TEMPLATE AND ABOUT SECTION
-
-- todo: button wrapper
-- todo useState moonburger
-- todo style /home/elsahvy/Desktop/Tmp/tmp--LC-astro/src/layouts/MarkdownPostLayout.astro
-
-## COME BACK TO- Templates and About Sections: currently using const array, will eventually use Work sections md/ layout in future. Also will create new card component for each maps
-
--
--
--
--
 -
 -
 - -eh journal-
-  2/27
-  -dynamic card works nicely using: SellingPt, HowItWorks, Works component
-
-## COME BACK TO- list journal posts in .md files in order- conditional btn which lists oldest or most recent posts
-
-## COME BACK TO- -move 3 templates file to later, when new content is decided
-
-## COME BACK TO- create universal-rounded-border style
-
-## COME BACK TO- components/sections/About/added/Templates <--- cards are now universal (2/26)
 
 2/18
 -rm case study CTA button for now, at least until there is more content.
@@ -48,18 +28,9 @@
 -2/15:
 -"simplify the website process": about, CTA, contact
 
--2/11:
--email link and icon in header
--contact info in footer
-
-TUT: 226:00- https://www.youtube.com/watch?v=XoIHKO6AkoM&t=1018s
-
-_FOR REVIEW_
-*https://docs.astro.build/en/core-concepts/astro-components/*
-
 - MAIN FOCUS:
 - HERO
-- ABOUT
+- ABOUT->CTA
 - WORK- talk about each websites SELL BY STORY: CATEGORIZED, SPECIALIZED, AND UNIQUE BRAND SECTIONS
 - PACKAGES- focus on CTA, Hero, Contact… quality over quantity
 - CONTACT

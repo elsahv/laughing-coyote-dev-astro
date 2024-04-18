@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import pic1 from "./public/fish-images/assets/jellyfish.jpg";
+import pic2 from "./public/fish-images/assets/school.jpg";
+import pic3 from "./public/fish-images/assets/seals.jpg";
+import pic4 from "./public/fish-images/assets/shark.jpg";
+
+import pic5 from "./public/fish-images/assets/starfish.jpg";
+import pic6 from "./public/fish-images/assets/turtle.jpg";
+import pic7 from "./public/fish-images/assets/urchin.jpg";
+import pic8 from "./public/fish-images/assets/weird-looking-fish.jpg";
+
+const items = [
+  {
+    id: 1,
+    image: pic1,
+  },
+  {
+    id: 2,
+    image: pic2,
+  },
+  {
+    id: 3,
+    image: pic3,
+  },
+  {
+    id: 4,
+    image: pic4,
+  },
+  {
+    id: 5,
+    image: pic5,
+  },
+  {
+    id: 6,
+    image: pic6,
+  },
+  {
+    id: 7,
+    image: pic7,
+  },
+  {
+    id: 8,
+    image: pic8,
+  },
+];
+---
+
+<section id="SERVICES-GALLERY" class="">
+  <div class="bg-">
+    <h2 class="pl-[55px] text-2xl">SERVICES</h2>
+    <div id="gallery" class="px-[55px] grid grid-cols-4 gap-1">
+      {
+        items.map((item) => (
+          <Image
+            src={item.image}
+            alt=""
+            class="border border-black w-[650px] h-[350px] "
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

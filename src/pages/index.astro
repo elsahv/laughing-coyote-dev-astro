@@ -1,17 +1,41 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import About from "../components/sections/About/index.astro";
-import CTA from "../components/sections/CTA/index.astro";
+import Hero from "../components/sections/Hero.astro";
+import HowItWorks from "../components/sections/About/HowItWorks.astro";
+import ServicesGallery from "../components/ServicesGallery.astro";
 import Contact from "../components/sections/Contact/index.astro";
-import TestDynamic from "../components/sections/TestDynamic/index.astro";
 ---
 
 <MainLayout>
-  <!-- <About />
-  <CTA />
-  <Contact /> -->
+  <Hero />
 
-  <>
-    <TestDynamic />
-  </>
+  <section id="AB0UT">
+    <div id="" class="flex justify-center px-5">
+      <div id="container" class="">
+        <div id="selling-pt" class="py-5 my-5">
+          <div
+            class="mt-[50px] p-5 border border-t-black border-b-black bg-onyx text-parchment"
+          >
+            <p class="text-2xl py-1 my-1">
+              This was what Laughing Coyote Dev was created for, to save you
+              some headaches that come with learning about:
+            </p>
+            <ul class="text-xl">
+              <li class="">- how to design a website</li>
+              <li class="">- how to pick a domain and use hosting</li>
+              <li class="">
+                - and etc! See
+                <a href="/#services" class="pl-1 underline"> services below!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ServicesGallery />
+        <HowItWorks />
+      </div>
+    </div>
+  </section>
+  <!-- <div class="bg-test2 px-[55px]">CONTACT CTA</div> -->
+  <Contact />
 </MainLayout>

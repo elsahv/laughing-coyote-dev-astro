@@ -1,10 +1,56 @@
 ---
+import HowItWorks from "../components/sections/About/HowItWorks.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import Coyote from "./public/images/coyote.png";
+
+const items = [
+  {
+    title: "post 1",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+  },
+  {
+    title: "post 2",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+  },
+  {
+    title: "post 3",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+  },
+  {
+    title: "post 1",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+  },
+  {
+    title: "post 2",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+  },
+  {
+    title: "post 3",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+  },
+];
 ---
 
 <MainLayout>
-  <h1>writing</h1>
-  <!-- ABOUT -->
-  <!-- CTA -->
-  <!-- CONTACT -->
+  <section id="writing" class="py-[45px] my-[155px]">
+    <div class="py-3 flex justify-center bg-">
+      <h2 class="underline text-5xl px-5 py-2 font-bold">Articles</h2>
+    </div>
+
+    <div id="grid-wrapper" class="flex justify-center">
+      <div id="grid" class="grid grid-cols-3 gap-5 pt-[50px] px-[150px]">
+        {
+          items.map((item) => (
+            <div id="sq" class="px-2 py-3 bg-test">
+              <h2 class="capitalize font-bold">{item.title}</h2>
+              <p>{item.p}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-test2 px-[55px]">CONTACT CTA</div>
 </MainLayout>

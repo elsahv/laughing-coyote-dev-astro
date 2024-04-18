@@ -4,40 +4,40 @@ const allWorks = await Astro.glob("../../../../pages/works/*.md");
 ---
 
 <>
-  <div id="works-wrapper" class="flex justify-center items-center">
-    <div id="container" class="">
-      <div
+  <!-- <div id="works-wrapper" class="flex justify-center items-center"> -->
+  <!-- <div id="container" class=""> -->
+  <!-- <div
         id="section-banner"
         class="bg-parchment text-onyx rounded-bl-lg rounded-tl-lg border border-black rounded drop-shadow-lg 2xl:ml-[80px] mt-[150px] mb-[50px] 2xl:p-[35px] p-5"
-      >
-        <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
+      > -->
+  <!-- <h2 class="2xl:text-5xl text-4xl font-bold">Featured Works</h2>
         <p class="pt-1 pl-1 text-2xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo
           atque fuga. Corporis doloremque sit minus, asperiores quia velit
           inventore nostrum! Dicta alias corporis numquam.
-        </p>
-      </div>
+        </p> -->
+  <!-- </div> -->
 
-      <div id="grid-wrapper" class="2xl:pl-5 2xl:ml-5 md:px-[50px] p-1">
-        <div
-          id="flex"
-          class="flex justify-center xl:flex-row flex-col 2xl:pl-[50px] pl-1 gap-5 m-5"
-        >
-          {
-            allWorks.map((website) => (
-              <div class="">
-                <Card
-                  title={website.frontmatter.title}
-                  url={website.url}
-                  siteImg={website.frontmatter.image.url}
-                  description={website.frontmatter.description}
-                  websiteUrl={website.frontmatter.websiteUrl}
-                />
-              </div>
-            ))
-          }
-        </div>
-      </div>
+  <div id="grid-wrapper" class="2xl:pl-5 2xl:ml-5 md:px-[50px] p-1">
+    <div
+      id="flex"
+      class="flex justify-center xl:flex-row flex-col 2xl:pl-[50px] pl-1 gap-5 m-5"
+    >
+      {
+        allWorks.map((website) => (
+          <div class="">
+            <Card
+              title={website.frontmatter.title}
+              url={website.url}
+              siteImg={website.frontmatter.image.url}
+              description={website.frontmatter.description}
+              websiteUrl={website.frontmatter.websiteUrl}
+            />
+          </div>
+        ))
+      }
     </div>
   </div>
+  <!-- </div> -->
+  <!-- </div> -->
 </>

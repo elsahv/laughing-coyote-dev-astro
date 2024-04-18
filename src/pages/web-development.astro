@@ -1,10 +1,30 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import CTA from "../components/sections/CTA/index.astro";
+import Contact from "../components/sections/Contact/index.astro";
+import GridTemplateAreas from "../components/GridTemplateAreas.astro";
+import HowItWorks from "../components/sections/About/HowItWorks.astro";
+import ServicesGallery from "../components/ServicesGallery.astro";
+import Works from "../components/sections/CTA/Works/index.astro";
 ---
 
 <MainLayout>
-  <h1>web dev</h1>
-  <!-- ABOUT -->
-  <!-- CTA -->
-  <!-- CONTACT -->
+  <section id="web-development" class="py-[45px] my-[155px]">
+    <div class="py-3 flex justify-center bg-">
+      <h2 class="text-5xl px-5 py-2 font-bold underline">Featured Works</h2>
+    </div>
+
+    <div id="ABOUT" class="flex justify-center">
+      <p class="max-w-[1060px] pt-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis
+        nostrum totam ullam non ipsum, obcaecati explicabo nulla nesciunt
+        blanditiis iste provident architecto excepturi, sint eum maxime repellat
+        dolores modi?
+      </p>
+    </div>
+  </section>
+  <Works />
+  <div class="bg-test2 px-[55px]">OTHER DESIGNS/ final selling pt</div>
+  <ServicesGallery />
+  <div class="bg-test2 px-[55px]">CONTACT CTA</div>
 </MainLayout>
