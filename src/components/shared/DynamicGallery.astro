@@ -1,0 +1,12 @@
+---
+export interface Props {
+  topic1: string;
+  topic2: string;
+}
+
+const { topic1 } = Astro.props as Props;
+---
+
+<div>
+  {topic1}
+</div>

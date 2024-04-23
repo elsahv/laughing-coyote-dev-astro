@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 import { Image } from "astro:assets";
 import Coyote from "./public/images/coyote.png";
+import DynamicFooter from "../components/shared/DynamicFooterBanner.astro";
 ---
 
 <MainLayout>
@@ -12,6 +13,10 @@ import Coyote from "./public/images/coyote.png";
       class="flex justify-center pt-[250px] bg- border border-r-black"
     >
       <div class="p-5">
+        <DynamicFooter
+          title="Contact Final "
+          paragraph="info: elsahvy@gmail.com"
+        />
         <h1 class="font-bold text-2xl">Contact</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ab

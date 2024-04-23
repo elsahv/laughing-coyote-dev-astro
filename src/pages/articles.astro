@@ -3,6 +3,8 @@ import HowItWorks from "../components/sections/About/HowItWorks.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import Coyote from "./public/images/coyote.png";
+import ContactSection from "../components/sections/ContactSection/index.astro";
+import DynamicFooter from "../components/shared/DynamicFooterBanner.astro";
 
 const items = [
   {
@@ -33,7 +35,7 @@ const items = [
 ---
 
 <MainLayout>
-  <section id="writing" class="py-[45px] my-[155px]">
+  <section id="articles" class="py-[45px] my-[155px]">
     <div class="py-3 flex justify-center bg-">
       <h2 class="underline text-5xl px-5 py-2 font-bold">Articles</h2>
     </div>
@@ -51,6 +53,10 @@ const items = [
       </div>
     </div>
   </section>
+  <DynamicFooter
+    title="Contact Writing- 'see about pg and other projects!"
+    paragraph=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo."
+  />
 
-  <div class="bg-test2 px-[55px]">CONTACT CTA</div>
+  <!-- <div class="bg-test2 px-[55px]"><ContactSection /></div> -->
 </MainLayout>

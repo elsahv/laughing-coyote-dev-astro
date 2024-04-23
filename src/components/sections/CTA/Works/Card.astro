@@ -16,11 +16,11 @@ const { title, siteImg, url, description, websiteUrl } = Astro.props as Props;
     class="w-full opacity-80 hover:opacity-100 border-black border-t border-b"
   >
     <a href={url}>
-      <img src={siteImg} alt="" class="w-full rounded border-2 border-black" />
+      <img src={siteImg} alt="" class="rounded border-2 border-black" />
     </a>
   </div>
 
-  <div class="pt-2 py-1 bg-">
+  <div class="pt-3 p-5">
     <h3 class="md:text-4xl text-3xl font-bold text-">{title}</h3>
     <p class="bg-test text-onyx">
       {description}
@@ -33,7 +33,7 @@ const { title, siteImg, url, description, websiteUrl } = Astro.props as Props;
         <a href={url}> Case study </a>
       </button>
 
-      <button class="w-1/4 rounded p-1 bg-test2 text-black border border-black">
+      <button class="rounded px-2 bg-test2 text-black border border-black">
         <a href={websiteUrl}> visit site</a>
       </button>
     </div>

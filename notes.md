@@ -1,3 +1,9 @@
+4/20
+CURRENTLY: break up into smaller comps, especially cards. Rename, fix name errors
+
+1.COMBINE WORKS AND CTAS CARD STYLES
+2.\*COMBINE SERVICES AND DIFFERENT DESIGNS GRID STYLES
+
 - 4/13
   1."simple and minimalist"
   2."modern" 3. no BS... straight to the point

@@ -1,14 +1,11 @@
 ---
+import MoonBurger from "./tests/MoonBurger.astro";
+
 // import { Image } from "astro:assets";
-// import Moonburger from "../../public/images/icons/moon.png";
-import TestMoonburger from "../tests/testMoonburger.astro";
 
 const links = [
-  // { label: "Web Development", href: "/web-development" },
-  // { label: "Writing", href: "/writing" },
-
-  { label: "Featured Works", href: "/web-development" },
-  { label: "Articles", href: "/writing" },
+  { label: "Featured Works", href: "/featured-works" },
+  { label: "Articles", href: "/articles" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -26,9 +23,11 @@ const links = [
         <a href="/">Laughing Coyote Dev</a>
       </div>
     </div>
-    <div id="hamburger" class="lg:hidden flex justify-end p-5">
-      <TestMoonburger />
-    </div>
+    <!-- todo: COME BACK TO V -->
+    <!-- <div id="hamburger" class="lg:hidden flex justify-end p-5">
+      <MoonBurger />
+    </div> -->
+    <!-- todo: COME BACK TO ^ -->
 
     <div id="block-hidden" class="lg:block hidden">
       <ul class="flex justify-end 2xl:items-end items-center">

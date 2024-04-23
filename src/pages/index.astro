@@ -2,8 +2,66 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import HowItWorks from "../components/sections/About/HowItWorks.astro";
-import ServicesGallery from "../components/ServicesGallery.astro";
-import Contact from "../components/sections/Contact/index.astro";
+import ContactSection from "../components/sections/ContactSection/index.astro";
+import DynamicFooterBanner from "../components/shared/DynamicFooterBanner.astro";
+// import ServicesGallery from "../components/ServicesGallery.astro";
+
+import { Image } from "astro:assets";
+import pic1 from "./public/fish-images/assets/jellyfish.jpg";
+import pic2 from "./public/fish-images/assets/school.jpg";
+import pic3 from "./public/fish-images/assets/seals.jpg";
+import pic4 from "./public/fish-images/assets/shark.jpg";
+import pic5 from "./public/fish-images/assets/starfish.jpg";
+import pic6 from "./public/fish-images/assets/turtle.jpg";
+import pic7 from "./public/fish-images/assets/urchin.jpg";
+import pic8 from "./public/fish-images/assets/weird-looking-fish.jpg";
+import DynamicBanner from "../components/shared/DynamicBanner.astro";
+
+const items = [
+  {
+    id: 1,
+    image: pic1,
+    topic: "WEB DESIGN",
+  },
+  {
+    id: 2,
+    image: pic2,
+    topic: "WEB DEV",
+  },
+  {
+    id: 3,
+    image: pic3,
+    topic: "STRATEGIC SEO",
+  },
+  {
+    id: 4,
+    image: pic4,
+    topic: "MOBILE FRIENDLY",
+  },
+  {
+    id: 5,
+    image: pic5,
+    // topic: "simplify the website process: about, CTA, contact",
+    topic: "simplify the website process",
+  },
+  {
+    id: 6,
+    image: pic6,
+    topic: "SELL BY STORY",
+  },
+  {
+    id: 7,
+    image: pic7,
+    // topic:
+    //   " 1.'simple and minimalist' 2.'modern' 3. 'no BS... straight to the point'",
+    topic: "simple and minimalist",
+  },
+  {
+    id: 8,
+    image: pic8,
+    topic: "INCREASED CUSTOMER ENGAGEMENT",
+  },
+];
 ---
 
 <MainLayout>
@@ -13,29 +71,53 @@ import Contact from "../components/sections/Contact/index.astro";
     <div id="" class="flex justify-center px-5">
       <div id="container" class="">
         <div id="selling-pt" class="py-5 my-5">
-          <div
-            class="mt-[50px] p-5 border border-t-black border-b-black bg-onyx text-parchment"
-          >
-            <p class="text-2xl py-1 my-1">
-              This was what Laughing Coyote Dev was created for, to save you
-              some headaches that come with learning about:
-            </p>
-            <ul class="text-xl">
-              <li class="">- how to design a website</li>
-              <li class="">- how to pick a domain and use hosting</li>
-              <li class="">
-                - and etc! See
-                <a href="/#services" class="pl-1 underline"> services below!</a>
-              </li>
-            </ul>
-          </div>
+          <DynamicBanner
+            headline="this is the home pg"
+            paragraph1="-how to design a website"
+            paragraph2="- how to pick a domain and use hosting"
+            paragraph3="and etc!"
+          />
         </div>
 
-        <ServicesGallery />
+        <section id="SERVICES-GALLERY" class="">
+          <div class="bg-">
+            <h2 class="pl-[55px] text-2xl">SERVICES OFFERED!!</h2>
+            <p class="pl-[55px] pb-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Recusandae illo exercitationem sapiente blanditiis, veniam
+              doloremque? Placeat deleniti necessitatibus tempora accusamus
+              doloremque exercitationem vel eum voluptate, officia voluptatem
+              similique consequuntur soluta.
+            </p>
+
+            <div
+              id="gallery-grid"
+              class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
+            >
+              <>
+                {
+                  items.map((item) => (
+                    <div class="">
+                      <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+                        {item.topic}
+                      </p>
+                      <Image
+                        src={item.image}
+                        alt=""
+                        class="border border-black w-[650px] h-[350px] "
+                      />
+                    </div>
+                  ))
+                }
+              </>
+            </div>
+          </div>
+        </section>
         <HowItWorks />
       </div>
     </div>
   </section>
-  <!-- <div class="bg-test2 px-[55px]">CONTACT CTA</div> -->
-  <Contact />
+  <DynamicFooterBanner title="Contact Homepage" paragraph="paragraph test1!" />
+  <!-- ? SOURCE HERE! <GalleryPg /> -->
+  <ContactSection />
 </MainLayout>
