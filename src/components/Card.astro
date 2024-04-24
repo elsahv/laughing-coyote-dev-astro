@@ -1,12 +1,15 @@
 ---
 export interface Props {
   title: string;
+  image: any;
+  paragraph: string;
 }
 
-const { title } = Astro.props as Props;
+const { title, image, paragraph } = Astro.props as Props;
 ---
 
-<>
-  <p>{title}</p>
-  <!-- img -->
-</>
+<div class="mt-5 md:p-3 p-1">
+  <h2 class="font-bold text-xl pl-1">{title}</h2>
+  <img src={image} alt="" class="border border-black" />
+  <p class="text-onyx pt-2 pl-2 pr-5">{paragraph}</p>
+</div>

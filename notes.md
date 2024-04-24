@@ -1,10 +1,11 @@
 4/24
-**CURRENTLY: changed HowItWorks comp to CTAs, revise dynamic cards**
-_NEXT: changed FeaturedWorks comp, add dynamic cards_
+**CURRENTLY: add FeaturedWebsites comp to featured works pg, add dynamic cards**
+_NEXT:_
 
-1.COMBINE WORKS AND CTAS CARD STYLES
-2.\*COMBINE SERVICES AND DIFFERENT DESIGNS GRID STYLES
-
+- JOURNAL NOTES
+- 4/24
+- - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->//NEW "CURRENTLY DOING RIBBON"
+- Add dynamic cards
 - 4/13
   1."simple and minimalist"
   2."modern" 3. no BS... straight to the point
@@ -14,10 +15,6 @@ _NEXT: changed FeaturedWorks comp, add dynamic cards_
   2.CTA (Packages)- what do you want customer to do?
   3.CONTACT
 
--
--
-- -eh journal-
-
 2/18
 -rm case study CTA button for now, at least until there is more content.
 -"I'm trying to document more often to make better progress"
@@ -26,7 +23,7 @@ _NEXT: changed FeaturedWorks comp, add dynamic cards_
 -things are really clicking into place today!!
 -added much more content to each section, been speeding up on making progress this past week!
 
--2/15:
+-2/15:  
 -"Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."
 -"I realize that creating test components and starting 'new drafts' as opposed to deleting previous versions makes better progress."
 -"does tailwind have a grid-template-areas option? I've had to refresh my memory with using vanilla css!"

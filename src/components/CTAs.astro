@@ -1,5 +1,5 @@
 ---
-import SecondCard from "./shared/SecondCard.astro";
+import Card from "../components/CTAs.astro";
 
 const items = [
   {
@@ -47,7 +47,7 @@ const items = [
       {
         items.map((item) => (
           <>
-            <SecondCard
+            <Card
               title={item.title}
               image={item.image}
               paragraph={item.paragraph}
