@@ -1,43 +1,30 @@
 ---
-import SecondCard from "../../SecondCard.astro";
+import TestCard from "./TestCard.astro";
 
 const items = [
   {
-    title: "Development CTA",
+    title: "Hovey Roofing",
     paragraph:
       "phone calls, meetings, consultations.... research, planning, scheduling... develop site structure/sitemap ex:10 hours x $50/hr=$500. -What does the user want? -how to make brand provide value?",
     image:
       "https://images.pexels.com/photos/15406244/pexels-photo-15406244/free-photo-of-stars-in-cosmos.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    title: "Writing CTA",
+    title: "Generations Backflow",
     paragraph:
       "  sitemap, wireframe site--> mockup first draft--> mockup revised, final draft",
     image:
       "https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
-
-  {
-    title: "Case Studies CTA",
-    paragraph:
-      " set up vercel temp--> convert mockups into code--> go over temp with client --> final revisions",
-    image:
-      "https://images.pexels.com/photos/1227497/pexels-photo-1227497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    title: "Ready to move forward?",
-    paragraph:
-      " final review and Q&A--> move local website to live server, hosting,client training--> final payment",
-    image:
-      "https://images.pexels.com/photos/2166/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
 ];
 ---
 
-<!-- todo: CHANGE HOW IT WORKS TO ABOUT -->
-<section id="how-it-works" class="py-[45px] my-[155px]">
+<!-- todo:ADD BUTTON WRAPPER(CASE STUDY BTN, VISIT SITE BTN ) -->
+<h1>NEW FEATURED</h1>
+
+<section id="featured-works" class="py-[45px] my-[155px]">
   <div class="py-3 flex justify-center bg-">
-    <h2 class="text-5xl px-5 py-2 font-bold max-w-sm">CTAs</h2>
+    <h2 class="text-5xl px-5 py-2 font-bold max-w-sm">featured-works</h2>
   </div>
   <div id="grid-wrapper" class="flex justify-center">
     <div
@@ -47,7 +34,7 @@ const items = [
       {
         items.map((item) => (
           <>
-            <SecondCard
+            <TestCard
               title={item.title}
               image={item.image}
               paragraph={item.paragraph}

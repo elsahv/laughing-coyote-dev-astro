@@ -16,6 +16,8 @@ import pic6 from "./public/fish-images/assets/turtle.jpg";
 import pic7 from "./public/fish-images/assets/urchin.jpg";
 import pic8 from "./public/fish-images/assets/weird-looking-fish.jpg";
 import DynamicBanner from "../components/shared/DynamicBanner.astro";
+import Card from "../components/Card.astro";
+import CTAs from "../components/CTAs.astro";
 
 const items = [
   {
@@ -98,6 +100,8 @@ const items = [
                 {
                   items.map((item) => (
                     <div class="">
+                      {/* TODO: FIGURE OUT MAPPING OUT GRIDS */}
+                      {/* <Card title="HIIII" /> */}
                       <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
                         {item.topic}
                       </p>
@@ -113,7 +117,12 @@ const items = [
             </div>
           </div>
         </section>
-        <HowItWorks />
+        <!-- <HowItWorks /> -->
+        <>
+          <!-- * CHANGE HOW IT WORKS TO CTAS -->
+          <CTAs />
+          <!-- * CHANGE HOW IT WORKS TO CTAS -->
+        </>
       </div>
     </div>
   </section>

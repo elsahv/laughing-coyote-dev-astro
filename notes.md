@@ -1,5 +1,6 @@
-4/20
-CURRENTLY: break up into smaller comps, especially cards. Rename, fix name errors
+4/24
+**CURRENTLY: changed HowItWorks comp to CTAs, revise dynamic cards**
+_NEXT: changed FeaturedWorks comp, add dynamic cards_
 
 1.COMBINE WORKS AND CTAS CARD STYLES
 2.\*COMBINE SERVICES AND DIFFERENT DESIGNS GRID STYLES
