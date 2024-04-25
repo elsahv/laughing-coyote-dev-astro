@@ -3,8 +3,12 @@
 _compare to featured-works comp for ref!_
 
 - JOURNAL NOTES
+- 4/25
+  1.move all photos to /src/images folder?????
+
 - 4/24
-- -     <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->//NEW "CURRENTLY DOING RIBBON"
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->//NEW "CURRENTLY DOING RIBBON"
+
 - Add dynamic cards
 - 4/13
   1."simple and minimalist"

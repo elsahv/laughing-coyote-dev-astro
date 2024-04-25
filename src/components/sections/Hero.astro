@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Coyote from "./public/images/coyote.png";
+import Coyote from "./src/images/coyote.png";
 ---
 
 <div id="/" class="">
@@ -55,7 +55,11 @@ import Coyote from "./public/images/coyote.png";
       </section>
 
       <section class="pt-[25px]">
-        <Image src={Coyote} alt="" class="" />
+        <img
+          src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+          class="border border-black"
+        />
       </section>
     </div>
   </div>
