@@ -1,5 +1,5 @@
 4/24
-**CURRENTLY: seek out node js tut to learn how to increase javascript heap memory** -ANSWER TO PROBLEM: ITS THE CTAS!!! I think I need to apply
+**CURRENTLY: figure out gallery images issue('could not resolve image')** -ANSWER TO PROBLEM: ITS THE CTAS!!! I think I need to apply
 _compare to featured-works comp for ref!_
 
 - JOURNAL NOTES

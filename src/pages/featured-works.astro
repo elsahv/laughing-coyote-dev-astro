@@ -2,60 +2,44 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import ContactSection from "../components/sections/ContactSection/index.astro";
 import DynamicFooter from "../components/shared/DynamicFooterBanner.astro";
-import { Image } from "astro:assets";
-import pic1 from "./public/images/image1.png";
-import pic2 from "./public/images/image2.png";
-import pic3 from "./public/images/image3.png";
-import pic4 from "./public/images/image4.png";
-import pic5 from "./public/images/image5.png";
-import pic6 from "./public/images/image6.png";
-import pic7 from "./public/images/image7.png";
-import pic8 from "./public/images/image7.png";
+
 import DynamicBanner from "../components/shared/DynamicBanner.astro";
 import CustomerSites from "../components/CustomerSites.astro";
 
 const items = [
   {
     id: 1,
-    image: pic1,
     title: "design 1",
   },
   {
     id: 2,
-    image: pic2,
     title: "design 2",
   },
   {
     id: 3,
-    image: pic3,
     title: "design 3",
   },
   {
     id: 4,
-    image: pic4,
     title: "design 4",
   },
   {
     id: 5,
-    image: pic5,
     // title: "simplify the website process: about, CTA, contact",
     title: "design 5",
   },
   {
     id: 6,
-    image: pic6,
     title: "design 6",
   },
   {
     id: 7,
-    image: pic7,
     // title:
     //   " 1.'simple and minimalist' 2.'modern' 3. 'no BS... straight to the point'",
     title: "design 7",
   },
   {
     id: 8,
-    image: pic8,
     title: "design 8",
   },
 ];
@@ -110,11 +94,6 @@ const items = [
               <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
                 {item.title}
               </p>
-              <Image
-                src={item.image}
-                alt=""
-                class="border border-black w-[650px] h-[350px] "
-              />
             </div>
           ))
         }
