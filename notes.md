@@ -1,10 +1,10 @@
 4/24
-**CURRENTLY: add FeaturedWebsites comp to featured works pg, add dynamic cards**
-_NEXT:_
+**CURRENTLY: seek out node js tut to learn how to increase javascript heap memory** -ANSWER TO PROBLEM: ITS THE CTAS!!! I think I need to apply
+_compare to featured-works comp for ref!_
 
 - JOURNAL NOTES
 - 4/24
-- - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->//NEW "CURRENTLY DOING RIBBON"
+- -     <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->//NEW "CURRENTLY DOING RIBBON"
 - Add dynamic cards
 - 4/13
   1."simple and minimalist"

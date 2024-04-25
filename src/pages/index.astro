@@ -1,11 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import ContactSection from "../components/sections/ContactSection/index.astro";
 import DynamicFooterBanner from "../components/shared/DynamicFooterBanner.astro";
-// import ServicesGallery from "../components/ServicesGallery.astro";
-
-import { Image } from "astro:assets";
+import DynamicBanner from "../components/shared/DynamicBanner.astro";
+import CTAs from "../components/CTAs.astro";
 import pic1 from "./public/fish-images/assets/jellyfish.jpg";
 import pic2 from "./public/fish-images/assets/school.jpg";
 import pic3 from "./public/fish-images/assets/seals.jpg";
@@ -14,53 +14,50 @@ import pic5 from "./public/fish-images/assets/starfish.jpg";
 import pic6 from "./public/fish-images/assets/turtle.jpg";
 import pic7 from "./public/fish-images/assets/urchin.jpg";
 import pic8 from "./public/fish-images/assets/weird-looking-fish.jpg";
-import DynamicBanner from "../components/shared/DynamicBanner.astro";
-import Card from "../components/Card.astro";
-import CTAs from "../components/CTAs.astro";
 
 const items = [
   {
     id: 1,
     image: pic1,
-    topic: "WEB DESIGN",
+    title: "WEB DESIGN",
   },
   {
     id: 2,
     image: pic2,
-    topic: "WEB DEV",
+    title: "WEB DEV",
   },
   {
     id: 3,
     image: pic3,
-    topic: "STRATEGIC SEO",
+    title: "STRATEGIC SEO",
   },
   {
     id: 4,
     image: pic4,
-    topic: "MOBILE FRIENDLY",
+    title: "MOBILE FRIENDLY",
   },
   {
     id: 5,
     image: pic5,
-    // topic: "simplify the website process: about, CTA, contact",
-    topic: "simplify the website process",
+    // title: "simplify the website process: about, CTA, contact",
+    title: "simplify the website process",
   },
   {
     id: 6,
     image: pic6,
-    topic: "SELL BY STORY",
+    title: "SELL BY STORY",
   },
   {
     id: 7,
     image: pic7,
-    // topic:
+    // title:
     //   " 1.'simple and minimalist' 2.'modern' 3. 'no BS... straight to the point'",
-    topic: "simple and minimalist",
+    title: "simple and minimalist",
   },
   {
     id: 8,
     image: pic8,
-    topic: "INCREASED CUSTOMER ENGAGEMENT",
+    title: "INCREASED CUSTOMER ENGAGEMENT",
   },
 ];
 ---
@@ -68,63 +65,50 @@ const items = [
 <MainLayout>
   <Hero />
 
-  <section id="AB0UT">
-    <div id="" class="flex justify-center px-5">
-      <div id="container" class="">
-        <div id="selling-pt" class="py-5 my-5">
-          <DynamicBanner
-            headline="this is the home pg"
-            paragraph1="-how to design a website"
-            paragraph2="- how to pick a domain and use hosting"
-            paragraph3="and etc!"
-          />
-        </div>
-
-        <section id="SERVICES-GALLERY" class="">
-          <div class="bg-">
-            <h2 class="pl-[55px] text-2xl">SERVICES OFFERED!!</h2>
-            <p class="pl-[55px] pb-1">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae illo exercitationem sapiente blanditiis, veniam
-              doloremque? Placeat deleniti necessitatibus tempora accusamus
-              doloremque exercitationem vel eum voluptate, officia voluptatem
-              similique consequuntur soluta.
-            </p>
-
-            <div
-              id="gallery-grid"
-              class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
-            >
-              <>
-                {
-                  items.map((item) => (
-                    <div class="">
-                      {/* TODO: FIGURE OUT MAPPING OUT GRIDS */}
-                      {/* <Card title="HIIII" /> */}
-                      <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
-                        {item.topic}
-                      </p>
-                      <Image
-                        src={item.image}
-                        alt=""
-                        class="border border-black w-[650px] h-[350px] "
-                      />
-                    </div>
-                  ))
-                }
-              </>
-            </div>
-          </div>
-        </section>
-        <!-- <HowItWorks /> -->
-        <>
-          <!-- * CHANGE HOW IT WORKS TO CTAS -->
-          <CTAs />
-          <!-- * CHANGE HOW IT WORKS TO CTAS -->
-        </>
+  <div id="" class="flex justify-center px-5">
+    <div id="container" class="">
+      <div id="selling-pt" class="py-5 my-5">
+        <DynamicBanner
+          headline="this is the home pg"
+          paragraph1="-how to design a website"
+          paragraph2="- how to pick a domain and use hosting"
+          paragraph3="and etc!"
+        />
       </div>
+      <div id="SERVICES-GALLERY" class="">
+        <div class='p-5"'>
+          <h2 class="pl-[55px] text-2xl">SERVICES OFFERED!!</h2>
+          <p class="pl-[55px] pb-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+            illo exercitationem sapiente blanditiis, veniam doloremque? Placeat
+            deleniti necessitatibus tempora accusamus doloremque exercitationem
+            vel eum voluptate, officia voluptatem similique consequuntur soluta.
+          </p>
+
+          <div
+            id="gallery-grid"
+            class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
+          >
+            {
+              items.map((item) => (
+                <div class="">
+                  <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+                    {item.title}
+                  </p>
+                  <Image
+                    src={item.image}
+                    alt=""
+                    class="border border-black w-[650px] h-[350px] "
+                  />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <CTAs />
     </div>
-  </section>
+  </div>
   <DynamicFooterBanner title="Contact Homepage" paragraph="paragraph test1!" />
   <!-- ? SOURCE HERE! <GalleryPg /> -->
   <ContactSection />
