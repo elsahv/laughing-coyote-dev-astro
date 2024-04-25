@@ -9,37 +9,53 @@ import CustomerSites from "../components/CustomerSites.astro";
 const items = [
   {
     id: 1,
+    image:
+      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "design 1",
   },
   {
     id: 2,
+    image:
+      "https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "design 2",
   },
   {
     id: 3,
+    image:
+      "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "design 3",
   },
   {
     id: 4,
+    image:
+      "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "design 4",
   },
   {
     id: 5,
+    image:
+      "https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&w=600",
     // title: "simplify the website process: about, CTA, contact",
     title: "design 5",
   },
   {
     id: 6,
+    image:
+      "https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "design 6",
   },
   {
     id: 7,
+    image:
+      "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     // title:
     //   " 1.'simple and minimalist' 2.'modern' 3. 'no BS... straight to the point'",
     title: "design 7",
   },
   {
     id: 8,
+    image:
+      "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "design 8",
   },
 ];
@@ -73,10 +89,10 @@ const items = [
       paragraph3="and etc!"
     />
   </div>
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
   <div id="SERVICES-GALLERY" class="">
     <div class="bg-">
-      <h2 class="pl-[55px] text-2xl">SERVICES OFFERED!!</h2>
+      <h2 class="pl-[55px] text-2xl">WEBSITE DESIGNS!!</h2>
       <p class="pl-[55px] pb-1">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
         illo exercitationem sapiente blanditiis, veniam doloremque? Placeat
@@ -94,13 +110,18 @@ const items = [
               <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
                 {item.title}
               </p>
+              <img
+                src={item.image}
+                alt=""
+                class="border border-black w-[650px] h-[350px] "
+              />
             </div>
           ))
         }
       </div>
     </div>
   </div>
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
   <DynamicFooter
     title="Contact Web Dev"
     paragraph="  still not ready for contact? Here are some free resource articles"
