@@ -1,0 +1,25 @@
+---
+export interface Props {
+  headline: string;
+  paragraph1: string;
+  paragraph2: string;
+  paragraph3: string;
+}
+
+const { headline, paragraph2, paragraph3, paragraph1 } = Astro.props as Props;
+---
+
+<div id="dynamic-banner-wrapper" class="py-5 my-5">
+  <div
+    class="mt-[50px] p-5 border border-t-black border-b-black bg-onyx text-parchment"
+  >
+    <h4 class="text-2xl h4y-1 my-1">
+      {headline}
+    </h4>
+    <div class="text-xl flex flex-col">
+      <p class="">{paragraph1}</p>
+      <p class="">{paragraph2}</p>
+      <p class="">{paragraph3}</p>
+    </div>
+  </div>
+</div>

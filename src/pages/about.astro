@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import DynamicFooter from "../components/shared/DynamicFooterBanner.astro";
+import Dynamic_FooterBanner from "../components/shared/Dynamic_FooterBanner.astro";
+import Test_CenterPageBanner from "../components/Test_CenterPageBanner.astro";
 
 const items = [
   {
@@ -24,23 +25,25 @@ const items = [
     p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
   },
   {
-    title: "post 3",
-    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    title: "Contact",
+    p: " you can contact at elsahvy@gmail.com",
   },
 ];
 ---
 
 <MainLayout>
   <section id="about" class="py-[45px] my-[155px]">
-    <div class="py-3 flex justify-center bg-">
-      <h2 class="underline text-5xl px-5 py-2 font-bold">About</h2>
+    <div id="color-banner" class="bg-teal border border-black">
+      <Test_CenterPageBanner
+        title="About"
+        paragraph="this is the about page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
+      />
     </div>
-
     <div id="grid-wrapper" class="flex justify-center">
       <div id="grid" class="grid grid-cols-3 gap-5 pt-[50px] px-[150px]">
         {
           items.map((item) => (
-            <div id="sq" class="px-2 py-3 bg-test bg-teal">
+            <div id="sq" class="px-2 py-3 bg-test bg-">
               <h2 class="capitalize font-bold">{item.title}</h2>
               <p>{item.p}</p>
             </div>
@@ -49,7 +52,7 @@ const items = [
       </div>
     </div>
   </section>
-  <DynamicFooter
+  <Dynamic_FooterBanner
     title="Contact Writing- 'see about pg and other projects!"
     paragraph=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo."
   />

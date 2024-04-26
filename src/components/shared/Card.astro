@@ -8,7 +8,9 @@ export interface Props {
 const { title, image, paragraph } = Astro.props as Props;
 ---
 
-<div class="mt-5 md:p-3 _PrimaryBorder rounded p-3 mx-5 py-5 my-[50px]">
+<div
+  class="mt-5 md:p-3 _PrimaryBorder hover:bg-teal hover:cursor-pointer rounded p-3 mx-5 py-5 my-[50px]"
+>
   <h2 class="font-bold text-xl pl-1">{title}</h2>
   <img src={image} alt="" class="border border-black" />
   <p class="text-onyx pt-2 pl-2 pr-5">{paragraph}</p>

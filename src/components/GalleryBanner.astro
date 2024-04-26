@@ -1,0 +1,11 @@
+---
+export interface Props {
+  title: string;
+  paragraph: string;
+}
+
+const { title, paragraph } = Astro.props as Props;
+---
+
+<h2 class="pl-[55px] text-2xl">{title}</h2>
+<p class="pl-[55px] pb-3">{paragraph}</p>

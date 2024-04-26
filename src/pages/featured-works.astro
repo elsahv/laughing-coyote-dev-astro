@@ -1,10 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import ContactSection from "../components/sections/ContactSection/index.astro";
-import DynamicFooter from "../components/shared/DynamicFooterBanner.astro";
-
-import DynamicBanner from "../components/shared/DynamicBanner.astro";
+import ContactSection from "../components/ContactSection.astro";
+import DynamicFooter from "../components/shared/Dynamic_FooterBanner.astro";
+import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
 import CustomerSites from "../components/CustomerSites.astro";
+import GalleryBanner from "../components/GalleryBanner.astro";
+import Test_CenterPageBanner from "../components/Test_CenterPageBanner.astro";
 
 const items = [
   {
@@ -62,47 +63,51 @@ const items = [
 ---
 
 <MainLayout>
-  <section
-    id="featured-works-banner"
-    class="bg-onyx text-parchment border border-t-black border-b-black py-[45px] my-[155px]"
-  >
-    <div class="py-3 flex justify-center bg-">
-      <h2 class="text-5xl px-5 py-2 font-bold underline">Featured Works</h2>
-    </div>
+  <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <!-- <section class="bg-test2">
+      <div class="py-3 flex justify-center bg-">
+        <h2 class="text-5xl px-5 py-2 font-bold underline">Featured Works</h2>
+      </div>
 
-    <div id="ABOUT" class="flex justify-center">
-      <p class="max-w-[1060px] pt-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis
-        nostrum totam ullam non ipsum, obcaecati explicabo nulla nesciunt
-        blanditiis iste provident architecto excepturi, sint eum maxime repellat
-        dolores modi?
-      </p>
-    </div>
-  </section>
-  <CustomerSites />
-  <!-- <div class="bg-test2 px-[55px]">OTHER DESIGNS/ final selling pt</div> -->
-  <div id="selling-pt" class="py-5 my-5">
-    <DynamicBanner
-      headline="this is the web dev pg"
-      paragraph1="-how to design a website"
-      paragraph2="- how to pick a domain and use hosting"
-      paragraph3="and etc!"
+      <div id="ABOUT" class="flex justify-center">
+        <p class="max-w-[1060px] pt-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          debitis nostrum totam ullam non ipsum, obcaecati explicabo nulla
+          nesciunt blanditiis iste provident architecto excepturi, sint eum
+          maxime repellat dolores modi?
+        </p>
+      </div>
+    </section> -->
+    <Test_CenterPageBanner
+      title="Featured Works"
+      paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
     />
-  </div>
 
-  <div id="SERVICES-GALLERY" class="">
-    <div class="bg-">
-      <h2 class="pl-[55px] text-2xl">WEBSITE DESIGNS!!</h2>
-      <p class="pl-[55px] pb-1">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-        illo exercitationem sapiente blanditiis, veniam doloremque? Placeat
-        deleniti necessitatibus tempora accusamus doloremque exercitationem vel
-        eum voluptate, officia voluptatem similique consequuntur soluta.
-      </p>
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <!--*--*--*--*--*--CENTER PAGE BANNER ^ *--*--*--*--*--*--*--*-->
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  </div>
+  <CustomerSites />
+  <Dynamic_Banner
+    headline="this is the web dev pg"
+    paragraph1="-how to design a website"
+    paragraph2="- how to pick a domain and use hosting"
+    paragraph3="and etc!"
+  />
+
+  <div id="GALLERY-WEB-DESIGNS" class="">
+    <div class="px-5">
+      <GalleryBanner
+        title="Web Designs"
+        paragraph="Multiple Designs available for your imagination!"
+      />
 
       <div
         id="gallery-grid"
-        class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
+        class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
       >
         {
           items.map((item) => (
