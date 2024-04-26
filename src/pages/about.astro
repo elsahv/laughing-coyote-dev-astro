@@ -5,8 +5,8 @@ import Test_CenterPageBanner from "../components/Test_CenterPageBanner.astro";
 
 const items = [
   {
-    title: "post 1",
-    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    title: "Hi there, I'm Elsa",
+    p: "Portfolio-cta Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
   },
   {
     title: "post 2",
@@ -21,7 +21,7 @@ const items = [
     p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
   },
   {
-    title: "post 2",
+    title: "Feel free to browse newsletter for updates. ",
     p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
   },
   {
@@ -44,8 +44,10 @@ const items = [
         {
           items.map((item) => (
             <div id="sq" class="px-2 py-3 bg-test bg-">
-              <h2 class="capitalize font-bold">{item.title}</h2>
-              <p>{item.p}</p>
+               <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--> 
+              <h2 class="capitalize font-bold">{item.title}</h2> <!--//*: TITLE CONTENT SHOULD BE THE ABOUT  -->
+              <p>{item.p}</p><!--//*: PARAGRAPH CONTENT SHOULD BE THE WHY -->
+              <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--> 
             </div>
           ))
         }
