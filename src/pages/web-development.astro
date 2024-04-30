@@ -1,0 +1,132 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import CTAs from "../components/CTAs.astro";
+import BlogPostsComp from "../components/BlogPostsComp.astro";
+import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
+import DynamicFooterBanner from "../components/shared/Dynamic_FooterBanner.astro";
+import Hero from "../components/Hero.astro";
+
+const items = [
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "WEB DESIGN",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "WEB DEV",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "STRATEGIC SEO",
+  },
+  {
+    id: 4,
+    image:
+      "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "MOBILE FRIENDLY",
+  },
+  {
+    id: 5,
+    image:
+      "https://images.pexels.com/photos/6956129/pexels-photo-6956129.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "simplify: about, CTA, contact",
+  },
+  {
+    id: 6,
+    image:
+      "https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "SELL BY STORY",
+  },
+  {
+    id: 7,
+    image:
+      "https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&w=600",
+    // title:
+    //   " 1.'simple and minimalist' 2.'modern' 3. 'no BS... straight to the point'",
+    title: "simple and minimalist",
+  },
+  {
+    id: 8,
+    image:
+      "https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "INCREASED CUSTOMER ENGAGEMENT",
+  },
+];
+---
+
+<MainLayout>
+  - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*-MAKE HERO DYNAMIC! v-*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <Hero
+    title="web dev page"
+    pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  />
+
+  - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*-MAKE HERO DYNAMIC! ^-*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <section id="about" class="py-[45px] my-[155px]">
+    <div id="color-banner" class="">
+      <CenterPageBanner
+        title="Web Development"
+        paragraph="why you should choose me for web development. this is the about page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
+      />
+    </div>
+
+    <div
+      class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
+      id="gallery-grid"
+    >
+      {
+        items.map((item) => (
+          <div class="hover:opacity-80">
+            <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+              {item.title}
+            </p>
+            <img
+              src={item.image}
+              alt=""
+              class="border border-black w-[650px] h-[350px] "
+            />
+          </div>
+        ))
+      }
+    </div>
+    <!-- <div id="grid-wrapper" class="flex justify-center"> -->
+    <!-- <div id="grid" class="grid grid-cols-3 gap-5 pt-[50px] px-[150px]"> -->
+    <!-- { -->
+    <!-- items.map((item) => ( -->
+    <!-- <div id="sq" class="px-2 py-3 bg-test bg-"> -->
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <!-- <h2 class="capitalize font-bold">{item.title}</h2>  -->
+    <!--//*: TITLE CONTENT SHOULD BE THE ABOUT  -->
+    <!-- <p class="">{item.p}</p> -->
+    <!--//*: PARAGRAPH CONTENT SHOULD BE THE WHY -->
+    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    <!-- </div> -->
+    <!-- )) -->
+    <!-- } -->
+    <!-- </div> -->
+  </section>
+  <!-- <CTAs /> -->
+  <Dynamic_Banner
+    headline="Most Recent Posts"
+    paragraph1="-how to design a website"
+    paragraph2="- how to pick a domain and use hosting"
+    paragraph3="- and etc!"
+  />
+  <CenterPageBanner
+    title="Most Recent Articles"
+    paragraph="This is for the most recents posts for the home page."
+  />
+  <BlogPostsComp />
+  <DynamicFooterBanner title="title" paragraph="paragraph" />
+</MainLayout>

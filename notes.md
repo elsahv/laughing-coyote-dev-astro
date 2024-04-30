@@ -1,8 +1,11 @@
 4/24
-**CURRENTLY: figure out gallery images issue('could not resolve image')** -ANSWER TO PROBLEM: ITS THE CTAS!!! I think I need to apply
-_compare to featured-works comp for ref!_
 
 - JOURNAL NOTES
+- 4/29
+- <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
 - 4/25
   1.move all photos to /src/images folder?????
 

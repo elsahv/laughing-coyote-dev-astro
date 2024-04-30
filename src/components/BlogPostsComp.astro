@@ -1,0 +1,54 @@
+---
+const posts = [
+  {
+    title: "first post!",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    pic: "https://images.pexels.com/photos/20485059/pexels-photo-20485059/free-photo-of-a-person-riding-a-dirt-bike-on-the-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "why headless matters for speed",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    pic: "https://images.pexels.com/photos/18768356/pexels-photo-18768356/free-photo-of-windows-of-riverside-stilt-houses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "hiking in Joshua Tree",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    pic: "https://images.pexels.com/photos/20923044/pexels-photo-20923044/free-photo-of-la-tierra.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "post 1",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    pic: "https://images.pexels.com/photos/20923044/pexels-photo-20923044/free-photo-of-la-tierra.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "post 2",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    pic: "https://images.pexels.com/photos/20485059/pexels-photo-20485059/free-photo-of-a-person-riding-a-dirt-bike-on-the-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    title: "post 13",
+    p: " Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Doloribus a deserunt reiciendis quaerat cumque, omnis in architecto quos, maxime, assumenda eos quo repudiandae. Quo quidem veniam facilis laboriosam at quaerat.",
+    pic: "https://images.pexels.com/photos/18768356/pexels-photo-18768356/free-photo-of-windows-of-riverside-stilt-houses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
+---
+
+<div id="grid-wrapper" class="flex justify-center items-center py-5 bg-">
+  <div id="grid" class="grid grid-cols-3 gap-4 py-[50px] px-[150px]">
+    {
+      posts.map((post) => (
+        <div id="sq" class="p-4 bordesr border-black  cursor-pointer">
+          <h2 class="capitalize font-bold hover:underline cursor-pointer py-1">
+            {post.title}
+          </h2>
+          <img
+            src={post.pic}
+            alt={post.title}
+            class=" rounded border border-black"
+          />
+          <p>{post.p}</p>
+        </div>
+      ))
+    }
+  </div>
+</div>

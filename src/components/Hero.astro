@@ -1,6 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import Coyote from "./src/images/coyote.png";
+
+export interface Props {
+  title: string;
+  pic: any;
+}
+
+const { title, pic } = Astro.props as Props;
 ---
 
 <div id="/" class="">
@@ -9,9 +16,10 @@ import Coyote from "./src/images/coyote.png";
       <section class="2xl:px-5 px-1 flex items-center">
         <div class="w-full lg:pl-[70px] px-5">
           <div class="py-1 mb-1">
-            <h1 class="text-4xl py-1 my-1 font-bold">
+            <!-- <h1 class="text-4xl py-1 my-1 font-bold">
               A subscription website service for busy small-businesses owners.
-            </h1>
+            </h1> -->
+            <h1 class="text-4xl py-1 my-1 font-bold">{title}</h1>
           </div>
           {
             /* <p class="pb-5">
@@ -55,11 +63,13 @@ import Coyote from "./src/images/coyote.png";
       </section>
 
       <section class="pt-[25px]">
-        <img
+        <!-- <img
           src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
           class="border border-black"
-        />
+        /> -->
+
+        <img src={pic} alt="" />
       </section>
     </div>
   </div>

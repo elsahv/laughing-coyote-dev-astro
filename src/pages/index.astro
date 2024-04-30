@@ -1,11 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/Hero.astro";
-import ContactSection from "../components/ContactSection.astro";
-import Dynamic_FooterBanner from "../components/shared/Dynamic_FooterBanner.astro";
 import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
 import CTAs from "../components/CTAs.astro";
 import GalleryBanner from "../components/GalleryBanner.astro";
+// import BlogPostsComp from "../components/BlogPostsComp.astro";
+// import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 
 const items = [
   {
@@ -62,16 +62,26 @@ const items = [
 ---
 
 <MainLayout>
-  <Hero />
+  - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*-MAKE HERO DYNAMIC! v-*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <Hero
+    title="A subscription website service for busy small-businesses owners. "
+    pic="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  />
+
+  - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*-MAKE HERO DYNAMIC! ^-*--*--*--*--*--*--*--*--*--*-->
+  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
   <div id="" class="flex justify-center px-5">
     <div id="container" class="">
       <div id="selling-pt" class="py-5 my-5">
         <Dynamic_Banner
-          headline="this is the home pg"
+          headline="Services Offered"
           paragraph1="-how to design a website"
           paragraph2="- how to pick a domain and use hosting"
-          paragraph3="and etc!"
+          paragraph3="- and etc!"
         />
       </div>
       <div id="GALLERY-SERVICES" class="">
@@ -102,8 +112,18 @@ const items = [
         </div>
       </div>
       <CTAs />
+
+      <!-- <Dynamic_Banner
+        headline="Most Recent Posts"
+        paragraph1="-how to design a website"
+        paragraph2="- how to pick a domain and use hosting"
+        paragraph3="- and etc!"
+      />
+      <CenterPageBanner
+        title="Most Recent Articles"
+        paragraph="This is for the most recents posts for the home page."
+      />
+      <BlogPostsComp /> -->
     </div>
   </div>
-  <Dynamic_FooterBanner title="Contact Homepage" paragraph="paragraph test1!" />
-  <ContactSection />
 </MainLayout>

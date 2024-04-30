@@ -1,11 +1,11 @@
 ---
 const today = new Date();
+import ContactSection from "./ContactSection.astro";
 ---
 
-<footer
-  class="relative bottom-0 bg- text-center w-full border-t-2 border-black"
->
-  <div class="">
-    Copyright &copy; {today.getFullYear()}
-  </div>
+<footer class="text-center w-full bg-">
+  <ContactSection />
+  <>
+    <p>Copyright &copy; {today.getFullYear()}</p>
+  </>
 </footer>

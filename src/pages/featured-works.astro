@@ -1,11 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import ContactSection from "../components/ContactSection.astro";
-import DynamicFooter from "../components/shared/Dynamic_FooterBanner.astro";
 import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
 import CustomerSites from "../components/CustomerSites.astro";
 import GalleryBanner from "../components/GalleryBanner.astro";
-import Test_CenterPageBanner from "../components/Test_CenterPageBanner.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 
 const items = [
   {
@@ -64,31 +62,10 @@ const items = [
 
 <MainLayout>
   <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    <!-- <section class="bg-test2">
-      <div class="py-3 flex justify-center bg-">
-        <h2 class="text-5xl px-5 py-2 font-bold underline">Featured Works</h2>
-      </div>
-
-      <div id="ABOUT" class="flex justify-center">
-        <p class="max-w-[1060px] pt-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          debitis nostrum totam ullam non ipsum, obcaecati explicabo nulla
-          nesciunt blanditiis iste provident architecto excepturi, sint eum
-          maxime repellat dolores modi?
-        </p>
-      </div>
-    </section> -->
-    <Test_CenterPageBanner
+    <CenterPageBanner
       title="Featured Works"
       paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
     />
-
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    <!--*--*--*--*--*--CENTER PAGE BANNER ^ *--*--*--*--*--*--*--*-->
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
   </div>
   <CustomerSites />
   <Dynamic_Banner
@@ -107,7 +84,7 @@ const items = [
 
       <div
         id="gallery-grid"
-        class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
+        class="mb-5 md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
       >
         {
           items.map((item) => (
@@ -124,12 +101,7 @@ const items = [
           ))
         }
       </div>
+      asdfds
     </div>
   </div>
-
-  <DynamicFooter
-    title="Contact Web Dev"
-    paragraph="  still not ready for contact? Here are some free resource articles"
-  />
-  <ContactSection />
 </MainLayout>
