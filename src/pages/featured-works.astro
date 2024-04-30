@@ -4,6 +4,7 @@ import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
 import CustomerSites from "../components/CustomerSites.astro";
 import GalleryBanner from "../components/GalleryBanner.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Hero from "../components/Hero.astro";
 
 const items = [
   {
@@ -67,7 +68,18 @@ const items = [
       paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
     />
   </div>
-  <CustomerSites />
+
+  <div id="featured-websites">
+    <Hero
+      title="HoveyRoofing"
+      pic="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+    <Hero
+      title="Generations Backflow"
+      pic="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+  </div>
+  <!-- <CustomerSites /> -->
   <Dynamic_Banner
     headline="this is the web dev pg"
     paragraph1="-how to design a website"

@@ -62,17 +62,6 @@ const items = [
 ---
 
 <MainLayout>
-  - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*--*--*--*-MAKE HERO DYNAMIC! v-*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-  <Hero
-    title="web dev page"
-    pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  />
-
-  - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*--*--*--*-MAKE HERO DYNAMIC! ^-*--*--*--*--*--*--*--*--*--*-->
-  <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
   <section id="about" class="py-[45px] my-[155px]">
     <div id="color-banner" class="">
       <CenterPageBanner
@@ -80,7 +69,6 @@ const items = [
         paragraph="why you should choose me for web development. this is the about page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
     </div>
-
     <div
       class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
       id="gallery-grid"
@@ -89,6 +77,8 @@ const items = [
         items.map((item) => (
           <div class="hover:opacity-80">
             <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+            <!--//*: TITLE CONTENT SHOULD BE THE ABOUT  -->
+            <!--//*: PARAGRAPH CONTENT SHOULD BE THE WHY -->
               {item.title}
             </p>
             <img
@@ -100,29 +90,13 @@ const items = [
         ))
       }
     </div>
-    <!-- <div id="grid-wrapper" class="flex justify-center"> -->
-    <!-- <div id="grid" class="grid grid-cols-3 gap-5 pt-[50px] px-[150px]"> -->
-    <!-- { -->
-    <!-- items.map((item) => ( -->
-    <!-- <div id="sq" class="px-2 py-3 bg-test bg-"> -->
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    <!-- <h2 class="capitalize font-bold">{item.title}</h2>  -->
-    <!--//*: TITLE CONTENT SHOULD BE THE ABOUT  -->
-    <!-- <p class="">{item.p}</p> -->
-    <!--//*: PARAGRAPH CONTENT SHOULD BE THE WHY -->
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-    <!-- </div> -->
-    <!-- )) -->
-    <!-- } -->
-    <!-- </div> -->
+    <Hero
+      title="web dev page"
+      pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
   </section>
-  <!-- <CTAs /> -->
-  <Dynamic_Banner
-    headline="Most Recent Posts"
-    paragraph1="-how to design a website"
-    paragraph2="- how to pick a domain and use hosting"
-    paragraph3="- and etc!"
-  />
+
+  <CTAs />
   <CenterPageBanner
     title="Most Recent Articles"
     paragraph="This is for the most recents posts for the home page."
