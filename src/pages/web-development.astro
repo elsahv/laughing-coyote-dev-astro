@@ -3,9 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import CTAs from "../components/CTAs.astro";
 import BlogPostsComp from "../components/BlogPostsComp.astro";
-import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
-import DynamicFooterBanner from "../components/shared/Dynamic_FooterBanner.astro";
 import Hero from "../components/Hero.astro";
+import GalleryBanner from "../components/GalleryBanner.astro";
 
 const items = [
   {
@@ -65,10 +64,18 @@ const items = [
   <section id="about" class="py-[45px] my-[155px]">
     <div id="color-banner" class="">
       <CenterPageBanner
-        title="Web Development"
-        paragraph="why you should choose me for web development. this is the about page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
+      title="Web Development"
+      paragraph="why you should choose me for web development. this is the about page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
     </div>
+    <Hero
+      title="web dev page"
+      pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+    <GalleryBanner
+    title="Different Services Available"
+    paragraph="Listed below are a bunch of services provided."
+  />
     <div
       class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
       id="gallery-grid"
@@ -90,10 +97,6 @@ const items = [
         ))
       }
     </div>
-    <Hero
-      title="web dev page"
-      pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    />
   </section>
 
   <CTAs />
@@ -102,5 +105,4 @@ const items = [
     paragraph="This is for the most recents posts for the home page."
   />
   <BlogPostsComp />
-  <DynamicFooterBanner title="title" paragraph="paragraph" />
 </MainLayout>

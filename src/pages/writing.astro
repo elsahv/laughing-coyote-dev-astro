@@ -1,8 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Dynamic_FooterBanner from "../components/shared/Dynamic_FooterBanner.astro";
 import BlogPostsComp from "../components/BlogPostsComp.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <MainLayout>
@@ -11,10 +11,7 @@ import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
       title="Writing"
       paragraph="This is for the featured works page."
     />
+
     <BlogPostsComp />
   </section>
-  <!-- <Dynamic_FooterBanner
-    title="Contact Writing- 'see about pg and other projects!"
-    paragraph=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo."
-  /> -->
 </MainLayout>

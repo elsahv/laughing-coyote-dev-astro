@@ -1,4 +1,10 @@
 4/24
+HERO CONTENT:
+
+<!-- WHAT DO YOU NEED HELP WITH? -->
+
+CREATING A WEBSITE, TO INCREASE YOUR POTENTIAL CUSTOMERS? <--link to web dev pg
+The ablity to tell your story and brand? <--link to writing dev pg
 
 - JOURNAL NOTES
 - 4/29
