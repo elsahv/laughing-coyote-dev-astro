@@ -2,11 +2,10 @@
 export interface Props {
   title: string;
   image: any;
-  paragraph: string;
   link: string;
 }
 
-const { title, image, paragraph, link } = Astro.props as Props;
+const { title, image, link } = Astro.props as Props;
 ---
 
 <!-- CHECKPOINT -->
@@ -20,6 +19,5 @@ const { title, image, paragraph, link } = Astro.props as Props;
         <img src={image} alt="" class="hover:opacity-70 border border-black" />
       </a>
     </div>
-    <!-- <p class="text-onyx pt-2 pl-2 pr-5">{paragraph}</p> -->
   </a>
 </div>

@@ -1,6 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/Hero.astro";
+import CTAs from "../components/CTAs.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import BlogPostsComp from "../components/BlogPostsComp.astro";
 ---
 
 <MainLayout>
@@ -8,4 +11,30 @@ import Hero from "../components/Hero.astro";
     title="A subscription website service for busy small-businesses owners. "
     pic="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   />
+  <!-- <CTAs /> -->
+
+  <!-- //?? EACH SECTION CONTAINS FIRST SECTION OF EACH PG?? -->
+  <ul>
+    <div id="SECTION1-services" class="bg-test1">
+      <Hero
+        title="Services"
+        pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+    </div>
+
+    <section id="SECTION2-articles" class="py-[45px] my-[155px]">
+      <CenterPageBanner
+        title="Articles"
+        paragraph="This is for the featured works page. dsfusoidfj nifsdjhf lksdjflksdjf lkasaslkjkkjf kjfksjfksdfl s kfs k fleklsd "
+      />
+      <BlogPostsComp />
+      <button>view all articles</button>
+    </section>
+
+    <section id="SECTION3-featured-works" class="py-[45px] my-[155px]">
+      <h2>featured works CTA</h2>
+    </section>
+
+    <section id="SECTION4-contact-cta" class="bg-orange">contact-CTA</section>
+  </ul>
 </MainLayout>
