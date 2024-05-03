@@ -1,0 +1,60 @@
+---
+const items = [
+  {
+    title: "Web Dev",
+    listitem1: "Lorem ipsum d iis ipsum veniam,",
+    listitem2: "Lorem ipsum dolor sit amet consectet ciis ipsum veniam,",
+    listitem3:
+      "Lorem ipsum dolor s pisicing elit. Amet enim officiis ipsum veniam,",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+  },
+  {
+    title: "Design",
+    listitem1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam, ",
+    listitem2: "Lorem ipsum dolor sit  ,",
+    listitem3:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+    listitem4:
+      "Lorem ipsum ur adipisicing elit. Amet enim officiis ipsum veniam,",
+  },
+  {
+    title: "content writing",
+    listitem1: "Lorem ipsum dolor et enim officiis ipsum veniam, ",
+    listitem2: "Lorem ipsum dolor et enim officiis ipsum veniam,",
+    listitem3:
+      "Lorem ipsum dolor sit amet consectetur adip Amet enim officiis ipsum veniam,",
+    listitem4: "Lorem ipsum dolor . Amet enim officiis ipsum veniam,",
+  },
+  {
+    title: "maintenance",
+    listitem1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam, ",
+    listitem2: "Lorem ipsum do officiis ipsum veniam,",
+    listitem3: "Lorem ipsum do officiis ipsum venfdfiam,",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectet nim officiis ipsum veniam,",
+  },
+];
+---
+
+<div id="wrapper" class="flex justify-center pb-5 mt-5">
+  <div id="container" class="max-w-[1060px]">
+    <div class="grid grid-cols-2 gap-5">
+      {
+        items.map((item) => (
+          <div id="sq" class=" ">
+            <h2 class="font-bold ">{item.title}</h2>
+            <ul>
+              <li>- {item.listitem1}</li>
+              <li>- {item.listitem2}</li>
+              <li>- {item.listitem3}</li>
+              <li>- {item.listitem4}</li>
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>

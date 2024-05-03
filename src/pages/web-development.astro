@@ -1,107 +1,141 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import CTAs from "../components/CTAs.astro";
-import BlogPostsComp from "../components/BlogPostsComp.astro";
-import Hero from "../components/Hero.astro";
+import Dynamic_Banner from "../components/shared/Dynamic_Banner.astro";
 import GalleryBanner from "../components/GalleryBanner.astro";
-
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Hero from "../components/Hero.astro";
+import TestDynamicWebDevSection from "../components/TestDynamicWebDevSection.astro";
+import TestGrid from "../components/TestGrid.astro";
 const items = [
-  { 
+  {
     id: 1,
     image:
       "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "WEB DESIGN",
+    title: "design 1",
   },
   {
     id: 2,
     image:
-      "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "WEB DEV",
+      "https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "design 2",
   },
   {
     id: 3,
     image:
-      "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "STRATEGIC SEO",
+      "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "design 3",
   },
   {
     id: 4,
     image:
-      "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "MOBILE FRIENDLY",
+      "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "design 4",
   },
   {
     id: 5,
     image:
-      "https://images.pexels.com/photos/6956129/pexels-photo-6956129.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "simplify: about, CTA, contact",
+      "https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&w=600",
+    // title: "simplify the website process: about, CTA, contact",
+    title: "design 5",
   },
   {
     id: 6,
     image:
-      "https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "SELL BY STORY",
+      "https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "design 6",
   },
   {
     id: 7,
     image:
-      "https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     // title:
     //   " 1.'simple and minimalist' 2.'modern' 3. 'no BS... straight to the point'",
-    title: "simple and minimalist",
+    title: "design 7",
   },
   {
     id: 8,
     image:
-      "https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "INCREASED CUSTOMER ENGAGEMENT",
+      "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "design 8",
   },
 ];
 ---
 
 <MainLayout>
-  <section id="about" class="py-[45px] my-[155px]">
-    <div id="color-banner" class="">
-      <CenterPageBanner
+  <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
+    <CenterPageBanner
       title="Web Development"
-      paragraph="why you should choose me for web development. this is the about page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
-      />
-    </div>
-    <Hero
-      title="web dev page"
-      pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
     />
-    <GalleryBanner
-    title="Different Services Available"
-    paragraph="Listed below are a bunch of services provided."
-  />
-    <div
-      class="md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1"
-      id="gallery-grid"
-    >
-      {
-        items.map((item) => (
-          <div class="hover:opacity-80">
-            <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
-            <!--//*: TITLE CONTENT SHOULD BE THE ABOUT  -->
-            <!--//*: PARAGRAPH CONTENT SHOULD BE THE WHY -->
-              {item.title}
-            </p>
-            <img
-              src={item.image}
-              alt=""
-              class="border border-black w-[650px] h-[350px] "
-            />
-          </div>
-        ))
-      }
-    </div>
-  </section>
+  </div>
+  <div id="interactice templates" class="">
+    <div class="px-5">
+      <GalleryBanner
+        title="Interactive templates"
+        paragraph="Multiple Designs available for your imagination!"
+      />
 
-  <!-- <CenterPageBanner
-    title="Most Recent Articles"
-    paragraph="This is for the most recents posts for the home page."
-  /> -->
-  <!-- <BlogPostsComp /> -->
+      <!-- //? CREATE GALLERY COMP ?? v -->
+      <div
+        id="gallery-grid"
+        class="mb-5 md:px-[55px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
+      >
+        {
+          items.map((item) => (
+            <div class="">
+              <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+                {item.title}
+              </p>
+              <img
+                src={item.image}
+                alt=""
+                class="border border-black w-[650px] h-[350px] "
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <div id="CURRENTLY WORKING" class="bg-">
+        <section id="content-undecided" class="">
+          <TestDynamicWebDevSection />
+        </section>
+
+        <section id="featured-works-section" class="bg-">
+          <!-- <h4>featured works</h4> -->
+          <Dynamic_Banner
+            headline="this is the featured websites section"
+            paragraph1="-how to design a website"
+            paragraph2="- how to pick a domain and use hosting"
+            paragraph3="and etc!"
+          />
+
+          <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+          <!--*--*--*--*--*-move HERO COMP onto pg v-*--*--*--*--*--*--*--*--*--*-->
+          <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+
+          <div id="featured-websites">
+            <TestGrid />
+            <!-- <Hero
+              title="HoveyRoofing"
+              pic="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            /> -->
+            <!-- <Hero
+              title="Generations Backflow22"
+              pic="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            /> -->
+          </div>
+          <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+          <!--*--*--*--*--*-move HERO COMP onto pg v-*--*--*--*--*--*--*--*--*--*-->
+          <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+        </section>
+        <section id="coyote-pkgs" class="bg-test1">
+          <h4>
+            -coyote packages: growing pup, rising carnivore, leader of the pack-
+            pricing
+          </h4>
+        </section>
+      </div>
+    </div>
+  </div>
 </MainLayout>
