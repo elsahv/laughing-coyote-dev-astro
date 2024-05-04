@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/Hero.astro";
-import CTAs from "../components/CTAs.astro";
+// import CTAs from "../components/CTAs.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import BlogPostsComp from "../components/BlogPostsComp.astro";
 import TestDynamicWebDevSection from "../components/TestDynamicWebDevSection.astro";
@@ -20,7 +20,7 @@ import TestDynamicWebDevSection from "../components/TestDynamicWebDevSection.ast
     <div id="services" class="bg-">
       <div class="flex justify-center">
         <Hero
-          title="About"
+          title="Services"
           pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         />
       </div>
@@ -35,10 +35,15 @@ import TestDynamicWebDevSection from "../components/TestDynamicWebDevSection.ast
     <section id="articles" class="py-[45px] my-[155px]">
       <CenterPageBanner
         title="Articles"
-        paragraph="This is for the featured works page. dsfusoidfj nifsdjhf lksdjflksdjf lkasaslkjkkjf kjfksjfksdfl s kfs k fleklsd "
+        paragraph="I like to write about web development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas consequatur, corrupti illum enim alias."
       />
+
       <BlogPostsComp />
-      <button>view all articles</button>
+      <p class="text-center">
+        Visit the articles page to see <span class="underline">
+          <a href="/articles"> all posts! </a>
+        </span>
+      </p>
     </section>
 
     <!-- SECTION 4 -->

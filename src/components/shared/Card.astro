@@ -2,10 +2,9 @@
 export interface Props {
   title: string;
   image: any;
-  link: string;
 }
 
-const { title, image, link } = Astro.props as Props;
+const { title, image } = Astro.props as Props;
 ---
 
 <!-- CHECKPOINT -->
@@ -15,9 +14,7 @@ const { title, image, link } = Astro.props as Props;
   <a href="/">
     <h2 class="font-bold text-xl pl-1 flex justify-center">{title}</h2>
     <div class="flex justify-center">
-      <a href={link}>
-        <img src={image} alt="" class="hover:opacity-70 border border-black" />
-      </a>
+      <img src={image} alt="" class="hover:opacity-70 border border-black" />
     </div>
   </a>
 </div>
