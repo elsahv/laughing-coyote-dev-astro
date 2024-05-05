@@ -1,52 +1,77 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/Hero.astro";
-// import CTAs from "../components/CTAs.astro";
+import ServicesContent from "../components/ServicesContent.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import BlogPostsComp from "../components/BlogPostsComp.astro";
-import TestDynamicWebDevSection from "../components/TestDynamicWebDevSection.astro";
+import ServicesGrid from "../components/shared/grids/ServicesGrid.astro";
+import TestGrid from "../components/TestGrid.astro";
 ---
 
 <MainLayout>
-  <Hero
-    title="A subscription website service for busy small-businesses owners. "
-    pic="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  />
-  <!-- <CTAs /> -->
+  <!--* SECTION 1 -------------------------------------------------------------------------------------------------------------------->
+  <div id="hero" class="bg-">
+    <Hero
+      title="A subscription website service for busy small-businesses owners. "
+      pic="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+  </div>
+  <div class="flex justify-center">
+    <Hero
+      title="Services 1"
+      pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    />
+  </div>
+  <!--* ------------------------------------------------------------------------------------------------------------------------------->
 
-  <!-- //?? EACH SECTION CONTAINS FIRST SECTION OF EACH PG?? -->
-  <ul>
-    <!-- SECTION 1 -->
-    <div id="services" class="bg-">
-      <div class="flex justify-center">
-        <Hero
-          title="Services"
-          pic="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        />
+  <!--* SECTION 2 -------------------------------------------------------------------------------------------------------------------->
+  <div id="services" class="bg-">
+    <CenterPageBanner
+      title="Services 2"
+      paragraph="why you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+    />
+    <ServicesContent />
+  </div>
+  <!--* ------------------------------------------------------------------------------------------------------------------------------->
+
+  <!--* SECTION 3 -------------------------------------------------------------------------------------------------------------------->
+  <div id="web-development" class="">
+    <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
+      <CenterPageBanner
+        title="Web Development"
+        paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
+      />
+      <ServicesGrid />
+      <!-- todo: FIGURE OUT -->
+      <div id="coyote-pkgs" class="bg-test1">
+        <h4>
+          -coyote packages: growing pup, rising carnivore, leader of the pack-
+          pricing
+        </h4>
       </div>
+      <!-- todo: FIGURE OUT -->
     </div>
 
-    <section id="featured-works" class="">
-      <h2>WEB DEV CTA</h2>
-      <TestDynamicWebDevSection />
-    </section>
-
-    <!-- SECTION 3 -->
-    <section id="articles" class="py-[45px] my-[155px]">
+    <div id="client-work" class="bg-">
       <CenterPageBanner
-        title="Articles"
-        paragraph="I like to write about web development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas consequatur, corrupti illum enim alias."
+        title="Client Work"
+        paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
+    </div>
+    <div id="featured-websites">
+      <Hero
+        title="HoveyRoofing"
+        pic="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+      <Hero
+        title="Generations Backflow22"
+        pic="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+    </div>
+  </div>
 
-      <BlogPostsComp />
-      <p class="text-center">
-        Visit the articles page to see <span class="underline">
-          <a href="/articles"> all posts! </a>
-        </span>
-      </p>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section id="contact-cta" class="bg-orange">contact-CTA</section>
-  </ul>
+  <!--* SECTION 4 -------------------------------------------------------------------------------------------------------------------->
+  <section id="contact">
+    <h2>contact section</h2>
+  </section>
+  <!--* ------------------------------------------------------------------------------------------------------------------------------->
 </MainLayout>
