@@ -5,7 +5,6 @@ import ServicesContent from "../components/ServicesContent.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import ServicesGrid from "../components/shared/grids/ServicesGrid.astro";
 import Redo_Hero from "../components/Redo_Hero.astro";
-import RedoHero from "../components/Redo_Hero.astro";
 ---
 
 <MainLayout>
@@ -29,14 +28,14 @@ import RedoHero from "../components/Redo_Hero.astro";
         paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
       <ServicesGrid />
-      <!-- todo: FIGURE OUT v-->
-      <div id="coyote-pkgs" class="bg-test1">
+      <!-- todo: FIGURE OUT COYOTE PACKAGES v-->
+      <!-- <div id="coyote-pkgs" class="bg-test1">
         <h4>
           -coyote packages: growing pup, rising carnivore, leader of the pack-
           pricing
         </h4>
-      </div>
-      <!-- todo: FIGURE OUT ^-->
+      </div> -->
+      <!-- todo: FIGURE OUT COYOTE PACKAGES ^-->
     </div>
 
     <div id="client-work" class="">
@@ -48,9 +47,12 @@ import RedoHero from "../components/Redo_Hero.astro";
       <div id="hero-wrapper" class="flex justify-center bg- pr-[55px]">
         <div id="container">
           <div id="flex-col" class="flex flex-col">
-            <section id="flex-1" class="grid grid-cols-2 gap-x-8">
-              <div id="" class="bg- flex justify-end items-end pb-5 pr-5">
-                <ul class="md:text-lg text-md pt-1 pl-5 ml-5">
+            <section id="flex-1" class="flex md:flex-row flex-col bg-">
+              <div
+                id="sq1"
+                class="bg-test1 flex justify-end items-end pb-5 2xl:pr-5 pr-0"
+              >
+                <ul class="md:text-lg text-sm pt-1 pl-5 ml-5">
                   <h2 class="text-test text-4xl font-extrabold pb-2">
                     HoveyRoofing
                   </h2>
@@ -103,7 +105,10 @@ import RedoHero from "../components/Redo_Hero.astro";
               </div>
             </section>
             <!-- /////////////////////////////////// -->
-            <section id="flex-1" class="grid grid-cols-2 gap-x-8">
+            <section
+              id="flex-2"
+              class="flex md:flex-row flex-col-reverse gap-x-8"
+            >
               <div
                 id="img-container"
                 class="border border-black flex justify-end items-center mr-[75px]"
@@ -113,7 +118,7 @@ import RedoHero from "../components/Redo_Hero.astro";
                   alt=""
                 />
               </div>
-              <div class="bg- flex justify-start items-center">
+              <div class="bg-test2 flex justify-start items-center">
                 <ul class="md:text-lg text-md pt-1">
                   <li class="" class="">
                     <h2 class="text-test text-4xl font-extrabold pb-2">
