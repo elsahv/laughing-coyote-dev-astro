@@ -9,8 +9,11 @@ const { title, pic } = Astro.props as Props;
 
 <div id="/" class="bg-">
   <div id="" class="2xl:pt-[80px] pt-[90px]">
-    <div class="grid 2xl:grid-cols-2 grid-cols-1 h-screen">
-      <section class="2xl:px-5 px-1 flex items-center">
+    <div class="grid lg:grid-cols-2 grid-cols-1 h-">
+      <section
+        id="left-sq"
+        class="2xl:px-5 px-1 flex 2xl:items-center items-start"
+      >
         <div class="w-full lg:pl-[70px] px-5">
           <div class="py-1 mb-1">
             <h1 class="text-4xl py-1 my-1 font-bold">{title}</h1>
@@ -28,7 +31,7 @@ const { title, pic } = Astro.props as Props;
             <!--*--*--*--*--*-CHANGE CONTENT v-*--*--*--*--*--*--*--*--*--*-->
             <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-            <li class="lowercase" class="text-lg">
+            <li class="lowercase text-lg">
               <p class="text-test text-xl font-extrabold">
                 WHAT DO YOU NEED HELP WITH?
               </p>
@@ -80,7 +83,7 @@ const { title, pic } = Astro.props as Props;
         </div>
       </section>
 
-      <section class="pt-[25px]">
+      <section id="right-sq" class="pt-[25px]">
         <!-- <img
           src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
