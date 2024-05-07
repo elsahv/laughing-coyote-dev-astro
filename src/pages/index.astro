@@ -4,15 +4,15 @@ import Hero from "../components/Hero.astro";
 import ServicesContent from "../components/ServicesContent.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import ServicesGrid from "../components/shared/grids/ServicesGrid.astro";
-import Redo_Hero from "../components/Redo_Hero.astro";
+import ContactSection from "../components/ContactSection.astro";
 ---
 
 <MainLayout>
-  <!--* SECTION 1-------------------------------------------------------------------------------------------------------------------->
-  <Redo_Hero />
+  <!--* SECTION 1- HERO-------------------------------------------------------------------------------------------------------------------->
+  <Hero />
 
-  <!--* SECTION 2-------------------------------------------------------------------------------------------------------------------->
-  <div id="services" class="bg-">
+  <!--* SECTION 2- SERVICES-------------------------------------------------------------------------------------------------------------------->
+  <div id="services" class="mt-[90px]">
     <CenterPageBanner
       title="Services 2"
       paragraph="why you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
@@ -20,7 +20,7 @@ import Redo_Hero from "../components/Redo_Hero.astro";
     <ServicesContent />
   </div>
 
-  <!--* SECTION 3-------------------------------------------------------------------------------------------------------------------->
+  <!--* SECTION 3- WEB DEV GRID-------------------------------------------------------------------------------------------------------------------->
   <div id="web-development" class="">
     <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
       <CenterPageBanner
@@ -37,139 +37,142 @@ import Redo_Hero from "../components/Redo_Hero.astro";
       </div> -->
       <!-- todo: FIGURE OUT COYOTE PACKAGES ^-->
     </div>
-
+    <!--* SECTION 4- CLIENT WORK-------------------------------------------------------------------------------------------------------------------->
     <div id="client-work" class="">
       <CenterPageBanner
         title="Client Work"
         paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
 
-      <div id="hero-wrapper" class="flex justify-center bg- pr-[55px]">
-        <div id="container">
-          <div id="flex-col" class="flex flex-col">
-            <section id="flex-1" class="flex md:flex-row flex-col bg-">
-              <div
-                id="sq1"
-                class="bg-test1 flex justify-end items-end pb-5 2xl:pr-5 pr-0"
-              >
-                <ul class="md:text-lg text-sm pt-1 pl-5 ml-5">
-                  <h2 class="text-test text-4xl font-extrabold pb-2">
-                    HoveyRoofing
-                  </h2>
-
-                  <li class="lowercase text-xl">
-                    <b>-</b><a href="/web-development" class="font-semibold">
-                      CREATING A WEBSITE,</a
-                    >
-                    TO INCREASE YOUR POTENTIAL CUSTOMERS?
-                  </li>
-                  <li class="lowercase text-xl">
-                    <b>-</b> The ablity to tell your <a
-                      href="/writing"
-                      class="font-bold">story and brand?</a
-                    >
-                  </li>
-
-                  <li class="lowercase text-xl">
-                    <b>-</b> Increased potential customers, easier to find on Google.
-                  </li>
-
-                  <li class="lowercase text-xl">
-                    <b>-</b> A custom website that fits your business, personality,
-                    goals... and you alone.
-                  </li>
-
-                  <!-- TODO: BTN WRAPPER   v-->
-                  <div id="btn-wrapper" class="mt-5">
-                    <button
-                      class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
-                    >
-                      <a href="/">view case study</a>
-                    </button>
-                    <button
-                      class="rounded border border-black py-1 px-2 bg-orange text-parchment"
-                    >
-                      <a href="/">visit site</a>
-                    </button>
-                  </div>
-                  <!-- TODO: BTN WRAPPER   ^-->
-                </ul>
-              </div>
-              <div
-                id="img-container"
-                class="flex justify-center items-center border border-black"
-              >
-                <img
-                  src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                />
-              </div>
-            </section>
-            <!-- /////////////////////////////////// -->
-            <section
-              id="flex-2"
-              class="flex md:flex-row flex-col-reverse gap-x-8"
+      <div
+        id="grid-wrapper"
+        class="flex justify-center 2xl:pr-[55px] pr-2 2xl:px-[55px] px-0"
+      >
+        <!-- <div id="container" class="bg-test1"> -->
+        <div id="flex-col" class="flex flex-col">
+          <section id="flex-1" class="flex md:flex-row flex-col bg-">
+            <div
+              id="sq1"
+              class="bg- flex justify-end items-end pb-5 2xl:pr-[75px]"
             >
-              <div
-                id="img-container"
-                class="border border-black flex justify-end items-center mr-[75px]"
-              >
-                <img
-                  src="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                />
-              </div>
-              <div class="bg-test2 flex justify-start items-center">
-                <ul class="md:text-lg text-md pt-1">
-                  <li class="" class="">
-                    <h2 class="text-test text-4xl font-extrabold pb-2">
-                      Generations Backflow
-                    </h2>
-                  </li>
+              <ul class="md:text-lg text-sm pt-1 pl-5 pr-3 ml-5 max-w-[850px]">
+                <h2 class="text-test text-4xl font-extrabold pb-2">
+                  HoveyRoofing
+                </h2>
 
-                  <li class="lowercase text-xl">
-                    <b>-</b><a href="/web-development" class="font-semibold">
-                      CREATING A WEBSITE,</a
-                    >
-                    TO INCREASE YOUR POTENTIAL CUSTOMERS?
-                  </li>
-                  <li class="lowercase text-xl">
-                    <b>-</b> The ablity to tell your <a
-                      href="/writing"
-                      class="font-bold">story and brand?</a
-                    >
-                  </li>
-                  <li class="lowercase text-xl">
-                    <b>-</b> Peace of mind... for business owners who don't have
-                    time to build with software.
-                  </li>
-                  <!-- TODO: BTN WRAPPER   v-->
-                  <div id="btn-wrapper" class="mt-5">
-                    <button
-                      class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
-                    >
-                      <a href="/">view case study</a>
-                    </button>
-                    <button
-                      class="rounded border border-black py-1 px-2 bg-orange text-parchment"
-                    >
-                      <a href="/">visit site</a>
-                    </button>
-                  </div>
-                  <!-- TODO: BTN WRAPPER   ^-->
-                </ul>
-              </div>
-            </section>
-          </div>
+                <li class="lowercase text-xl">
+                  <b>-</b><a href="/web-development" class="font-semibold">
+                    CREATING A WEBSITE,</a
+                  >
+                  TO INCREASE YOUR POTENTIAL CUSTOMERS?
+                </li>
+                <li class="lowercase text-xl">
+                  <b>-</b> The ablity to tell your <a
+                    href="/writing"
+                    class="font-bold">story and brand?</a
+                  >
+                </li>
+
+                <li class="lowercase text-xl">
+                  <b>-</b> Increased potential customers, easier to find on Google.
+                </li>
+
+                <li class="lowercase text-xl">
+                  <b>-</b> A custom website that fits your business, personality,
+                  goals... and you alone.
+                </li>
+
+                <!-- TODO: BTN WRAPPER   v-->
+                <div id="btn-wrapper" class="mt-5">
+                  <button
+                    class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
+                  >
+                    <a href="/">view case study</a>
+                  </button>
+                  <button
+                    class="rounded border border-black py-1 px-2 bg-orange text-parchment"
+                  >
+                    <a href="/">visit site</a>
+                  </button>
+                </div>
+                <!-- TODO: BTN WRAPPER   ^-->
+              </ul>
+            </div>
+            <div
+              id="img-container"
+              class="flex justify-center items-center border border-black p-5 m-5 max-w-[900px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+            </div>
+          </section>
+          <!-- /////////////////////////////////// -->
+          <section
+            id="flex-2"
+            class="flex md:flex-row flex-col-reverse gap-x-8"
+          >
+            <div
+              id="img-container"
+              class="border border-black flex justify-end items-center mr-[75px] p-5 m-5 max-w-[900px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </div>
+            <div class="pb-[25px] p-3 flex justify-start items-end">
+              <ul class="md:text-lg text-md pt-1 2xl:pr-[25px] pr-0">
+                <li class="" class="">
+                  <h2 class="text-4xl font-extrabold pb-2">
+                    Generations Backflow
+                  </h2>
+                </li>
+
+                <li class="lowercase text-xl">
+                  <b>-</b><a href="/web-development" class="font-semibold">
+                    CREATING A WEBSITE,</a
+                  >
+                  TO INCREASE YOUR POTENTIAL CUSTOMERS?
+                </li>
+                <li class="lowercase text-xl">
+                  <b>-</b> The ablity to tell your <a
+                    href="/writing"
+                    class="font-bold">story and brand?</a
+                  >
+                </li>
+                <li class="lowercase text-xl">
+                  <b>-</b> Peace of mind... for business owners who don't have time
+                  to build with software.
+                </li>
+                <!-- TODO: BTN WRAPPER   v-->
+                <div id="btn-wrapper" class="mt-5 flex justify-end pr-[75px]">
+                  <button
+                    class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
+                  >
+                    <a href="/">view case study</a>
+                  </button>
+                  <button
+                    class="rounded border border-black py-1 px-2 bg-orange text-parchment"
+                  >
+                    <a href="/">visit site</a>
+                  </button>
+                </div>
+                <!-- TODO: BTN WRAPPER   ^-->
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
     </div>
   </div>
 
-  <!--* SECTION 4-------------------------------------------------------------------------------------------------------------------->
-  <section id="contact">
-    <CenterPageBanner
+  <!--* SECTION 5- CONTACT-------------------------------------------------------------------------------------------------------------------->
+  <section id="contact" class="mt-[50px] pt-5 bg-teal text-parchment">
+    <!-- <CenterPageBanner
       title="Contact"
       paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
-    />
+    /> -->
+    <ContactSection />
   </section>
 </MainLayout>
