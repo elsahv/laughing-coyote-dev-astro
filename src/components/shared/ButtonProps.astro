@@ -1,0 +1,23 @@
+---
+export interface Props {
+  btn1: any;
+  btn2: any;
+}
+
+const { btn1, btn2 } = Astro.props as Props;
+---
+
+<div class="">
+  <div id="btn-wrapper" class="mt-5">
+    <button
+      class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
+    >
+      <a href="/">{btn1}</a>
+    </button>
+    <button
+      class="rounded border border-black py-1 px-2 bg-orange text-parchment"
+    >
+      <a href="/">{btn2}</a>
+    </button>
+  </div>
+</div>

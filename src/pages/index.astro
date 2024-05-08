@@ -5,6 +5,7 @@ import ServicesContent from "../components/ServicesContent.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import ServicesGrid from "../components/shared/grids/ServicesGrid.astro";
 import ContactSection from "../components/ContactSection.astro";
+import ButtonProps from "../components/shared/ButtonProps.astro";
 ---
 
 <MainLayout>
@@ -28,13 +29,14 @@ import ContactSection from "../components/ContactSection.astro";
         paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
       <ServicesGrid />
+      another cta
       <!-- todo: FIGURE OUT COYOTE PACKAGES v-->
-      <!-- <div id="coyote-pkgs" class="bg-test1">
+      <div id="coyote-pkgs" class="bg-test1">
         <h4>
           -coyote packages: growing pup, rising carnivore, leader of the pack-
           pricing
         </h4>
-      </div> -->
+      </div>
       <!-- todo: FIGURE OUT COYOTE PACKAGES ^-->
     </div>
     <!--* SECTION 4- CLIENT WORK-------------------------------------------------------------------------------------------------------------------->
@@ -43,12 +45,10 @@ import ContactSection from "../components/ContactSection.astro";
         title="Client Work"
         paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
       />
-
       <div
         id="grid-wrapper"
         class="flex justify-center 2xl:pr-[55px] pr-2 2xl:px-[55px] px-0"
       >
-        <!-- <div id="container" class="bg-test1"> -->
         <div id="flex-col" class="flex flex-col">
           <section id="flex-1" class="flex md:flex-row flex-col bg-">
             <div
@@ -59,7 +59,6 @@ import ContactSection from "../components/ContactSection.astro";
                 <h2 class="text-test text-4xl font-extrabold pb-2">
                   HoveyRoofing
                 </h2>
-
                 <li class="lowercase text-xl">
                   <b>-</b><a href="/web-development" class="font-semibold">
                     CREATING A WEBSITE,</a
@@ -72,7 +71,6 @@ import ContactSection from "../components/ContactSection.astro";
                     class="font-bold">story and brand?</a
                   >
                 </li>
-
                 <li class="lowercase text-xl">
                   <b>-</b> Increased potential customers, easier to find on Google.
                 </li>
@@ -81,21 +79,9 @@ import ContactSection from "../components/ContactSection.astro";
                   <b>-</b> A custom website that fits your business, personality,
                   goals... and you alone.
                 </li>
-
-                <!-- TODO: BTN WRAPPER   v-->
-                <div id="btn-wrapper" class="mt-5">
-                  <button
-                    class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
-                  >
-                    <a href="/">view case study</a>
-                  </button>
-                  <button
-                    class="rounded border border-black py-1 px-2 bg-orange text-parchment"
-                  >
-                    <a href="/">visit site</a>
-                  </button>
-                </div>
-                <!-- TODO: BTN WRAPPER   ^-->
+                <!-- * BTN WRAPPER   v-->
+                <ButtonProps btn1="visit case study" btn2="visit site " />
+                <!-- * BTN WRAPPER   ^-->
               </ul>
             </div>
             <div
@@ -145,20 +131,9 @@ import ContactSection from "../components/ContactSection.astro";
                   <b>-</b> Peace of mind... for business owners who don't have time
                   to build with software.
                 </li>
-                <!-- TODO: BTN WRAPPER   v-->
-                <div id="btn-wrapper" class="mt-5 flex justify-end pr-[75px]">
-                  <button
-                    class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
-                  >
-                    <a href="/">view case study</a>
-                  </button>
-                  <button
-                    class="rounded border border-black py-1 px-2 bg-orange text-parchment"
-                  >
-                    <a href="/">visit site</a>
-                  </button>
-                </div>
-                <!-- TODO: BTN WRAPPER   ^-->
+                <!-- * BTN WRAPPER   v-->
+                <ButtonProps btn1="visit case study" btn2="visit site " />
+                <!-- * BTN WRAPPER   ^-->
               </ul>
             </div>
           </section>
