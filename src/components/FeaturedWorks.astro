@@ -1,5 +1,5 @@
 ---
-import ButtonProps from "../components/shared/ButtonProps.astro";
+
 ---
 
 <>
@@ -32,23 +32,17 @@ import ButtonProps from "../components/shared/ButtonProps.astro";
               <b>-</b> A custom website that fits your business, personality, goals...
               and you alone.
             </li>
-            <!-- * BTN WRAPPER   v-->
-            <ButtonProps
-              btn1="see code"
-              btn2="visit site"
-              btn1Link="/"
-              btn2Link="https://hoveyroofing.com "
-            />
-            <!-- * BTN WRAPPER   ^-->
           </ul>
         </div>
         <div
           id="img-container"
           class="flex justify-center items-center border border-black p-5 m-5 max-w-[900px]"
         >
-          <img
-            src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          />
+          <a href="https://hoveyroofing.com">
+            <img
+              src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </a>
         </div>
       </section>
       <!-- /////////////////////////////////// -->
@@ -58,43 +52,39 @@ import ButtonProps from "../components/shared/ButtonProps.astro";
           class="border border-black flex justify-end items-center mr-[75px] p-5 m-5 max-w-[900px]"
         >
           <a href="/test">
-            <img
-              src="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
+            <a href="https://google.com">
+              <img
+                src="https://images.pexels.com/photos/357440/pexels-photo-357440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </a>
           </a>
-        </div>
-        <div class="pb-[25px] p-3 flex justify-start items-end">
-          <ul class="md:text-lg text-md pt-1 2xl:pr-[25px] pr-0">
-            <li class="" class="">
-              <h2 class="text-4xl font-extrabold pb-2">Generations Backflow</h2>
-            </li>
+          <div class="pb-[25px] p-3 flex justify-start items-end">
+            <ul class="md:text-lg text-md pt-1 2xl:pr-[25px] pr-0">
+              <li class="" class="">
+                <h2 class="text-4xl font-extrabold pb-2">
+                  Generations Backflow
+                </h2>
+              </li>
 
-            <li class="lowercase text-xl">
-              <b>-</b><a href="/web-development" class="font-semibold">
-                CREATING A WEBSITE,</a
-              >
-              TO INCREASE YOUR POTENTIAL CUSTOMERS?
-            </li>
-            <li class="lowercase text-xl">
-              <b>-</b> The ablity to tell your <a
-                href="/writing"
-                class="font-bold">story and brand?</a
-              >
-            </li>
-            <li class="lowercase text-xl">
-              <b>-</b> Peace of mind... for business owners who don't have time to
-              build with software.
-            </li>
-            <!-- * BTN WRAPPER   v-->
-            <ButtonProps
-              btn1="see code"
-              btn2="visit site"
-              btn1Link=""
-              btn2Link="/"
-            />
-            <!-- * BTN WRAPPER   ^-->
-          </ul>
+              <li class="lowercase text-xl">
+                <b>-</b><a href="/web-development" class="font-semibold">
+                  CREATING A WEBSITE,</a
+                >
+                TO INCREASE YOUR POTENTIAL CUSTOMERS?
+              </li>
+              <li class="lowercase text-xl">
+                <b>-</b> The ablity to tell your <a
+                  href="/writing"
+                  class="font-bold">story and brand?</a
+                >
+              </li>
+              <li class="lowercase text-xl">
+                <b>-</b> Peace of mind... for business owners who don't have time
+                to build with software.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
