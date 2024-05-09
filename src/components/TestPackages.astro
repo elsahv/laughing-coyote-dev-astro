@@ -1,0 +1,47 @@
+---
+const items = [
+  {
+    title: "Growing Pup",
+    listitem1: "interactive template 1",
+    listitem2: "Lorem ipsum dolor sit amet consectet ciis ipsum veniam,",
+    listitem3:
+      "Lorem ipsum dolor s pisicing elit. Amet enim officiis ipsum veniam,",
+    listitem4:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+  },
+  {
+    title: "Rising Carnivore",
+    listitem1: "interactivdde template 2",
+    listitem2: "Lorem ipsum dolor sit  ,",
+    listitem3:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+    listitem4:
+      "Lorem ipsum ur adipisicing elit. Amet enim officiis ipsum veniam,",
+  },
+];
+---
+
+---
+
+<div id="wrapper" class="flex justify-center pb-5 mb-5 md:p-5 p-0 bg-">
+  <div id="container" class="max-w-[1060px]">
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
+      {
+        items.map((item) => (
+          <div
+            id="sq"
+            class="p-5 bg-teal rounded-lg text-parchment border border-black"
+          >
+            <h2 class="font-bold text-2xl">{item.title}</h2>
+            <ul class="text-lg">
+              <li>- {item.listitem1}</li>
+              <li>- {item.listitem2}</li>
+              <li>- {item.listitem3}</li>
+              <li>- {item.listitem4}</li>
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>

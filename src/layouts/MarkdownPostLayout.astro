@@ -1,36 +1,14 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-
+import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Header />
-<div id="" class="px-[100px] text-onyx bg-parchment">
-  <div id="post-header-grid" class="h-screen grid 2xl:grid-cols-2 grid-cols-1">
-    <div id="left-sq" class="bg-test flex items-center 2xl:justify-center">
-      <div class="2xl:pr-5 ml-2 py-2 px-5 my-[50px] w-3/4">
-        <h1 class="md:text-5xl text-3xl pb-2 mt-1 text-onyx">
-          {frontmatter.title}
-        </h1>
-        <slot />
-        <p class="md:text-2xl pl-1 pt-1 pr-3 text-onyx opacity-75">
-          {frontmatter.paragraph}
-        </p>
-      </div>
-    </div>
-    <div
-      id="right-sq"
-      class="flex items-center border border-rosyBrown dropshadow-2xl"
-    >
-      <a href={frontmatter.websiteUrl} class="border border-black">
-        <img
-          src={frontmatter.image.url}
-          alt={frontmatter.image.alt}
-          class="max-w-4xl p-[50px]"
-        />
-      </a>
-    </div>
-  </div>
-</div>
-<Footer />
+<MainLayout>
+  <h2>{frontmatter.title}</h2>
+  <img
+    src={frontmatter.image.url}
+    alt=""
+    class="border border-black w-[650px] h-[350px] hover:opacity-80"
+  />
+  <slot />
+</MainLayout>

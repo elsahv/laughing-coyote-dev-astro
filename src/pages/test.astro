@@ -1,0 +1,22 @@
+---
+const allWorks = await Astro.glob("../pages/works/*.md");
+---
+
+<div class="grid grid-cols-4">
+  {
+    allWorks.map((work) => (
+      <div id="sq" class="">
+        <a href={work.url}>
+          <h2 class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+            {work.frontmatter.title}
+          </h2>
+          <img
+            src={work.frontmatter.image.url}
+            alt=""
+            class="border border-black w-[650px] h-[350px] hover:opacity-80"
+          />
+        </a>
+      </div>
+    ))
+  }
+</div>

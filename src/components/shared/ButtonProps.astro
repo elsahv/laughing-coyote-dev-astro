@@ -2,9 +2,11 @@
 export interface Props {
   btn1: any;
   btn2: any;
+  btn1Link: string;
+  btn2Link: string;
 }
 
-const { btn1, btn2 } = Astro.props as Props;
+const { btn1, btn2, btn1Link, btn2Link } = Astro.props as Props;
 ---
 
 <div class="">
@@ -12,12 +14,12 @@ const { btn1, btn2 } = Astro.props as Props;
     <button
       class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
     >
-      <a href="/">{btn1}</a>
+      <a href={btn1Link}>{btn1}</a>
     </button>
     <button
       class="rounded border border-black py-1 px-2 bg-orange text-parchment"
     >
-      <a href="/">{btn2}</a>
+      <a href={btn2Link}>{btn2}</a>
     </button>
   </div>
 </div>

@@ -1,5 +1,14 @@
 ---
 import ButtonProps from "./shared/ButtonProps.astro";
+
+const items = [
+  {
+    title: "title1",
+  },
+  {
+    title: "title2",
+  },
+];
 ---
 
 <div id="hero-wrapper" class="flex justify-center md:pt-[120px] pt-1">
@@ -10,6 +19,9 @@ import ButtonProps from "./shared/ButtonProps.astro";
           id="sq1"
           class="bg- flex justify-end items-end md:pb-5 pb-[55px] md:pr-5 p-1 ml-2"
         >
+          <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+          <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
+          <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
           <ul class="md:text-lg text-md pt-1 md:pl-5 p1-5 2xl:ml-5 ml-1">
             <h2 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
               A subscription website service for busy small-businesses owners.
@@ -42,7 +54,12 @@ import ButtonProps from "./shared/ButtonProps.astro";
             </li>
 
             <!-- * BTN WRAPPER   v-->
-            <ButtonProps btn1="see services" btn2="contact" />
+            <ButtonProps
+              btn1="see services"
+              btn2="contact"
+              btn1Link="/#services"
+              btn2Link="/#contact"
+            />
             <!-- * BTN WRAPPER   ^-->
           </ul>
         </div>
@@ -97,7 +114,12 @@ import ButtonProps from "./shared/ButtonProps.astro";
               build with software.
             </li>
             <!-- * BTN WRAPPER   v-->
-            <ButtonProps btn1="why choose LC?" btn2="contact" />
+            <ButtonProps
+              btn1="why choose LC?"
+              btn2="contact"
+              btn1Link=""
+              btn2Link="/"
+            />
             <!-- * BTN WRAPPER   ^-->
             <!-- <li>
                    <b>-</b> Increased potential customers, easier to find on Google.
