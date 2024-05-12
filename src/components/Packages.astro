@@ -19,6 +19,8 @@ const items = [
       "Lorem ipsum ur adipisicing elit. Amet enim officiis ipsum veniam,",
   },
 ];
+
+import ButtonProps from "./shared/ButtonProps.astro";
 ---
 
 ---
@@ -38,6 +40,15 @@ const items = [
               <li>- {item.listitem2}</li>
               <li>- {item.listitem3}</li>
               <li>- {item.listitem4}</li>
+             
+            <!-- * BTN WRAPPER  (make visible when content available) v-->
+            {/* <ButtonProps
+              btn1="see demo"
+              btn2="contact"
+              btn1Link="/#services"
+              btn2Link="/#contact"
+            /> */}
+            <!-- * BTN WRAPPER   ^-->
             </ul>
           </div>
         ))

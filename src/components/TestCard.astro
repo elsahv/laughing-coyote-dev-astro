@@ -1,9 +1,48 @@
 ---
+import ButtonProps from "./shared/ButtonProps.astro";
+
 export interface Props {
   title: string;
+  listitem1: string;
+  listitem2: string;
+  listitem3: string;
+  listitem4: string;
 }
 
-const { title } = Astro.props as Props;
+const { title, listitem1, listitem2, listitem3, listitem4 } =
+  Astro.props as Props;
 ---
 
-<h2>{title}</h2>
+<div id="hero-wrapper" class="flex justify-center md:pt-[120px] pt-1">
+  <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
+    <div id="SQ1" class="bg- lg:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
+      <div id="padding" class="lg:p-5 p-1 bg-">
+        <div class="">
+          <h2 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
+            {title}
+          </h2>
+          <ul>
+            <li class="lowercase md:text-xl text-md">- {listitem1}</li>
+            <li class="lowercase md:text-xl text-md">- {listitem2}</li>
+            <li class="lowercase md:text-xl text-md">- {listitem3}</li>
+            <li class="lowercase md:text-xl text-md">- {listitem4}</li>
+          </ul>
+          <!-- * BTN WRAPPER   v-->
+          <ButtonProps
+            btn1="see services"
+            btn2="contact"
+            btn1Link="/#services"
+            btn2Link="/#contact"
+          />
+          <!-- * BTN WRAPPER   ^-->
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////////////////// -->
+    <div id="sq2" class="flex justify-center items-center 2xl:p-0 pb-1">
+      <img
+        src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+    </div>
+  </div>
+</div>
