@@ -1,0 +1,25 @@
+---
+const allServices = await Astro.glob("../pages/services/*.md");
+---
+
+<div
+  id="chooseLC"
+  class="mt-[35px] mb-5 lg:px-[55px] px-5 grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 pt-2 border border-black"
+>
+  {
+    allServices.map((service) => (
+      <div id="sq" class="">
+        {/* <a href={service.url} class=""> */}
+        <h2 class="absolute p-2 text-  bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+          {service.frontmatter.title}
+        </h2>
+        <img
+          src={service.frontmatter.image.url}
+          alt=""
+          class="border border-black w-[650px] h-[350px]"
+        />
+        {/* </a> */}
+      </div>
+    ))
+  }
+</div>

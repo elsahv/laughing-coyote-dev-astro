@@ -7,13 +7,17 @@ export interface Props {
   listitem2: string;
   listitem3: string;
   listitem4: string;
+  heroImg: string;
 }
 
-const { title, listitem1, listitem2, listitem3, listitem4 } =
+const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
   Astro.props as Props;
 ---
 
-<div id="hero-wrapper" class="flex justify-center md:pt-[120px] pt-1">
+<div
+  id="hero-wrapper"
+  class="text-onyx 2xl:h-screen flex justify-center md:pt- pt-1"
+>
   <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
     <div id="SQ1" class="bg- lg:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
       <div id="padding" class="lg:p-5 p-1 bg-">
@@ -40,10 +44,7 @@ const { title, listitem1, listitem2, listitem3, listitem4 } =
     </div>
     <!-- /////////////////////////////////// -->
     <div id="sq2" class="flex justify-center items-center 2xl:p-0 pb-1">
-      <img
-        src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        class="border border-black"
-      />
+      <img src={heroImg} class="" />
     </div>
   </div>
 </div>

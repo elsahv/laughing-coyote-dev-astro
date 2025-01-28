@@ -1,133 +1,36 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/Hero.astro";
-import ServicesContent from "../components/ServicesContent.astro";
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-// import ServicesGrid from "../components/shared/grids/ServicesGrid.astro";
-
-// const allServices = await Astro.glob("../pages/services/*.md");
-import ContactSection from "../components/ContactSection.astro";
-import ButtonProps from "../components/shared/ButtonProps.astro";
-import Packages from "../components/Packages.astro";
+import HeroCard from "../components/HeroCard.astro";
 import Services from "../components/Services.astro";
-import FeaturedWorks from "../components/FeaturedWorks.astro";
+import DynamicBanner from "../components/shared/Dynamic_Banner.astro";
 ---
 
 <MainLayout>
-  <!--* SECTION 1- HERO-------------------------------------------------------------------------------------------------------------------->
-  <Hero />
-
-  <!--* SECTION 2- SERVICES-------------------------------------------------------------------------------------------------------------------->
-  <div id="services" class="mt-[90px] border border-black">
-    <CenterPageBanner
-      title="About LC"
-      paragraph="why you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
+  <HeroCard
+    title=" A subscription website service for busy small-businesses owners."
+    listitem1="website creation"
+    listitem2="the ablity to tell your story and brand"
+    listitem3=" Increased potential customers, easier to find on Google."
+    listitem4="A custom website that fits your business, personality, goals... and you alone."
+    heroImg="https://dl.dropboxusercontent.com/scl/fi/xzfhk2jletg2hqwc9ecks/coyote.png?rlkey=xtfjf7plvgb8y3fjxdij0vdt5&st=xf6njv83&dl=0"
+  />
+  <div id="services" class="">
+    <DynamicBanner
+      headline="Services"
+      paragraph1="Simple Web Design"
+      paragraph2="More complicated Web Hosting"
+      paragraph3="SEO- Make your business findable"
     />
-    <ServicesContent />
-  </div>
-  <section
-    id="flex-2"
-    class="bg- grid md:grid-cols-2 grid-cols-1 gap-x-8 pt-5 mt-[65px]"
-  >
-    <div
-      id="sq3"
-      class="flex justify-end items-center mr-[75px] 2xl:m-0 ml-[45px]"
-    >
-      <img
-        src="https://images.pexels.com/photos/21658440/pexels-photo-21658440/free-photo-of-happy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt=""
+    <div id="index-services-wrapper" class="px-[150px]">
+      <Services
+        title1="Simple Pg"
+        title2="Full stack app"
+        p1="Static landing pg brochure, client side, site-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sit laboriosam deleniti, consectetur obcaecati id. Provident illo veniam pariatur beatae nulla minima sed? "
+        p2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sit laboriosam exercitationem beatae, similique voluptatem fuga velit a deleniti,"
+        img1="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img2="https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
-    </div>
-    <div
-      id="sq4"
-      class="bg- flex justify-start items-end md:pb-5 pb-[55px] md:pr-5 p-1 ml-2"
-    >
-      <ul class="md:text-lg text-md pt-1 pl-4">
-        <li class="lowercase" class="text-lg">
-          <p class="text-test text-xl font-extrabold">
-            <!-- WHAT DO YOU NEED HELP WITH? -->
-            Web Development
-          </p>
-        </li>
-
-        <li class="lowercase">
-          <b>-</b><a href="/web-development" class="font-semibold">
-            CREATING A WEBSITE,</a
-          >
-          TO INCREASE YOUR POTENTIAL CUSTOMERS?
-        </li>
-        <li class="lowercase">
-          <b>-</b> The ablity to tell your <a href="/writing" class="font-bold"
-            >story and brand?</a
-          >
-        </li>
-        <li>
-          <b>-</b> Peace of mind... for business owners who don't have time to build
-          with software.
-        </li>
-        <!-- * BTN WRAPPER-undecided v-->
-        <!-- <ButtonProps
-          btn1="why choose LC?"
-          btn2="contact"
-          btn1Link="/#chooseLC"
-          btn2Link="/#contact"
-        /> -->
-        <!-- * BTN WRAPPER   ^-->
-        <!-- <li>
-                   <b>-</b> Increased potential customers, easier to find on Google.
-                 </li> -->
-
-        <!-- <li>
-              <b>-</b> A custom website that fits your business, personality, goals...
-              and you alone.
-            </li> -->
-      </ul>
-    </div>
-  </section>
-
-  <!--* SECTION 3- WEB DEV GRID-------------------------------------------------------------------------------------------------------------------->
-  <div id="web-development" class="">
-    <div id="featured-works-banner" class="bg- text-onyx py-[45px] my-[155px]">
-      <CenterPageBanner
-        title="Why choose LC?"
-        paragraph="view each sq for description of how LC can help you"
-      />
-      <Services />
-
-      <CenterPageBanner
-        title="Packages"
-        paragraph="which package best describes you? you should choose me for web development. why I've build LC.... or why LC was built.... talk about passion behind quick, modern minimalist style, straight to the point. "
-      />
-      <!-- todo: FIGURE OUT COYOTE PACKAGES v-->
-      <>
-        <Packages />
-      </>
-      <!-- todo: FIGURE OUT COYOTE PACKAGES ^-->
-    </div>
-    <!--* SECTION 4- CLIENT WORK-------------------------------------------------------------------------------------------------------------------->
-    <div id="client-work" class="">
-      <CenterPageBanner
-        title="Client Work"
-        paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
-      />
-
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      <!--*--*-CREATE  POSTS FORMAT FOR FEATURED WORKS v-*--*-->
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      <FeaturedWorks />
-
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-      <!--*--*-CREATE  POSTS FORMAT FOR FEATURED WORKS v-*--*-->
-      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
     </div>
   </div>
-
-  <!--* SECTION 5- CONTACT-------------------------------------------------------------------------------------------------------------------->
-  <section id="contact" class="mt-[50px] pt-5">
-    <CenterPageBanner
-      title="Contact"
-      paragraph="this is the featured-works page-lorem orem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ex velit officiis amet voluptatibus eos quibusdam temporibus suscipit blanditiis dolores neque. Autem quia rem facilis, sint quo voluptates repellat illo"
-    />
-    <ContactSection />
-  </section>
+  <!-- <Contact /> -->
 </MainLayout>

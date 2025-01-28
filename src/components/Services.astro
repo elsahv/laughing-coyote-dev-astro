@@ -1,25 +1,39 @@
 ---
-const allServices = await Astro.glob("../pages/services/*.md");
+export interface Props {
+  title1: string;
+  title2: string;
+  p1: string;
+  p2: string;
+  img1: string;
+  img2: string;
+}
+
+const { title1, p1, p2, img1, img2, title2 } = Astro.props as Props;
 ---
 
-<div
-  id="chooseLC"
-  class="mt-[35px] mb-5 lg:px-[55px] px-5 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2 border border-black"
->
-  {
-    allServices.map((service) => (
-      <div id="sq" class="">
-        {/* <a href={service.url} class=""> */}
-        <h2 class="absolute p-2 text-test1  bg-teal border border-black lowercase dropshadow-2xl text-2xl">
-          {service.frontmatter.title}
-        </h2>
-        <img
-          src={service.frontmatter.image.url}
-          alt=""
-          class="border border-black w-[650px] h-[350px]"
-        />
-        {/* </a> */}
+<!-- TODO: CREATE UNIVERSAL GRID WITH IMGS AND DESCRIPTIONS -->
+<div id="wrapper" class="p- px-2 bg-test">
+  <div
+    id="container"
+    class="flex justify-center md:p-5 p-1 bg-test 2xl:m-[150px] m-3 py-5"
+  >
+    <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 2xl:gap-10">
+      <div id="sq1" class="">
+        <div class="mt-[100px] pr-2 pl-[90px] text-right">
+          <h2 class="font-bold text-2xl">{title1}</h2>
+          <p class="">{p1}</p>
+        </div>
       </div>
-    ))
-  }
+      <div id="sq2">
+        <img src={img1} alt="" class="border border-black" />
+      </div>
+      <div id="sq3" class="border border-black">
+        <img src={img2} alt="" />
+      </div>
+      <div id="sq4" class="mt-[100px] pl-3">
+        <h2 class="font-bold text-2xl">{title2}</h2>
+        <p>{p2}</p>
+      </div>
+    </div>
+  </div>
 </div>

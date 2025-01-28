@@ -1,10 +1,12 @@
 ---
 const today = new Date();
-// import ContactSection from "./ContactSection.astro";
+import Contact from "../components/Contact.astro";
 ---
 
-<footer class="text-center w-full border border-t-black pt-3 pb-2">
-  <!-- <ContactSection /> -->
+<footer
+  class="bg-teal text-parchment text-center w-full border border-t-black pt-3 pb-2"
+>
+  <Contact />
   <p>Copyright &copy; {today.getFullYear()}</p>
   <!-- CTA LINK TO ABOUT SECTION (ON SERVICES PG) -->
 </footer>
