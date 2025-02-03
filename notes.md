@@ -1,7 +1,35 @@
--DAY SUMMARY- 5/12/24:\*\*
+- 2/3/25 CURRENTLY:
+- not sure where to put business card comp
+- add another about to contact comp?
+-
+- <!-- *1 HERO -->
+  <!-- *2 PROBLEM SOLVING SECTION -->
+  <!-- *3 SOCIAL PROOF-- PORTFOLIO CTA -->
+  <!-- *4 FIRST PERSON---HOW IT WORKS -->
+  <!-- *5 WHATS INCLUDED -->
+  <!-- *6 ARE YOU READY? -->
+  <!-- *7 ABOUT ME -->
+  <!-- *8 IS THIS FOR ME? -->
+  <!-- *9 THIS IS NOT FOR YOU IF -->
+  <!-- *10 FAQ -->
+  <!--* 11 CTA -->
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+- -DAY SUMMARY- 5/12/24:\*\*
 
-**CURRENTLY- **CHANGE SERVICES CONTENT TO ABOUT/ DIFFERENT CATEGORY\*\*
-**CURRENTLY- CREATE DYNAMIC MAP FOR HERO LISTS-HERO, CLIENT WORK, CONTACT**
+  **CURRENTLY- **CHANGE SERVICES CONTENT TO ABOUT/ DIFFERENT CATEGORY\*\*
+  **CURRENTLY- CREATE DYNAMIC MAP FOR HERO LISTS-HERO, CLIENT WORK, CONTACT**
 
 EVENTUALLY- CREATE COMP (possibly dynamic) for client work grid
 EVENTUALLY-MAKE ALL SECTIONS MOBILE FRIENDLY

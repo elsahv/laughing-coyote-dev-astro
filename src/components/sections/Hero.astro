@@ -1,5 +1,5 @@
 ---
-import ButtonProps from "./shared/ButtonProps.astro";
+import ButtonProps from "../shared/ButtonProps.astro";
 
 export interface Props {
   title: string;
@@ -18,6 +18,16 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
   id="hero-wrapper"
   class="text-onyx 2xl:h-screen flex justify-center md:pt- pt-1"
 >
+  <!-- COPY PROMPTS -->
+
+  <!-- A (ttention)- you're struggling to get [desirable result] because you don't have [missing piece]' -->
+
+  <!-- I- you have [example], but you aren't [achieving this result] -->
+
+  <!-- D- How does this make them feel? -->
+
+  <!-- A- have you been in the same situation? How did you overcome this? How can you help them do the same? -->
+
   <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
     <div id="SQ1" class="bg- lg:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
       <div id="padding" class="lg:p-5 p-1 bg-">
@@ -33,16 +43,15 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
           </ul>
           <!-- * BTN WRAPPER   v-->
           <ButtonProps
-            btn1="see services"
+            btn1="see more"
             btn2="contact"
-            btn1Link="/#services"
+            btn1Link="/#about"
             btn2Link="/#contact"
           />
           <!-- * BTN WRAPPER   ^-->
         </div>
       </div>
     </div>
-    <!-- /////////////////////////////////// -->
     <div id="sq2" class="flex justify-center items-center 2xl:p-0 pb-1">
       <img src={heroImg} class="" />
     </div>

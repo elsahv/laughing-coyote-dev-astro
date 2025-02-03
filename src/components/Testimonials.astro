@@ -1,0 +1,25 @@
+---
+import testImg from "../images/gallery1.jpg";
+import { Image } from "astro:assets";
+---
+
+<!-- TODO: TESTIMONIALS v-->
+<section
+  id="testimonials"
+  class="bg-teal text-parchment border-black border-b border-t"
+>
+  <div id="testimonials-container" class="flex justify-center">
+    <div id="grid" class="grid grid-cols-2">
+      <div id="sq1" class="flex justify-center">
+        <Image src={testImg} alt="" />
+      </div>
+      <div id="sq2" class="flex justify-center items-center font-bold pr-5">
+        "client side, site-Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Soluta sit laboriosam deleniti, consectetur obcaecati id.
+        Provident illo veniam pariatur beatae nulla minima sed?"
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TODO: TESTIMONIALS ^-->
