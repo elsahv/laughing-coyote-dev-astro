@@ -1,36 +1,18 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-// import HowItWorks from "../components/HowItWorks.astro";
-import About from "../components/sections/About.astro";
 import Hero from "../components/sections/Hero.astro";
-import WebDev from "../components/sections/WebDev.astro";
+import FeaturedSites from "../components/sections/FeaturedSites.astro";
 import Services from "../components/sections/Services.astro";
 import Writing from "../components/sections/Writing.astro";
 import Contact from "../components/sections/Contact.astro";
+import WebDev from "../components/sections/WebDev.astro";
 ---
 
 <MainLayout>
-  <!-- * HERO SECTION -->
-  <Hero
-    title=" A subscription website service for busy small-businesses owners..."
-    listitem1="website creation"
-    listitem2="the ablity to tell your story and brand"
-    listitem3=" Increased potential customers, easier to find on Google."
-    listitem4="A custom website that fits your business, personality, goals... and you alone."
-    heroImg="https://dl.dropboxusercontent.com/scl/fi/xzf hk2jletg2hqwc9ecks/coyote.png?rlkey=xtfjf7plvgb8y3fjxdij0vdt5&st=xf6njv83&dl=0"
-  />
-
-  <!-- * ABOUT SECTION -->
-
-  <About />
-  <!-- <HowItWorks /> -->
-
-  <!-- *: WEB DEV SECTION-->
-  <WebDev />
-  <!-- * SERVICES SECTION-->
+  <Hero />
   <Services />
-  <!-- * WRITING SECTION-->
+  <WebDev />
+  <FeaturedSites />
   <Writing />
-  <!-- * CONTACT SECTION-->
   <Contact />
 </MainLayout>

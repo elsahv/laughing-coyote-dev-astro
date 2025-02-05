@@ -60,44 +60,24 @@ const items = [
 ];
 ---
 
-<div class="bg-">
-  <section class="pb-5">
-    <div class="text-center">
-      <!-- todo: CHOOSE 'CENTER' OR 'GALLERY' BANNER -->
-      <!-- <GalleryBanner
-        title="Interactive templates"
-        paragraph="Multiple Designs available for your imagination!"
-      /> -->
-      <h2 class="text-2xl font-bold">Services- (What LC offers)</h2>
-      <p class="mb-[55px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur a
-        in autem rem voluptates enim?
-      </p>
-    </div>
-
-    <div
-      id="gallery-grid"
-      class="mb-5 md:px-[155px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
-    >
-      {
-        items.map((item) => (
-          <div class="">
-            <a href={item.link}>
-              <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
-                {item.title}
-              </p>
-              <img
-                src={item.image}
-                alt=""
-                class="border border-black w-[650px] h-[350px] "
-              />
-            </a>
-          </div>
-        ))
-      }
-    </div>
-  </section>
-  <p class="pl-[55px]">
-    <a href="/web-development"> see elaborated services on web pg! </a>
-  </p>
+<div
+  id="gallery-grid"
+  class="mb-5 md:px-[155px] px-1 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
+>
+  {
+    items.map((item) => (
+      <div class="">
+        <a href={item.link}>
+          <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+            {item.title}
+          </p>
+          <img
+            src={item.image}
+            alt=""
+            class="border border-black w-[650px] h-[350px] "
+          />
+        </a>
+      </div>
+    ))
+  }
 </div>

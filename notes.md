@@ -1,9 +1,44 @@
-- 2/3/25 CURRENTLY:
+- 2/4/25 CURRENTLY:
+
+CURRENT NOTES: ON ‘CREATE YOUR OFFER’ VID
+
+find your niche-”LC- target demand would be rich artists in the area, think of 60-year-old high deserter who has no time or patience for websites”
+
+free value blog: tech assistance to senior citizens.??
+
+-”reason not to work for free: a customer who pays is more invested in the business project, as opposed to a free customer”
+
+- KEY MINDSHIFT SHIFTS:
+- avoid the “too many options on the menu, also betraying yourself as the budget option”
+
+- two types of clients: one who wants a dance monkey, or one who are happy to pay expert prices for long standing results”
+
+- ”your brand isn’t built alone in your bedroom, but through collaboration with your audience.”
+
 - not sure where to put business card comp
 - add another about to contact comp?
 -
+- HERO content
+- Why should you prefer a custom-made website, when you can simply use wix or wordpress? Because a custom website fits your business, personality, goals... and you alone.
+
+- We have one main goal, to get more views towards your business! With Laughing Coyote Dev, you get more than just a website:
+- Information displayed, accessible, easier to find on Google
+- The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations.
+- Mobile Optimization- Studies show that majority of website use is through mobile phones and tablets
+
+-
 - <!-- *1 HERO -->
-  <!-- *2 PROBLEM SOLVING SECTION -->
+- <!-- COPY PROMPTS -->
+
+  <!-- A (ttention)- you're struggling to get [desirable result] because you don't have [missing piece]' -->
+
+  <!-- I- you have [example], but you aren't [achieving this result] -->
+
+  <!-- D- How does this make them feel? -->
+
+  <!-- A- have you been in the same situation? How did you overcome this? How can you help them do the same? -->
+
+- <!-- *2 PROBLEM SOLVING SECTION -->
   <!-- *3 SOCIAL PROOF-- PORTFOLIO CTA -->
   <!-- *4 FIRST PERSON---HOW IT WORKS -->
   <!-- *5 WHATS INCLUDED -->
