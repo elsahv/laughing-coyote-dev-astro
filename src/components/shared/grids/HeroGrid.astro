@@ -1,4 +1,7 @@
 ---
+import Image from "astro/components/Image.astro";
+import CoyoteImg from "../../../images/coyote.png";
+
 import ButtonProps from "../ButtonProps.astro";
 
 export interface Props {
@@ -20,6 +23,9 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
 >
   <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
     <div id="SQ1" class="bg- lg:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
+      <!-- TODO: TEST <Image /> src -->
+      <Image src={CoyoteImg} alt="" />
+
       <div id="padding" class="lg:p-5 p-1 bg-">
         <div class="">
           <h2 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
