@@ -1,10 +1,12 @@
 ---
-import GalleryBanner from "../GalleryBanner.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+import HomePageGrid from "../shared/grids/HomePageGrid.astro";
 ---
 
-<section id="writing" class="h-screen border border-black pt-5 mt-[150px]">
-  <GalleryBanner
-    title="Writing- (What LC offers)"
+<section id="writing" class="border border-black pt-5 mt-[150px]">
+  <CenterPageBanner
+    BannerTitle="Writing- (What LC offers)"
     paragraph="Grammar skills by a real human!"
   />
+  <HomePageGrid />
 </section>

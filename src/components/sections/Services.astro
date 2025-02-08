@@ -18,8 +18,7 @@ const items = [
 ];
 ---
 
-<section id="services">
-  <!-- TODO: CURRENTLY: NEW HEADLINE COMP  v-->
+<section id="SERVICES-section" class="bg-">
   <CenterPageBanner
     BannerTitle="Services "
     paragraph="-Ive spent time learning how to simplify the design process so you can focus on your business instead"
@@ -29,14 +28,11 @@ const items = [
     <div id="how-it-works-container" class="2xl:p-5 mb-5 2xl:mx-5">
       <div
         id="grid"
-        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[50px] px-5"
+        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[50px] md:px-5 px-0"
       >
         {
           items.map((item) => (
-            <div
-              id="sq"
-              class="p-5 bg-teal text-parchment border-2 border-orange"
-            >
+            <div id="sq" class="p-5 bg-teal text-test1 border-2 border-orange">
               <h2 class="font-bold">{item.title}</h2>
               <p class="pt-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

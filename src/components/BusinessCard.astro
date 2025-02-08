@@ -18,14 +18,11 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
   id=""
   class="px-5 2xl:mx-[150px] bg- text-onyx 2xl:h-screen flex justify-center pt-1"
 >
-  <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
-    <div
-      id="SQ1"
-      class="flex justify-end items-center bg- lg:p-5 px-1 py-3 mb-5"
-    >
+  <div id="grid" class="grid md:grid-cols-2 grid-cols-1">
+    <div id="SQ1" class="flex items-center bg- 2xl:p-5 mb-5">
       <div id="padding" class="lg:p-5 p-1 bg-">
         <div class="">
-          <h2 class="text-test lg:text-4xl text-3xl font-extrabold pb-2">
+          <h2 class="lg:text-4xl text-3xl font-extrabold pb-2">
             {title}
           </h2>
           <ul>
@@ -47,9 +44,9 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
     </div>
     <div
       id="sq2"
-      class="flex bg- md:justify-center md:items-center 2xl:p-0 pb-1"
+      class="flex bg- md:justify-center md:items-center md:p-5 pb-1"
     >
-      <img src={heroImg} class="w-1/2 border border-black mr-[80px]" />
+      <img src={heroImg} class="md:w-3/4 border border-black" />
     </div>
   </div>
 </div>

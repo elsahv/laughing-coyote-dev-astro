@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      testWidth: {
+        testCustomSm: "599px",
+      },
       colors: {
         richBlack: "#001524",
         lavender: "#CDD1E2",

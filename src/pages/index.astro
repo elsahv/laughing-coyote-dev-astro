@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import FeaturedSites from "../components/sections/FeaturedSites.astro";
 import Services from "../components/sections/Services.astro";
+import TestWebDevGrid from "../components/TestWebDevGrid.astro";
 import Writing from "../components/sections/Writing.astro";
 import Contact from "../components/sections/Contact.astro";
 import WebDev from "../components/sections/WebDev.astro";
@@ -11,8 +12,15 @@ import WebDev from "../components/sections/WebDev.astro";
 <MainLayout>
   <Hero />
   <Services />
+  <!-- TODO: CREATE UNIVERSAL GRID v-->
+  <TestWebDevGrid />
   <WebDev />
+  <!-- TODO: CREATE UNIVERSAL GRID ^-->
+
+  <!-- ?: CHANGE INTO DIFFERENT GRID v-->
   <FeaturedSites />
+  <!-- ?: CHANGE INTO DIFFERENT GRID ^-->
+
   <Writing />
   <Contact />
 </MainLayout>
