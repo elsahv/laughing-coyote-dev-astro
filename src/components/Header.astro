@@ -1,4 +1,6 @@
 ---
+import HamburgerMenu from "./HamburgerMenu.jsx";
+
 const links = [
   { label: "Services", href: "/#services" },
   // SUB LINKS: 1) 2)ABOUT
@@ -15,19 +17,12 @@ const links = [
 <header
   class="sticky top-0 dropshadow-2xl bg-parchment text-carribean border border-onyx z-50 pb-3 pt-2"
 >
-  <nav
-    class="font-bold pl-5 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 text-2xl"
-  >
-    <div class="flex justify-start items-end py-3 pl-1">
-      <div id="logo" class="md:text-3xl text-2xl">
-        <a href="/">Laughing Coyote Dev</a>
-      </div>
+  <nav class="font-bold pl-5 md:pr-5 pr-1 pt-1 grid grid-cols-2 text-2xl">
+    <div id="logo" class="text-3xl flex justify-start items-center py-3 pl-1">
+      <a href="/">Laughing Coyote Dev</a>
     </div>
-    <!-- todo: COME BACK TO V -->
-    <div id="hamburger" class="lg:hidden flex justify-end md:p-5 p-0"></div>
-    <!-- todo: COME BACK TO ^ -->
-
-    <div id="block-hidden" class="xl:block hidden">
+    <HamburgerMenu />
+    <div id="" class="xl:block hidden">
       <ul class="flex justify-end 2xl:items-end items-center">
         {
           links.map((link) => (

@@ -17,3 +17,23 @@ p {
 section {
   padding-top: 150px;
 }
+
+/* //*HEADER */
+.nav-menu {
+  background: #0792a5;
+  border-left: solid 2px #000;
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  padding: 10px;
+  /* transition: 1s; */
+}
+
+.nav-menu.active {
+  right: 0;
+  /* transition: 1s; */
+  position: absolute;
+  z-index: 20;
+}
