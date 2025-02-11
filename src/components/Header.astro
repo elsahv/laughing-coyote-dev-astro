@@ -1,6 +1,4 @@
 ---
-import HamburgerMenu from "./HamburgerMenu.jsx";
-
 const links = [
   { label: "Services", href: "/#services" },
   // SUB LINKS: 1) 2)ABOUT
@@ -15,22 +13,28 @@ const links = [
 
 <!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEN SCROLLING -->
 <header
-  class="sticky top-0 dropshadow-2xl bg-parchment text-carribean border border-onyx z-50 pb-3 pt-2"
+  class="bg- sticky top-0 dropshadow-2xl text-carribean border border-onyx z-50 2xl:pb-3 pb-5 2xl:pt-2 pt-4"
 >
-  <nav class="font-bold pl-5 md:pr-5 pr-1 pt-1 grid grid-cols-2 text-2xl">
-    <div id="logo" class="text-3xl flex justify-start items-center py-3 pl-1">
+  <nav
+    class="font-bold pl-5 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1 text-2xl"
+  >
+    <div
+      id="logo"
+      class="2xl:text-3xl text-5xl flex lg:justify-start justify-center items-center py-3 2xl:pl-1 pl-4"
+    >
       <a href="/">Laughing Coyote Dev</a>
     </div>
-    <HamburgerMenu />
-    <div id="" class="xl:block hidden">
-      <ul class="flex justify-end 2xl:items-end items-center">
+    <div id="" class="">
+      <ul
+        class="bg- flex 2xl:justify-end justify-start 2xl:items-end items-center"
+      >
         {
           links.map((link) => (
-            <a class="mx-5" href={link.href}>
-              <li class="2xl:pt-5 pt-1 opacity-90 hover:opacity-100 drop-shadow-2xl">
+            <li class="2xl:pt-5 pt-1 opacity-90 hover:opacity-100 drop-shadow-2xl">
+              <a class="mx-5" href={link.href}>
                 {link.label}
-              </li>
-            </a>
+              </a>
+            </li>
           ))
         }
       </ul>

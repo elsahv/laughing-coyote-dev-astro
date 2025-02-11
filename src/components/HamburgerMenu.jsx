@@ -4,7 +4,7 @@ import { GrClose } from "react-icons/gr";
 
 const HamburgerMenu = () => {
   return (
-    <div className="2xl:hidden bg- flex justify-end items-center">
+    <div className="">
       <div className="pb-2 pr-3 bg-">
         <GiHamburgerMenu />
       </div>
