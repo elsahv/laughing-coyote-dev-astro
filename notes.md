@@ -1,3 +1,89 @@
+<!-- * 2/11/25- CURRENTLY: N BUILDING A SALES PG--->
+<!-- * http://youtube.com/watch?v=Ny-Az8nAAaM -->
+
+- <!-- !  <Hero /> v-->
+- <!-- *1 HERO 1 V-->
+- <!-- COPY PROMPTS -->
+
+  <!-- A (ttention)- you're struggling to get [desirable result] because you don't have [missing piece]' -->
+
+  <!-- I- you have [example], but you aren't [achieving this result] -->
+
+  <!-- D- How does this make them feel? -->
+
+  <!-- A- have you been in the same situation? How did you overcome this? How can you help them do the same? -->
+
+_**<!-- CTAS -v -->**_
+
+<!--  1 HERO 1 ^-->
+<!-- 2 PROBLEM SOLVING SECTION -->
+<!-- 3 SOCIAL PROOF-- PORTFOLIO CTA -->
+<!-- 4 FIRST PERSON---HOW IT WORKS -->
+<!-- 5 WHATS INCLUDED -->
+<!-- 6 ARE YOU READY? -->
+<!-- 7 ABOUT ME -->
+<!-- 8 IS THIS FOR ME? -->
+<!-- 9 THIS IS NOT FOR YOU IF -->
+<!-- 10 FAQ -->
+<!-- 11 CTA -->
+
+        <!-- Todo: MATCH CTA SECTIONS TO COMPS -->
+
+    <!-- ?SECTIONS -v -->
+
+- <!-- *:1  HERO v-->
+- <!-- !-<Hero sections/> -->
+- <!-- *:   HERO ^-->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+  <!-- * 4 FIRST PERSON---HOW IT WORKS v-->
+- <!-- *2 PROBLEM SOLVING SECTION v-->
+<!-- *7 ABOUT ME v-->
+- <!-- !<Services sections/> -->
+<!-- *7 ABOUT ME ^-->
+- <!-- *2 PROBLEM SOLVING SECTION ^-->
+<!-- * 4 FIRST PERSON---HOW IT WORKS ^-->
+- <!--  -->
+    <!--  -->
+    <!--  -->
+  <!-- *5 WHATS INCLUDED v--->
+    <!-- *10 FAQ v-->
+      <!-- !<WebDev sections/> -->
+    <!-- *10 FAQ ^-->
+- <!-- *5 WHATS INCLUDED ^-->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+- <!-- *3 SOCIAL PROOF-- PORTFOLIO CTA v-->
+- <!-- *8 IS THIS FOR ME? -->
+     <!-- *9 THIS IS NOT FOR YOU IF v -->
+   <!-- !<FeaturedSites sections/> -->
+     <!-- *9 THIS IS NOT FOR YOU IF ^ -->
+- <!-- *8 IS THIS FOR ME? -->
+- <!-- *3 SOCIAL PROOF-- PORTFOLIO CTA ^-->
+   <!--  -->
+   <!--  -->
+   <!--  -->
+     <!-- !<Writing sections/> -->
+
+   <!--  -->
+   <!--  -->
+   <!--  -->
+    <!-- *6 ARE YOU READY? -->
+   <!-- *11 CTA v-->
+     <!-- !<Contact sections/> -->
+   <!-- *11 CTA ^-->
+  <!-- *6 ARE YOU READY? -->
+
+-
+-
+-
+-
+-
+-
+-
+-
 - 2/4/25 CURRENTLY:
 
 CURRENT NOTES: ON ‘CREATE YOUR OFFER’ VID
@@ -25,51 +111,13 @@ free value blog: tech assistance to senior citizens.??
 - Information displayed, accessible, easier to find on Google
 - The ability to tell your story, owning a website gives you the ability to tell your business story without any limitations.
 - Mobile Optimization- Studies show that majority of website use is through mobile phones and tablets
-
--
-- <!-- *1 HERO -->
-- <!-- COPY PROMPTS -->
-
-  <!-- A (ttention)- you're struggling to get [desirable result] because you don't have [missing piece]' -->
-
-  <!-- I- you have [example], but you aren't [achieving this result] -->
-
-  <!-- D- How does this make them feel? -->
-
-  <!-- A- have you been in the same situation? How did you overcome this? How can you help them do the same? -->
-
-- <!-- *2 PROBLEM SOLVING SECTION -->
-  <!-- *3 SOCIAL PROOF-- PORTFOLIO CTA -->
-  <!-- *4 FIRST PERSON---HOW IT WORKS -->
-  <!-- *5 WHATS INCLUDED -->
-  <!-- *6 ARE YOU READY? -->
-  <!-- *7 ABOUT ME -->
-  <!-- *8 IS THIS FOR ME? -->
-  <!-- *9 THIS IS NOT FOR YOU IF -->
-  <!-- *10 FAQ -->
-  <!--* 11 CTA -->
--
--
--
--
--
--
--
--
--
--
--
--
--
 - -DAY SUMMARY- 5/12/24:\*\*
 
-  **CURRENTLY- **CHANGE SERVICES CONTENT TO ABOUT/ DIFFERENT CATEGORY\*\*
-  **CURRENTLY- CREATE DYNAMIC MAP FOR HERO LISTS-HERO, CLIENT WORK, CONTACT**
+  -
 
 EVENTUALLY- CREATE COMP (possibly dynamic) for client work grid
-EVENTUALLY-MAKE ALL SECTIONS MOBILE FRIENDLY
+
 EVENTUALLY- MAKE DYNAMIC CONTAINER/PADDING/MARGINS FOR EACH SECTIONS
-EVENTUALLY- 'CREATE BACK TO TOP' COMPONENT
 
 ??make the first 1/2 of website a different color scheme than the second half. Both halves should blend into the other ??maybe opposite color schemes?
 
@@ -85,47 +133,13 @@ EVENTUALLY- 'CREATE BACK TO TOP' COMPONENT
 - FEATURED WORK
 - CONTACT
 
-- 4/29
 - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-- 4/25
-  1.move all photos to /src/images folder?????
-
-- 4/24
     <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--> //NEW "CURRENTLY DOING RIBBON"
-
-- Add dynamic cards
-- 4/13
-  1."simple and minimalist"
-  2."modern" 3. no BS... straight to the point
 
 - 4/2/24
   1.ABOUT[Hero(first impressions to customer), extra content]- , about business
   2.CTA (Packages)- what do you want customer to do?
   3.CONTACT
-
-2/18
--rm case study CTA button for now, at least until there is more content.
--"I'm trying to document more often to make better progress"
-
--2/16
--things are really clicking into place today!!
--added much more content to each section, been speeding up on making progress this past week!
-
--2/15:  
--"Today I worked on the website case studies section. 1st I laid everything out in html, am now converting to a dynamic grid."
--"I realize that creating test components and starting 'new drafts' as opposed to deleting previous versions makes better progress."
--"does tailwind have a grid-template-areas option? I've had to refresh my memory with using vanilla css!"
--just found out an adapter is needed for using astro with vercel: https://docs.astro.build/en/guides/server-side-rendering/
-
--2/15:
--"simplify the website process": about, CTA, contact
-
-- MAIN FOCUS:
-- HERO
-- ABOUT->CTA
-- WORK- talk about each websites SELL BY STORY: CATEGORIZED, SPECIALIZED, AND UNIQUE BRAND SECTIONS
-- PACKAGES- focus on CTA, Hero, Contact… quality over quantity
-- CONTACT

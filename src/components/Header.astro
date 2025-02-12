@@ -13,7 +13,7 @@ const links = [
 
 <!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEtext-smN SCROLLING -->
 <header
-  class="dropshadow-2xl text-carribean border-b border-onyx z-50 2xl:pb-5 pb-[30px] 2xl:pt-2 pt-4"
+  class="dropshadow-2xl text-carribean border-b border-onyx z-50 2xl:pb-3 pb-[30px] 2xl:pt-2 pt-4"
 >
   <div
     class="bg- md:pl-5 pl-0 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1"
@@ -24,13 +24,13 @@ const links = [
     >
       <a href="/">Laughing Coyote Dev</a>
     </div>
-    <nav id="" class="">
+    <nav id="" class="bg-">
       <ul
-        class="font-medium flex md:flex-row flex-col 2xl:justify-end justify-start 2xl:items-end items-start"
+        class="font-medium flex md:flex-row flex-col 2xl:justify-end justify-start 2xl:items-end items-start 2xl:pt-0 pt-1"
       >
         {
           links.map((link) => (
-            <li class="md:text-2xl text-xl 2xl:pt-5 md:pt-1 pt-0 opacity-90 hover:opacity-100 drop-shadow-2xl">
+            <li class="2xl:text-xl md:text-2xl text-xl 2xl:pt-5 md:pt-1 pt-0 opacity-90 hover:opacity-100 drop-shadow-2xl">
               <a class="mx-5" href={link.href}>
                 {link.label}
               </a>
