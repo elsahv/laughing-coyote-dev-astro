@@ -1,5 +1,7 @@
-<!-- ***** 2/11/25- CURRENTLY: N BUILDING A SALES PG--->
 <!-- ***** http://youtube.com/watch?v=Ny-Az8nAAaM -->
+
+<!-- ***** 2/12/25- CURRENTLY: N BUILDING A SALES PG--->
+<!-- ***** 2/12/25- ON DECK: Step-by-step system to ATTRACT your first clients [ZERO COLD OUTREACH]--->
 
 _**<!-- CTAS- (VID ORDER) -v -->**_
 
@@ -14,7 +16,6 @@ _**<!-- CTAS- (VID ORDER) -v -->**_
 <!-- 9 THIS IS NOT FOR YOU IF -->
 <!-- 10 FAQ -->
 <!-- 11 CTA -->
-
 <!--  -->
 <!--  -->
 <!--  -->
@@ -53,8 +54,7 @@ _**<!-- CTAS- (VID ORDER) -v -->**_
 -
 -
 - 2/4/25 CURRENTLY:
-
-CURRENT NOTES: ON ‘CREATE YOUR OFFER’ VID
+  CURRENT NOTES: ON ‘CREATE YOUR OFFER’ VID
 
 find your niche-”LC- target demand would be rich artists in the area, think of 60-year-old high deserter who has no time or patience for websites”
 
@@ -84,10 +84,8 @@ free value blog: tech assistance to senior citizens.??
 - CONTACT
 
 - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-   <!--*--*--*--*--*-CENTER PAGE BANNER v-*--*--*--*--*--*--*--*--*--*-->
+   <!--*--*--*--*--*-"CURRENTLY DOING RIBBON" v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
-
-    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--> //NEW "CURRENTLY DOING RIBBON"
 
 - 4/2/24
   1.ABOUT[Hero(first impressions to customer), extra content]- , about business

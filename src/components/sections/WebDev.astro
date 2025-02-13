@@ -1,22 +1,53 @@
 ---
+import Packages from "../Packages.astro";
 import CenterPageBanner from "../shared/CenterPageBanner.astro";
-// import GalleryGrid from "../shared/grids/GalleryGrid.astro";
+import GalleryGrid from "../shared/grids/GalleryGrid.astro";
 import HomePageGrid from "../shared/grids/HomePageGrid.astro";
-import FeaturedSites from "./FeaturedSites.astro";
+import TestMasonryGrid from "../tests/TestMasonryGrid";
+// import FeaturedSites from "./FeaturedSites.astro";
 ---
 
 <section id="web-development">
   <CenterPageBanner
     BannerTitle="Web Dev- (What LC offers)"
-    paragraph="Multiple Designs available for your imagination!"
+    paragraph="Multiple Designs based on your imagination!"
   />
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  - <!-- *3 [social proof]-- portfolio CASE STUDIES GRID cta v-->
   <!-- TODO: CHANGE INTO CASE STUDIES GRID vvvvvv-->
   <!-- todo: https://www.youtube.com/watch?v=Ny-Az8nAAaM -->
-  <FeaturedSites />
-  <!-- TODO: ---------ADD PACKAGES SEC---------^^^^^-->
+  <!-- <FeaturedSites /> -->
+  <TestMasonryGrid />
+  - <!-- *3 [social proof]-- portfolio CASE STUDIES GRID cta ^-->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- *5.whats included [2 panel packages display]---------v--->
+  <Packages />
   <!-- TODO: whats included [2 panel packages display, convince clients to take action] --->
-  <!-- : COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  v-->
-  <!-- <GalleryGrid /> -->
+  <!-- *5.whats included [2 panel packages display]---------^--->
+
+  <!-- ? COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  v-->
+  <GalleryGrid />
   <HomePageGrid />
-  <!-- : COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  ^-->
+  <!-- ? COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  ^-->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- *11 cta- (add section to build more authority, 19:36) v-->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- 10. faq v-->
+  - <!-- *8 is this for me? (21:13)v-->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- *9 this is not for you if v -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- *6 are you ready? -->
 </section>
