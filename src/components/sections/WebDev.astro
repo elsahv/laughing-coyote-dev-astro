@@ -1,13 +1,13 @@
 ---
 import Packages from "../Packages.astro";
 import CenterPageBanner from "../shared/CenterPageBanner.astro";
-import GalleryGrid from "../shared/grids/GalleryGrid.astro";
+// import GalleryGrid from "../shared/grids/GalleryGrid.astro";
 import HomePageGrid from "../shared/grids/HomePageGrid.astro";
-import TestMasonryGrid from "../tests/TestMasonryGrid";
+// import TestMasonryGrid from "../tests/TestMasonryGrid";
 // import FeaturedSites from "./FeaturedSites.astro";
 ---
 
-<section id="web-development">
+<section id="web-development" class="mt-[200px]">
   <CenterPageBanner
     BannerTitle="Web Dev- (What LC offers)"
     paragraph="Multiple Designs based on your imagination!"
@@ -18,8 +18,12 @@ import TestMasonryGrid from "../tests/TestMasonryGrid";
   - <!-- *3 [social proof]-- portfolio CASE STUDIES GRID cta v-->
   <!-- TODO: CHANGE INTO CASE STUDIES GRID vvvvvv-->
   <!-- todo: https://www.youtube.com/watch?v=Ny-Az8nAAaM -->
+  <!-- ? COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  v-->
+  <HomePageGrid />
+  <!-- <GalleryGrid /> -->
+  <!-- ? COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  ^-->
   <!-- <FeaturedSites /> -->
-  <TestMasonryGrid />
+  <!-- <TestMasonryGrid /> -->
   - <!-- *3 [social proof]-- portfolio CASE STUDIES GRID cta ^-->
   <!--  -->
   <!--  -->
@@ -29,10 +33,6 @@ import TestMasonryGrid from "../tests/TestMasonryGrid";
   <!-- TODO: whats included [2 panel packages display, convince clients to take action] --->
   <!-- *5.whats included [2 panel packages display]---------^--->
 
-  <!-- ? COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  v-->
-  <GalleryGrid />
-  <HomePageGrid />
-  <!-- ? COME BACK TO: CREATE DYNAMIC GALLERY GRID FROM HOMEPAGE GRID'  ^-->
   <!--  -->
   <!--  -->
   <!--  -->

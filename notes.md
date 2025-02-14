@@ -20,21 +20,24 @@ _**<!-- CTAS- (VID ORDER) -v -->**_
 <!--  -->
 <!--  -->
 
- <!-- *PLANNED OUT SECTIONS AND CTAS!! ------------------>
+ <!-- *PLANNED OUT SECTIONS AND CTAS!! --------v---------->
 
-- <!-- !-<HERO-SECTION/> -->
-- <!-- *:1  hero cta ----->
+- <!-- !-<HERO-SECTION/> x-->
+- <!-- *:1  hero cta x----->
 - <!--  -->
   <!--  -->
   <!--  -->
-- <!-- !<SERVICES-SECTION/> -->
-- <!-- *2. problem solving section -->
-- <!-- * 3. [social proof-- 'highlights desirable outcome' ]-- 7. about me  v-->
-- <!-- * 4. first person---how it works- (4 sq grid: 'gives client a plan')-- v-->
+- <!-- !<SERVICES-SECTION/> x-->
+<!-- - combine 2 & 3! v-->
+- <!-- *2. problem solving section x-->
+- <!-- * 3. [social proof-- 'highlights desirable outcome' ]-- 7. about me  x-->
+<!-- - combine 2 & 3! ^-->
+-
+- <!-- * 4. first person---how it works- (4 sq grid: 'gives client a plan')-- x-->
 - <!--  -->
   <!--  -->
   <!--  -->
-      <!-- !<WEBDEV-SECTION/> -->
+      <!-- !<WEBDEV-SECTION/> come back to! v-->
 - <!-- *3 [social proof]-- portfolio CASE STUDIES GRID cta v-->
   <!-- *5.whats included [2 panel packages display]---------v--->
   <!-- *11 cta- (add section to build more authority, 19:36) v-->

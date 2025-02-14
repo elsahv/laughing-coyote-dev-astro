@@ -1,0 +1,42 @@
+---
+const items = [
+  {
+    title: "DISCOVERY PHASE",
+  },
+  {
+    title: "CREATIVE PHASE",
+  },
+  {
+    title: "DEVELOPMENT PHASE",
+  },
+  {
+    title: "LAUNCH PHASE",
+  },
+];
+---
+
+<!-- * 4. first person---how it works- (4 sq grid: 'gives client a plan')-- v-->
+<div class="my-[50px]">
+  <div id="how-it-works-wrapper" class="bg-test2 2xl:p-5 mb-5 mx-5">
+    <div id="how-it-works-container" class="2xl:p-5 mb-5 2xl:mx-5">
+      <div
+        id="grid"
+        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[50px] md:px-5 px-0"
+      >
+        {
+          items.map((item) => (
+            <div id="sq" class="p-5 bg-teal text-test1 border-2 border-orange">
+              <h2 class="font-bold">{item.title}</h2>
+              <p class="pt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, ab rem, mollitia cupiditate eum in veritatis ad esse
+                consectetur, nobis sunt? Ex ratione molestiae provident deleniti
+                minus non placeat repellat!
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

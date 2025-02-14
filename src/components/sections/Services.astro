@@ -1,72 +1,24 @@
 ---
-import BusinessCard from "../BusinessCard.astro";
-import CenterPageBanner from "../shared/CenterPageBanner.astro";
-
-const items = [
-  {
-    title: "DISCOVERY PHASE",
-  },
-  {
-    title: "CREATIVE PHASE",
-  },
-  {
-    title: "DEVELOPMENT PHASE",
-  },
-  {
-    title: "LAUNCH PHASE",
-  },
-];
+import ProblemSolvingSection from "../ctas/ProblemSolvingSection.astro";
+import SocialProof from "../ctas/SocialProof.astro";
+import HowItWorks from "../HowItWorks.astro";
 ---
 
 <!-- TODO: USE BRAND STORY SCRIPT vvvvv---https://www.notion.so/Creative-Business-Blueprint-526e7a26b6894938ad174aca80bee741?p=8a1222c20fc546ed92d60fb1d882c90b&pm=c-->
 <section id="services" class="mt-[150px]">
+  <!-- !- combine 2 & 3! v-->
   - <!-- *2. problem solving section v-->
-  <CenterPageBanner
-    BannerTitle="Services "
-    paragraph="PROBLEM SOLVING SECTION-'address key problem your client is experiencing'  Ive spent time learning how to simplify the design process so you can focus on your business instead"
-  />
-  - <!-- *2. --------------------------^-->
+  <ProblemSolvingSection />
   <!--  -->
   <!--  -->
   <!--  -->
   <!-- * 3. [social proof-- 'highlights desirable outcome' ]-- 7. about me  v-->
-  <div id="ABOUT-ME-section">
-    <BusinessCard
-      title="About LC "
-      listitem1="website creation"
-      listitem2="the ablity to tell your story and brand"
-      listitem3=" Increased potential customers, easier to find on Google."
-      listitem4="A custom website that fits your business, personality, goals... and you alone."
-      heroImg="https://dl.dropboxusercontent.com/scl/fi/pstfnqc17njjpmksizru2/portfolio-pic.jpg?rlkey=dkgcbk61xa6fvkdtrnu8sp4cr&st=r9r78elx&dl=0"
-    />
-  </div>
-  <!-- * 3. [social proof-- 'highlights desirable outcome' ]-- 7. about me  ^-->
+  <SocialProof />
+  <!-- !- combine 2 & 3! ^-->
   <!--  -->
   <!--  -->
   <!--  -->
   - <!-- * 4. first person---how it works- (4 sq grid: 'gives client a plan')-- v-->
-  <div id="how-it-works-wrapper" class="2xl:p-5 mb-5 mx-5">
-    <div id="how-it-works-container" class="2xl:p-5 mb-5 2xl:mx-5">
-      <div
-        id="grid"
-        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[50px] md:px-5 px-0"
-      >
-        {
-          items.map((item) => (
-            <div id="sq" class="p-5 bg-teal text-test1 border-2 border-orange">
-              <h2 class="font-bold">{item.title}</h2>
-              <p class="pt-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, ab rem, mollitia cupiditate eum in veritatis ad esse
-                consectetur, nobis sunt? Ex ratione molestiae provident deleniti
-                minus non placeat repellat!
-              </p>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </div>
-  - <!-- * 4. first person---how it works- (4 sq grid: 'gives client a plan')-- ^-->
+  <HowItWorks />
 </section>
 <!-- TODO: USE BRAND STORY SCRIPT ^^^^^-->
