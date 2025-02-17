@@ -1,14 +1,14 @@
 const TestMasonryGrid = () => {
   return (
     <>
-      <div id="grid-wrapper" className="bg- 2xl:px-5 px-0">
+      <div id="grid-wrapper" className="2xl:px-5 px-0 bg-test2">
         <div
           id="grid"
-          className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-5 p-0 xl:mb-50 lg:m-32 md:m-3"
+          className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 p-0 xl:mb-50 lg:m-32 md:m-3"
         >
           <div
             id="sq1"
-            className="sq-styles 2xl:col-span-1 col-span-2 2xl:row-span-2 row-span-1  rounded-lg bg-gradient-to-r from-green-500 to-green-700"
+            className="sq-styles 2xl:col-span-1 col-span-2 2xl:row-span-2 row-span-1 rounded-lg bg-gradient-to-r from-green-500 to-green-700"
           >
             <div>
               <b>Hovey Roofing Ex</b>
@@ -31,7 +31,7 @@ const TestMasonryGrid = () => {
           {/* //? COMBINE 2, 3 SIDE BY SIDE, W /FLEX v*/}
           <div
             id="flex"
-            class="flex md:flex-row flex-col space-x-4 bg-teal col-span-2"
+            class="flex md:flex-row flex-col space-x-4 bg- col-span-2"
           >
             <div
               id="sq2"
@@ -57,7 +57,7 @@ const TestMasonryGrid = () => {
             </div>
             <div
               id="sq3"
-              className="sq-styles wrounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+              className="w-full sq-styles rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
             >
               3 green-blue-purple-rtg3- <b>(site 1) description</b>
               <div id="img-wrapper" className="w-full h-64 bg-test1">
@@ -80,7 +80,7 @@ const TestMasonryGrid = () => {
           {/* //? COMBINE 2, 3 SIDE BY SIDE, W /FLEX ^*/}
           <div
             id="sq4"
-            className="sq-styles col-span-2 row-span-1  rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
+            className="col-span-2 row-span-1  sq-styles rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
           >
             red-yellow-sq4
             <p>
@@ -100,46 +100,48 @@ const TestMasonryGrid = () => {
 
           {/* //TODO: 5, 6 SIDE BY SIDE v*/}
           <div
-            id="sq5"
-            className="sq-styles 2xl:col-span-2 col-span-1 row-span-1  rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600"
+            id="flex"
+            class="flex md:flex-row flex-col space-x-4 bg-teal col-span-3"
           >
-            red-yellow-rtg5- <b>(site 2) About LC- Blurb</b>
-            <p>
-              5Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              nobis ea magni quasi, corporis distinctio labore cumque totam
-              voluptate officia, non aspernatur et accusamus. Rerum odio itaque
-              perferendis facere molestiae? sum dolor sit amet consectetur
-              adipisicing elit. Cum nobis ea magni quasi, corporis distinctio
-              labore cumque totam voluptate officia, non asperna
-            </p>
-            <p>
-              5Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-              itaque libero! Tempora dolore totam beatae nesciunt. Quam, harum,
-              mollitia odio esse, voluptates similique nesciunt aspernatur iure
-              dolorum laboriosam dolor. Nobis?
-            </p>
+            <div
+              id="sq5"
+              className="sq-styles 2xl:col-span-2 col-span-1 row-span-1  rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600"
+            >
+              red-yellow-rtg5- <b>(site 2) About LC- Blurb</b>
+              <p>
+                5Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                nobis ea magni quasi, corporis distinctio labore cumque totam
+                voluptate officia, non aspernatur et accusamus. Rerum odio
+                itaque perferendis facere molestiae? sum dolor sit amet
+                consectetur adipisicing elit. Cum nobis ea magni quasi, corporis
+                distinctio labore cumque totam voluptate officia, non asperna
+              </p>
+              <p>
+                5Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                itaque libero! Tempora dolore totam beatae nesciunt. Quam,
+                harum, mollitia odio esse, voluptates similique nesciunt
+                aspernatur iure dolorum laboriosam dolor. Nobis?
+              </p>
+            </div>
+            {/*  */}
+            <></>
+            {/*  */}
+            {/*  //*: DIVIDE */}
+            <div
+              id="6"
+              className="sq-styles col-span-3 row-span-1  rounded-lg bg-gradient-to-r bg-test1"
+            >
+              <h3>
+                white-sq6- <b>CTA</b>
+              </h3>
+              <p>
+                5Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                itaque libero! Tempora dolore totam beatae nesciunt. Quam,
+                harum, mollitia odio esse, voluptates similique nesciunt
+                aspernatur iure dolorum laboriosam dolor. Nobis?
+              </p>
+            </div>
           </div>
-          {/*  */}
-          <></>
-
-          {/*  */}
-
-          {/*  //*: DIVIDE */}
-          <div
-            id="6"
-            className="sq-styles col-span-1 row-span-1  rounded-lg bg-gradient-to-r bg-white"
-          >
-            <h3>
-              white-sq6- <b>CTA</b>
-            </h3>
-            <p>
-              5Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-              itaque libero! Tempora dolore totam beatae nesciunt. Quam, harum,
-              mollitia odio esse, voluptates similique nesciunt aspernatur iure
-              dolorum laboriosam dolor. Nobis?
-            </p>
-          </div>
-
           {/* //TODO: 5, 6 SIDE BY SIDE v*/}
         </div>
       </div>

@@ -27,4 +27,9 @@ html {
 .sq-styles {
   border: 2px solid #000;
   padding: 10px;
+  margin: 15px;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+  }
 }
