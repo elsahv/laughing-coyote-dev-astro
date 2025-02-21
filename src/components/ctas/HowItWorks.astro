@@ -15,17 +15,26 @@ const items = [
 ];
 ---
 
-<!-- * 4. first person---how it works- (4 sq grid: 'gives client a plan')-- v-->
-<div class="my-[50px]">
-  <div id="how-it-works-wrapper" class="bg-test2 2xl:p-5 mb-5 mx-5">
+<div id="wrapper" class="md:p-5 p-1 my-[50px] bg-orange border border-teal">
+  <div id="" class="flex justify-center p-3">
+    <h2 class="text-2xl pb-5 font-bold italic md:mx-5 md:px-5">
+      “ABOUT- Ive spent time learning how to simplify the design process so you
+      can focus on your business instead.”
+    </h2>
+  </div>
+
+  <div id="how-it-works-wrapper" class="2xl:p-5 mb-5 md:mx-5">
     <div id="how-it-works-container" class="2xl:p-5 mb-5 2xl:mx-5">
       <div
         id="grid"
-        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[50px] md:px-5 px-0"
+        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl gap-5 md:px-5"
       >
         {
           items.map((item) => (
-            <div id="sq" class="p-5 bg-teal text-test1 border-2 border-orange">
+            <div
+              id="sq"
+              class="p-5 rounded bg-teal text-parchment border-2 border-onyx m-1"
+            >
               <h2 class="font-bold">{item.title}</h2>
               <p class="pt-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

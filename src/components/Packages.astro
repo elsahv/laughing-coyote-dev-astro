@@ -21,19 +21,17 @@ const items = [
       "see grid below for some of the possibilities!",
   },
 ];
-
 ---
 
----
-
-<div id="wrapper" class="h-screen flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg-">
+<div id="wrapper" class="bg-teal h-screen flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg-">
   <div id="container" class="max-w-[1060px]">
-    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
+    pkgs
+    <div id="grid" class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
       {
         items.map((item) => (
           <div
-            id="sq"
-            class="p-5 bg-teal rounded-lg text-parchment border border-black"
+            id="card"
+            class="p-5 bg-test2 rounded-lg text-teal border border-black"
           >
             <h2 class="font-bold text-2xl">{item.title}</h2>
             <div id="img-wrapper">

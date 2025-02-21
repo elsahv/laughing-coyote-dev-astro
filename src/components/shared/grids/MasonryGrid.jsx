@@ -1,14 +1,14 @@
-const TestMasonryGrid = () => {
+const MasonryGrid = () => {
   return (
     <>
-      <div id="grid-wrapper" className="2xl:px-5 px-0 bg-test2">
+      <div id="grid-wrapper" className="md:mx-5 mx-0 2xl:px-[50px]">
         <div
           id="grid"
-          className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 2xl:p-[100px] p-5"
+          className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-2 2xl:p-[100px] p-5"
         >
           <div
             id="sq1"
-            className="sq-styles 2xl:col-span-1 col-span-2 2xl:row-span-2 row-span-1 rounded-lg bg-gradient-to-r from-green-500 to-green-700"
+            className="sq-styles 2xl:col-span-1 col-span-2 2xl:row-span-2 row-span-1 rounded-lg bg-gradient-to-r from-green-500 to-green-700 mb-4 2xl:mr-4"
           >
             <div>
               <b>Hovey Roofing Ex</b>
@@ -31,11 +31,11 @@ const TestMasonryGrid = () => {
           {/* //? COMBINE 2, 3 SIDE BY SIDE, W /FLEX v*/}
           <div
             id="flex"
-            class="flex md:flex-row flex-col space-x-4 bg- col-span-2"
+            class="flex md:flex-row sq-styles:flex-col space-4 col-span-2"
           >
             <div
               id="sq2"
-              className=" sq-styles rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"
+              className="sq-styles rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"
             >
               pink-indigo-sq2
               <p>
@@ -57,7 +57,7 @@ const TestMasonryGrid = () => {
             </div>
             <div
               id="sq3"
-              className="w-full sq-styles rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+              className="w-full sq-styles md:mt-0 mt-5 md:ml-5 2xl:my-0 rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
             >
               3 green-blue-purple-rtg3- <b>(site 1) description</b>
               <div id="img-wrapper" className="w-full h-64 bg-test1">
@@ -80,7 +80,7 @@ const TestMasonryGrid = () => {
           {/* //? COMBINE 2, 3 SIDE BY SIDE, W /FLEX ^*/}
           <div
             id="sq4"
-            className="col-span-2 row-span-1  sq-styles rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
+            className="col-span-2 row-span-1 my-4 sq-styles rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
           >
             red-yellow-sq4
             <p>
@@ -101,11 +101,11 @@ const TestMasonryGrid = () => {
           {/* //TODO: 5, 6 SIDE BY SIDE v*/}
           <div
             id="flex"
-            class="flex md:flex-row flex-col space-x-4 bg-teal col-span-3"
+            class="flex md:flex-row flex-col md:space-x-4 col-span-3"
           >
             <div
               id="sq5"
-              className="sq-styles 2xl:col-span-2 col-span-1 row-span-1  rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600"
+              className="sq-styles 2xl:col-span-2 col-span-1 row-span-1 rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600"
             >
               red-yellow-rtg5- <b>(site 2) About LC- Blurb</b>
               <p>
@@ -127,9 +127,10 @@ const TestMasonryGrid = () => {
             <></>
             {/*  */}
             {/*  //*: DIVIDE */}
+
             <div
               id="6"
-              className="sq-styles col-span-3 row-span-1  rounded-lg bg-gradient-to-r bg-test1"
+              className="sq-styles 2xl:ml-5 md:mt-0 mt-5 col-span-3 row-span-1 rounded-lg xbg-gradient-to-r bg-test1"
             >
               <h3>
                 white-sq6- <b>CTA</b>
@@ -149,4 +150,4 @@ const TestMasonryGrid = () => {
   );
 };
 
-export default TestMasonryGrid;
+export default MasonryGrid;

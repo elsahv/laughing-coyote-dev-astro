@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       testWidth: {
-        testCustomSm: "599px",
+        testCustomSm: "598px",
       },
       colors: {
         richBlack: "#001524",
