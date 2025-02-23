@@ -26,5 +26,9 @@ html {
 
 .sq-styles {
   border: 2px solid teal;
-  padding: 10px;
+  /* padding: 10px; */
+}
+
+#window-sq {
+  background: teal;
 }

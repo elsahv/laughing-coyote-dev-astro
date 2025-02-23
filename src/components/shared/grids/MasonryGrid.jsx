@@ -1,3 +1,25 @@
+import WindowGrid from "../../tests/WindowGrid";
+
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubAlt } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
+const SmIcons = [
+  {
+    icon: <FaLinkedin />,
+  },
+  {
+    icon: <FaGithubAlt />,
+  },
+  {
+    icon: <FaFacebook />,
+  },
+  {
+    icon: <FaInstagram />,
+  },
+];
+
 const MasonryGrid = () => {
   return (
     <>
@@ -31,7 +53,7 @@ const MasonryGrid = () => {
           {/* //? COMBINE 2, 3 SIDE BY SIDE, W /FLEX v*/}
           <div
             id="flex"
-            class="flex md:flex-row sq-styles:flex-col space-4 col-span-2"
+            class="flex md:flex-row flex-col sq-styles space-4 col-span-2"
           >
             <div
               id="sq2"
@@ -57,19 +79,9 @@ const MasonryGrid = () => {
             </div>
             <div
               id="sq3"
-              className="w-full sq-styles md:mt-0 mt-5 md:ml-5 2xl:my-0 rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+              className="w-[200px] sq-styles md:mt-0 mt-5 md:ml-5 2xl:my-0 rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 "
             >
-              3 green-blue-purple-rtg3- <b>(site 1) description</b>
-              <div id="img-wrapper" className="w-full h-64 bg-test1">
-                <div id="img-container">hov roof img</div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo odio nam eius nemo minus rem voluptate quaerat
-                ducimus, odit fugiat molestiae dolore itaque inventore.
-                Deserunt, quia necessitatibus! Consectetur, quod sunt? rem
-                voluptate quaerat
-              </p>
+              <WindowGrid />
             </div>
           </div>
 
