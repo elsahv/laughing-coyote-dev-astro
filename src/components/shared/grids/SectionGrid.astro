@@ -8,38 +8,67 @@ export interface Props {
   listitem3: string;
   listitem4: string;
   heroImg: string;
+  btn1: string;
+  btn2: string;
+  btnLink1: string;
+  btnLink2: string;
 }
 
-const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
-  Astro.props as Props;
+const {
+  title,
+  listitem1,
+  listitem2,
+  listitem3,
+  listitem4,
+  heroImg,
+  btn1,
+  btn2,
+  btnLink1,
+  btnLink2,
+} = Astro.props as Props;
 ---
 
-<div id="hero-wrapper" class="text-onyx 2xl:h-screen flex justify-center">
+<div
+  id="hero-wrapper"
+  class="bg-teal text-onyx 2xl:h-screen flex justify-center"
+>
   <div id="hero-grid" class="grid xl:grid-cols-2 grid-cols-1">
-    <div id="SQ1" class="2xl:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
-      <div id="padding" class="pt-1 pl-5 bg-">
-        <h2 class="text-test lg:text-4xl md:text-3xl text-2xl pb-2">
-          {title}
-        </h2>
-        <ul>
-          <li class="lowercase md:text-xl text-md">- {listitem1}</li>
-          <li class="lowercase md:text-xl text-md">- {listitem2}</li>
-          <li class="lowercase md:text-xl text-md">- {listitem3}</li>
-          <li class="lowercase md:text-xl text-md">- {listitem4}</li>
-        </ul>
-        <!-- * BTN WRAPPER   v-->
-        <ButtonProps
-          btn1="see more"
-          btn2="contact"
-          btn1Link="/#about"
-          btn2Link="/#contact"
-        />
-        <!-- * BTN WRAPPER   ^-->
+    <div id="sq1" class="bg-test1 2xl:p-5 px-1 py-3 mb-5 2xl:mt-[250px] mt-1">
+      <!-- <div id="padding" class="pt-1 pl-5 bg-"> -->
+      <h2 class="text-test lg:text-4xl md:text-3xl text-2xl pb-2">
+        {title}
+      </h2>
+      <ul>
+        <li class="lowercase md:text-xl text-md">- {listitem1}</li>
+        <li class="lowercase md:text-xl text-md">- {listitem2}</li>
+        <li class="lowercase md:text-xl text-md">- {listitem3}</li>
+        <li class="lowercase md:text-xl text-md">- {listitem4}</li>
+      </ul>
+      <!-- * BTN WRAPPER   v-->
+
+      <div id="btn-wrapper" class="bg-test mt-5 ml-2">
+        <button
+          id="btn1"
+          class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
+        >
+          <a href={btnLink1}>
+            {btn1}
+          </a>
+        </button>
+
+        <button
+          id="btn2"
+          class="rounded border border-black py-1 px-2 bg-orange text-parchment"
+        >
+          <a href="/contact">Contact</a>
+        </button>
       </div>
+      <!-- * BTN WRAPPER   ^-->
+      <!-- </div> -->
     </div>
     <div
       id="sq2"
-      class="flex justify-center items-center 2xl:p-0 pb-1 2xl:pt-3 pt-[70px]"
+      class="bg-test2 flex justify-center items-center 2xl:p-0 pb-1 2xl:pt-3 pt-[70px]"
     >
       <img src={heroImg} class="" />
     </div>

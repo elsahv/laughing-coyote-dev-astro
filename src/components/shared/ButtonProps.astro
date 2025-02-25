@@ -1,25 +1,23 @@
 ---
 export interface Props {
   btn1: any;
-  btn2: any;
   btn1Link: string;
-  btn2Link: string;
 }
 
-const { btn1, btn2, btn1Link, btn2Link } = Astro.props as Props;
+const { btn1, btn1Link } = Astro.props as Props;
 ---
 
-<div class="">
-  <div id="btn-wrapper" class="mt-5">
-    <button
-      class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
-    >
-      <a href={btn1Link}>{btn1}</a>
-    </button>
-    <button
-      class="rounded border border-black py-1 px-2 bg-orange text-parchment"
-    >
-      <a href={btn2Link}>{btn2}</a>
-    </button>
-  </div>
+<div id="btn-wrapper" class="mt-5 bg- max-w-52 flex justify-center py-1">
+  <button
+    id="dynamic-btn"
+    class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
+  >
+    <a href={btn1Link}>{btn1}</a>
+  </button>
+  <button
+    id="contact-btn"
+    class="rounded border border-black py-1 px-2 bg-orange text-parchment"
+  >
+    <a href="/">contact</a>
+  </button>
 </div>

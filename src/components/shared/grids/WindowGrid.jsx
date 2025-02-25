@@ -20,16 +20,16 @@ const SmIcons = [
 
 const WindowGrid = () => {
   return (
-    <div id="window-grid-wrapper" className="bg- w-[200px]">
-      <h2>
-        <b> Social Media</b>
-      </h2>
-      <div id="window-grid" className="grid grid-cols-2 gap-3">
+    <div id="window-grid-wrapper" className="pt-5">
+      {/* <h2 className="text-2xl underline font-bold p-2 text-center ">
+        Social Media
+      </h2> */}
+      <div id="window-grid" className="mt-2 p-5 grid grid-cols-2 gap-y-10 ">
         {SmIcons.map((item) => (
           <div key={item.icon}>
-            <div className="">
-              <h4 className="w-full bg-test1">{item.icon}</h4>
-            </div>
+            <h4 className="xl:text-5xl md:text-4xl text-5xl bg-test flex justify-center ">
+              {item.icon}
+            </h4>
           </div>
         ))}
       </div>
