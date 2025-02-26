@@ -7,8 +7,9 @@ import Sq6 from "./sq6";
 
 const SocialProof = () => {
   return (
-    <div id="socialProof-container">
+    <div id="socialProof-container" className="opacity-90 hover:opacity-100">
       <div id="socialProof-grid" className="md:mx-5 mx-0 2xl:px-[80px]">
+        <h2>Who LC helps:</h2>
         <div
           id="grid"
           className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-2 2xl:p-[100px] p-7"
