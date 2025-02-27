@@ -1,15 +1,19 @@
 const items = [
   {
-    title: "template 1",
+    title:
+      "https://dl.dropboxusercontent.com/scl/fi/5inddieiui1bocegxbi41/IMG_0470.jpg?rlkey=hoj3wvshffzs38wfxqmllcz77&st=dzvoyqvj&dl=0",
   },
   {
-    title: "template 2",
+    title:
+      "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=czai5y3y&dl=0",
   },
   {
-    title: "template 3",
+    title:
+      "https://dl.dropboxusercontent.com/scl/fi/5inddieiui1bocegxbi41/IMG_0470.jpg?rlkey=hoj3wvshffzs38wfxqmllcz77&st=dzvoyqvj&dl=0",
   },
   {
-    title: "template 4",
+    title:
+      "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=czai5y3y&dl=0",
   },
 ];
 
@@ -17,26 +21,31 @@ const Sq4 = () => {
   return (
     <div
       id="sq4"
-      className="border-2 border-black col-span-2 row-span-1 my-4 sq-styles rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
+      className="border-2 border-black col-span-2 row-span-1 my-4 sq-styles rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
     >
-      <div id="wrapper" class="md:p-5 p-1  ">
-        <div id="how-it-works-wrapper" class="2xl:p-5 mb-5 md:mx-5">
+      {/* <h2>LC TEMPLATES</h2> */}
+      {/* <div id="wrapper" class="  "> */}
+      {/* <div id="how-it-works-wrapper" class=""> */}
+      <div
+        id="grid"
+        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl gap-5 "
+      >
+        {items.map((item) => (
           <div
-            id="grid"
-            class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl gap-5 md:px-5"
+            id="templates"
+            key={item.title}
+            class="rounded bg-teal text-parchment border-2 border-onyx h-"
           >
-            {items.map((item) => (
-              <div
-                id="templates"
-                key={item.title}
-                class="p-5 rounded bg-teal text-parchment border-2 border-onyx m-1"
-              >
-                <h2 class="font-bold">{item.title}</h2>
-              </div>
-            ))}
+            <img
+              src={item.title}
+              alt=""
+              class="border-2 border-black rounded-lg"
+            />
           </div>
-        </div>
+        ))}
       </div>
+      {/* </div> */}
+      {/* </div>   */}
     </div>
   );
 };

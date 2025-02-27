@@ -9,15 +9,15 @@ export interface Props {
 const { headline, paragraph2, paragraph3, paragraph1 } = Astro.props as Props;
 ---
 
-<div id="dynamic-banner-wrapper" class="mt-5">
-  <div class="p-5 border-2 border-t-black border-b-black">
-    <h4 class="text-3xl my-1 font-bold">
+<div id="dynamic-banner-wrapper" class="text-center mt-5">
+  <div class="p-5">
+    <h4 class="text-5xl my-1 font-bold">
       {headline}
     </h4>
     <div class="text-xl flex flex-col">
       <p class="">{paragraph1}</p>
-      <p class="">{paragraph2}</p>
-      <p class="">{paragraph3}</p>
+      <!-- <p class="">{paragraph2}</p>
+      <p class="">{paragraph3}</p> -->
     </div>
   </div>
 </div>

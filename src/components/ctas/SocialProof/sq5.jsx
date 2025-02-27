@@ -6,16 +6,18 @@ const Sq5 = () => {
     >
       <h4 className="font-bold">About LC</h4>
 
-      <p className="">
-        5Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis ea
-        magni quasi, corporis distinctio labore cumque totam voluptate officia,
-        non aspernatur et accusamus. Rerum odio itaque perferendis facere
-        molestiae? sum dolor sit amet consectetur adipisicing elit. Cum nobis ea
-        magni quasi, corporis distinctio labore cumque totam voluptate officia,
-        non asperna
+      <p id="part-of-problem-solving-section" className="">
+        LC was inspired by my desire to stand out as a web devleoper, my
+        portfolio is my first project. magni quasi, corporis distinctio labore
+        cumque totam voluptate officia, non aspernatur et accusamus. Rerum odio
+        itaque perferendis facere molestiae? sum dolor sit amet consectetur
+        adipisicing elit. Cum nobis ea magni quasi, corporis distinctio labore
+        cumque totam voluptate officia, non asperna {"-->"}
       </p>
-      <p>
-        <a href="/#problem-solving section">link to problem solving section</a>
+      <p className="pt-1">
+        <a href="/#problem-solving section" class="underline">
+          link to problem solving section
+        </a>
       </p>
     </div>
   );

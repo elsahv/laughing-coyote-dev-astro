@@ -6,15 +6,19 @@ import { FaInstagram } from "react-icons/fa";
 const SmIcons = [
   {
     icon: <FaLinkedin />,
+    link: "https://linkedin.com",
   },
   {
     icon: <FaGithubAlt />,
+    link: "https://github.com/elsahv?tab=repositories",
   },
   {
     icon: <FaFacebook />,
+    link: "https://facebook.com",
   },
   {
     icon: <FaInstagram />,
+    link: "http://instagram.com",
   },
 ];
 
@@ -27,9 +31,14 @@ const WindowGrid = () => {
       <div id="window-grid" className="mt-2 p-5 grid grid-cols-2 gap-y-10 ">
         {SmIcons.map((item) => (
           <div key={item.icon}>
-            <h4 className="xl:text-5xl md:text-4xl text-5xl bg-test flex justify-center ">
-              {item.icon}
-            </h4>
+            <div
+              id="sm-icon-wrapper"
+              className="xl:text-5xl md:text-4xl text-5xl bg-test flex justify-center "
+            >
+              <a href={item.link} className="hover:text-lavender">
+                {item.icon}
+              </a>
+            </div>
           </div>
         ))}
       </div>

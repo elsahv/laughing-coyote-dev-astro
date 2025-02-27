@@ -4,7 +4,7 @@ const items = [
     id: 1,
     image:
       "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "WEB DESIGN",
+    title: "WEB DESIGN- fjdskj",
     link: "/test1",
   },
   {
@@ -60,24 +60,26 @@ const items = [
 ];
 ---
 
-<div
-  id="gallery-grid"
-  class="2xl:px-[155px] px-3 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 my-5 py-5"
->
-  {
-    items.map((item) => (
-      <div class="">
-        <a href={item.link}>
-          <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
-            {item.title}
-          </p>
-          <img
-            src={item.image}
-            alt=""
-            class="border border-black w-[650px] h-[350px] "
-          />
-        </a>
-      </div>
-    ))
-  }
+<div id="galleryGrid-wrapper" class="flex justify-center">
+  <div
+    id="gallery-grid"
+    class="xl:px-[155px] grid 2xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 my-5 py-5"
+  >
+    {
+      items.map((item) => (
+        <div class="">
+          <a href={item.link}>
+            <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl rounded-br-2xl rounded-tl-2xl">
+              {item.title}
+            </p>
+            <img
+              src={item.image}
+              alt=""
+              class="rounded-2xl border-2 border-black w-[500px] h-[450px] "
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
 </div>

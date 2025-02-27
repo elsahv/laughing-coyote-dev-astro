@@ -1,4 +1,6 @@
 ---
+import AreYouReady from "../ctas/AreYouReady.astro";
+
 const items = [
   {
     title: "instagram",
@@ -19,6 +21,7 @@ const items = [
 ---
 
 <section id="contact" class="py-5">
+  <AreYouReady />
   <div class="px-5 md:px-10">
     <div class="mx-auto w-full max-w-7xl">
       <div class="py-16 md:py-24 lg:py-32">
@@ -42,7 +45,7 @@ const items = [
               </div>
             </div>
           </div>
-          <div class="bg-teal p-5">
+          <div class="bg-teal rounded-md p-5">
             <h1 class="text-3xl text-onyx">lets connect</h1>
             <div
               class="flex justify-center px-1 py-2 dropshadow-2xl my-3 border border-test2 rounded"
