@@ -8,19 +8,21 @@ import Sq6 from "./sq6";
 
 const SocialProof = () => {
   return (
-    <div id="social-proof-wrapper">
+    <div id="social-proof-wrapper" class="2xl:opacity-80 opacity-100">
       <div id="socialProof-container" className="opacity-90 hover:opacity-100">
         <div id="socialProof-grid" className="md:mx-5 mx-0 2xl:px-[80px]">
-          {/* <h2>Who LC helps:</h2> */}
+          <div id="" class="flex justify-center p-3">
+            <h2 class="underline text-3xl pb-5 font-bold italic md:mx-5 md:px-5">
+              Website Case Studies
+            </h2>
+          </div>
+
           <div
             id="grid"
-            className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-2 2xl:p-[100px] p-7"
+            className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-2 2xl:px-[100px] p-7"
           >
             <Sq1 />
-            <div
-              id="flex"
-              class="flex md:flex-row flex-col sq-styles col-span-2"
-            >
+            <div id="flex" class="flex md:flex-row flex-col col-span-2 bg-">
               <Sq2 />
               <Sq3 />
             </div>

@@ -16,12 +16,13 @@ const items = [
 ---
 
 <div id="wrapper" class="md:p-5 p-1 my-[50px] bg-w border border-teal">
+  <!-- TODO: CURRENTLY CREATE DYNAMIC CENTER TITLE -->
   <div id="" class="flex justify-center p-3">
     <h2 class="text-2xl pb-5 font-bold italic md:mx-5 md:px-5">
       Gives client a plan
     </h2>
   </div>
-
+  <!--  -->
   <div id="how-it-works-wrapper" class="2xl:p-5 mb-5 md:mx-5">
     <div id="how-it-works-container" class="2xl:p-5 mb-5 2xl:mx-5">
       <div
@@ -30,10 +31,7 @@ const items = [
       >
         {
           items.map((item) => (
-            <div
-              id="sq"
-              class="p-5 rounded bg-teal text-parchment border-2 border-onyx m-1"
-            >
+            <div id="sq" class="p-5 sq-styles bg-teal text-parchment m-1">
               <h2 class="font-bold">{item.title}</h2>
               <p class="pt-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

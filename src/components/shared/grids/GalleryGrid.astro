@@ -69,13 +69,11 @@ const items = [
       items.map((item) => (
         <div class="">
           <a href={item.link}>
-            <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl rounded-br-2xl rounded-tl-2xl">
-              {item.title}
-            </p>
+            <p class=" p-2 lowercase dropshadow-2xl text-2xl">{item.title}</p>
             <img
               src={item.image}
               alt=""
-              class="rounded-2xl border-2 border-black w-[500px] h-[450px] "
+              class="rounded border border-black w-[500px] h-[450px] "
             />
           </a>
         </div>

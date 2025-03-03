@@ -21,31 +21,31 @@ const Sq4 = () => {
   return (
     <div
       id="sq4"
-      className="border-2 border-black col-span-2 row-span-1 my-4 sq-styles rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
+      className="col-span-2 row-span-1 my-4 rounded-lg -gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
     >
-      {/* <h2>LC TEMPLATES</h2> */}
-      {/* <div id="wrapper" class="  "> */}
-      {/* <div id="how-it-works-wrapper" class=""> */}
-      <div
-        id="grid"
-        class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl gap-5 "
-      >
-        {items.map((item) => (
+      <h2>Interactive LC TEMPLATES</h2>
+      <div id="wrapper" class="  ">
+        <div id="how-it-works-wrapper" class="">
           <div
-            id="templates"
-            key={item.title}
-            class="rounded bg-teal text-parchment border-2 border-onyx h-"
+            id="grid"
+            class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl gap-5 "
           >
-            <img
-              src={item.title}
-              alt=""
-              class="border-2 border-black rounded-lg"
-            />
+            {items.map((item) => (
+              <div
+                id="templates"
+                key={item.title}
+                class=" text-parchment rounded"
+              >
+                <img
+                  src={item.title}
+                  alt=""
+                  class="border border-onyx rounded-lg h-full"
+                />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-      {/* </div> */}
-      {/* </div>   */}
     </div>
   );
 };

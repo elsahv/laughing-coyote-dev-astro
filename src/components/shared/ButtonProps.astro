@@ -8,16 +8,10 @@ const { btn1, btn1Link } = Astro.props as Props;
 ---
 
 <div id="btn-wrapper" class="mt-5 bg- max-w-52 flex justify-center py-1">
-  <button
-    id="dynamic-btn"
-    class="rounded border border-black py-1 px-2 mr-4 bg-test1 text-teal"
-  >
+  <button id="dynamic-btn" class="sq-styles py-1 px-2 mr-4 bg-test1 text-teal">
     <a href={btn1Link}>{btn1}</a>
   </button>
-  <button
-    id="contact-btn"
-    class="rounded border border-black py-1 px-2 bg-test2 text-"
-  >
+  <button id="contact-btn" class="sq-styles py-1 px-2 bg-test2 text-">
     <a href="/">contact</a>
   </button>
 </div>

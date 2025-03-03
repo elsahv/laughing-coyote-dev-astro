@@ -1,20 +1,23 @@
 ---
 import HowItWorks from "../ctas/HowItWorks.astro";
 import WhatsIncluded from "../ctas/WhatsIncluded.astro";
-import CenterPageBanner from "../shared/CenterPageBanner.astro";
-import SocialProof from "../ctas/SocialProof";
-import ProblemSolving from "../ctas/ProblemSolving.astro";
-// import AreYouReady from "../ctas/AreYouReady.astro";
+import DynamicBanner from "../shared/Dynamic_Banner.astro";
+import GalleryGrid from "../shared/grids/GalleryGrid.astro";
 ---
 
-<section id="about" class="">
-  <!-- ?  UNSURE IF NEEDED v-->
-  <!-- ?<div id="website-services">
-    ?<CenterPageBanner BannerTitle="Social Proof" paragraph="" />
-  ?</div> ^-->
-  <SocialProof />
-  <ProblemSolving />
+<section id="" class="">
   <HowItWorks />
-  <!-- <WhatsIncluded /> -->
-  <!-- <AreYouReady /> -->
+</section>
+<section
+  id="website-services"
+  class="bg- text-teal border border- mt-5 py-[110px]"
+>
+  <DynamicBanner
+    headline="Website Services"
+    paragraph1="storytelling through fiction and business  '"
+    paragraph2="storytelling through fiction and business  '"
+    paragraph3="storytelling through fiction and business  '"
+  />
+  <GalleryGrid />
+  <WhatsIncluded />
 </section>

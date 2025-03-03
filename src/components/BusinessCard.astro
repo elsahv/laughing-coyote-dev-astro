@@ -18,9 +18,9 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
   id=""
   class="px-5 2xl:mx-[150px] bg- text-onyx 2xl:h-screen flex justify-center pt-1"
 >
-  <div id="grid" class="grid md:grid-cols-2 grid-cols-1">
-    <div id="SQ1" class="flex items-center bg- 2xl:p-5 mb-5">
-      <img src={heroImg} class="md:w-3/4 border border-black rounded-lg" />
+  <div id="grid" class="bg- grid md:grid-cols-2 grid-cols-1">
+    <div id="SQ1" class="flex justify-end items-center bg- 2xl:p-5 mb-5">
+      <img src={heroImg} class="md:w-3/4 sq-styles" />
     </div>
     <div
       id="sq2"
@@ -28,17 +28,19 @@ const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
     >
       <div id="padding" class="lg:p-5 p-1 bg-">
         <div class="">
-          <h2 class="lg:text-4xl text-3xl font-extrabold pb-2">
+          <h2 class="text-2xl bg- pb-2 border-b-2 border-black">
             {title}
           </h2>
-          <ul>
-            <li class="lowercase md:text-xl text-md">- {listitem1}</li>
-            <li class="lowercase md:text-xl text-md">- {listitem2}</li>
-            <li class="lowercase md:text-xl text-md">- {listitem3}</li>
-            <li class="lowercase md:text-xl text-md">- {listitem4}</li>
+          <ul
+            class="space-y-5 list-decimal lowercase md:text-xl text-md pt-5 pl-[30px]"
+          >
+            <li class="">{listitem1}</li>
+            <li class="">{listitem2}</li>
+            <li class="">{listitem3}</li>
+            <li class="">{listitem4}</li>
           </ul>
           <!-- * BTN WRAPPER   v-->
-          <ButtonProps btn1="see services" btn1Link="/#services" />
+          <ButtonProps btn1="see case studies" btn1Link="/#social-proof" />
           <!-- * BTN WRAPPER   ^-->
         </div>
       </div>

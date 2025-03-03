@@ -2,7 +2,7 @@ const Sq5 = () => {
   return (
     <div
       id="sq5"
-      className="mt-3 sq-styles 2xl:col-span-2 col-span-1 row-span-1 rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600 border-2 border-black p-5 2xl:h-3/4 h-full ml-[60px]"
+      className="mt-3 sq-styles 2xl:col-span-2 col-span-1 row-span-1 rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600 p-5 2xl:h-3/4 h-full md:ml-[60px]"
     >
       <h4 className="font-bold">About LC</h4>
 
@@ -16,7 +16,7 @@ const Sq5 = () => {
       </p>
       <p className="pt-1">
         <a href="/#problem-solving section" class="underline">
-          link to problem solving section
+          link to 'how it works'
         </a>
       </p>
     </div>

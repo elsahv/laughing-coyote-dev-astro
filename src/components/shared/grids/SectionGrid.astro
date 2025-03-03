@@ -28,9 +28,9 @@ const {
 
 <div id="section-grid" class="grid xl:grid-cols-2 grid-cols-1">
   <div id="sq1" class="bg- 2xl:p-5 px-1 py-3 mb-5 2xl:mt-[250px] md:mt-[150px]">
-    <h2 class="text-test lg:text-4xl md:text-3xl text-2xl pb-2">
+    <h1 class="text-test lg:text-4xl md:text-3xl text-2xl pb-2">
       {title}
-    </h2>
+    </h1>
     <ul class="space-y-1">
       <li class="lowercase md:text-xl text-md">- {listitem1}</li>
       <li class="lowercase md:text-xl text-md">- {listitem2}</li>
@@ -39,10 +39,10 @@ const {
     </ul>
     <!-- * BTN WRAPPER   v-->
 
-    <div id="btn-wrapper" class="bg-test mt-5 ml-2">
+    <div id="btn-wrapper" class="mt-5 ml-2">
       <button
         id="dynamic-btn"
-        class="rounded border border-black py-1 px-2 mr-4 bg-teal text-test2"
+        class="py-1 px-2 mr-4 sq-styles bg-teal text-test2"
       >
         <a href={dynamicBtnLink}>
           {dynamicBtn}
@@ -51,7 +51,7 @@ const {
 
       <button
         id="contact-btn"
-        class="rounded border border-black py-1 px-2 bg-orange text-parchment"
+        class="sq-styles py-1 px-2 bg-orange text-parchment"
       >
         <a href="/contact">Contact</a>
       </button>

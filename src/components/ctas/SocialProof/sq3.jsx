@@ -4,9 +4,12 @@ const Sq3 = () => {
   return (
     <div
       id="sq3"
-      className="md:w-2/3 bg-teal text-test2  border-2 border-black sq-styles mt-[130px] md:ml-5 rounded-lg "
+      className="mt-[190px] w-[445px] h-[205px]  md:ml-5 rounded-lg p-1"
     >
-      <WindowGrid />
+      <h4 className="">Social Media</h4>
+      <div className="text-test2  bg-teal sq-styles">
+        <WindowGrid />
+      </div>
     </div>
   );
 };
