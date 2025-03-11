@@ -1,12 +1,9 @@
 const Testimonial = () => {
   return (
-    <div
-      id="testimonial-wrapper"
-      class="bg- 2xl:m-[250px] md:my-[150px] md:mx-[50px] -"
-    >
+    <div id="testimonial-wrapper" class="bg-">
       <div id="testimonial-container" class="flex md:flex-row flex-col">
         <div
-          id="sq1"
+          id="left-side"
           class="bg- flex md:justify-end justify-center items-center bg- p-5"
         >
           <p className="w-3/4 font-medium text-lg">
@@ -17,13 +14,13 @@ const Testimonial = () => {
           </p>
         </div>
         <div
-          id="sq2"
+          id="right-side"
           class="bg- flex md:justify-start justify-center items-center text-onyx font-light "
         >
           <img
             src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
-            class="w-1/2 mr-5 rounded-lg"
+            class="sq-styles w-3/4 mr-5 rounded-lg"
           />
         </div>
       </div>

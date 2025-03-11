@@ -1,7 +1,7 @@
 ---
 const links = [
-  { label: "About", href: "/#about" },
-  { label: "Website Services", href: "/#case-studies" },
+  { label: "About", href: "/about" },
+  // { label: "Website Services", href: "/#case-studies" },
   // -> sublinks:whats included, packages
   //* { label: "Writing Skills", href: "/#writing-skills" },
   { label: "Work", href: "/work" },
@@ -11,24 +11,30 @@ const links = [
 
 <!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEtext-smN SCROLLING -->
 <header
-  class="border-teal border-b sticky top-0 bg-parchment dropshadow-2xl text-carribean z-50 2xl:pb-3 pb-[30px] 2xl:pt-2 pt-4"
+  class="bg- dropshadow-2xl text-teal z-50 2xl:pb-3 pb-[30px] 2xl:pt-3 px-5 mx-5"
 >
   <div
-    class="bg- md:pl-5 pl-0 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1"
+    class="bg-test md:pl-5 pl-0 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1"
   >
     <div
       id="header-logo"
-      class="bg- font-bold md:text-3xl text-2xl flex md:justify-start items-center 2xl:py-3 2xl:pl-1 pl-4"
+      class="bg-test font- md:text-3xl text-2xl flex md:justify-start items-center 2xl:pl-1 pl-4"
     >
-      <a href="/">Laughing Coyote Dev</a>
+      Laughing Coyote Dev
+      <a id="" href="/">
+        <img
+          src="https://dl.dropboxusercontent.com/scl/fi/xzf hk2jletg2hqwc9ecks/coyote.png?rlkey=xtfjf7plvgb8y3fjxdij0vdt5&st=xf6njv83&dl=0"
+          class="w-28 h-24"
+        />
+      </a>
     </div>
     <nav id="" class="bg-">
       <ul
-        class="bg- font-medium flex 2xl:flex-row flex-col 2xl:justify-end justify-start 2xl:items-end items-start 2xl:pt-0 pt-1"
+        class="bg-test h-[70%] flex 2xl:flex-row flex-col 2xl:justify-end justify-start 2xl:items-end items-start 2xl:pt-0 pt-1"
       >
         {
           links.map((link) => (
-            <li class="2xl:text-xl md:text-xl text-xl 2xl:pt-5 md:pt-1 pt-0 opacity-90 hover:opacity-100 drop-shadow-2xl">
+            <li class="text-xl 2xl:pt-5 md:pt-1 pt-0 opacity-90 hover:opacity-100 drop-shadow-2xl">
               <a class="mx-5" href={link.href}>
                 {link.label}
               </a>

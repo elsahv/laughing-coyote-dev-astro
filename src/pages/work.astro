@@ -69,29 +69,33 @@ const items = [
 ---
 <MainLayout>
    <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
-   <!-- <CenterPageBanner BannerTitle="WHATS INCLUDED"paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "/> -->
    <!-- <DynamicBanner headline="Work" paragraph1="sites featured on LC" paragraph2="p1 sfdsfsd" paragraph3="p1 sfdsfsd" headline="headline koskfsoF:LSfOLJ"        
-    
-   
    /> -->
+   
+   <div id="wrapper" class="border-t border-black">
+      <div id="banner-wrapper"class="mt-[150px]">
 
-   <div id="wrapper" class="">
-   <GalleryBanner title="Work" paragraph="sites featured on LC"    />
-   <div id="centered" class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg- mt-[200px]">
-    <div id="featured-sites-container" class="max-w-[1060px]">
-      <div id="featured-sites-grid" class="grid grid-cols-1 gap-x-5 gap-y-12">
+        <!-- TODO CURRENTLY: figure out banner --v -->
+     <CenterPageBanner BannerTitle="Work"paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "/>
+    </div>
+   <!-- <GalleryBanner title="Work" paragraph="sites featured on LC"    /> -->
+   <div id="works-wrapper" class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg- mt-[50px]">
+    <div id="works-container" class="bg- max-w-[1300px] ">
+      <div id="works-grid" class="grid grid-cols-1 gap-x-5 gap-y-12">
         {
           items.map((item) => (
             <div
               id="card" 
-              class="p-5 rounded-lg "
+              class="p-5 text-carribean"
             >
               <h2 class="font-bold text-2xl pb-2">{item.title}</h2>
 
 
-             <div id="flex" class="flex">
-              <div id="img-wrapper" class="w-full my-1 rounded">
-                     <img src={item.img} alt={item.title} class="border-2 border-black rounded-lg "/>
+             <div id="grid" class="grid grid-cols-2 bg-">
+
+
+              <div id="img-wrapper" class="my-1 bg-test1 rounded">
+                     <img src={item.img} alt={item.title} class="w-full  border-2 border-black rounded-lg "/>
               </div>
 
 
@@ -103,12 +107,12 @@ const items = [
                 <li>- {item.listitem4}</li>
               <!-- * BTN WRAPPER  (make visible when content available) v-->
               <div id="btns-wrapper" class="mt-5 text-sm">
-              <button id="btn1" class="sq-styles py-1 px-2 mr-4 bg-test2 text-teal">
+              <button id="btn1" class="sq-styles py-1 px-2 mr-4 bg- text-onyx">
                 <a href={item.btnLink1}>
                 {item.btn1}
                     </a>              
               </button>
-              <button id="btn2" class="sq-styles py-1 px-2 text-orange bg-parchment">
+              <button id="btn2" class="sq-styles py-1 px-2 text-onyx bg-parchment">
                 <a href={item.btnLink2}>
                 {item.btn2}
                     </a>   
@@ -122,7 +126,7 @@ const items = [
           ))
         }
       </div>
-        <Testimonial /> 
+        <!-- <Testimonial />  -->
     </div>
   
   </div>
@@ -130,5 +134,5 @@ const items = [
    <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG ^-->
 
 
-  <ContactCTA />
+  <!-- <ContactCTA /> -->
 </MainLayout>

@@ -2,7 +2,7 @@ const Sq1 = () => {
   return (
     <div
       id="Sq1"
-      className="2xl:hover:opacity-90 pt-[90px] my-5 2xl:col-span-1 col-span-2 2xl:row-span-2 row-span-1 mb-4 2xl:mr-4 ml-[0px]"
+      className="bg- 2xl:hover:opacity-90 pt-[45px] my-5 2xl:col-span-1 col-span-2 2xl:row-span-2 row-span-1 mb-4 2xl:mr-4 ml-[0px]"
     >
       <a href="/case-study/hoveyroofing">
         <img

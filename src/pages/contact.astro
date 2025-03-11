@@ -1,16 +1,21 @@
 ---
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import GalleryBanner from "../components/shared/GalleryBanner.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-  <GalleryBanner title="Contact" paragraph="- (where to find me!)" />
+  <!-- <GalleryBanner title="Contact" paragraph="- (where to find me!)" /> -->
   <div id="wrapper" class="m-5 p-5">
     <div id="container" class="m-5 p-5 bg-test1">
       <div id="grid" class="grid grid-cols-2">
         <div class="sq1">
-          <h1>contact headline</h1>
-          <p>
+          <!-- <h1 id="contact-page-title" class="text-3xl">Contact</h1> -->
+          <CenterPageBanner
+            BannerTitle="Contact"
+            paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
+          />
+          <p class="text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             laboriosam qui commodi veritatis vitae accusantium, odio, similique
             culpa excepturi nemo molestiae totam veniam eligendi atque, expedita
@@ -21,9 +26,18 @@ import MainLayout from "../layouts/MainLayout.astro";
           <div id="contact-form-wrapper" class="bg-test2 flex justify-center">
             <div id="contact-form-container" class="mr-5 bg-">
               <form action="" class="flex flex-col space-y-2">
-                <input type="text" class="sq-styles w-[400px]" />
-                <input type="text" class="sq-styles w-[400px]" />
-                <input type="text" class="sq-styles w-[400px]" />
+                <input
+                  type="text"
+                  class="rounded border border-teal h-[40px] w-[400px]"
+                />
+                <input
+                  type="text"
+                  class="rounded border border-teal h-[40px] w-[400px]"
+                />
+                <input
+                  type="text"
+                  class="rounded border border-teal h-[40px] w-[400px]"
+                />
               </form>
             </div>
           </div>

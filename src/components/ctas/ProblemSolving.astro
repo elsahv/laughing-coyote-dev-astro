@@ -1,5 +1,6 @@
 ---
 import ButtonProps from "../shared/ButtonProps.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
 
 export interface Props {
   title: string;
@@ -7,41 +8,53 @@ export interface Props {
   listitem2: string;
   listitem3: string;
   listitem4: string;
-  heroImg: string;
+  primaryImg: string;
+  secondaryImg: string;
 }
 
-const { title, listitem1, listitem2, listitem3, listitem4, heroImg } =
-  Astro.props as Props;
+const {
+  title,
+  listitem1,
+  listitem2,
+  listitem3,
+  listitem4,
+  primaryImg,
+  secondaryImg,
+} = Astro.props as Props;
 ---
 
-<div id="" class="px-5 2xl:mx-[155px] bg- text-onyx flex justify-center pt-1">
-  <div id="grid" class="bg- flex md:flex-row flex-col">
+<div
+  id=""
+  class="px-5 2xl:mx-[255px] rounded-lg bg-test sq- text- flex justify-center pt-1"
+>
+  <div id="grid" class="bg-t flex md:flex-row-reverse flex-col">
     <div id="SQ1" class="flex justify-end items-center bg- 2xl:p-5 mb-5">
-      <img src={heroImg} class="sq-styles" />
+      <img src={primaryImg} class="sq-styles" />
     </div>
     <div
       id="sq2"
       class="flex bg- md:justify-center md:items-center md:p-5 pb-1"
     >
       <div id="padding" class="lg:p-5 p-1 bg-">
-        <div class="">
-          <h2 class="text-2xl bg- pb-2 border-b-2 border-black">
-            {title}
-          </h2>
-          <ul
-            class="space-y-5 list-decimal lowercase md:text-xl text-md pt-5 pl-[30px]"
-          >
-            <li class="">{listitem1}</li>
-            <li class="">{listitem2}</li>
-            <li class="">{listitem3}</li>
-            <li class="">{listitem4}</li>
-          </ul>
-          <!-- * BTN WRAPPER   v-->
-          <ButtonProps btn1="see case studies" btn1Link="/#social-proof" />
-          <!-- * BTN WRAPPER   ^-->
+        <!-- <div class="text-"> -->
+        <div id="conditional-img" class="bg- py-5 pb-[40px]">
+          <img src={secondaryImg} alt="" class="sq-styles max-w-[43 0px]" />
         </div>
+
+        <ul class="bg- text- space-y-1 lowercase md:text-lg text-md pt-2">
+          <!-- TODO:CURRENTLY figure out conditional-img for homepage, and <CenterPageBanner /> for about pg -->
+          dsfdfd
+          <li class="">-{listitem1}</li>
+          <li class="">-{listitem2}</li>
+          <li class="">-{listitem3}</li>
+          <!-- <li class="">-{listitem4}</li> -->
+        </ul>
+        <!-- * BTN WRAPPER   v-->
+        <ButtonProps btn1="see case studies" btn1Link="/#social-proof" />
+        <!-- * BTN WRAPPER   ^-->
+        <!-- </div> -->
       </div>
-      <!-- <img src={heroImg} class="md:w-3/4 border border-black" /> -->
+      <!-- <img src={primaryImg} class="md:w-3/4 border border-black" /> -->
     </div>
   </div>
 </div>

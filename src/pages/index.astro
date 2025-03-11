@@ -1,21 +1,23 @@
 ---
-//   <!-- TODO v-->
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-import About from "../components/sections/About.astro";
-import WebsiteServices from "../components/sections/WebsiteServices.astro";
-import ContactCTA from "../components/sections/ContactCTA.astro";
-
-// import ContactCTA from "../components/sections/ContactCTA.astro";
-// import ContactCTA from "../components/sections/ContactCTA.astro";
-import CaseStudies from "../components/sections/CaseStudies.astro";
-//   <!-- TODO ^-->
+import MasonryGrid from "../components/ctas/MasonryGrid";
+import HomeAboutCTA from "../components/sections/HomeAboutCTA.astro";
+import TestCard1 from "../components/TestCard1.astro";
+import HowItWorks from "../components/ctas/HowItWorks.astro";
 ---
 
 <MainLayout>
   <Hero />
-  <About />
-  <CaseStudies />
-  <WebsiteServices />
-  <ContactCTA />
+  <MasonryGrid />
+  <!--  -->
+  <!--  -->
+  <!-- ?: make dynamic v-->
+  <TestCard1 />
+  <!-- ?: make dynamic ^-->
+  <!--  -->
+  <!--  -->
+  <HomeAboutCTA />
+  <HowItWorks />
+  <!-- <TestCard1 /> -works pg -->
 </MainLayout>
