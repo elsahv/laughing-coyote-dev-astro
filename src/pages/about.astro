@@ -1,22 +1,20 @@
 ---
 import ButtonProps from "../components/shared/ButtonProps.astro";
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import TestTernary from "../components/tests/TestTernary";
+import DynamicAboutCTA from "../components/tests/DynamicAboutCTA";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
+  <!-- TODO CURRENTLY: <DynamicAboutCTA /> v-->
   <div id="wrapper" class="test1">
     <div id="container" class="">
       <div id="grid" class="grid grid-cols-2 gap-5 test2">
-        <div id="sq1" class="orange flex justify-end">
+        <div id="sq1" class="bg-test1 flex justify-end">
           <div
             id="sq1-container"
-            class="w-1/2 flex justify-center items-center test2"
+            class="w-1/2 flex justify-center items-end test2"
           >
-            <!-- * CONDITIONAL FOR ABOUT TITLE HERE --v -->
-            <TestTernary isLoggedIn={true} username="about" />
-            <!-- * -----------------------------------^ -->
+            <DynamicAboutCTA isLoggedIn={true} username="About" />
           </div>
         </div>
         <div id="sq2" class="lavender row-span-2">
@@ -26,7 +24,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             class="sq-styles"
           />
         </div>
-        <div id="sq3" class="teal flex justify-end">
+        <div id="sq3" class="bg-teal flex justify-end">
           <ul class="test2 w-1/2">
             <li>
               -address key problem your client is experiencing' Ive spent time
@@ -36,14 +34,12 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li>-the ablity to tell your story and brand</li>
             <li>Increased potential customers, easier to find on Google.</li>
             <!-- * BTN WRAPPER   v-->
-            <ButtonProps btn1="see case studies" btn1Link="/#social-proof" />
+            <ButtonProps btn1="see about" btn1Link="/about" />
             <!-- * BTN WRAPPER   ^-->
           </ul>
         </div>
-        <!-- <div id="sq4" class="test2">img</div> -->
       </div>
     </div>
   </div>
-
-  <!-- TODO: CTA TO WORK PORTFOLIO PG -->
+  <!-- TODO CURRENTLY: <DynamicAboutCTA /> ^-->
 </MainLayout>

@@ -7,7 +7,7 @@ import HowItWorks from "../components/ctas/HowItWorks.astro";
 import ButtonProps from "../components/shared/ButtonProps.astro";
 import TestImg from "../images/coyote.png";
 import { Image } from "astro:assets";
-import TestTernary from "../components/tests/TestTernary";
+import DynamicAboutCTA from "../components/tests/DynamicAboutCTA";
 ---
 
 <MainLayout>
@@ -18,6 +18,7 @@ import TestTernary from "../components/tests/TestTernary";
   <TestCard1 />
   <!-- ?: make dynamic ^-->
 
+  <!-- TODO CURRENTLY: <DynamicAboutCTA /> v-->
   <div id="wrapper" class="test1">
     <div id="container" class="">
       <div id="grid" class="grid grid-cols-2 gap-5 test2">
@@ -26,9 +27,7 @@ import TestTernary from "../components/tests/TestTernary";
             id="sq1-container"
             class="w-1/2 flex justify-center items-center test2"
           >
-            <!-- * CONDITIONAL FOR SECONDARY IMG HERE --v -->
-            <TestTernary isLoggedIn={false} username="About" />
-            <!-- * -----------------------------------^ -->
+            <DynamicAboutCTA isLoggedIn={false} username="About" />
           </div>
         </div>
         <div id="sq2" class="lavender row-span-2">
@@ -52,9 +51,9 @@ import TestTernary from "../components/tests/TestTernary";
             <!-- * BTN WRAPPER   ^-->
           </ul>
         </div>
-        <!-- <div id="sq4" class="test2">img</div> -->
       </div>
     </div>
   </div>
+  <!-- TODO CURRENTLY: <DynamicAboutCTA /> ^-->
   <HowItWorks />
 </MainLayout>
