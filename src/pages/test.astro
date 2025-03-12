@@ -1,17 +1,7 @@
 ---
-import WebsiteServices from "../components/sections/WebsiteServices.astro";
-import TestCard1 from "../components/TestCard1.astro";
-import MainLayout from "../layouts/MainLayout.astro";
+import TestConditional from "../components/tests/TestConditional";
 ---
 
-<!-- //TODO: TEST WORK PG  -->
-<MainLayout>
-  <h1>test WORK</h1>
-  <div class="featured-websites">
-    <TestCard1 />
-    <TestCard1 />
-    <TestCard1 />
-    <TestCard1 />
-    w
-  </div>
-</MainLayout>
+<div class="">
+  <TestConditional isLoggedIn={true} username="Elsa" />
+</div>

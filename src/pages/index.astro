@@ -2,22 +2,59 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import MasonryGrid from "../components/ctas/MasonryGrid";
-import HomeAboutCTA from "../components/sections/HomeAboutCTA.astro";
 import TestCard1 from "../components/TestCard1.astro";
 import HowItWorks from "../components/ctas/HowItWorks.astro";
+import ButtonProps from "../components/shared/ButtonProps.astro";
+import TestImg from "../images/coyote.png";
+import { Image } from "astro:assets";
+import TestTernary from "../components/tests/TestTernary";
 ---
 
 <MainLayout>
   <Hero />
   <MasonryGrid />
-  <!--  -->
-  <!--  -->
+
   <!-- ?: make dynamic v-->
   <TestCard1 />
   <!-- ?: make dynamic ^-->
-  <!--  -->
-  <!--  -->
-  <HomeAboutCTA />
+
+  <div id="wrapper" class="test1">
+    <div id="container" class="">
+      <div id="grid" class="grid grid-cols-2 gap-5 test2">
+        <div id="sq1" class="orange flex justify-end">
+          <div
+            id="sq1-container"
+            class="w-1/2 flex justify-center items-center test2"
+          >
+            <!-- * CONDITIONAL FOR SECONDARY IMG HERE --v -->
+            <TestTernary isLoggedIn={false} username="About" />
+            <!-- * -----------------------------------^ -->
+          </div>
+        </div>
+        <div id="sq2" class="lavender row-span-2">
+          <img
+            src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="sq-styles"
+          />
+        </div>
+        <div id="sq3" class="teal flex justify-end">
+          <ul class="test2 w-1/2">
+            <li>
+              -address key problem your client is experiencing' Ive spent time
+              learning how to simplify the design process so you can focus on
+              your business instead
+            </li>
+            <li>-the ablity to tell your story and brand</li>
+            <li>Increased potential customers, easier to find on Google.</li>
+            <!-- * BTN WRAPPER   v-->
+            <ButtonProps btn1="see about" btn1Link="/about" />
+            <!-- * BTN WRAPPER   ^-->
+          </ul>
+        </div>
+        <!-- <div id="sq4" class="test2">img</div> -->
+      </div>
+    </div>
+  </div>
   <HowItWorks />
-  <!-- <TestCard1 /> -works pg -->
 </MainLayout>
