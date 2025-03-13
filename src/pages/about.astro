@@ -6,26 +6,27 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout>
   <!-- TODO CURRENTLY: <DynamicAboutCTA /> v-->
-  <div id="wrapper" class="h-screen">
+  <div id="wrapper" class="py-5 my-5">
     <div id="container" class="">
-      <div id="grid" class="grid grid-cols-2 gap-5 test2">
-        <div id="sq1" class="test1 flex justify-end">
+      <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5 test2">
+        <div id="sq1" class="bg- flex md:justify-end justify-center">
           <div
             id="sq1-container"
-            class="w-1/2 flex justify-center items-end test2"
+            class="2xl:w-1/2 w-full flex lg:justify-end justify-center items-end bg-"
           >
             <DynamicAboutCTA isLoggedIn={true} username="About" />
           </div>
         </div>
         <div id="sq2" class="lavender row-span-2">
           <img
+            id="primary-img"
             src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
-            class="sq-styles"
+            class="sq-styles p-5 m-5"
           />
         </div>
-        <div id="sq3" class="teal flex justify-end">
-          <ul class="test2 w-1/2">
+        <div id="sq3" class="bg- flex md:justify-end pl-5 ml-5">
+          <ul class="bg- 2xl:w-1/2 md:w-2/3 w-full">
             <li>
               -address key problem your client is experiencing' Ive spent time
               learning how to simplify the design process so you can focus on

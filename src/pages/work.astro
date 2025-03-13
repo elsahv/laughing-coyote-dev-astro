@@ -1,138 +1,111 @@
 ---
-import Testimonial from "../components/ctas/Testimonial";
-import ContactCTA from "../components/sections/ContactCTA.astro";
-import GalleryBanner from "../components/shared/GalleryBanner.astro";
-import DynamicBanner from "../components/shared/Dynamic_Banner.astro";
-import DynamicHeadline from "../components/shared/Dynamic_Headline.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-
+import ButtonProps from "../components/shared/ButtonProps.astro";
 
 const items = [
   {
     title: "Hovey Roofing",
     listitem1: "landing pg",
-    listitem2: "This is a template catered towards people starting out, not much custom.",
-    listitem3:
-      "Things that can be custom should be already made",
+    listitem2:
+      "This is a template catered towards people starting out, not much custom.",
+    listitem3: "Things that can be custom should be already made",
     listitem4:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
     img: "https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     btn1: "see demo",
     btn2: "contact",
     btnLink1: "/template 1",
-    btnLink2: "/contact"
+    btnLink2: "/contact",
   },
   {
     title: "Portfolio",
     listitem1: "landing pg with content",
     listitem2: "Taking your business to a whole another level.",
-    listitem3:
-      "Custom, contact for unique and custom work,",
-    listitem4:
-      "see grid below for some of the possibilities!",
+    listitem3: "Custom, contact for unique and custom work,",
+    listitem4: "see grid below for some of the possibilities!",
     img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
     btn1: "see demo",
     btn2: "contact",
     btnLink1: "/template 2",
-    btnLink2: "/contact"
-      },
-      {
+    btnLink2: "/contact",
+  },
+  {
     title: "The Running Quail",
     listitem1: "landing pg with content",
     listitem2: "Taking your business to a whole another level.",
-    listitem3:
-      "Custom, contact for unique and custom work,",
-    listitem4:
-      "see grid below for some of the possibilities!",
+    listitem3: "Custom, contact for unique and custom work,",
+    listitem4: "see grid below for some of the possibilities!",
     img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
     btn1: "see demo",
     btn2: "contact",
     btnLink1: "/template 2",
-    btnLink2: "/contact"
-      },
-      {
+    btnLink2: "/contact",
+  },
+  {
     title: "LC Templates",
     listitem1: "landing pg with content",
     listitem2: "Taking your business to a whole another level.",
-    listitem3:
-      "Custom, contact for unique and custom work,",
-    listitem4:
-      "see grid below for some of the possibilities!",
+    listitem3: "Custom, contact for unique and custom work,",
+    listitem4: "see grid below for some of the possibilities!",
     img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
     btn1: "see demo",
     btn2: "contact",
     btnLink1: "/template 2",
-    btnLink2: "/contact"
-      }   
+    btnLink2: "/contact",
+  },
 ];
 ---
+
 <MainLayout>
-   <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
-   <!-- <DynamicBanner headline="Work" paragraph1="sites featured on LC" paragraph2="p1 sfdsfsd" paragraph3="p1 sfdsfsd" headline="headline koskfsoF:LSfOLJ"        
-   /> -->
-   
-   <div id="wrapper" class="">
-      <div id="banner-wrapper"class="mt-[150px]">
+  <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
 
-        <!-- TODO CURRENTLY: figure out banner --v -->
-     <CenterPageBanner BannerTitle="Work"paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "/>
+  <div id="wrapper" class="">
+    <div id="banner-wrapper" class="mt-[150px]">
+      <CenterPageBanner
+        BannerTitle="Work"
+        paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
+      />
     </div>
-   <!-- <GalleryBanner title="Work" paragraph="sites featured on LC"    /> -->
-   <div id="works-wrapper" class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg- mt-[50px]">
-    <div id="works-container" class="bg- max-w-[1300px] ">
-      <div id="works-grid" class="grid grid-cols-1 gap-x-5 gap-y-12">
-        {
-          items.map((item) => (
-            <div
-              id="card" 
-              class="p-5 text-carribean"
-            >
-              <h2 class="font-bold text-2xl pb-2">{item.title}</h2>
-
-
-             <div id="grid" class="grid grid-cols-2 bg-">
-
-
-              <div id="img-wrapper" class="my-1 bg-  sq-styles">
-                     <img src={item.img} alt={item.title} class="w-full sq-styles "/>
+    <div
+      id="works-wrapper"
+      class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg- mt-[50px]"
+    >
+      <div id="works-container" class="bg- max-w-[1300px]">
+        <div id="works-grid" class="grid grid-cols-1 gap-x-5 gap-y-12">
+          {
+            items.map((item) => (
+              <div id="card" class="p-5 text-carribean">
+                <h2 class="font-bold text-2xl pb-2">{item.title}</h2>
+                <div id="grid" class="bg- grid lg:grid-cols-2 grid-cols-1 bg-">
+                  <div id="img-wrapper" class="my-1 bg-  sq-">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      class="w-full h-full sq-styles "
+                    />
+                  </div>
+                  <div
+                    id="test2"
+                    class=" w-full md:p-2 pt-2 flex items-end justify-start"
+                  >
+                    <ul class="md:text-lg text-sm pl-2 bg- 2xl:pt-[120px]">
+                      <li class="font-semibold">- {item.listitem1}</li>
+                      <li>- {item.listitem2}</li>
+                      <li>- {item.listitem3}</li>
+                      <li>- {item.listitem4}</li>
+                      <ButtonProps btn1="case study" btn1Link="/work" />
+                    </ul>
+                  </div>
+                </div>
               </div>
-
-
-               <div id="test2" class=" w-full p-2  bg-"  >
-              <ul class="text-lg pl-2 bg- pt-[120px]">
-                <li class="font-semibold">- {item.listitem1}</li>
-                <li>- {item.listitem2}</li>
-                <li>- {item.listitem3}</li>
-                <li>- {item.listitem4}</li>
-              <!-- * BTN WRAPPER  (make visible when content available) v-->
-              <div id="btns-wrapper" class="mt-5 text-sm">
-              <button id="btn1" class="sq-styles py-1 px-2 mr-4 bg-papaya text-onyx">
-                <a href={item.btnLink1}>
-                {item.btn1}
-                    </a>              
-              </button>
-              <button id="btn2" class="sq-styles py-1 px-2 text-onyx bg-lavender">
-                <a href={item.btnLink2}>
-                {item.btn2}
-                    </a>   
-              </button>
-            </div>
-            </div>
-          </div>
-              <!-- * BTN WRAPPER   ^-->
-              </ul>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
-        <!-- <Testimonial />  -->
     </div>
-  
   </div>
-</div>
-   <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG ^-->
-
+  <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG ^-->
 
   <!-- <ContactCTA /> -->
 </MainLayout>

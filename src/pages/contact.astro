@@ -9,12 +9,12 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
   <!--TODO:  test for contact pg: content/ grid layout -v--->
 
-  <div id="wrapper" class="text-2xl bg- pt-[25px] pl-[55px] justify- items-">
-    <div id="container" class="bg-">
-      <div id="grid" class="grid grid-cols-3">
-        <div id="left-sq" class="bg- col-span-2 h-">
-          <div id="form-wrapper" class="p-5">
-            <h1>Contact form</h1>
+  <div id="wrapper" class="text-2xl pt-[45px] 2xl:pl-[55px] pl-2">
+    <div id="container" class="">
+      <div id="grid" class="grid grid-cols-3 2xl:px-0 md:px-5 px-0">
+        <div id="left-sq" class="bg- 2xl:col-span-2 col-span-3">
+          <div id="form-wrapper" class="md:p-5 p-1">
+            <h1 class="text-3xl font-semibold">Contact Here</h1>
             <form action="" class="mt-5 text-md flex flex-col space-y-2">
               <input
                 type="text"
@@ -26,13 +26,8 @@ import MainLayout from "../layouts/MainLayout.astro";
                 placeholder="enter email"
                 class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
               />
-              <!-- <input
-                type="text"
-                placeholder="test3"
-                class="pl-2 w-1/2 h-10 rounded border border-black"
-              /> -->
             </form>
-            <div id="buttons-container">
+            <div id="buttons-container" class="bg- mt-5">
               <WebDevGrid />
             </div>
           </div>

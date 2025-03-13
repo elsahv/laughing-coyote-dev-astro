@@ -2,19 +2,20 @@
 import ButtonProps from "./shared/ButtonProps.astro";
 ---
 
-<div id="test-card1-container" class="border border- bg- p-[150px] my-[55px]">
-  <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-x-8">
-    <div
-      id="sq1"
-      class="flex justify-end items-center pl-5 mr-[75px] 2xl:m-0 ml-[45px]"
-    >
+<div
+  id="test-card1-container"
+  class="border border- 2xl:p-[150px] p-1 my-[95px] bg-"
+>
+  <div id="grid" class="grid lg:grid-cols-2 grid-cols-1 gap-x-3">
+    <div id="sq1" class="bg- mx-2 md:px-4 pl-0">
       <img
         src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=fhrency5&dl=0"
-        class="sq-styles w-[650px]"
+        class="sq-styles"
       />
     </div>
     <div
-      class="bg-test flex justify-start items-end md:pb-5 pb-[55px] md:pr-5 p-1 ml-2"
+      id="sq2"
+      class="bg- flex justify-start items-end md:pb-5 pb-[55px] md:pr-5 p-1 ml-2"
     >
       <ul class="md:text-lg text-md pt-1 pl-4">
         <div class="text-md">Hovey Roofing</div>
@@ -56,8 +57,14 @@ import ButtonProps from "./shared/ButtonProps.astro";
           dolorum!"
         </div>
         <!-- * BTN WRAPPER   v-->
-        <ButtonProps btn1="see case studies" btn1Link="/#social-proof" />
-        <!-- * BTN WRAPPER   ^-->
+
+        <a href="/case-study/hoveyroofing">
+          <ButtonProps
+            btn1="view case study"
+            btn1Link="/case-study/hoveyroofing"
+          />
+          <!-- * BTN WRAPPER   ^-->
+        </a>
       </ul>
     </div>
   </div>

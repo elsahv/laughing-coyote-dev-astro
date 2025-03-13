@@ -1,25 +1,16 @@
 ---
-const links = [
-  { label: "About", href: "/about" },
-  // { label: "Website Services", href: "/#case-studies" },
-  // -> sublinks:whats included, packages
-  //* { label: "Writing Skills", href: "/#writing-skills" },
-  { label: "Work", href: "/work" },
-  { label: "Contact", href: "/contact" },
-];
+import MenuItems from "./tests/MenuItems";
 ---
 
 <!-- todo: BOTTOM BORDER STYLE, ADD SHADOW BLUR (or teal background transition) WHEtext-smN SCROLLING -->
-<header
-  class="bg- dropshadow-2xl text-teal z-50 2xl:pb-3 pb-[30px] 2xl:pt-3 px-5 mx-5"
->
+<header class="bg- dropshadow-2xl text-teal 2xl:pb-3 pb-[30px]">
   <div
     class="bg-test md:pl-5 pl-0 md:pr-5 pr-1 pt-1 grid 2xl:grid-cols-2 grid-cols-1"
   >
     <a id="" href="/">
       <div
         id="header-logo"
-        class="bg- font- md:text-3xl text-2xl flex md:justify-start items-center 2xl:pl-1 pl-4"
+        class="bg- font- 2xl:text-2xl md:text-4xl text-2xl flex md:justify-start items-center 2xl:pl-1 pl-4"
       >
         Laughing Coyote Dev
         <img
@@ -29,19 +20,7 @@ const links = [
       </div>
     </a>
     <nav id="" class="bg-">
-      <ul
-        class="bg-test h-[70%] flex 2xl:flex-row flex-col 2xl:justify-end justify-start 2xl:items-end items-start 2xl:pt-0 pt-1"
-      >
-        {
-          links.map((link) => (
-            <li class="text-xl 2xl:pt-5 md:pt-1 pt-0 opacity-90 hover:opacity-100 drop-shadow-2xl">
-              <a class="mx-5" href={link.href}>
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      <MenuItems />
     </nav>
   </div>
 </header>
