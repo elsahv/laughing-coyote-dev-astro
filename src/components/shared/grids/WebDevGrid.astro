@@ -59,22 +59,24 @@ const items = [
 ];
 ---
 
-<div class="bg-">
+<!-- TODO: TURN INTO MULT BUTTONS CONTAINER  -->
+<div class="bg- mt-5 pt-5">
+  <h2>What would you like to do?</h2>
   <div
     id="gallery-grid"
-    class="mb-5 md:px-[55px] px-1 grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
+    class="mb-5 px-1 grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 pt-2"
   >
     {
       items.map((item) => (
-        <div id="sq" class="">
+        <div id="sq" class="sq-styles">
           <a href={item.link}>
-            <p class="absolute p-2 text-parchment bg-teal border border-black lowercase dropshadow-2xl text-2xl">
+            <p class="absolute p-2 text-parchment bg-teal rounded-tl-3xl rounded-br-3xl lowercase dropshadow-2xl text-2xl border border-black">
               {item.title}
             </p>
             <img
               src={item.image}
               alt=""
-              class="border border-black w-[650px] h-[350px] "
+              class="sq-styles w-[650px] h-[350px] "
             />
           </a>
         </div>
