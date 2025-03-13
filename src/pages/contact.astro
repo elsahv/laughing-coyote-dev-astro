@@ -1,46 +1,45 @@
 ---
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import GalleryBanner from "../components/shared/GalleryBanner.astro";
+import HowItWorks from "../components/ctas/HowItWorks.astro";
+import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
+import GalleryGrid from "../components/shared/grids/GalleryGrid.astro";
+import WebDevGrid from "../components/shared/grids/WebDevGrid.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-  <!-- <GalleryBanner title="Contact" paragraph="- (where to find me!)" /> -->
-  <div id="wrapper" class="p-5 m-5 h-screen">
-    <div id="container" class="p-5 m-[55px]">
-      <div id="grid" class="grid grid-cols-2 gap-10">
-        <div id="sq1" class="mb-5 p-5 sq-styles">
-          <!-- <h1 id="contact-page-title" class="text-3xl">Contact</h1> -->
-          <CenterPageBanner
-            BannerTitle="Contact"
-            paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
-          />
-          <p class="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            laboriosam qui commodi veritatis vitae accusantium, odio, similique
-            culpa excepturi nemo molestiae totam veniam eligendi atque, expedita
-            numquam libero sequi voluptatum?contact headline
-          </p>
-        </div>
-        <div id="sq2" class="bg- w-full flex justify-start items-center">
-          <div id="contact-form-container" class="mr-5 bg-">
-            <form action="" class="flex flex-col space-y-2">
+  <!--TODO:  test for contact pg: content/ grid layout -v--->
+
+  <div id="wrapper" class="text-2xl bg- pt-[25px] pl-[55px] justify- items-">
+    <div id="container" class="bg-">
+      <div id="grid" class="grid grid-cols-3">
+        <div id="left-sq" class="bg- col-span-2 h-">
+          <div id="form-wrapper" class="p-5">
+            <h1>Contact form</h1>
+            <form action="" class="mt-5 text-md flex flex-col space-y-2">
               <input
                 type="text"
-                placeholder="test1"
-                class="pl-2 w-[600px] h-10 rounded border border-black"
+                placeholder="enter name"
+                class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
               />
               <input
                 type="text"
-                placeholder="test2"
-                class="pl-2 w-[600px] h-10 rounded border border-black"
+                placeholder="enter email"
+                class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
               />
-              <input
+              <!-- <input
                 type="text"
                 placeholder="test3"
-                class="pl-2 w-[600px] h-10 rounded border border-black"
-              />
+                class="pl-2 w-1/2 h-10 rounded border border-black"
+              /> -->
             </form>
+            <div id="buttons-container">
+              <WebDevGrid />
+            </div>
+          </div>
+
+          <div id="right-sq" class="h- p-5 bg- col-span-1">
+            <div id="email" class="">elsahvy@gmail.com</div>
+            <div class="">sm</div>
           </div>
         </div>
       </div>
