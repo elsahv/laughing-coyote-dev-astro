@@ -1,8 +1,41 @@
 ---
+import ButtonProps from "../../components/shared/ButtonProps.astro";
+import DynamicAboutCTA from "../../components/tests/DynamicAboutCTA";
+import TestList from "../../components/tests/TestList.astro";
 import CaseStudyLayout from "../../layouts/CaseStudyLayout.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-  <CaseStudyLayout />
+  <div id="wrapper" class="py-5 my-5">
+    <div id="container" class="">
+      <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5">
+        <div id="sq1" class="bg- flex md:justify-end justify-center">
+          <div
+            id="sq1-container"
+            class="2xl:w-1/2 w-full flex lg:justify-end justify-center items-end bg-"
+          >
+            <DynamicAboutCTA isLoggedIn={false} username="HoveyRoofing" />
+          </div>
+        </div>
+        <div id="sq2" class="lavender row-span-2">
+          <img
+            id="primary-img"
+            src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="sq-styles p-5 m-5"
+          />
+        </div>
+
+        <div id="sq3" class="bg- flex md:justify-end pl-5 ml-5">
+          <TestList
+            title=""
+            item1="HoveyRoofing- address key problem your client is experiencing' Ive spent time learning how to simplify the design process so you can focus on your business instead"
+            item2="the ablity to tell your story and brand"
+            item3="Increased potential customers, easier to find on Google."
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </MainLayout>
