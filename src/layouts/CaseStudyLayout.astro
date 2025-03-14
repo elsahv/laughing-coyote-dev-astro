@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import LogoIcon from "../images/coyote.png";
+import PrimaryImage from "../images/hero-image.jpg";
+---
+
+<div id="markdown-post" class="bg- text-lg">
+  <section class="2xl:px-[150px] pr-5 mx-5 bg-">
+    <div id="flex" class="bg-teal mt-5 2xl:p-5 dropshadow-3xl">
+      <Image src={PrimaryImage} alt="" class="bg-test1 w-1/2" />
+    </div>
+
+    <div id="wrapper" class="bg- mt-5 p-5">
+      <div id="container" class="bg- 2xl:pl-[570px] pl-[200PX] lg:pr-[200px]">
+        <h2 class="pt-5 py-2 mt-5 font-bold text-4xl">title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
+          quisquam temporibus laudantium reprehenderit eligendi rerum. Quos
+          exercitationem, ratione tempore assumenda voluptatem quis dolores
+          quasi commodi officia voluptas quaerat. Eveniet?
+        </p>
+        <div id="btn-wrapper" class="mt-3">
+          <button
+            class="rounded text-aquamarine hover:bg-aquamarine hover:text-munsell border border-black px-2"
+          >
+            <a class="text-sm" href="/">visit site </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
