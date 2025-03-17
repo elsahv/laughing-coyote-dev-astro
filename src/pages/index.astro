@@ -7,7 +7,7 @@ import HowItWorks from "../components/ctas/HowItWorks.astro";
 import ButtonProps from "../components/shared/ButtonProps.astro";
 import TestImg from "../images/coyote.png";
 import { Image } from "astro:assets";
-import DynamicAboutCTA from "../components/tests/DynamicAboutCTA";
+import DynamicAboutCTA from "../components/DynamicAboutCTA";
 ---
 
 <MainLayout>
@@ -18,25 +18,25 @@ import DynamicAboutCTA from "../components/tests/DynamicAboutCTA";
   <TestCard1 />
   <!-- ?: make dynamic ^-->
 
-  <div id="wrapper" class="bg- 2xl:p-0 p-5">
-    <div id="container" class="">
-      <div id="grid" class="grid md:grid-cols-2 gap-5">
-        <div id="sq1" class="orange flex justify-end">
+  <div id="homepage-wrapper" class="bg- 2xl:p-0 p-5">
+    <div id="homepage-container" class="">
+      <div id="homepage-grid" class="grid md:grid-cols-2 gap-5">
+        <div id="homepage-sq1" class="orange flex justify-end">
           <div
-            id="sq1-container"
+            id="homepage-sq1-container"
             class="2xl:w-1/2 flex justify-center items-center bg-"
           >
             <DynamicAboutCTA isLoggedIn={false} username="About" />
           </div>
         </div>
-        <div id="sq2" class="lavender row-span-2">
+        <div id="homepage-sq2" class="lavender row-span-2">
           <img
             src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             class="sq-styles"
           />
         </div>
-        <div id="sq3" class="teal flex justify-end">
+        <div id="homepage-sq3" class="teal flex justify-end">
           <ul class="2xl:w-1/2">
             <li>
               -address key problem your client is experiencing' Ive spent time

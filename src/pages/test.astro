@@ -1,46 +1,60 @@
 ---
-import HowItWorks from "../components/ctas/HowItWorks.astro";
-import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
-import GalleryGrid from "../components/shared/grids/GalleryGrid.astro";
-import WebDevGrid from "../components/shared/grids/WebDevGrid.astro";
+import BusinessCard from "../components/BusinessCard.astro";
+import TestCard1 from "../components/TestCard1.astro";
+import TestimonialS from "../components/TestimonialS.astro";
+import DynamicAboutCTA from "../components/DynamicAboutCTA";
+import Website from "../components/Website.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import GalleryGrid from "../components/shared/grids/GalleryGrid.astro";
+import WebDevGridLg from "../components/shared/grids/WebDevGridLg.astro";
+import WebDevGridSm from "../components/shared/grids/WebDevGridSm.astro";
+import WindowGrid from "../components/shared/grids/WindowGrid";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import CaseStudies from "../components/sections/CaseStudies.astro";
+import ContactCTA from "../components/sections/ContactCTA.astro";
+import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
+import HowItWorks from "../components/ctas/HowItWorks.astro";
+import MasonryGrid from "../components/ctas/MasonryGrid";
 ---
 
 <MainLayout>
-  <div id="wrapper" class="text-2xl bg- pt-[25px] pl-[55px] justify- items-">
-    <div id="container" class="bg-">
-      <div id="grid" class="grid grid-cols-3">
-        <div id="left-sq" class="bg- col-span-2 h-">
-          <div id="form-wrapper" class="p-5">
-            <h1>Contact form</h1>
-            <form action="" class="mt-5 text-md flex flex-col space-y-2">
-              <input
-                type="text"
-                placeholder="enter name"
-                class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
-              />
-              <input
-                type="text"
-                placeholder="enter email"
-                class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
-              />
-              <!-- <input
-                type="text"
-                placeholder="test3"
-                class="pl-2 w-1/2 h-10 rounded border border-black"
-              /> -->
-            </form>
-            <div id="buttons-container">
-              <WebDevGrid />
-            </div>
-          </div>
+  <!-- ? UNSURE v-->
+  <!-- <TestimonialS /> -->
+  <!-- <Website title1="title1" title2="title2" p1="p1" p2="p2" img1="dsfsdf" img2="dfsfd" /> -->
+  <!-- <WindowGrid /> -->
+  <!-- ? UNSURE ^-->
 
-          <div id="right-sq" class="h- p-5 bg- col-span-1">
-            <div id="email" class="">elsahvy@gmail.com</div>
-            <div class="">sm</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--* KEEP v-->
+  <!-- * -->
+  <!-- <TestCard1 /> -->
+  <!-- *<BusinessCard 
+title="title"
+    ,
+    listitem1="1 Lorem ipsum dolor sit amet consectetur"
+    ,listitem2="2 one pariatur. Magnam obcaecati, inventore, asperiores itaque deserunt in ipsum consectetur quisquam rer"
+    ,
+    listitem3="3 one pariatur. Magnam obcaecati, inventore, asperiores itaque deserunt in ipsum consectetur quisquam rer"
+    ,
+    listitem4="4 uptate aut dolorum labor"
+    ,
+    heroImg="https://images.pexels.com/photos/5641973/pexels-photo-5641973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  /> -->
+  <!-- *<DynamicBanner
+    headline="Website Services"
+    paragraph1="storytelling through fiction and business  '"
+    paragraph2="storytelling through fiction and business  '"
+    paragraph3="storytelling through fiction and business  '"
+  /> -->
+  <!-- *<DynamicAboutCTA /> -->
+  <!-- <GalleryGrid /> -->
+  <!-- *<WebDevGridLg /> -->
+  <!-- <WebDevGridSm /> -->
+  <!-- *<CenterPageBanner /> -->
+  <!-- <CaseStudies /> -->
+
+  <!--* <ContactCTA /> -->
+  <!-- <WhatsIncluded /> -->
+  <!--* <HowItWorks /> -->
+  <!-- <MasonryGrid /> -->
+  <!--* KEEP ^-->
 </MainLayout>

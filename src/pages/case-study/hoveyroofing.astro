@@ -1,6 +1,7 @@
 ---
 import ButtonProps from "../../components/shared/ButtonProps.astro";
-import DynamicAboutCTA from "../../components/tests/DynamicAboutCTA";
+import WebDevGridSm from "../../components/shared/grids/WebDevGridSm.astro";
+import DynamicAboutCTA from "../../components/DynamicAboutCTA";
 import TestList from "../../components/tests/TestList.astro";
 import CaseStudyLayout from "../../layouts/CaseStudyLayout.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
@@ -8,14 +9,17 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 <MainLayout>
   <div id="wrapper" class="py-5 my-5">
-    <div id="container" class="">
-      <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5">
+    <div id="container" class="bg-">
+      <div id="gallery-banner" class="bg-test">
+        <WebDevGridSm />
+      </div>
+      <div id="grid" class="py-5 grid md:grid-cols-2 grid-cols-1 gap-5">
         <div id="sq1" class="bg- flex md:justify-end justify-center">
           <div
             id="sq1-container"
             class="2xl:w-1/2 w-full flex lg:justify-end justify-center items-end bg-"
           >
-            <DynamicAboutCTA isLoggedIn={false} username="HoveyRoofing" />
+            <DynamicAboutCTA isLoggedIn={true} username="HoveyRoofing" />
           </div>
         </div>
         <div id="sq2" class="lavender row-span-2">
@@ -35,6 +39,10 @@ import MainLayout from "../../layouts/MainLayout.astro";
             item3="Increased potential customers, easier to find on Google."
           />
         </div>
+      </div>
+
+      <div id="gallery-banner">
+        <WebDevGridSm />
       </div>
     </div>
   </div>

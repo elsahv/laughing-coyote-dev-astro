@@ -1,4 +1,3 @@
-import Testimonial from "../Testimonial";
 import Sq1 from "./sq1";
 import Sq2 from "./sq2";
 import Sq3 from "./sq3";
@@ -38,7 +37,6 @@ const MasonryGrid = () => {
         </div>
       </div>
       {/* </div> */}
-      {/* <Testimonial /> */}
     </div>
   );
 };
