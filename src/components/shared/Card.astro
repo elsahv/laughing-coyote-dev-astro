@@ -1,20 +1,19 @@
 ---
-export interface Props {
-  title: string;
-  image: any;
-}
+import ButtonProps from "../shared/ButtonProps.astro";
 
-const { title, image } = Astro.props as Props;
+const frontmatter = Astro.props;
+
+const { title, image, alt, testItem1, btn1, btn2 } = frontmatter;
 ---
 
-<!-- CHECKPOINT -->
-<div
-  class="bg- mt-5 md:p-3 hover:cursor-pointer rounded p-3 mx-5 py-5 my-[50px]"
->
-  <a href="/">
-    <h2 class="font-bold text-xl pl-1 flex justify-center">{title}</h2>
-    <div class="flex justify-center">
-      <img src={image} alt="" class="hover:opacity-70 border border-black" />
+<div id="card-wrapper" class="rounded-lg p-[55px]">
+  <img src={image} class="sq-styles h-[450px]" alt={alt} />
+  <div class="bg- md:text-lg text-sm pt-2 pl-5">
+    <h3 class="font-bold text-2xl">{title}</h3>
+    <p>{testItem1}</p>
+    <div id="card-btn-wrapper" class="space-x-2 text-onyx">
+      <button id="btn1" class="underline">{btn1}</button>
+      <button id="btn2" class="underline">{btn2}</button>
     </div>
-  </a>
+  </div>
 </div>

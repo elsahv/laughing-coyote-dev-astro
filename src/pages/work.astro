@@ -1,65 +1,14 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import ButtonProps from "../components/shared/ButtonProps.astro";
-
-const items = [
-  {
-    title: "Hovey Roofing",
-    listitem1: "landing pg",
-    listitem2:
-      "This is a template catered towards people starting out, not much custom.",
-    listitem3: "Things that can be custom should be already made",
-    listitem4:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
-    img: "https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    btn1: "see demo",
-    btn2: "contact",
-    btnLink1: "/template 1",
-    btnLink2: "/contact",
-  },
-  {
-    title: "Portfolio",
-    listitem1: "A developer/ story brand writing portfolio",
-    listitem2: "Taking your business to a whole another level.",
-    listitem3: "Custom, contact for unique and custom work,",
-    listitem4: "see grid below for some of the possibilities!",
-    img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
-    btn1: "see demo",
-    btn2: "contact",
-    btnLink1: "/template 2",
-    btnLink2: "/contact",
-  },
-  {
-    title: "The Running Quail",
-    listitem1: "landing pg with content",
-    listitem2: "Taking your business to a whole another level.",
-    listitem3: "Custom, contact for unique and custom work,",
-    listitem4: "see grid below for some of the possibilities!",
-    img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
-    btn1: "see demo",
-    btn2: "contact",
-    btnLink1: "/template 2",
-    btnLink2: "/contact",
-  },
-  {
-    title: "LC Templates",
-    listitem1: "landing pg with content",
-    listitem2: "Taking your business to a whole another level.",
-    listitem3: "Custom, contact for unique and custom work,",
-    listitem4: "see grid below for some of the possibilities!",
-    img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
-    btn1: "see demo",
-    btn2: "contact",
-    btnLink1: "/template 2",
-    btnLink2: "/contact",
-  },
-];
+import WebDevGridSm from "../components/shared/grids/WebDevGridSm.astro";
+import Card from "../components/shared/Card.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+const allSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
   <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
-
+  <WebDevGridSm />
   <div id="wrapper" class="">
     <div id="banner-wrapper" class="mt-[150px]">
       <CenterPageBanner
@@ -67,43 +16,21 @@ const items = [
         paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
       />
     </div>
-    <div
-      id="works-wrapper"
-      class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0 bg- mt-[50px]"
-    >
-      <div id="works-container" class="">
-        <div id="works-grid" class="grid grid-cols-2 gap-x-5 gap-y-12">
-          {
-            items.map((item) => (
-              <div id="card" class="p-5 bg-carribean">
-                <h2 class="font-bold text-2xl pb-2">{item.title}</h2>
-                <div id="grid" class="bg- grid lg:grid-cols-3 grid-cols-1 bg-">
-                  <div id="img-wrapper" class="my-1 col-span-2">
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      class="w-full h-full sq-styles "
-                    />
-                  </div>
-                  <div
-                    id="test2"
-                    class=" w-full md:p-2 pt-2 flex items-end justify-start"
-                  >
-                    <ul class="md:text-lg text-sm pl-2 bg- 2xl:pt-[120px]">
-                      <li class="font-semibold text-test1">
-                        - {item.listitem1}
-                      </li>
-                      <li>- {item.listitem2}</li>
-                      <li>- {item.listitem3}</li>
-                      <li>- {item.listitem4}</li>
-                      <ButtonProps btn1="case study" btn1Link="/work" />
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+
+    <div id="grid-wrapper" class="p-[155px] bg-">
+      <div id="grid" class="grid grid-cols-2 gap-5">
+        {
+          allSites.map((site) => (
+            <Card
+              title={site.frontmatter.title}
+              image={site.frontmatter.image.url}
+              alt={site.frontmatter.image.alt}
+              testItem1={site.frontmatter.testItem1}
+              btn1={site.frontmatter.btn1}
+              btn2={site.frontmatter.btn2}
+            />
+          ))
+        }
       </div>
     </div>
   </div>

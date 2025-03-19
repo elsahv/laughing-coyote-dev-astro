@@ -1,9 +1,9 @@
 ---
-import ButtonProps from "./shared/ButtonProps.astro";
+import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div
-  id="test-card1-container"
+<section
+  id="featured-client"
   class="border border- 2xl:p-[150px] p-1 my-[95px] bg-"
 >
   <div id="grid" class="grid lg:grid-cols-2 grid-cols-1 gap-x-3">
@@ -52,20 +52,17 @@ import ButtonProps from "./shared/ButtonProps.astro";
               <b>-</b> A custom website that fits your business, personality, goals...
               and you alone.
             </li> -->
-        <div id="featured-site-testomonial" class="italic mt-3">
+        <div id="featured-site-testomonial" class="italic mt-3 mb-1">
           "Lorem ipsu psum illum? Consectetur corrupti maiores aliquam laborum
           dolorum!"
         </div>
         <!-- * BTN WRAPPER   v-->
-
-        <a href="/case-study/hoveyroofing">
-          <ButtonProps
-            btn1="view case study"
-            btn1Link="/case-study/hoveyroofing"
-          />
-          <!-- * BTN WRAPPER   ^-->
-        </a>
+        <ButtonProps
+          btn1="view case study"
+          btn1Link="/case-study/hoveyroofing"
+        />
+        <!-- * BTN WRAPPER   ^-->
       </ul>
     </div>
   </div>
-</div>
+</section>

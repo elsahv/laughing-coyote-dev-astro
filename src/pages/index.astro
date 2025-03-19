@@ -1,57 +1,16 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-import MasonryGrid from "../components/ctas/MasonryGrid";
-import TestCard1 from "../components/TestCard1.astro";
+import SocialProof from "../components/sections/SocialProof";
+import FeaturedClient from "../components/sections/FeaturedClient.astro";
 import HowItWorks from "../components/ctas/HowItWorks.astro";
-import ButtonProps from "../components/shared/ButtonProps.astro";
-import TestImg from "../images/coyote.png";
-import { Image } from "astro:assets";
-import DynamicAboutCTA from "../components/DynamicAboutCTA";
+import AboutPageCTA from "../components/sections/AboutPageCTA.astro";
 ---
 
 <MainLayout>
   <Hero />
-  <MasonryGrid />
-
-  <!-- ?: make dynamic v-->
-  <TestCard1 />
-  <!-- ?: make dynamic ^-->
-
-  <div id="homepage-wrapper" class="bg- 2xl:p-0 p-5">
-    <div id="homepage-container" class="">
-      <div id="homepage-grid" class="grid md:grid-cols-2 gap-5">
-        <div id="homepage-sq1" class="orange flex justify-end">
-          <div
-            id="homepage-sq1-container"
-            class="2xl:w-1/2 flex justify-center items-center bg-"
-          >
-            <DynamicAboutCTA isLoggedIn={false} username="About" />
-          </div>
-        </div>
-        <div id="homepage-sq2" class="lavender row-span-2">
-          <img
-            src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="sq-styles"
-          />
-        </div>
-        <div id="homepage-sq3" class="teal flex justify-end">
-          <ul class="2xl:w-1/2">
-            <li>
-              -address key problem your client is experiencing' Ive spent time
-              learning how to simplify the design process so you can focus on
-              your business instead
-            </li>
-            <li>-the ablity to tell your story and brand</li>
-            <li>Increased potential customers, easier to find on Google.</li>
-            <!-- * BTN WRAPPER   v-->
-            <ButtonProps btn1="see about" btn1Link="/about" />
-            <!-- * BTN WRAPPER   ^-->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <SocialProof />
+  <FeaturedClient />
+  <AboutPageCTA />
   <HowItWorks />
 </MainLayout>

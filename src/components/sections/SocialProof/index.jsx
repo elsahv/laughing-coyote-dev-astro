@@ -5,7 +5,7 @@ import Sq4 from "./sq4";
 import Sq5 from "./sq5";
 import Sq6 from "./sq6";
 
-const MasonryGrid = () => {
+const SocialProof = () => {
   return (
     <div id="masonryGrid-wrapper" class="2xl:opacity-80 opacity-100 bg-">
       {/* <div id="masonryGrid-container" className="opacity-90 hover:opacity-100"> */}
@@ -41,4 +41,4 @@ const MasonryGrid = () => {
   );
 };
 
-export default MasonryGrid;
+export default SocialProof;
