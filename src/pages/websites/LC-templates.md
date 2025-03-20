@@ -5,13 +5,14 @@ title: "LC-templates"
 websiteNumber: "02"
 pubDate: 2022-07-01
 testItem1: "A web design subscription service for small business owners and creatives- focuses on landing pages and content"
+category1: "category1"
 btn1: "business"
 btn2: "astro"
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=46k5gk9p&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/g23z3n6u9joennznyqxc4/lc-9-20-24.png?rlkey=q75joo6od6ixkfoxr9q57kfkb&st=cfnmoz5g&dl=0"
   alt: "The full Astro logo."
-websiteUrl: "https://therunningquail.com"
+websiteUrl: "https://laughingcoyote.dev"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---

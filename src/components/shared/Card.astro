@@ -1,19 +1,25 @@
 ---
-import ButtonProps from "../shared/ButtonProps.astro";
-
 const frontmatter = Astro.props;
 
-const { title, image, alt, testItem1, btn1, btn2 } = frontmatter;
+const { title, image, alt, testItem1, btn1, btn2, url } = frontmatter;
 ---
 
-<div id="card-wrapper" class="rounded-lg p-[55px]">
-  <img src={image} class="sq-styles h-[450px]" alt={alt} />
-  <div class="bg- md:text-lg text-sm pt-2 pl-5">
-    <h3 class="font-bold text-2xl">{title}</h3>
-    <p>{testItem1}</p>
-    <div id="card-btn-wrapper" class="space-x-2 text-onyx">
-      <button id="btn1" class="underline">{btn1}</button>
-      <button id="btn2" class="underline">{btn2}</button>
-    </div>
+<div id="card-wrapper" class="p-5 text-onyx">
+  <!-- ?: CHANGE BTNS TO CATEGORIES v-->
+  <div id="card-btn-wrapper" class="flex space-x-2 opacity-70 ml-1 pl-1 pb-1">
+    <div id="category1" class="">{btn1}</div>
+    <div id="category2" class="">{btn2}</div>
   </div>
+  <!-- ?:  ^-->
+  <a href={url}>
+    <img
+      src={image}
+      class="2xl:h-[450px] md:h-[300px] h-[200px] w-full rounded-lg border-2 border-teal hover:border-2 hover:border-onyx"
+      alt={alt}
+    />
+    <div class="bg- md:text-lg text-sm pt-2 p-3 md:ml-3 mr-2">
+      <h3 class="font-bold text-2xl">{title}</h3>
+      <p>{testItem1}</p>
+    </div>
+  </a>
 </div>

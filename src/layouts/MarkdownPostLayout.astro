@@ -1,63 +1,55 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../images/coyote.png";
+import MainLayout from "./MainLayout.astro";
 // import MenuItems from "../components/MenuItems.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
-<div id="markdown-post" class="text-lg">
-  <div class="bg-">
-    <div class="flex items-end">
-      <Image src={ProfilePic} alt="" class="w-[150px]" />
-      <nav class="pl-4 pr-2 w-full mb-2">
-        <!-- <MenuItems /> -->
-      </nav>
-    </div>
-    <button class="pl-2 pt-1 font- hover:font-normal text-sm">
-      <a class="" href="/">{"<--"} back to portfolio </a></button
-    >
-  </div>
-  <section class="2xl:px-[150px] pr-5 mx-5 bg-">
-    <div
-      id="flex"
-      class="mt-5 2xl:p-5 flex 2xl:flex-row flex-col dropshadow-3xl"
-    >
-      <div id="sq1" class="">
-        <div class="mt-5 p-5 m-1 flex flex-col h-full">
-          <h2 class="pt-5 py-2 mt-5 font-bold text-4xl">
-            {frontmatter.title}
-          </h2>
-          <!-- <p class="mt-2 pt-1 font- text-xl">{frontmatter.description}</p> -->
-          <li class="list-none pl-1">{frontmatter.testItem1}</li>
+<MainLayout>
+  <div id="markdown-post" class="text-lg text-carribean">
+    <div class="">
+      <div
+        id="flex "
+        class="bg- text-parchment mt-5 2xl:p-5 flex 2xl:flex-row flex-col dropshadow-3xl"
+      >
+        <div id="sq1" class="text-onyx">
+          <div class="mt-5 p-5 m-1 flex flex-col h-full">
+            <h2 class="pt-5 py-2 mt-5 font-bold text-4xl">
+              {frontmatter.title}
+            </h2>
+            <!-- <p class="mt-2 pt-1 font- text-xl">{frontmatter.description}</p> -->
+            <li class="list-none pl-1">{frontmatter.testItem1}</li>
 
-          <div id="btn-wrapper" class="mt-3">
-            <button
-              class="bg-munsell rounded text-aquamarine hover:bg-aquamarine hover:text-munsell border border-black px-2"
-            >
-              <a class="text-sm" href={frontmatter.websiteUrl}
-                >visit site
-                <!-- {frontmatter.title} -->
-              </a>
-            </button>
+            <div id="btn-wrapper" class="mt-3">
+              <button
+                class="bg-munsell rounded text-aquamarine hover:bg-aquamarine hover:text-munsell px-2"
+              >
+                <a class="text-sm" href={frontmatter.websiteUrl}
+                  >visit site
+                  <!-- {frontmatter.title} -->
+                </a>
+              </button>
+            </div>
           </div>
         </div>
+        <div id="sq2" class="">
+          <a href={frontmatter.websiteUrl}>
+            <img
+              src={frontmatter.image.url}
+              alt=""
+              class="sq-styles hover:opacity-80 p-[25px] h-[800px] w-[1300px]"
+            />
+          </a>
+        </div>
       </div>
-      <div id="sq2" class="border-black border w-full">
-        <a href={frontmatter.websiteUrl}>
-          <img
-            src={frontmatter.image.url}
-            alt=""
-            class="hover:opacity-80 w-full h-[570px]"
-          />
-        </a>
-      </div>
-    </div>
 
-    <div id="wrapper" class="absolute right-0 mt-5 p-5">
-      <div id="container" class="bg- 2xl:pl-[570px] pl-[200PX] lg:pr-[200px]">
-        <slot />
+      <div id="wrapper" class="right-0 mt-5 p-5">
+        <div id="container" class="bg- 2xl:pl-[570px] pl-[200PX] lg:pr-[200px]">
+          <slot />
+        </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</MainLayout>

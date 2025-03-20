@@ -10,15 +10,15 @@ const allSites = await Astro.glob("./websites/*.md");
   <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
   <WebDevGridSm />
   <div id="wrapper" class="">
-    <div id="banner-wrapper" class="mt-[150px]">
+    <div id="banner-wrapper" class="mt-[150px] text-">
       <CenterPageBanner
         BannerTitle="Work"
         paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
       />
     </div>
 
-    <div id="grid-wrapper" class="p-[155px] bg-">
-      <div id="grid" class="grid grid-cols-2 gap-5">
+    <div id="grid-wrapper" class="mb-5 pb-5 2xl:px-[105px] bg-">
+      <div id="grid" class="grid md:grid-cols-2 grid-cols-1 2xl:gap-12">
         {
           allSites.map((site) => (
             <Card
@@ -28,6 +28,7 @@ const allSites = await Astro.glob("./websites/*.md");
               testItem1={site.frontmatter.testItem1}
               btn1={site.frontmatter.btn1}
               btn2={site.frontmatter.btn2}
+              url={site.url}
             />
           ))
         }

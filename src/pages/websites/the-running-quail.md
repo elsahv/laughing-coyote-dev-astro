@@ -5,6 +5,7 @@ title: "The Running Quail"
 websiteNumber: "02"
 pubDate: 2022-07-01
 testItem1: "A collection of jt experiences. Eventually invite locals to participate"
+category1: "category1"
 btn1: "btn1"
 btn2: "btn2"
 author: "Astro Learner"

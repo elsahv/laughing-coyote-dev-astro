@@ -28,56 +28,21 @@ const items = [
     title: "MOBILE FRIENDLY",
     link: "/test1",
   },
-  // {
-  //   id: 5,
-  //   image:
-  //     "https://images.pexels.com/photos/6956129/pexels-photo-6956129.jpeg?auto=compress&cs=tinysrgb&w=600",
-  //   title: "simplify: about, CTA, contact",
-  //   link: "/test1",
-  // },
-  // {
-  //   id: 6,
-  //   image:
-  //     "https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=600",
-  //   title: "SELL BY STORY",
-  //   link: "/test1",
-  // },
-  // {
-  //   id: 7,
-  //   image:
-  //     "https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=600",
-  //   title: "SELL BY STORY",
-  //   link: "/test1",
-  // },
-  // {
-  //   id: 8,
-  //   image:
-  //     "https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg?auto=compress&cs=tinysrgb&w=600",
-  //   title: "SELL BY STORY",
-  //   link: "/test1",
-  // },
 ];
 ---
 
 <div class="bg- mt-5 pt-5">
-  <h2>What would you like to do?</h2>
   <div
     id="gallery-grid"
-    class="mb-5 px-4 py-5 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl:gap-2 lg:gap-6 gap-4 pt-2 bg-"
+    class="mb-5 py-5 grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl:gap-2 lg:gap-6 gap-4 pt-2 bg-"
   >
     {
       items.map((item) => (
         <div id="sq" class="p-">
-          <a href={item.link}>
-            {/* <p class="absolute p-2 text-teal  bg-papaya rounded-tl-3xl rounded-br-3xl lowercase dropshadow-2xl text-2xl border border-black">
-              {item.title}
-            </p> */}
-            <img
-              src={item.image}
-              alt=""
-              class="border-2 border-black rounded"
-            />
-          </a>
+          {/* <p class="absolute p-2 text-teal opacity-80 bg-papaya lowercase dropshadow-2xl text-2xl border border-black">
+            {item.title}
+          </p> */}
+          <img src={item.image} alt="" class="border-2 border-teal rounded " />
         </div>
       ))
     }

@@ -5,14 +5,15 @@ title: "HoveyRoofing"
 websiteNumber: "02"
 pubDate: 2022-07-01
 testItem1: "Small-business website for HoveyRoofing"
+category1: "category1"
 btn1: "btn1"
 btn2: "btn2"
-
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=46k5gk9p&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0"
+
   alt: "The full Astro logo."
-websiteUrl: "https://therunningquail.com"
+websiteUrl: "https://hoveyroofing.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
