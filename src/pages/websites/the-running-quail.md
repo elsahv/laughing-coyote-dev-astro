@@ -6,8 +6,7 @@ websiteNumber: "02"
 pubDate: 2022-07-01
 testItem1: "A collection of jt experiences. Eventually invite locals to participate"
 category1: "category1"
-btn1: "btn1"
-btn2: "btn2"
+category2: "category2"
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=46k5gk9p&dl=0"

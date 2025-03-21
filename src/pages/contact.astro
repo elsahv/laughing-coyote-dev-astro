@@ -1,7 +1,7 @@
 ---
-import HowItWorks from "../components/ctas/HowItWorks.astro";
-import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
-import GalleryGrid from "../components/shared/grids/GalleryGrid.astro";
+// import HowItWorks from "../components/ctas/HowItWorks.astro";
+// import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
+import ContactForm from "../components/ContactForm.jsx";
 import WebDevGridLg from "../components/shared/grids/WebDevGridLg.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
@@ -10,41 +10,22 @@ import MainLayout from "../layouts/MainLayout.astro";
   <div id="wrapper" class="text-2xl pt-[45px] 2xl:pl-[55px] pl-2">
     <div id="container" class="">
       <div id="grid" class="grid grid-cols-3 2xl:px-0 md:px-5 px-0">
-        <div id="left-sq" class="bg- 2xl:col-span-2 col-span-3">
-          <div id="form-wrapper" class="md:p-5 p-1">
-            <h1 class="text-3xl font-semibold">Contact Here</h1>
-            <form action="" class="mt-5 text-md flex flex-col space-y-2">
-              <input
-                type="text"
-                placeholder="enter name"
-                class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
-              />
-              <input
-                type="text"
-                placeholder="enter email"
-                class="bg-parchment pl-2 h-10 w-3/4 border-black border-b-2"
-              />
-            </form>
-            <div id="submit-btn-wrapper" class="mt-5 bg-">
-              <button
-                id="submit-btn"
-                class="bg-teal text-parchment rounded-md border border-orange py-1 px-2 text-md"
-                >send
-              </button>
-              <div id="buttons-container" class="bg- mt-5">
-                <WebDevGridLg />
-              </div>
-            </div>
+        <div id="left-sq" class="bg- pl-5 2xl:col-span-2 col-span-3">
+          <h1 class="text-3xl font-semibold">Contact Here</h1>
 
-            <div id="right-sq" class="h- p-5 bg- col-span-1">
-              <div id="email" class="">elsahvy@gmail.com</div>
-              <div id="sm-container">
-                <ul class="flex gap-x-5 pt-1 text-md text-onyx opacity-80 pl-1">
-                  <li>linkedIn</li>
-                  <li>fb</li>
-                  <li>inst</li>
-                </ul>
-              </div>
+          <!-- CONTACT FORM v -->
+          <ContactForm />
+
+          <WebDevGridLg />
+
+          <div id="right-sq" class="bg- p-5 bg- col-span-1">
+            <div id="email" class="">elsahvy@gmail.com</div>
+            <div id="sm-container">
+              <ul class="flex gap-x-5 pt-1 text-md text-onyx opacity-80 pl-1">
+                <li>linkedIn</li>
+                <li>fb</li>
+                <li>inst</li>
+              </ul>
             </div>
           </div>
         </div>

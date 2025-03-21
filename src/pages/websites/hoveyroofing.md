@@ -6,8 +6,7 @@ websiteNumber: "02"
 pubDate: 2022-07-01
 testItem1: "Small-business website for HoveyRoofing"
 category1: "category1"
-btn1: "btn1"
-btn2: "btn2"
+category2: "category2"
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0"

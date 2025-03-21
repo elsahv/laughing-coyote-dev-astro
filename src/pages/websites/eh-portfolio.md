@@ -6,8 +6,7 @@ websiteNumber: "02"
 pubDate: 2022-07-01
 testItem1: "A developer/ story brand writing portfolio."
 category1: "category1"
-btn1: "btn1"
-btn2: "btn2"
+category2: "category2"
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=qfq5tc9z&dl=0"
