@@ -3,11 +3,11 @@ import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import WebDevGridSm from "../components/shared/grids/WebDevGridSm.astro";
 import Card from "../components/shared/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
 const allSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
-  <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
   <WebDevGridSm />
   <div id="wrapper" class="">
     <div id="banner-wrapper" class="mt-[150px] text-">
@@ -18,7 +18,7 @@ const allSites = await Astro.glob("./websites/*.md");
     </div>
 
     <div id="grid-wrapper" class="mb-5 pb-5 2xl:px-[105px] bg-">
-      <div id="grid" class="grid md:grid-cols-2 grid-cols-1 2xl:gap-12">
+      <div id="grid" class="grid md:grid-cols-2 grid-cols-1 2xl:gap-1">
         {
           allSites.map((site) => (
             <Card
@@ -36,5 +36,6 @@ const allSites = await Astro.glob("./websites/*.md");
     </div>
   </div>
 
-  <!-- <ContactCTA /> -->
+  <!--  //TODO: CURRENTLY ADD <WhatsIncluded /> TO WORK PG v-->
+  <WhatsIncluded />
 </MainLayout>
