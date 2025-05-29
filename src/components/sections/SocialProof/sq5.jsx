@@ -17,7 +17,7 @@ const Sq5 = () => {
       </div>
       <div
         id="right-side"
-        class="mr-5 flex md:justify-start justify-center items-center text-onyx font-light"
+        class="mr-5 flex md:justify-start justify-center items-center font-light"
       >
         <img
           src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

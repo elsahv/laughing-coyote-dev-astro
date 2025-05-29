@@ -4,7 +4,7 @@ const frontmatter = Astro.props;
 const { title, image, alt, testItem1, category1, category2, url } = frontmatter;
 ---
 
-<div id="card-wrapper" class="p-5 text-onyx">
+<div id="card-wrapper" class="p-5 bg-">
   <!-- ?: CHANGE BTNS TO CATEGORIES v-->
   <div id="card-btn-wrapper" class="flex space-x-2 opacity-70 ml-1 pl-1 pb-1">
     <div id="category1" class="">{category1}</div>
@@ -14,7 +14,7 @@ const { title, image, alt, testItem1, category1, category2, url } = frontmatter;
   <a href={url}>
     <img
       src={image}
-      class="2xl:h-[450px] md:h-[300px] h-[200px] w-full rounded-lg border-2 border-teal hover:border-2 hover:border-onyx"
+      class="rounded-lg border-2 border-teal hover:border-2 hover:border-onyx"
       alt={alt}
     />
     <div class="bg- md:text-lg text-sm pt-2 p-3 md:ml-3 mr-2">

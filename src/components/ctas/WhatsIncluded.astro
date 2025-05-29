@@ -1,63 +1,146 @@
 ---
-import ButtonProps from "../shared/ButtonProps.astro";
-
-const items = [
-  {
-    title: "Growing Pup",
-    listitem1: "landing pg",
-    listitem2:
-      "This is a template catered towards people starting out, not much custom.",
-    listitem3: "Things that can be custom should be already made",
-    listitem4:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
-    img: "https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    btn1: "see demo",
-    btn2: "contact",
-    btnLink1: "/template 1",
-    btnLink2: "/contact",
-  },
-  {
-    title: "Rising Carnivore",
-    listitem1: "landing pg with content",
-    listitem2: "Taking your business to a whole another level.",
-    listitem3: "Custom, contact for unique and custom work,",
-    listitem4: "see grid below for some of the possibilities!",
-    img: "https://images.pexels.com/photos/26655860/pexels-photo-26655860/free-photo-of-red-fox-walking-in-the-meadow.jpeg?auto=compress&cs=tinysrgb&w=600",
-    btn1: "see demo",
-    btn2: "contact",
-    btnLink1: "/template 2",
-    btnLink2: "/contact",
-  },
-];
+import Packages from "../sections/Packages.astro";
 ---
 
 <div
   id="wrapper"
-  class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0 border-t border-black bg-"
+  class="bg- flex justify-center items-center pb-5 mb-5 md:p-5 p-0"
 >
   <div id="container" class="max-w-[1060px] py-5">
-    <h2 class="font-bold pb-1 pl-1">WHATS INCLUDED (PKGS)</h2>
-    <div id="grid" class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
-      {
-        items.map((item) => (
-          <div id="card" class="p-5 opacity-80 hover:opacity-100 rounded-lg">
-            <div id="img-wrapper" class=" w-full my-1">
-              <img src={item.img} alt={item.title} class="sq-styles" />
-            </div>
+    <div id="padding" class="bg- 2xl:p-5 p-2 md:mx-5 mx-1">
+      <!-- ? -->
+      <!-- ! 2. PRODUCT DEF -->
+      <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
 
-            <div id="content-wrapper" class="p-1">
-              <h2 class="font-bold text-2xl">{item.title}</h2>
-              <ul class="text-lg pb-3 pt-1">
-                <li>- {item.listitem1}</li>
-                <li>- {item.listitem2}</li>
-                <li>- {item.listitem3}</li>
-                <li>- {item.listitem4}</li>
-                <ButtonProps btn1="see demo" btn1Link="contact" />
-              </ul>
-            </div>
-          </div>
-        ))
-      }
+      <section class="py-5" id="PRODUCT DEFINITION">
+        <h2 class="pt-5">PRODUCT DEFINITION</h2>
+        <p class="">
+          CREATE LONGER VERSION:::: a digital creative studio where clients'
+          visions (userstories??) are translated into vivid, handcrafted
+          websites.
+        </p>
+        <p>
+          Most web design services focus on tech, speed, or business
+          optimization. Few lean into artisanal design, emotional storytelling,
+          and cozy aesthetics the way this concept (lc) does.
+        </p>
+      </section>
+      <img
+        src="https://dl.dropboxusercontent.com/scl/fi/36vnm2e663uln6akmex4d/lc.png?rlkey=lgim54nbp0u11mviylee29hyj&st=1nuybim1&dl=0"
+        alt=""
+        class="border border-gray-300 my-2"
+      />
+    </div>
+
+    <ul class="bg-">
+      <h2>Visual Style & Design Elements Think “boho meets browser”:</h2>
+      <li>
+        Color Palette: Muted earth tones, vintage pastels, and rich accent
+        colors (like ochre, dusty rose, sage, ink blue)
+      </li>
+      <li>Textures: Paper grain, watercolor washes, layered collages</li>
+      <li>
+        Typography: Soft serif headlines (like Cormorant Garamond or Playfair) +
+        friendly sans-serifs (like Quicksand or DM Sans)
+      </li>
+      <li>
+        Illustration Style: Sketchy icons, line drawings of tools (paintbrushes,
+        cameras, books, etc.), dotted borders and torn edges
+      </li>
+      <li>
+        Microinteractions: Hover animations like brush strokes appearing, cursor
+        turning into a paintbrush, loading screens with small “art studio”
+        metaphors
+      </li>
+    </ul>
+
+    <!--TODO: KEY FEATURES " Are there any key features, benefits, or values that should be highlighted?" -->
+
+    <section class="bg-" id="KEY FEATURES">
+      <h2>Key Features/Offers:</h2>
+      <ul class="bg-">
+        <li>
+          Portfolio-First Design: Build sites that feel like immersive galleries
+          or journals.
+        </li>
+        <li>
+          Storytelling Frameworks: Let creatives tell their brand story visually
+          and emotionally.
+        </li>
+        <li>
+          Creative Companion Calls: A process that feels more like an artist
+          collaboration than a business transaction. Think of each site as a
+          collaborative artwork: your client brings the inspiration, and you
+          bring the technical brushstrokes
+        </li>
+        <li>
+          “Palette Picker” Questionnaire: Help clients choose colors based on
+          their work and style.
+        </li>
+      </ul>
+    </section>
+    <!--TODO: KEY FEATURES ^-->
+
+    <!-- ! TARGET AUDIENCE -->
+    <!-- TODO: targetAudience="Who is your target audience?"v -->
+
+    <section class="py-3" id="TARGET AUDIENCE">
+      <h2>TARGET AUDIENCE</h2>
+      <p>The people I'm looking to serve...</p>
+      <p class="bg-">
+        Unique Selling Point: You're not just designing websites—you’re
+        co-creating digital homes for passionate people. You get their creative
+        process because you share it.
+      </p>
+    </section>
+
+    <!-- !AUDIENCE MESSAGE -->
+
+    <!-- TODO: audienceMessage="What feeling or message do you want the audience to take away?" v-->
+    <section class="my-5" id="AUDIENCE MESSAGE">
+      <h2>AUDIENCE MESSAGE</h2>
+      <ul
+        class="bg-"
+        id="audience message: to feel good about having a site that displays their own messages"
+      >
+        <h2>Visual/Brand Mood:</h2>
+        <li>Cozy, colorful, and whimsical</li>
+        <li>Hand-drawn elements, textured backgrounds, natural shapes</li>
+        <li>Soft, custom typography and pastel palettes</li>
+      </ul>
+    </section>
+
+    <div class="bg- mt-[50px]">
+      <div
+        id="HIGHLIGHTS THE KEYFEATURES AND AUDIENCE MESSAGE SECTIONS"
+        class="bg- my-5 py-5 mt-5 pr-3"
+      >
+        <div id="TEST-grid" class="grid grid-cols-2 gap-10 mt-5">
+          <img
+            src="https://dl.dropboxusercontent.com/scl/fi/g23z3n6u9joennznyqxc4/lc-9-20-24.png?rlkey=q75joo6od6ixkfoxr9q57kfkb&st=19kz2kwm&dl=0"
+            alt=""
+            class="border border-gray-400 h-[350px] w-full"
+          />
+
+          <img
+            src="https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="border border-gray-400 h-[350px] w-full"
+          />
+
+          <img
+            src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
+            alt=""
+            class="border border-gray-400 h-[350px] w-full"
+          />
+
+          <img
+            src="https://images.pexels.com/photos/2893525/pexels-photo-2893525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="border border-gray-400 h-[350px] w-full"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>

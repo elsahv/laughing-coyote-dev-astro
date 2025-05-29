@@ -39,7 +39,7 @@ const Sq4 = () => {
                 <img
                   src={item.title}
                   alt=""
-                  class="border border-onyx rounded-lg h-full"
+                  class="border border-carribean rounded-lg h-full"
                 />
               </div>
             ))}

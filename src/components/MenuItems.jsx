@@ -1,10 +1,10 @@
 const links = [
-  { label: "About", href: "/about" },
+  { label: "Web development", href: "/#web-development" },
   // { label: "Website Services", href: "/#case-studies" },
   // -> sublinks:whats included, packages
-  //* { label: "Writing Skills", href: "/#writing-skills" },
-  { label: "Work", href: "/work" },
-  { label: "Contact", href: "/contact" },
+  { label: "Writing Skills", href: "/#writing" },
+  // { label: "Writing", href: "/writing" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const TestMenuItems = () => {

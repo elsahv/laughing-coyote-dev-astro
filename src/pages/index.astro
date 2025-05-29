@@ -1,30 +1,116 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-import SocialProof from "../components/sections/SocialProof";
 import FeaturedClient from "../components/sections/FeaturedClient.astro";
 import HowItWorks from "../components/ctas/HowItWorks.astro";
-import AboutPageCTA from "../components/sections/AboutPageCTA.astro";
-import TestWorksCTA from "../components/tests/TestWorksCTA.astro";
+import WebDevGridSm from "../components/shared/grids/WebDevGridSm.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Card from "../components/shared/Card.astro";
+import ContactForm from "../components/ContactForm";
+import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
+import About from "../components/sections/About.astro";
+import Works from "../components/tests/Works.astro";
+import BuildAuthority from "../components/sections/SocialProof";
+import Packages from "../components/sections/Packages.astro";
+import MainGoal from "../components/MainGoal.astro";
+const allSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
+  <!--* 1. HERO v -->
   <Hero />
-  <SocialProof />
+  <!--* ^^^ -->
 
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!-- TODO CURRENTLY: MADE DYNAMIC-v-->
-  <!-- TODO: LC TEMPLATES-v-->
-  <!--  TODO:  HoveyRoofing-v-->
-  <!-- TODO:  EH portfolio-v-->
-  <!--  TODO:  RQ--v-->
-  <!--TODO-^-->
-  <!--  -->
-  <!--  -->
-  <!--  -->
+  <!--* 2. BUILD AUTHORITY (INSTEAD OF SOCIAL PROOF) v-->
+  <BuildAuthority />
+  <!--* ^^^-->
 
-  <FeaturedClient />
-  <HowItWorks />
+  <!-- ? UNSURE IF KEEPING V-->
+  <!-- 
+  <div id="banner-wrapper" class="mt-[150px] text-">
+    <CenterPageBanner
+      BannerTitle="Web Development"
+      paragraph="I build custom applications for small businesses."
+    />
+  </div> -->
+  <!-- ? UNSURE IF KEEPING ^-->
+
+  <div
+    id="list-wrapper"
+    class="border border-black bg-teal text-parchment my-[150px] pt-3 pb-1 flex justify-center"
+  >
+    <ul class="list-decimal pb-3 text-2xl my-1">
+      <li>creative software development</li>
+      <li>web design</li>
+      <li>copywriting</li>
+    </ul>
+  </div>
+  <!--TODO:  3.  SOCIAL PROOF SECTION- other grid  V-->
+  <!--  TODO   ^^^^^^^^^^^^^^^^^^^^^^-->
+
+  <!-- TODO 4. PROBLEM SOLVING SECTION- short headline w/ paragraph- v->
+
+  <!-- !CHANGE ABOUT INTO MAIN GOAL -->
+  <About />
+  <MainGoal />
+  <!-- !CHANGE ABOUT INTO MAIN GOAL -->
+
+  <WebDevGridSm />
+  <!-- TODO ^^^^^^^^^^^^^^^^^^^^^^^^-->
+
+  <div id="web-development">
+    <div id="wrapper" class="">
+      <!--  *:  HOW IT WORKS SECTION -->
+      <HowItWorks />
+      <!--* ^^^-->
+
+      <!-- *:  PORTFOLIO EXAMPLES -->
+      <FeaturedClient />
+      <Works />
+      <!-- *:  ^^^ -->
+
+      <!-- <WebDevGridSm /> -->
+
+      <!--* SERVICES PACKAGES v-->
+      <Packages />
+      <!--* SERVICES PACKAGES ^-->
+      <WhatsIncluded />
+
+      <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
+        <CenterPageBanner
+          BannerTitle="Writing"
+          paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
+        />
+        <div
+          id="grid"
+          class="grid md:grid-cols-3 grid-cols-1 2xl:gap-5 px-[50px]"
+        >
+          {
+            allSites.map((site) => (
+              <Card
+                title={site.frontmatter.title}
+                image={site.frontmatter.image.url}
+                alt={site.frontmatter.image.alt}
+                testItem1={site.frontmatter.testItem1}
+                category1={site.frontmatter.category1}
+                category2={site.frontmatter.category2}
+                url={site.url}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <ContactForm />
+  <div id="right-sq" class="bg- p-5 bg- col-span-1">
+    <div id="email" class="">elsahvy@gmail.com</div>
+    <div id="sm-container">
+      <ul class="flex gap-x-5 pt-1 text-md opacity-80 pl-1">
+        <li>linkedIn</li>
+        <li>fb</li>
+        <li>inst</li>
+      </ul>
+    </div>
+  </div>
 </MainLayout>
