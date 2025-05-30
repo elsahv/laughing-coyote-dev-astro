@@ -7,7 +7,7 @@ import Sq6 from "./sq6";
 
 const BuildAuthority = () => {
   return (
-    <div id="masonryGrid-wrapper" class="2xl:opacity-80 opacity-100 bg-">
+    <div id="wrapper" class="2xl:opacity-80 opacity-100 bg-">
       <div id="" className="bg- md:mx-5 mx-0 2xl:px-[80px]">
         <div
           id="grid"

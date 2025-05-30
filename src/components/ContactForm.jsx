@@ -64,6 +64,19 @@ const ContactForm = () => {
           </button>
         </div>
       </form>
+
+      <div id="all-contact-info" class="mt-5 bg-">
+        <div id="email" class="">
+          elsahvy@gmail.com
+        </div>
+        <div id="sm-container">
+          <ul id="sm-links" class="flex gap-x-5 pt-1 text-md opacity-80 pl-1">
+            <li>linkedIn</li>
+            <li>fb</li>
+            <li>inst</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

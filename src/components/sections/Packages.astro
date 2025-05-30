@@ -30,26 +30,30 @@ const items = [
 ];
 ---
 
-<h2 class="font-bold pb-1 pl-1">WHATS INCLUDED (PKGS)</h2>
-<div id="grid" class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
-  {
-    items.map((item) => (
-      <div id="card" class="p-5 opacity-80 hover:opacity-100 rounded-lg">
-        <div id="img-wrapper" class=" w-full my-1">
-          <img src={item.img} alt={item.title} class="sq-styles" />
-        </div>
+<div id="wrapper" class="bg-test1 flex justify-center">
+  <!-- <h2 class="font-bold pb-1 pl-1">WHATS INCLUDED (PKGS)</h2> -->
+  <!-- <div id="container" class=""> -->
+  <div id="grid" class="bg- grid lg:grid-cols-2 grid-cols-1">
+    {
+      items.map((item) => (
+        <div id="card" class="p-5 opacity-80 hover:opacity-100 rounded-lg">
+          <div id="img-wrapper" class="my-1">
+            <img src={item.img} alt={item.title} class="w-[400px] sq-styles" />
+          </div>
 
-        <div id="content-wrapper" class="p-1">
-          <h2 class="font-bold text-2xl">{item.title}</h2>
-          <ul class="text-lg pb-3 pt-1">
-            <li>- {item.listitem1}</li>
-            <li>- {item.listitem2}</li>
-            <li>- {item.listitem3}</li>
-            <li>- {item.listitem4}</li>
-            <ButtonProps btn1="see demo" btn1Link="contact" />
-          </ul>
+          <div id="content-wrapper" class="p-1">
+            <h2 class="font-bold text-2xl">{item.title}</h2>
+            <ul class="text-lg pb-3 pt-1">
+              <li>- {item.listitem1}</li>
+              <li>- {item.listitem2}</li>
+              <li>- {item.listitem3}</li>
+              <li>- {item.listitem4}</li>
+              <ButtonProps btn1="see demo" btn1Link="contact" />
+            </ul>
+          </div>
         </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
+  <!-- </div> -->
 </div>
