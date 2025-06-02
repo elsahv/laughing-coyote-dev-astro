@@ -2,24 +2,26 @@
 const items = [
   {
     title: "DISCOVERY PHASE",
+    p: "gives client a plan- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt aperiam commodi enim quasi illum molestias a repellendus provident minus. ",
   },
   {
     title: "CREATIVE PHASE",
+    p: "gives client a plan- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt aperiam commodi enim quasi illum molestias a repellendus provident minus. ",
   },
   {
     title: "DEVELOPMENT PHASE",
+    p: "gives client a plan- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt aperiam commodi enim quasi illum molestias a repellendus provident minus. ",
   },
   {
     title: "LAUNCH PHASE",
+    p: "gives client a plan- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt aperiam commodi enim quasi illum molestias a repellendus provident minus. ",
   },
 ];
 ---
 
 <section id="how-it-works" class="md:p-5 p-1 my-[50px]">
   <div id="title-banner" class="flex justify-center p-3">
-    <h2 class="text-2xl pb-5 font-bold italic md:mx-5 md:px-5">
-      Gives client a plan
-    </h2>
+    <h2 class="text-2xl pb-5 font-bold italic md:mx-5 md:px-5">How it Works</h2>
   </div>
   <!--  -->
   <div id="how-it-works-wrapper" class="2xl:p-5 mb-5 md:mx-5">
@@ -32,12 +34,7 @@ const items = [
           items.map((item) => (
             <div id="sq" class="p-5 sq-styles bg-teal text-parchment m-1">
               <h2 class="font-bold">{item.title}</h2>
-              <p class="pt-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, ab rem, mollitia cupiditate eum in veritatis ad esse
-                consectetur, nobis sunt? Ex ratione molestiae provident deleniti
-                minus non placeat repellat!
-              </p>
+              <p class="pt-1">{item.p}</p>
             </div>
           ))
         }
