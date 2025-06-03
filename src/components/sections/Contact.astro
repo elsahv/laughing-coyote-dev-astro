@@ -1,0 +1,16 @@
+---
+import ContactForm from "../ContactForm";
+import FinalCta from "../FinalCta.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+---
+
+<div class="border border-black text-onyx pb-5">
+  <CenterPageBanner
+    BannerTitle="Contact"
+    paragraph="I build custom applications for small businesses."
+  />
+  <div class="grid grid-cols-2">
+    <FinalCta />
+    <ContactForm />
+  </div>
+</div>

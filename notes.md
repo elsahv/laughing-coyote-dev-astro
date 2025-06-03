@@ -1,4 +1,19 @@
--
+-UNSURE WHAT CAME FROM WHERE:
+...
+
+      <!-- ! 2. PRODUCT DEF -->
+      <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
+
+    <!--TODO: KEY FEATURES " Are there any key features, benefits, or values that should be highlighted?" -->
+
+
+    <!-- ! TARGET AUDIENCE -->
+    <!-- TODO: targetAudience="Who is your target audience?"v -->
+
+  <!-- !AUDIENCE MESSAGE -->
+
+    <!-- TODO: audienceMessage="What feeling or message do you want the audience to take away?" v-->
+
 -
 - 2/4/25 CURRENTLY:
   CURRENT NOTES: ON ‘CREATE YOUR OFFER’ VID

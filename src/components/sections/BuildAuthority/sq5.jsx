@@ -10,9 +10,9 @@ const Sq5 = () => {
         class="bg- flex md:justify- justify-center items-center"
       >
         <p className="pr-2 font-medium md:text-lg text-md ">
-          " <b>client side</b>, site-Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Soluta sit laboriosam deleniti, consectetur
-          obcaecati id. Provident illo veniam pariatur beatae nulla minima sed?"
+          "Most web design services focus on tech, speed, or business
+          optimization. Few lean into artisanal design, emotional storytelling,
+          and cozy aesthetics the way this concept (lc) does. "
         </p>
       </div>
       <div

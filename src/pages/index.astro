@@ -3,26 +3,22 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import HowItWorks from "../components/ctas/HowItWorks.astro";
 // import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-// import Card from "../components/shared/Card.astro";
+import Card from "../components/shared/Card.astro";
 import ContactForm from "../components/ContactForm";
+const allSites = await Astro.glob("./websites/*.md");
 import Packages from "../components/sections/Packages.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
 import SocialProof from "../components/SocialProof.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
-// const allSites = await Astro.glob("./websites/*.md");
-import WhatsIncluded from "../components/ctas/WhatsIncluded.astro";
 import MainGoal from "../components/MainGoal.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
 import FinalCta from "../components/FinalCta.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Contact from "../components/sections/Contact.astro";
 ---
 
 <MainLayout>
-  <!-- * -->
-  <!-- * -->
-  <!-- * -->
-  <!-- TODO: 5/30- START AGAIN HERE V-->
   <Hero />
   <BuildAuthority />
   <ProblemSolving />
@@ -31,26 +27,9 @@ import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
   <Portfolio />
   <Packages />
   <BuildAuthority2 />
+  <Contact />
 
-  <div class="bg-teal text-parchment border-t border-black bg- py-[50px] my-5">
-    <CenterPageBanner
-      BannerTitle="Contact"
-      paragraph="I build custom applications for small businesses."
-    />
-    <div class="grid grid-cols-2">
-      <FinalCta />
-      <ContactForm />
-    </div>
-  </div>
-  <!-- TODO: START AGAIN HERE ^-->
-  <!-- * -->
-  <!-- * -->
-  <!-- * -->
-  <!-- <div class="bg-test1"> -->
-  <!-- <WhatsIncluded /> -->
-  <!-- <MainGoal /> -->
-  <!-- </div> -->
-  <!-- ?LEAST PRIORITY CURRENTLY V-->
+  <!-- ? Why is this not working?? -->
   <!-- <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
     <CenterPageBanner
       BannerTitle="Writing"
@@ -66,12 +45,24 @@ import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
             testItem1={site.frontmatter.testItem1}
             category1={site.frontmatter.category1}
             category2={site.frontmatter.category2}
-            url={site.url}
+            url={site.frontmatter.url}
           />
         ))
       }
     </div>
   </div> -->
+  <!-- ? ^^^^^^^^ -->
 
-  <!-- ?LEAST PRIORITY CURRENTLY ^-->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- TODO: 6/1- TEST COMPONENTS HERE! V-->
+  <div class="bg-test1">
+    <!-- <MainGoal /> -->
+  </div>
+
+  <!-- TODO: ^^^^^^^^^ ^-->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
 </MainLayout>
