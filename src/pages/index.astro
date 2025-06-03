@@ -2,8 +2,8 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import HowItWorks from "../components/ctas/HowItWorks.astro";
-// import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import Card from "../components/shared/Card.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Card from "../components/Card.astro";
 import ContactForm from "../components/ContactForm";
 const allSites = await Astro.glob("./websites/*.md");
 import Packages from "../components/sections/Packages.astro";
@@ -11,10 +11,7 @@ import BuildAuthority from "../components/sections/BuildAuthority";
 import SocialProof from "../components/SocialProof.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
-import MainGoal from "../components/MainGoal.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
-import FinalCta from "../components/FinalCta.astro";
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import Contact from "../components/sections/Contact.astro";
 ---
 
@@ -27,21 +24,19 @@ import Contact from "../components/sections/Contact.astro";
   <Portfolio />
   <Packages />
   <BuildAuthority2 />
-  <Contact />
 
-  <!-- ? Why is this not working?? -->
-  <!-- <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
+  <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
     <CenterPageBanner
       BannerTitle="Writing"
       paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
     />
-    <div id="grid" class="grid md:grid-cols-3 grid-cols-1 2xl:gap-5 px-[50px]">
+    <div id="grid" class="grid md:grid-cols-3 grid-cols-1 2xl:gap-8 px-[50px]">
       {
         allSites.map((site) => (
           <Card
             title={site.frontmatter.title}
-            image={site.frontmatter.image.url}
-            alt={site.frontmatter.image.alt}
+            image={site.frontmatter.image?.url}
+            alt={site.frontmatter.title}
             testItem1={site.frontmatter.testItem1}
             category1={site.frontmatter.category1}
             category2={site.frontmatter.category2}
@@ -49,17 +44,18 @@ import Contact from "../components/sections/Contact.astro";
           />
         ))
       }
+
+      <!-- ? Why is this not working?? -->
+      <!-- image={site.frontmatter.image.url} -->
+      <!-- ? ^^^^^^^^ -->
     </div>
-  </div> -->
-  <!-- ? ^^^^^^^^ -->
+  </div>
+  <Contact />
 
   <!-- * -->
   <!-- * -->
   <!-- * -->
   <!-- TODO: 6/1- TEST COMPONENTS HERE! V-->
-  <div class="bg-test1">
-    <!-- <MainGoal /> -->
-  </div>
 
   <!-- TODO: ^^^^^^^^^ ^-->
   <!-- * -->

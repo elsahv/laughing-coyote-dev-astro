@@ -1,6 +1,17 @@
 -UNSURE WHAT CAME FROM WHERE:
 ...
 
+NOTE: the “Canvas & Code” concept—positioning web design as a collaborative,
+artistic process tailored specifically for creatives—is relatively niche
+and underused.
+
+That said, a handful of designers do operate in adjacent spaces (e.g.,
+studio brands targeting indie artists or feminine brands), but your unique
+blend of handmade feel + custom digital artistry gives you a strong point
+of differentiation.
+
+<!-- TODO:  1. MAIN GOAL What is the main goal of the campaign? (e.g. brand awareness, sales, community building)" -->
+
       <!-- ! 2. PRODUCT DEF -->
       <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
 
