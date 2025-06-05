@@ -1,30 +1,37 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-import HowItWorks from "../components/ctas/HowItWorks.astro";
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import HowItWorks from "../components/sections/HowItWorks.astro";
 import Card from "../components/Card.astro";
-import ContactForm from "../components/ContactForm";
 const allSites = await Astro.glob("./websites/*.md");
 import Packages from "../components/sections/Packages.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
-import SocialProof from "../components/SocialProof.astro";
+import SocialProof from "../components/sections/SocialProof.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
+import WebDevGrid from "../components/WebDevGrid.astro";
 import Contact from "../components/sections/Contact.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 ---
 
 <MainLayout>
   <Hero />
   <BuildAuthority />
   <ProblemSolving />
-  <HowItWorks />
+
+  <div class="mt-[150px]">
+    <CenterPageBanner
+      BannerTitle="Social Proof"
+      paragraph="I build custom applications for small businesses."
+    />
+  </div>
+  <WebDevGrid />
   <SocialProof />
   <Portfolio />
+  <HowItWorks />
   <Packages />
   <BuildAuthority2 />
-
   <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
     <CenterPageBanner
       BannerTitle="Writing"
@@ -44,21 +51,7 @@ import Contact from "../components/sections/Contact.astro";
           />
         ))
       }
-
-      <!-- ? Why is this not working?? -->
-      <!-- image={site.frontmatter.image.url} -->
-      <!-- ? ^^^^^^^^ -->
     </div>
   </div>
   <Contact />
-
-  <!-- * -->
-  <!-- * -->
-  <!-- * -->
-  <!-- TODO: 6/1- TEST COMPONENTS HERE! V-->
-
-  <!-- TODO: ^^^^^^^^^ ^-->
-  <!-- * -->
-  <!-- * -->
-  <!-- * -->
 </MainLayout>

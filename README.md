@@ -6,7 +6,7 @@
   |
   _3. ADDRESS KEY PROBLEM- what problem LC solves_  
    |
-  _4.SOCIAL PROOF- provide solutions, glowing testimonial- " Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]." (USE <FeaturedClient />)_
+  _4.SOCIAL PROOF- provide solutions, glowing testimonial- " Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]."_
   |
   _5. HOW IT WORKS- gives client a plan, include CTA button_
   |

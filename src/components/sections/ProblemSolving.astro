@@ -1,9 +1,9 @@
 ---
-import DynamicAboutCTA from "../DynamicAboutCTA";
+import DynamicAboutCTA from "../shared/DynamicAboutCta";
 import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div id="wrapper" class="bg- py-5 my-5">
+<div id="PROBLEM-SOLVING-wrapper" class="bg- py-5 my-5">
   <div id="container" class="">
     <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5">
       <div id="sq1" class="bg- flex md:justify-end justify-center">
@@ -11,7 +11,10 @@ import ButtonProps from "../shared/ButtonProps.astro";
           id="sq1-container"
           class="2xl:w-1/2 w-full flex lg:justify-end justify-center items-end bg-"
         >
-          <DynamicAboutCTA isLoggedIn={true} username="Problem Solving" />
+          <DynamicAboutCTA
+            isLoggedIn={true}
+            username=" How Laughing Coyote helps small businesses..."
+          />
           <!-- <DynamicAboutCTA isLoggedIn={false} username="test1" /> -->
         </div>
       </div>
@@ -23,21 +26,33 @@ import ButtonProps from "../shared/ButtonProps.astro";
           class="sq-styles p-5 m-5"
         />
       </div>
-      <!-- <div class="my-[150px]">
-  <div
-    id=""
-    class="bg-teal text-parchment py-2 border border-black flex items-center"
-  >
-    <ul class="px-3 mr-3 list-none text-3xl">
-      <li>software development</li>
-      <li class="py-1 my-5">web design</li>
-      <li>copywriting</li>
-    </ul>
-    <WebDevGridSm />
-  </div>
-</div> -->
+
       <div id="sq3" class="bg- flex md:justify-end pl-5 ml-5">
         <ul class="bg- 2xl:w-1/2 md:w-2/3 w-full">
+          <li>
+            are you an artist who desires a website to gain more clients... but
+            lacks the desire or time to build their own site?
+          </li>
+
+          <li>
+            Do you need a way to attract more customers and show off your
+            creative profession?
+          </li>
+          <li>
+            Perhaps you feel like a site would be great for your business... but
+            just don’t have the time to learn how to build a site?
+          </li>
+          <li>
+            You shouldn't have to worry about being charged for things you don't
+            need.
+          </li>
+          <!-- <li>software development</li>
+
+          <li class="">web design</li>
+          <li>Highly Personalized</li>
+          <li>Artistically Driven</li>
+          <li>Crafted in Code</li>
+          <li>copywriting- the ablity to tell your story and brand</li>
           <li>
             a digital creative studio where clients' visions (userstories??) are
             translated into vivid, handcrafted websites.
@@ -47,17 +62,47 @@ import ButtonProps from "../shared/ButtonProps.astro";
             learning how to simplify the design process so you can focus on your
             business instead)
           </li>
-          <li>-the ablity to tell your story and brand</li>
-          <li>Highly Personalized</li>
-          <li>Artistically Driven</li>
-          <li>Crafted in Code</li>
           <li>Increased potential customers, easier to find on Google.</li>
           <li>The people I'm looking to serve...</li>
           <li>
             Unique Selling Point: You're not just designing websites—you’re
             co-creating digital homes for passionate people. You get their
             creative process because you share it.
-          </li>
+          </li> -->
+          <!-- 
+        <li>Tailored to the client’s creative style, voice, and aesthetic</li>
+        <li>
+          "Peace of mind... for business owners who don't have time to build
+          with software."
+        </li>
+        <li>Informed by the client’s artwork, medium, or story</li>
+        <li>"What separates web developers from Ai? Human innovation!</li> -->
+          <!-- <li>
+          Avoids templates and generic layouts in favor of expressive, unique
+          design elements
+        </li>
+        <li>
+          Prioritizes mood, composition, and visual storytelling over corporate
+          polish
+        </li>
+        <li>
+          Often includes hand-drawn elements, textures, painterly color
+          palettes, or collage-style layouts
+        </li>
+        <li>
+          Draws inspiration from fine art, zines, sketchbooks, journals, or
+          craftwork
+        </li> -->
+          <!-- 
+        <li>
+          Combines the fluidity of visual art with the structure of web
+          development
+        </li>
+        <li>Responsive and functional, but emotionally resonant and "alive"</li>
+        <li>
+          May include interactive touches like hover effects, transitions, or
+          animations that feel whimsical or tactile
+        </li> -->
           <ButtonProps btn1="see work" btn1Link="/work" />
         </ul>
       </div>

@@ -1,5 +1,3 @@
-import WindowGrid from "../../shared/grids/WindowGrid";
-
 const Sq3 = () => {
   return (
     <div
@@ -8,7 +6,6 @@ const Sq3 = () => {
     >
       {/* <h4 className="">Social Media</h4> */}
       <div className="text-test2  bg-teal sq-styles">
-        {/* <WindowGrid /> */}
         <ul class="pl-3 pt-3 pb-3 text-2xl space-y-4">
           <li>web design</li>
           <li>software development</li>
