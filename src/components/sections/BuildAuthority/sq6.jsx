@@ -4,14 +4,14 @@ const Sq6 = () => {
       id="6"
       className=" 2xl:ml-5 md:mt-0 md:pr-5 mt-5 col-span-3 row-span-1 bg-gradient-to-r "
     >
-      <a href="/websites/eh-portfolio">
-        <img
-          src="https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=pn5aa0j8&dl=0"
-          alt=""
-          className="sq-styles"
-        />
-      </a>
-      <h3 className="font-bold pl-1">EH- portfolio</h3>
+      {/* <a href="/websites/eh-portfolio"> */}
+      <img
+        src="https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=i9rtcxk7&dl=0"
+        alt=""
+        className="sq-styles"
+      />
+      {/* </a> */}
+      <h3 className="font-bold pl-1">Wtbh</h3>
     </div>
   );
 };

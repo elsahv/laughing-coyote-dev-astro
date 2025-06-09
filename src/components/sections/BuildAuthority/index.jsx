@@ -5,6 +5,7 @@ import Sq4 from "./sq4";
 import Sq5 from "./sq5";
 import Sq6 from "./sq6";
 
+// ? UNSURE ABOUT A HREFS??
 const BuildAuthority = () => {
   return (
     <div id="wrapper" class="2xl:opacity-80 opacity-100 bg-">

@@ -3,8 +3,8 @@ import DynamicAboutCTA from "../shared/DynamicAboutCta";
 import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div id="PROBLEM-SOLVING-wrapper" class="bg- py-5 my-5">
-  <div id="container" class="">
+<div id="PROBLEM-SOLVING-wrapper" class="py-5 my-[105px]">
+  <div id="container" class="bg- 2xl:mx-0 mx-5">
     <div id="grid" class="grid md:grid-cols-2 grid-cols-1 gap-5">
       <div id="sq1" class="bg- flex md:justify-end justify-center">
         <div
@@ -18,17 +18,17 @@ import ButtonProps from "../shared/ButtonProps.astro";
           <!-- <DynamicAboutCTA isLoggedIn={false} username="test1" /> -->
         </div>
       </div>
-      <div id="sq2" class="lavender row-span-2">
+      <div id="sq2" class="bg- row-span-2">
         <img
           id="primary-img"
           src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
-          class="sq-styles p-5 m-5"
+          class="sq-styles lg:p-5 p-2"
         />
       </div>
 
-      <div id="sq3" class="bg- flex md:justify-end pl-5 ml-5">
-        <ul class="bg- 2xl:w-1/2 md:w-2/3 w-full">
+      <div id="sq3" class="bg- flex 2xl:justify-end 2xl:pl-5 md:ml-5">
+        <ul class="2xl:w-1/2 w-full pl-1">
           <li>
             are you an artist who desires a website to gain more clients... but
             lacks the desire or time to build their own site?
@@ -103,7 +103,7 @@ import ButtonProps from "../shared/ButtonProps.astro";
           May include interactive touches like hover effects, transitions, or
           animations that feel whimsical or tactile
         </li> -->
-          <ButtonProps btn1="see work" btn1Link="/work" />
+          <ButtonProps btn1="view testimonial" btn1Link="/#view-testimonial" />
         </ul>
       </div>
     </div>

@@ -6,23 +6,19 @@ const { title, image, alt, testItem1, category1, category2, url } = frontmatter;
 
 <div
   id="card-wrapper"
-  class="px-3 bg-teal text-parchment rounded border-2 border-black"
+  class="bg-teal text-parchment rounded-2xl border-2 border-black"
 >
   <!-- ?: CHANGE BTNS TO CATEGORIES v-->
-  <div id="card-btn-wrapper" class="flex space-x-2 opacity-70 ml-1 pl-1 pb-1">
-    <div id="category1" class="">{category1}</div>
-    <div id="category2" class="">{category2}</div>
-  </div>
   <!-- ?:  ^-->
   <a href="/test">
     <img
       src={image}
-      class="h-[300px] w-full rounded-lg border-2 border-onyx hover:border-2 hover:border-onyx"
+      class="2xl:h-[300px] w-full rounded-tl-2xl rounded-tr-2xl border-b-2 border-black"
       alt={alt}
     />
     <div class="bg- md:text-lg text-sm pt-2 p-3 md:ml-3 mr-2">
-      <h3 class="font-bold text-2xl">{title}</h3>
-      <p>{testItem1}</p>
+      <h3 class="font-bold lg:text-2xl text-lg">{title}</h3>
+      <p class="">{testItem1}</p>
     </div>
   </a>
 </div>

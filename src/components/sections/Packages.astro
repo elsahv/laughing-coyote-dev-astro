@@ -6,10 +6,11 @@ const items = [
     title: "Growing Pup",
     listitem1: "landing pg",
     listitem2:
-      "This is a template catered towards people starting out, not much custom.",
-    listitem3: "Things that can be custom should be already made",
+      "(This is a template catered towards people starting out, not much custom.) Fully responsive 1-page website (home, about, contact, etc.)",
+    listitem3:
+      "(Things that can be custom should be already made) Mobile-friendly and modern design.",
     listitem4:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim officiis ipsum veniam,",
+      "Basic animations/interactions with JavaScript, Contact form (optional). Free hosting setup (Netlify or GitHub Pages). Delivery in 48 hours after content is received",
     img: "https://dl.dropboxusercontent.com/scl/fi/zdvqgpkxstz9g3vr5k70l/1-2-25-rq.png?rlkey=nnsad2qpj4i0e3bti5gkqy8gf&st=46k5gk9p&dl=0",
     btn1: "see demo",
     btn2: "contact",
@@ -18,7 +19,7 @@ const items = [
   },
   {
     title: "Rising Carnivore",
-    listitem1: "landing pg with content",
+    listitem1: "landing pg with content, custom w Sanity",
     listitem2: "Taking your business to a whole another level.",
     listitem3: "Custom, contact for unique and custom work,",
     listitem4: "see grid below for some of the possibilities!",
@@ -31,18 +32,17 @@ const items = [
 ];
 ---
 
-<div id="wrapper" class="mx-5 px-5 mt-[150px] pt-5">
+<div id="wrapper" class="xl:mx-5 xl:px-5 mt-[150px] pt-5">
   <CenterPageBanner
     BannerTitle="Packages"
     paragraph="I build custom applications for small businesses."
   />
   <div id="" class="bg- flex justify-center">
-    <!-- <h2 class="font-bold pb-1 pl-1">WHATS INCLUDED (PKGS)</h2> -->
-    <div id="container" class="px-5 mx-5">
-      <div id="grid" class="bg- grid lg:grid-cols-2 grid-cols-1">
+    <div id="container" class="2xl:px-5 px-0 2xl:mx-5 mx-0">
+      <div id="grid" class="grid lg:grid-cols-2 grid-cols-1">
         {
           items.map((item) => (
-            <div id="card" class="bg- m-5 p-5 opacity-80 hover:opacity-100">
+            <div id="card" class="bg- 2xl:m-5 p-5 opacity-80 hover:opacity-100">
               <div class="">
                 <div id="img-wrapper" class="my-1">
                   <img

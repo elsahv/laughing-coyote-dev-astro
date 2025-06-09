@@ -6,34 +6,50 @@ import ButtonProps from "../shared/ButtonProps.astro";
   id="HIGHLIGHTS THE KEYFEATURES AND AUDIENCE MESSAGE SECTIONS"
   class="bg- my-5 py-5 mt-[155px] pr-3 flex justify-center"
 >
-  <div id="TEST-grid" class="grid grid-cols-2 gap-10 mt-5 w-1/2">
-    <img
-      src="https://dl.dropboxusercontent.com/scl/fi/g23z3n6u9joennznyqxc4/lc-9-20-24.png?rlkey=q75joo6od6ixkfoxr9q57kfkb&st=19kz2kwm&dl=0"
-      alt=""
-      class="sq-styles"
-    />
-
-    <div id="sq2">
-      <h2 class="font- text-2xl">HoveyRoofing</h2>
-      <h3 class="text-4xl font-extrabold">Testimonial</h3>
-      <p>
-        "Before I was struggling with [problem,] and it made me feel [negative
-        emotion]."
-      </p>
-      <p>"Now I have acheived this [result], and I feel [positive emotion]."</p>
-      <p>-Glen</p>
-      <ButtonProps btn1="see how LC works" btn1Link="/#how-it-works" />
+  <div id="container" class="mt-5 2xl:w-1/2 px-[50px]">
+    <div id="top-grid" class="grid lg:grid-cols-2 bg-">
+      <div id="sq1" class="xl:p-0 p-5" bg->
+        <img
+          src="https://dl.dropboxusercontent.com/scl/fi/g23z3n6u9joennznyqxc4/lc-9-20-24.png?rlkey=q75joo6od6ixkfoxr9q57kfkb&st=19kz2kwm&dl=0"
+          alt=""
+          class="sq-styles mr-4"
+        />
+      </div>
+      <div id="sq2" class="bg- ml-4 p-3">
+        <div id="view-testimonial">
+          <h2 class="font- text-2xl">HoveyRoofing</h2>
+          <h3 class="text-4xl font-extrabold">Testimonial</h3>
+          <p>
+            "Before I was struggling with [problem,] and it made me feel
+            [negative emotion]."
+          </p>
+          <p>
+            "Now I have acheived this [result], and I feel [positive emotion]."
+          </p>
+          <p>-Glen</p>
+          <ButtonProps
+            btn1="see different styles"
+            btn1Link="/#see-different-styles"
+          />
+        </div>
+      </div>
     </div>
-    <img
-      src="https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt=""
-      class="sq-styles"
-    />
 
-    <img
-      src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
-      alt=""
-      class="sq-styles"
-    />
+    <div id="flex2" class="flex bg- space-x-10 mt-2">
+      <div id="sq3">
+        <img
+          src="https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+          class="sq-styles"
+        />
+      </div>
+      <div id="sq4">
+        <img
+          src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
+          alt=""
+          class="sq-styles"
+        />
+      </div>
+    </div>
   </div>
 </div>
