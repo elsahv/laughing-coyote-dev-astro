@@ -9,10 +9,13 @@ const Sq5 = () => {
         id="left-side"
         class="bg- flex md:justify- justify-center items-center"
       >
-        <p className="pr-2 font-medium md:text-lg text-md ">
-          "Most web design services focus on tech, speed, or business
+        {/* <p className="pr-2 font-medium md:text-lg text-md "> */}
+        {/* "Most web design services focus on tech, speed, or business
           optimization. Few lean into artisanal design, emotional storytelling,
-          and cozy aesthetics the way this concept (lc) does. "
+          and cozy aesthetics the way this concept (lc) does. " */}
+        {/* </p> */}
+        <p>
+          Helping small businesses with a desire to reach new customers online
         </p>
       </div>
       <div

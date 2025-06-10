@@ -1,7 +1,7 @@
 function DynamicAboutCTA(props) {
   return props.isLoggedIn ? (
     <div id="BannerTitle-section" class="bg-test flex justify-start bg-">
-      <h2 class="2xl:text-4xl md:text-3xl text-2xl md:px-5 px-1 pt-2 pl-2 font-bold underline">
+      <h2 class="2xl:text-4xl md:text-3xl text-2xl md:px-5 px-1 pt-2 pl-2 font-bold ">
         {props.username}
       </h2>
     </div>
