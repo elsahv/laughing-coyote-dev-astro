@@ -4,7 +4,7 @@ import Hero from "../components/sections/Hero.astro";
 import HowItWorks from "../components/sections/HowItWorks.astro";
 import Card from "../components/Card.astro";
 const allSites = await Astro.glob("./websites/*.md");
-import Packages from "../components/sections/Packages.astro";
+import Undecided from "../components/sections/Undecided.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
 import SocialProof from "../components/sections/SocialProof.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
@@ -13,33 +13,66 @@ import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
 import WebDevGrid from "../components/WebDevGrid.astro";
 import Contact from "../components/sections/Contact.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Packages from "../components/Packages.astro";
 ---
 
 <MainLayout>
   <Hero />
   <BuildAuthority />
+  <HowItWorks />
   <ProblemSolving />
   <Portfolio />
-  <!-- TODO: CHANGE TO HOW IT WORKS/ SERVICES V-->
-  <CenterPageBanner
-    BannerTitle=" How it Works/ Services Provided"
-    paragraph="This is how LC helps small businesses with a desire to reach new customers online"
-  />
-  <WebDevGrid />
-  <!-- TODO: CHANGE TO HOW IT WORKS/ SERVICES ^-->
+  <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SERVICES V-->
+  <div class="mt-[255px] mb-5">
+    <!-- <CenterPageBanner
+      BannerTitle=" Portfolio"
+      paragraph="This is how LC helps small businesses with a desire to reach new customers online"
+    /> -->
+    <WebDevGrid />
+  </div>
+  <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SERVICES ^-->
   <SocialProof />
-  <!-- <HowItWorks />  -->
-  <Packages />
-  <BuildAuthority2 />
-  <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
-    <CenterPageBanner
+
+  <!--  -->
+  <div class="absolute">
+    <WebDevGrid />
+  </div>
+
+  <div id="skewed-transition" class="skewed-wrapper">
+    <div class="skewed-bg"></div>
+    <div class="content">
+      <h2>Clean Content</h2>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div id="teal-background" class="bg-teal text-parchment">
+    <Undecided />
+
+    <WebDevGrid />
+
+    <!-- new <Packages /> -->
+
+    <div class="mt-[55px] pt-5">
+      <CenterPageBanner
+        BannerTitle="Packages"
+        paragraph="I build custom applications for small businesses. "
+      />
+    </div>
+
+    <Packages />
+
+    <BuildAuthority2 />
+    <!-- <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
+      <CenterPageBanner
       BannerTitle="Writing"
       paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
-    />
-    <div
+      />
+      <div
       id="grid"
       class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-8 gap-4 lg:px-[50px] px-3"
-    >
+      >
       {
         allSites.map((site) => (
           <Card
@@ -54,6 +87,7 @@ import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
         ))
       }
     </div>
+  </div> -->
+    <Contact />
   </div>
-  <Contact />
 </MainLayout>

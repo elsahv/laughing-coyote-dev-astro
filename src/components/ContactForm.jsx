@@ -21,16 +21,16 @@ const items = [
 
 const ContactForm = () => {
   return (
-    <div className="text-onyx bg-munsell border-2 border-onyx rounded-tl-2xl rounded-bl-2xl 2xl:pl-5 2xl:ml-5 ml-3 pl-2">
+    <div className="text-onyx bg-parchment border-2 border-onyx rounded-tl-2xl rounded-bl-2xl 2xl:pl-5 2xl:ml-5 ml-3 pl-2">
       <div id="contact" class="mt-1 pt-3 lg:p-5">
         <form id="IP-login-form" class="pt-5 bg-test flex flex-col gap-y-4">
           <input
             placeholder="enter email"
-            class="rounded-lg border border-black bg-parchment md:w-2/3 w-1/2 h-10 pl-2 hover:border-test1 mb-2"
+            class="rounded-lg border border-black bg-teal md:w-2/3 w-1/2 h-10 pl-2 hover:border-test1 mb-2"
           />
           <input
             placeholder="enter password"
-            class="rounded-lg border border-black bg-parchment md:w-2/3 w-1/2 h-10 pl-2 hover:border-test2"
+            class="rounded-lg border border-black bg-teal md:w-2/3 w-1/2 h-10 pl-2 hover:border-test2"
           />
           <div id="btns-wrapper " class="">
             <h3 class="py-3 text-xl">I'm looking for...</h3>
@@ -42,7 +42,7 @@ const ContactForm = () => {
               {items.map((item) => (
                 <button
                   id={item.btn}
-                  className="w-[139px] bg-onyx opacity-80 hover:opacity-100 text-parchment rounded border border-black mr-5 py-1 pl-2 text-center"
+                  className="w-[139px] sq-styles opacity-80 hover:opacity-100 hover:bg-test2 rounded border border-black mr-5 py-1 pl-2 text-center"
                 >
                   {item.btn}
                 </button>
@@ -54,12 +54,12 @@ const ContactForm = () => {
             <div className="">
               <textarea
                 placeholder="ex: what are your business goals?"
-                class="pt-5 pl-2 md:w-[500px] w-[350px] border border-black rounded-lg bg-parchment 2xl:ml-5 2xl:mt-1 mt-4"
+                class="pt-5 pl-2 md:w-[500px] w-[350px] border border-black rounded-lg bg-teal 2xl:ml-5 2xl:mt-1 mt-4"
               />
             </div>
           </div>
           <div id="btn-wrapper" class="">
-            <button class="rounded bg-onyx text-parchment px-3 py-1 border border-carribean opacity-80 hover:opacity-100">
+            <button class="rounded bg-orange text-onyx px-3 py-1 border border-carribean opacity-80 hover:opacity-100">
               send
             </button>
           </div>

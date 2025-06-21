@@ -1,10 +1,6 @@
 const Sq5 = () => {
   return (
-    // <div
-    //   id="sq5"
-    //   className="sq-styles bg-test2 2xl:col-span-2 col-span-1 row-span-1 rounded-lg flex"
-    // >
-    <div id="testimonial-container" class="bg- flex lg:flex-row flex-col -5">
+    <div id="sq5" class="bg- flex lg:flex-row flex-col -5">
       <div
         id="left-side"
         class="bg- flex md:justify- justify-center items-center"
@@ -15,7 +11,8 @@ const Sq5 = () => {
           and cozy aesthetics the way this concept (lc) does. " */}
         {/* </p> */}
         <p>
-          Helping small businesses with a desire to reach new customers online
+          Catered for creatives who are ready to take their business to the next
+          level
         </p>
       </div>
       <div
@@ -29,7 +26,6 @@ const Sq5 = () => {
         />
       </div>
     </div>
-    // </div>
   );
 };
 

@@ -1,4 +1,49 @@
--UNSURE WHAT CAME FROM WHERE:
+-UNSURE WHAT TO PUT WHERE:
+My days are spent creating niche websites and solutions for small business owners and creatives.
+
+            <!-- <p>
+            most clients just want something better than what they have.
+            Usually, clients have specific goals or problems they want to solve…
+            and typically one polished design does that for them (if you
+            actually listen during discovery). Clients come to us for our
+            expertise. They want someone to lead them, and tell them what’s
+            best. What will solve their issues, help them meet their goals, and
+            why. If you can explain the reasoning behind your design decisions
+            and how it solves the problems they are having, most times they will
+            trust you. When clients have to pick, it silently communicates that
+            they are the experts and they know best, which ultimately leads to
+            them micromanaging.  It also sets up a situation where if the new
+            design isn’t performing well, they second-guess the design they
+            chose. So, with all of that said… own your work, and be the expert
+            they’re hiring you to be! Give one design, and iterate as needed.
+          </p> -->
+
+            <!-- <li>software development</li>
+
+          <li>
+            a digital creative studio where clients' visions (userstories??) are
+            translated into vivid, handcrafted websites.
+          </li>
+
+          <li>
+            Unique Selling Point: You're not just designing websites—you’re
+            co-creating digital homes for passionate people. You get their
+            creative process because you share it.
+          </li> -->
+
+          <!--
+        <li>Tailored to the client’s creative style, voice, and aesthetic</li>
+
+        <li>
+          "We prioritize Peace of mind... for business owners who don't have time to learn and build
+          with software."
+        </li>
+
+        <li>
+          Prioritizes mood, composition, and visual storytelling over corporate
+          polish
+        </li>
+
 ...
 
 NOTE: the “Canvas & Code” concept—positioning web design as a collaborative,
