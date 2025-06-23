@@ -1,3 +1,38 @@
+_COPY/PASTE MAP FUNCTION--V_
+_---------------_
+const items = [
+{
+title: "",
+description: "",
+},
+{
+title: "",
+description: "",
+},
+{
+title: "",
+description: "",
+},
+{
+title: "",
+description: "",
+},
+];
+
+---
+
+{
+items.map((item) => (
+
+<div class="bg-teal p-5">
+<h3 class="text-lg font-bold">{item.title}</h3>
+<p class="text-sm">{item.description}</p>
+</div>
+))
+}
+_---------------_
+_COPY/PASTE MAP FUNCTION--^_
+
 -UNSURE WHAT TO PUT WHERE:
 My days are spent creating niche websites and solutions for small business owners and creatives.
 

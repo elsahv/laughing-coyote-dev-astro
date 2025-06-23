@@ -1,0 +1,44 @@
+---
+const items = [
+  {
+    title: "HoveyRoofing",
+  },
+  {
+    title: "Writing to Better Health",
+  },
+  {
+    title: "The Indoor Jungle Project",
+  },
+  {
+    title: "The Running Quail",
+  },
+];
+---
+
+<!-- TODO: CHANGE HOW IT WORKS COMP TO BUILD AUTH BANNER SHOWCASING SITES??  -->
+<section id="how-it-works" class="opacity-8x0 md:p-5 p-1 mt-[55px]">
+  <div id="title-banner" class="flex justify-center mt">
+    <h2 class="text-xl font- py-2 md:mx-5 md:px-5">
+      (sneak peek of featured websites)
+    </h2>
+  </div>
+  <!--  -->
+  <div id="how-it-works-wrapper" class="p-1">
+    <div id="how-it-works-container" class="flex justify-center bg-test">
+      <div
+        id="grid"
+        class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl:gap-5 gap-1"
+      >
+        {
+          items.map((item) => (
+            <div id="sq" class="2xl:px-3 px-2 py-2 sq-styles-teal m-1">
+              <span class="font- flex justify-center items-center text-teal ">
+                {item.title}
+              </span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

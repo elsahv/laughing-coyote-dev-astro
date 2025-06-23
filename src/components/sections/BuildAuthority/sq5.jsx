@@ -1,6 +1,6 @@
 const Sq5 = () => {
   return (
-    <div id="sq5" class="bg- flex lg:flex-row flex-col -5">
+    <div id="sq5" class="bg- flex flex-row -5">
       <div
         id="left-side"
         class="bg- flex md:justify- justify-center items-center"

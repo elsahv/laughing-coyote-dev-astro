@@ -1,31 +1,32 @@
 ---
-
+import Image from "astro/components/Image.astro";
+import SelfImg from "../../images/self.jpg";
 ---
 
-<div
-  id="wrapper"
-  class="bg- 2xl:h-screen grid lg:grid-cols-2 lg:items-center 2xl:p-5 p-2 2xl:mx-[150px] mx-3"
->
-  <!-- ? -->
-  <!-- ! 2. PRODUCT DEF -->
-  <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
-  <section class="2xl:mx-5 2xl:mt-[150px] py-5 bg-" id="PRODUCT DEFINITION">
-    <div class="pl-5 mt-5">
-      <h2 class="font-bold text-2xl pt-5 mt-5">Build Authority 2</h2>
-      <p class="">
-        CREATE LONGER VERSION:::: a digital creative studio where clients'
-        visions (userstories??) are translated into vivid, handcrafted websites.
-      </p>
-      <p>
-        Most web design services focus on tech, speed, or business optimization.
-        Few lean into artisanal design, emotional storytelling, and cozy
-        aesthetics the way this concept (lc) does.
-      </p>
+<div id="wrapper" class="bg- flex justify-center pl-5 py-5 ml-5">
+  <div id="container" class="pl-5 py- ml-5">
+    <div id="grid" class="bg- grid grid-cols-2 2xl:p-5 p-2 2xl:mx-[170px] mx-3">
+      <!-- ? -->
+      <!-- ! 2. PRODUCT DEF -->
+      <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
+      <section class="2xl:mx-5 2xl:mt-[150px] py-5 bg-" id="PRODUCT DEFINITION">
+        <div class="pl-5 pb-5 mt-5 bg-parchment text-teal sq-styles">
+          <h2 class="font-bold text-2xl mt-5">
+            Build Authority- About Me/ Why LC is a thing?
+          </h2>
+          <p class="">
+            CREATE LONGER VERSION:::: a digital creative studio where clients'
+            visions (userstories??) are translated into vivid, handcrafted
+            websites.
+          </p>
+          <p>
+            Most web design services focus on tech, speed, or business
+            optimization. Few lean into artisanal design, emotional
+            storytelling, and cozy aesthetics the way this concept (lc) does.
+          </p>
+        </div>
+      </section>
+      <Image src={SelfImg} alt="" class="w-[450px] my-2 sq-styles" />
     </div>
-  </section>
-  <img
-    src="https://dl.dropboxusercontent.com/scl/fi/36vnm2e663uln6akmex4d/lc.png?rlkey=lgim54nbp0u11mviylee29hyj&st=1nuybim1&dl=0"
-    alt=""
-    class="my-2 sq-styles"
-  />
+  </div>
 </div>
