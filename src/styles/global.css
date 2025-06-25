@@ -75,6 +75,7 @@ li {
 
 .skewed-bg {
   position: absolute;
+  border: 1px solid #000;
   top: 0;
   left: 0;
   width: 100%;
@@ -85,17 +86,38 @@ li {
   z-index: -1;
 }
 
+@media only screen and (max-width: 600px) {
+  .skewed-bg {
+    background: lightblue;
+    position: relative;
+  }
+}
+
 .content {
   position: relative;
   padding: 3rem;
   color: white;
 }
 
-/* //* SKEWED TRANSITION BACKGROUND */
+/* SKEWED TRANSITION BACKGROUND */
 
+/* * v */
 #skewed-transition {
   height: 31vh;
 }
+
+@media only screen and (max-width: 1024px) {
+  #skewed-transition {
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 820px) {
+  #skewed-transition {
+    height: 24vh;
+  }
+}
+
+/* *^ */
 
 .skewed-wrapper {
   position: relative;

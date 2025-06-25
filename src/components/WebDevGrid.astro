@@ -5,14 +5,14 @@ const items = [
     image:
       "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=7m58a2i4&dl=0",
     title: "DISCOVERY PHASE",
-    link: "/test1",
+    link: "/ ",
   },
   {
     id: 2,
     image:
       "https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0",
     title: "CREATIVE PHASE",
-    link: "/test1",
+    link: "/ ",
   },
   {
     id: 3,
@@ -20,7 +20,7 @@ const items = [
       "https://dl.dropboxusercontent.com/scl/fi/oraxtrdwq2apy6x4f87xj/fish-screenshot.jpg?rlkey=8woeczr9d8n7gqpqfbbnayb9e&st=bv1bc7kp&dl=0",
 
     title: "DEVELOPMENT PHASE",
-    link: "/test1",
+    link: "/ ",
   },
   {
     id: 4,
@@ -28,21 +28,25 @@ const items = [
       "https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=vzxtp941&dl=0",
 
     title: "LAUNCH PHASE",
-    link: "/test1",
+    link: "/ ",
   },
 ];
 ---
 
-<div class="pt-1 mx-1">
-  <div id="gallery-grid" class="2xl grid grid-cols-4 gap-1">
+<div class="pt-1 mx-1 bg-">
+  <div id="gallery-grid" class="2xl grid md:grid-cols-4 grid-cols-2 gap-4 py-4">
     {
       items.map((item) => (
-        <div id="sq" class=" 80 hover: 100">
+        <div id="sq" class="">
           <a href="/">
             {/* <p class=" p-2 text-teal  80  papaya  dropshadow-2xl text-2xl border border-black">
             {item.title}
           </p> */}
-            <img src={item.image} alt="" class="h-[305px] w-full sq-styles" />
+            <img
+              src={item.image}
+              alt=""
+              class="w-full 2xl:h-[300px] h-[230px] sq-styles"
+            />
           </a>
         </div>
       ))

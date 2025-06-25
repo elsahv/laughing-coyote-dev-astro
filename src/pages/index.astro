@@ -4,9 +4,9 @@ import Hero from "../components/sections/Hero.astro";
 import WebsitesBanner from "../components/sections/WebsitesBanner.astro";
 import HowItWorks from "../components/HowItWorks.astro";
 const allSites = await Astro.glob("./websites/*.md");
-import Undecided from "../components/sections/Undecided.astro";
+import Backend from "../components/sections/Backend.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
-import SocialProof from "../components/sections/SocialProof.astro";
+import Frontend from "../components/sections/Frontend.astro";
 // import Portfolio from "../components/sections/Portfolio.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
@@ -15,6 +15,7 @@ import Contact from "../components/sections/Contact.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import Packages from "../components/Packages.astro";
 import ButtonProps from "../components/shared/ButtonProps.astro";
+import Testimonial from "../components/Testimonial.astro";
 ---
 
 <MainLayout>
@@ -24,67 +25,34 @@ import ButtonProps from "../components/shared/ButtonProps.astro";
   <ProblemSolving />
   <!-- *CURRENT- CHANGE FROM PORTFOLIO TO <sHOW IT WORKS/>! v-->
   <HowItWorks />
-  <div class="bg-test1 flex justify-center mt-[150px]">
-    <div id="testimonial-container" class="bg- 2xl:w-1/2">
-      <div id="" class="grid lg:grid-cols-2 py-5">
-        <div id="sq1" class="xl:p-0 p-5 flex items-center">
-          <img
-            src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
-            alt=""
-            class="sq-styles-teal mr-4"
-          />
-        </div>
-        <div id="sq2" class="ml-4 p-3">
-          <div id="view-testimonial" class="">
-            <h2 class="font- text-2xl">Various styles</h2>
-            <h3 class="text-4xl font-extrabold">Testimonial</h3>
-            <p class="">
-              "Before I was struggling with [problem,] and it made me feel
-              [negative emotion]."
-            </p>
-            <p>
-              "Now I have acheived this [result], and I feel [positive
-              emotion]."
-            </p>
-            <p>-Glen</p>
-            <ButtonProps
-              btn1="see different styles"
-              btn1Link="/#see-different-styles"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Testimonial />
   <!-- <Portfolio /> -->
   <!-- *CURRENT ^-->
 
   <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SERVICES V-->
-  <div class="mt-[255px] mb-5">
-    <!-- <CenterPageBanner
+  <!-- <div class="mt-[255px] mb-5"> -->
+  <!-- <CenterPageBanner
       BannerTitle=" Portfolio"
       paragraph="This is how LC helps small businesses with a desire to reach new customers online"
     /> -->
 
+  <WebDevGrid />
+  <!-- </div> -->
+  <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SERVICES ^-->
+  <Frontend />
+  <div class="md:absolute relative">
     <WebDevGrid />
   </div>
-  <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SEestRVICES ^-->
-  <SocialProof />
-  <div class="absolute">
-    <WebDevGrid />
-  </div>
+  <!-- v -->
   <div id="skewed-transition" class="skewed-wrapper">
     <div class="skewed-bg"></div>
-    <div class="content">
-      <h2>Clean Content</h2>
-    </div>
+    <div class="content"></div>
   </div>
+  <!-- ^ -->
   <div id="teal-background" class="bg-teal text-parchment">
-    <Undecided />
+    <Backend />
     <WebDevGrid />
-
     <Packages />
-
     <BuildAuthority2 />
     <!-- <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
       <CenterPageBanner
@@ -98,7 +66,7 @@ import ButtonProps from "../components/shared/ButtonProps.astro";
       {
         allSites.map((site) => (
           <Card
-            title={site.frontmatter.title}
+            title={site.frontmatter.title}F
             image={site.frontmatter.image?.url}
             alt={site.frontmatter.title}
             testItem1={site.frontmatter.testItem1}

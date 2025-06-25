@@ -1,0 +1,35 @@
+---
+import ButtonProps from "./shared/ButtonProps.astro";
+---
+
+<div class="bg- flex justify-center my-[150px]">
+  <div id="testimonial-container" class="bg- 2xl:w-1/2">
+    <div id="" class="grid lg:grid-cols-2 py-5">
+      <div id="sq1" class="xl:p-0 p-5 flex items-center">
+        <img
+          src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
+          alt=""
+          class="sq-styles-teal mr-4"
+        />
+      </div>
+      <div id="sq2" class="ml-4 p-3">
+        <div id="view-testimonial" class="">
+          <h2 class="font- text-2xl">Various styles</h2>
+          <h3 class="text-4xl font-extrabold">Testimonial</h3>
+          <p class="">
+            "Before I was struggling with [problem,] and it made me feel
+            [negative emotion]."
+          </p>
+          <p>
+            "Now I have acheived this [result], and I feel [positive emotion]."
+          </p>
+          <p>-Glen</p>
+          <ButtonProps
+            btn1="see different styles"
+            btn1Link="/#see-different-styles"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

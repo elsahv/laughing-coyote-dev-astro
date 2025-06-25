@@ -2,14 +2,14 @@
 import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div id="flex" class="grid grid-cols-4">
-  <div id="TEAL" class="col-span-3">
-    <div class="bg- flex justify-center mt-[150px]">
+<div id="flex" class="bg grid md:grid-cols-4 grid-cols-1">
+  <div id="TEAL" class="md:col-span-3 col-span-2">
+    <div class="bg flex justify-center 2xl:mt-[150px]">
       <div
         id="packages-container"
-        class="w-3/4 col-span-2 xl:mx-5 xl:px-5 pt-5 mt-[55px] space-y-8"
+        class="md:w-3/4 w-full col-span-2 mx-5 xl:px-5 pt-5 pb-5 md:space-y-8 space-y-4"
       >
-        <h2 class="font-bold text-3xl pt-5 mt-5">frontend</h2>
+        <h2 class="font-bold text-3xl md:pt-5 pt-2 md:mt-5 mt-2">frontend</h2>
         <p class="bg-">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
           consectetur maiores provident, dicta magnam quia? Sequi similique, est
@@ -17,7 +17,7 @@ import ButtonProps from "../shared/ButtonProps.astro";
           minima vitae libero!
         </p>
 
-        <p>
+        <p class="mb-5 pb-5">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
           consectetur maiores provident, dicta magnam quia? Sequi similique, est
           error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam
@@ -26,16 +26,19 @@ import ButtonProps from "../shared/ButtonProps.astro";
       </div>
     </div>
   </div>
-  <div id=" " class="px-2 space-y-1">
+  <div
+    id=""
+    class="bg- flex md:flex-col flex-row px-2 lg:space-y-5 lg:gap-0 gap-4"
+  >
     <img
       src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
       alt=""
-      class="sq-styles-teal"
+      class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
     />
     <img
       src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
       alt=""
-      class="sq-styles-teal"
+      class="sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
     />
     <!-- <img
       src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
