@@ -3,19 +3,22 @@ import ButtonProps from "./shared/ButtonProps.astro";
 import CenterPageBanner from "./shared/CenterPageBanner.astro";
 ---
 
-<div id="container" class="p-5 mx-[90px] text-teal">
+<div id="container" class="2xl:p-5 2xl:mx-[90px] text-teal bg-">
   <div class="mt-[155px] pt-5 text-parchment">
     <CenterPageBanner
       BannerTitle="Packages"
       paragraph="I build custom applications for small businesses. "
     />
   </div>
-  <div id="main-grid" class="p-5 m-5 grid grid-cols-2 gap-12">
+  <div
+    id="main-grid"
+    class="bg- lg:p-5 p-1 md:m-5 grid md:grid-cols-2 grid-cols-1 gap-12"
+  >
     <div
       id="PKGS-CONTAINER1"
-      class="bg-papaya sq-styles-teal px-[35px] py-5 mt-[150px]"
+      class="bg-papaya sq-styles-teal 2xl:px-[35px] px-3 py-5 md:mt-[150px]"
     >
-      <div id="grid1" class="grid lg:grid-cols-2 p-2">
+      <div id="grid1" class="bg- grid 2xl:grid-cols-2 p-2">
         <div id="sq1" class="flex items-center">
           <img
             src="https://images.pexels.com/photos/10986252/pexels-photo-10986252.jpeg"
@@ -23,7 +26,7 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
             class="sq-styles-teal mr-4"
           />
         </div>
-        <div id="sq2" class="ml-4 p-3">
+        <div id="sq2" class="2xl:ml-4 p-3">
           <div id="view-testimonial" class="">
             <h2 class="text-xl opacity-80">package 01</h2>
             <h3 class="_textShadow text-4xl font-extrabold pb-1">
@@ -32,7 +35,7 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
             <p class="sq-styles bg-teal text-parchment mt-5 p-3">
               -Basic landing page with 1x per month updates.
             </p>
-            <div id="list-btn-container" class="ml-2 pl-5 pr-3">
+            <div id="list-btn-container" class="ml-2 2xl:pl-5 2xl:pr-3">
               <ul class="lowercase font-semibold list-disc space-y-3 pt-5">
                 <li>a template catered towards people starting out</li>
                 <li>
@@ -76,11 +79,17 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
     </div>
     <div
       id="PKGS-CONTAINER2"
-      class="text-carribean bg-papaya sq-styles mb-[150px] px-[35px] py-5"
+      class="text-carribean bg-papaya sq-styles mb-[150px] 2xl:px-[35px] px-3 py-5"
     >
-      <div id="" class="grid lg:grid-cols-2 py-5">
+      <div id="" class="bg- grid 2xl:grid-cols-2 py-5">
         <div id="sq1" class="xl:p-0 p-5 flex items-center">
-          <!--  -->
+          <img
+            src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
+            alt=""
+            class="sq-styles-teal mr-4"
+          />
+        </div>
+        <div id="sq2" class="ml-4 p-3">
           <div id="view-testimonial2" class="">
             <h2 class="text-xl opacity-80">package 02</h2>
             <h3 class="_textShadow text-4xl font-extrabold pb-1">
@@ -89,7 +98,7 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
             <p class="bg-carribean text-parchment sq-styles mt-5 p-3">
               Rising carnivore: 1x updates per week
             </p>
-            <ul class="font-semibold list-disc space-y-3 pt-5 pl-5">
+            <ul class="lowercase font-semibold list-disc space-y-3 pt-5">
               <li>a template catered towards people starting out</li>
               <li>Taking your business to a whole another level.</li>
               <li>Custom, contact for unique and custom work,</li>
@@ -107,21 +116,7 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
               btn1Link="/#see-different-styles"
             /> -->
           </div>
-          <!--  -->
-          <!-- <img
-            src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
-            alt=""
-            class="sq-styles-teal mr-4"
-          /> -->
-        </div>
-        <div id="sq2" class="ml-4 p-3">
-          <!--  -->
-          <img
-            src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
-            alt=""
-            class="sq-styles-teal mr-4"
-          />
-          <!--  -->
+          <!-- ^ -->
         </div>
       </div>
 
