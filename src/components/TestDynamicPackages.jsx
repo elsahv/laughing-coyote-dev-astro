@@ -1,5 +1,3 @@
-const title = "title";
-
 const items = [
   {
     pkgNo: "package 1.",
