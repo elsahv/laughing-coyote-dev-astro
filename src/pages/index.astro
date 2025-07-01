@@ -12,10 +12,10 @@ import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
 import WebDevGrid from "../components/WebDevGrid.astro";
 import Contact from "../components/sections/Contact.astro";
-import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import Packages from "../components/Packages.astro";
-import ButtonProps from "../components/shared/ButtonProps.astro";
 import Testimonial from "../components/Testimonial.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import TestDynamicPackages from "../components/TestDynamicPackages.jsx";
+import Packages from "../components/Packages.astro";
 ---
 
 <MainLayout>
@@ -23,22 +23,11 @@ import Testimonial from "../components/Testimonial.astro";
   <BuildAuthority />
   <WebsitesBanner />
   <ProblemSolving />
-  <!-- *CURRENT- CHANGE FROM PORTFOLIO TO <sHOW IT WORKS/>! v-->
   <HowItWorks />
   <Testimonial />
   <!-- <Portfolio /> -->
-  <!-- *CURRENT ^-->
-
-  <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SERVICES V-->
-  <!-- <div class="mt-[255px] mb-5"> -->
-  <!-- <CenterPageBanner
-      BannerTitle=" Portfolio"
-      paragraph="This is how LC helps small businesses with a desire to reach new customers online"
-    /> -->
 
   <WebDevGrid />
-  <!-- </div> -->
-  <!-- TODO: CHANGE TO HOW IT PORTFOLIO/ SERVICES ^-->
   <Frontend />
   <div class="md:absolute relative">
     <WebDevGrid />
@@ -52,7 +41,32 @@ import Testimonial from "../components/Testimonial.astro";
   <div id="teal-background" class="bg-teal text-parchment">
     <Backend />
     <WebDevGrid />
+    <!-- TODO: FIGURE OUT WHICH PACKAGES COMPONENT TO USE! --v -->
+
+    <!-- *OG--V -->
     <Packages />
+    <!-- *OG--^ -->
+
+    <!-- ?: NewPotentialPackageComp v-->
+    <!-- <CenterPageBanner
+      BannerTitle="Packages"
+      paragraph="I build custom applications for small businesses. "
+    />
+
+    <div id="packages-wrapper" class="px-5 mx-5">
+      <div id="packages-container" class="flex justify-center">
+        <div id="packages-grid" class="grid grid-cols-2 bg-test1 px-5">
+          <div id="push-down" class="mt-[50px] pt-[50px]">
+            <TestDynamicPackages title="" />
+          </div>
+          <div id="push-up" class="mb-[50px] pb-[50px]">
+            <TestDynamicPackages title="" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ?: NewPotentialPackageComp ^-->
+
     <BuildAuthority2 />
     <!-- <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
       <CenterPageBanner

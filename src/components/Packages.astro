@@ -3,20 +3,18 @@ import ButtonProps from "./shared/ButtonProps.astro";
 import CenterPageBanner from "./shared/CenterPageBanner.astro";
 ---
 
-<div id="container" class="2xl:p-5 2xl:mx-[90px] text-teal bg-">
-  <div class="mt-[155px] pt-5 text-parchment">
-    <CenterPageBanner
-      BannerTitle="Packages"
-      paragraph="I build custom applications for small businesses. "
-    />
-  </div>
+<div id="container" class="2xl:p-5 2xl:mx-[90px] bg-">
+  <CenterPageBanner
+    BannerTitle="Packages"
+    paragraph="I build custom applications for small businesses. "
+  />
   <div
     id="main-grid"
     class="bg- lg:p-5 p-1 md:m-5 grid md:grid-cols-2 grid-cols-1 gap-12"
   >
     <div
       id="PKGS-CONTAINER1"
-      class="bg-papaya sq-styles-teal 2xl:px-[35px] px-3 py-5 md:mt-[150px]"
+      class="bg-papaya text-teal sq-styles-teal 2xl:px-[35px] px-3 py-5 md:mt-[150px]"
     >
       <div id="grid1" class="bg- grid 2xl:grid-cols-2 p-2">
         <div id="sq1" class="flex items-center">
@@ -29,10 +27,8 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
         <div id="sq2" class="2xl:ml-4 p-3">
           <div id="view-testimonial" class="">
             <h2 class="text-xl opacity-80">package 01</h2>
-            <h3 class="_textShadow text-4xl font-extrabold pb-1">
-              The Growing Pup"
-            </h3>
-            <p class="sq-styles bg-teal text-parchment mt-5 p-3">
+            <h3 class="text-4xl font-extrabold pb-1">The Growing Pup"</h3>
+            <p class="sq-styles-teal bg-teal text-parchment mt-5 p-3">
               -Basic landing page with 1x per month updates.
             </p>
             <div id="list-btn-container" class="ml-2 2xl:pl-5 2xl:pr-3">
@@ -79,7 +75,7 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
     </div>
     <div
       id="PKGS-CONTAINER2"
-      class="text-carribean bg-papaya sq-styles mb-[150px] 2xl:px-[35px] px-3 py-5"
+      class="text-teal bg-papaya sq-styles mb-[150px] 2xl:px-[35px] px-3 py-5"
     >
       <div id="" class="bg- grid 2xl:grid-cols-2 py-5">
         <div id="sq1" class="xl:p-0 p-5 flex items-center">
@@ -92,10 +88,8 @@ import CenterPageBanner from "./shared/CenterPageBanner.astro";
         <div id="sq2" class="ml-4 p-3">
           <div id="view-testimonial2" class="">
             <h2 class="text-xl opacity-80">package 02</h2>
-            <h3 class="_textShadow text-4xl font-extrabold pb-1">
-              The Rising Scout"
-            </h3>
-            <p class="bg-carribean text-parchment sq-styles mt-5 p-3">
+            <h3 class="text-4xl font-extrabold pb-1">The Rising Scout"</h3>
+            <p class="text-papaya bg-teal sq-styles-teal mt-5 p-3">
               Rising carnivore: 1x updates per week
             </p>
             <ul class="lowercase font-semibold list-disc space-y-3 pt-5">

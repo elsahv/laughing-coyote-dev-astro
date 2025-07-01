@@ -7,16 +7,21 @@ export interface Props {
 const { BannerTitle, paragraph } = Astro.props as Props;
 ---
 
-<div id="BannerTitle-wrapper" class="bg- mt-5 py-5">
-  <div id="BannerTitle-section" class="flex justify-center">
-    <h2 class="2xl:text-5xl md:text-4xl text-3xl px-5 pt-2 font-bold underline">
-      {BannerTitle}
-    </h2>
+<div id="BannerTitle-wrapper" class="bg- mt-[205px] pt-5">
+  <div id="BannerTitle-section" class="bg- flex justify-center">
+    <div id="title-banner" class="flex items-center">
+      <div id="icon-wrapper" class="text-5xl"></div>
+      <h2
+        class="underline pl-2 2xl:text-5xl md:text-4xl text-3xl pb-1 pt-2 font-bold"
+      >
+        {BannerTitle}
+      </h2>
+    </div>
   </div>
 
   <div id="Banner-paragraph" class="bg- flex justify-center md:mb-5">
     <div class="pt-1 pb-5 bg-">
-      <p class="bg- md:text-2xl text-xl px-5 mx-5 max-w-6xl">
+      <p class="md:text-2xl text-xl px-5 mx-5 max-w-6xl">
         {paragraph}
       </p>
     </div>

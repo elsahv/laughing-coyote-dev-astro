@@ -7,7 +7,6 @@ export default {
         testCustomSm: "598px",
       },
       colors: {
-        richBlack: "#001524",
         lavender: "#CDD1E2",
         onyx: "#35373d",
         parchment: "#f0ead2",

@@ -3,33 +3,36 @@ import Image from "astro/components/Image.astro";
 import SelfImg from "../../images/self.jpg";
 ---
 
-<div id="wrapper" class="bg-test1 pl-5 py-5 ml-5">
-  <div id="container" class="flex justify-center pl-5 py- ml-5">
-    <div
-      id="grid"
-      class="bg-test2 max-w-[1000px] flex 2xl:flex-row flex-col-reverse 2xl:p-5 p-2 2xl:mx-[170px] mx-3"
-    >
-      <!-- ? -->
-      <!-- ! 2. PRODUCT DEF -->
-      <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
-      <section class="2xl:mx-5 2xl:mt-[150px] py-5 bg-" id="PRODUCT DEFINITION">
-        <div class="pl-5 pb-5 mt-5 bg-parchment text-teal sq-styles">
-          <h2 class="font-bold text-2xl mt-5">
-            Build Authority- About Me/ Why LC is a thing?
-          </h2>
-          <p class="">
-            CREATE LONGER VERSION:::: a digital creative studio where clients'
-            visions (userstories??) are translated into vivid, handcrafted
-            websites.
-          </p>
-          <p>
-            Most web design services focus on tech, speed, or business
-            optimization. Few lean into artisanal design, emotional
-            storytelling, and cozy aesthetics the way this concept (lc) does.
-          </p>
-        </div>
-      </section>
-      <Image src={SelfImg} alt="" class="w-[450px] my-2 sq-styles" />
-    </div>
+<div id="wrapper" class="bg-test flex justify-center py-5 my-5">
+  <div
+    id="flex"
+    class="bg- max-w-[1000px] flex 2xl:flex-row flex-col-reverse space-x-8 2xl:p-5 p-2 2xl:mx-[170px] mx-3"
+  >
+    <!-- ? -->
+    <!-- ! 2. PRODUCT DEF -->
+    <!--TODO: productDef="LC-What is the product, service, or idea you're promoting?" v-->
+    <section class="2xl:mx-5 2xl:mt-[150px] py-5 bg-" id="PRODUCT DEFINITION">
+      <div class="pl-5 pb-5 pr-5 mt-5 bg-parchment text-teal sq-styles">
+        <h2 class="font-bold text-2xl mt-5 pb-2">
+          Build Authority- About Me/ Why LC is a thing?
+        </h2>
+        <p class="">
+          CREATE LONGER VERSION:::: a digital creative studio where clients'
+          visions (userstories??) are translated into vivid, handcrafted
+          websites.
+        </p>
+        <p>
+          Most web design services focus on tech, speed, or business
+          optimization. Few lean into artisanal design, emotional storytelling,
+          and cozy aesthetics the way this concept (lc) does.
+        </p>
+      </div>
+      <p class="py-3 px-4 mt-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at
+        incidunt quas eveniet reprehenderit! Molestiae ex ullam nulla quas, non
+        debitis illum blanditiis nemo nobis animi rerum voluptatem quis maiores.
+      </p>
+    </section>
+    <Image src={SelfImg} alt="" class="w-[450px] my-2 sq-styles" />
   </div>
 </div>
