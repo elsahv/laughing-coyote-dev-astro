@@ -1,6 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 import SelfImg from "../../images/self.jpg";
+import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
 <div id="wrapper" class="bg-test flex justify-center py-5 my-5">
@@ -32,6 +33,9 @@ import SelfImg from "../../images/self.jpg";
         incidunt quas eveniet reprehenderit! Molestiae ex ullam nulla quas, non
         debitis illum blanditiis nemo nobis animi rerum voluptatem quis maiores.
       </p>
+
+      <!--blog cta offer to free content --v-->
+      <ButtonProps btn1="blog" btn1Link="/about" />
     </section>
     <Image src={SelfImg} alt="" class="w-[450px] my-2 sq-styles" />
   </div>

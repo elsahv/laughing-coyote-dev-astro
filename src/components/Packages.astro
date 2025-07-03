@@ -1,135 +1,42 @@
 ---
-// import ButtonProps from "./shared/ButtonProps.astro";
+import PackageCard from "./PackageCard";
 import CenterPageBanner from "./shared/CenterPageBanner.astro";
 ---
 
-<div id="container" class="2xl:p-5 2xl:mx-[90px] bg-">
+<div class="mt-5 pt-5">
   <CenterPageBanner
     BannerTitle="Packages"
     paragraph="I build custom applications for small businesses. "
   />
-  <div
-    id="main-grid"
-    class="bg- lg:p-5 p-1 md:m-5 grid md:grid-cols-2 grid-cols-1 gap-12"
-  >
-    <div
-      id="PKGS-CONTAINER1"
-      class="bg-papaya text-teal sq-styles-teal 2xl:px-[35px] px-3 py-5 md:mt-[150px]"
-    >
-      <div id="grid1" class="bg- grid 2xl:grid-cols-2 p-2">
-        <div id="sq1" class="flex items-center">
-          <img
-            src="https://images.pexels.com/photos/10986252/pexels-photo-10986252.jpeg"
-            alt=""
-            class="sq-styles-teal mr-4"
-          />
-        </div>
-        <div id="sq2" class="2xl:ml-4 p-3">
-          <div id="view-testimonial" class="">
-            <h2 class="text-xl opacity-80">package 01</h2>
-            <h3 class="text-4xl font-extrabold pb-1">The Growing Pup"</h3>
-            <p class="sq-styles-teal bg-teal text-parchment mt-5 p-3">
-              -Basic landing page with 1x per month updates.
-            </p>
-            <div id="list-btn-container" class="ml-2 2xl:pl-5 2xl:pr-3">
-              <ul class="lowercase font-semibold list-disc space-y-3 pt-5">
-                <li>a template catered towards people starting out</li>
-                <li>
-                  Fully responsive 1-page website (home, about, contact, etc.
-                </li>
-                <li>Mobile-friendly and modern design.</li>
-                <li>
-                  Basic animations/interactions with JavaScript, Contact form
-                  (optional).
-                </li>
-                <li>
-                  Free hosting setup (Netlify or GitHub Pages). Delivery in 48
-                  hours after content is received
-                </li>
-              </ul>
-              <!-- <ButtonProps
-                btn1="see different styles"
-                btn1Link="/#see-different-styles"
-              /> -->
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="flex2" class="flex space-x-10 mt-2">
-        <div id="sq3">
-          <img
-            src="https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="sq-styles -5"
-          />
-        </div>
-        <div id="sq4">
-          <img
-            src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
-            alt=""
-            class="sq-styles"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      id="PKGS-CONTAINER2"
-      class="text-teal bg-papaya sq-styles mb-[150px] 2xl:px-[35px] px-3 py-5"
-    >
-      <div id="" class="bg- grid 2xl:grid-cols-2 py-5">
-        <div id="sq1" class="xl:p-0 p-5 flex items-center">
-          <img
-            src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
-            alt=""
-            class="sq-styles-teal mr-4"
-          />
-        </div>
-        <div id="sq2" class="ml-4 p-3">
-          <div id="view-testimonial2" class="">
-            <h2 class="text-xl opacity-80">package 02</h2>
-            <h3 class="text-4xl font-extrabold pb-1">The Rising Scout"</h3>
-            <p class="text-papaya bg-teal sq-styles-teal mt-5 p-3">
-              Rising carnivore: 1x updates per week
-            </p>
-            <ul class="lowercase font-semibold list-disc space-y-3 pt-5">
-              <li>a template catered towards people starting out</li>
-              <li>Taking your business to a whole another level.</li>
-              <li>Custom, contact for unique and custom work,</li>
-              <li>
-                Basic animations/interactions with JavaScript, Contact form
-                (optional).
-              </li>
-              <li>
-                Free hosting setup (Netlify or GitHub Pages). Delivery in 48
-                hours after content is received
-              </li>
-            </ul>
-            <!-- <ButtonProps
-              btn1="see different styles"
-              btn1Link="/#see-different-styles"
-            /> -->
+  <div id="packages" class="px-5 mx-5">
+    <div id="packages-wrapper" class="font-semibold flex justify-center">
+      <div id="packages-container" class="bg- md:m-5 p-5 m-5">
+        <div id="flex-mobile" class="bg- flex xl:flex-row flex-col space-x-12">
+          <div id="push-down" class="mt-[50px] pt-[50px]">
+            <PackageCard
+              pkgNo="1"
+              title="The Growing Pup"
+              desc="Basic landing page with 1x per month updates."
+              item1="a template catered towards people starting out"
+              item2="Fully responsive 1-page website (home, about, contact, etc."
+              item3="Mobile-friendly and modern design."
+              item4=" Basic animations/interactions with JavaScript, Contact form (optional)."
+              item5="Free hosting setup (Netlify or GitHub Pages). Delivery in 48hours after content is received"
+            />
           </div>
-          <!-- ^ -->
-        </div>
-      </div>
-
-      <div id="flex2" class="flex space-x-10 mt-2">
-        <div id="sq3">
-          <!--  -->
-          <!--  -->
-          <img
-            src="https://images.pexels.com/photos/2041385/pexels-photo-2041385.jpeg"
-            alt=""
-            class="sq-styles mt-5"
-          />
-        </div>
-        <div id="sq4">
-          <img
-            src="https://images.pexels.com/photos/19557629/pexels-photo-19557629.jpeg"
-            alt=""
-            class="sq-styles"
-          />
+          <div id="push-up" class="mb-[50px] pb-[50px]">
+            <PackageCard
+              pkgNo="2"
+              title="The Rising Scout"
+              desc="Rising carnivore: 1x updates per week"
+              item1="a template catered towards people starting out"
+              item2="Fully responsive 1-page website (home, about, contact, etc."
+              item3="Mobile-friendly and modern design."
+              item4=" Basic animations/interactions with JavaScript, Contact form (optional)."
+              item5="Free hosting setup (Netlify or GitHub Pages). Delivery in 48hours after content is received"
+            />
+          </div>
         </div>
       </div>
     </div>
