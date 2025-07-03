@@ -11,7 +11,7 @@ const PackageCard = ({
   return (
     <div
       id="package-card-container"
-      className="bg-papaya text-teal sq-styles-teal 2xl:px-[35px] px-3 py-5 "
+      className="bg-papaya text-teal sq-styles-teal 2xl:px-[35px] px-3 py-5 xl:mt-0 mt-[35px]"
     >
       <div
         id="package-card-grid"
@@ -29,7 +29,7 @@ const PackageCard = ({
           <div id="content-container" class="ml-2 2xl:pl-5 2xl:pr-3">
             <span class="text-xl opacity-80">package {pkgNo}</span>
             <h3 class="text-4xl font-extrabold pb-1">{title}</h3>
-            <p class="sq-styles-teal mt-5 p-3">{desc}</p>
+            <p class="sq-styles bg-teal text-parchment mt-5 p-3">{desc}</p>
             <ul class="lowercase font-semibold list-disc space-y-3 pb-5 pl-3 pt-5 ">
               <li>{item1}</li>
               <li>{item2}</li>
