@@ -1,0 +1,29 @@
+---
+import HowItWorks from "../components/HowItWorks.astro";
+import ProblemSolving from "../components/sections/ProblemSolving.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Testimonial from "../components/Testimonial.astro";
+import WebDevGrid from "../components/WebDevGrid.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <CenterPageBanner BannerTitle="About" paragraph="(story why LC exists)" />
+  <WebDevGrid />
+  <ProblemSolving />
+  <Testimonial />
+  <HowItWorks />
+  <!-- <Testimonial /> -->
+  <!-- TRANSITION CSS HERE -->
+  <div class="md:absolute relative">
+    <!-- <WebDevGrid /> -->
+  </div>
+  <div id="skewed-transition" class="skewed-wrapper pt-5">
+    <div class="skewed-bg"></div>
+    <div class="content"></div>
+  </div>
+  <div id="color-switch" class="bg-teal text-parchment pt-[120px]">
+    <Testimonial />
+  </div>
+  <!-- TRANSITION CSS HERE -->
+</MainLayout>

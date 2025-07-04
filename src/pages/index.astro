@@ -3,78 +3,75 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import WebsitesBanner from "../components/sections/WebsitesBanner.astro";
 import HowItWorks from "../components/HowItWorks.astro";
-// const allSites = await Astro.glob("./websites/*.md");
 import Backend from "../components/sections/Backend.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
 import Frontend from "../components/sections/Frontend.astro";
-// import Portfolio from "../components/sections/Portfolio.astro";
+import Portfolio from "../components/sections/Portfolio.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
 import WebDevGrid from "../components/WebDevGrid.astro";
 import Contact from "../components/sections/Contact.astro";
 import Testimonial from "../components/Testimonial.astro";
-// import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-// import DynamicPackageCard from "../components/DynamicPackageCard.jsx";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import Packages from "../components/Packages.astro";
-import OGPackages from "../components/OGPackages.astro";
+import Card from "../components/Card.astro";
+const allSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
   <Hero />
   <BuildAuthority />
   <WebsitesBanner />
-  <ProblemSolving />
+
+  <!--   ABOUT PG V-->
+  <!-- <ProblemSolving />
+  <Testimonial />
   <HowItWorks />
   <Testimonial />
-  <!-- <Portfolio /> -->
+  <Portfolio /> -->
 
+  <!--  WEB DEV PG V-->
   <WebDevGrid />
   <Frontend />
   <div class="md:absolute relative">
     <WebDevGrid />
   </div>
-  <!-- v -->
   <div id="skewed-transition" class="skewed-wrapper">
     <div class="skewed-bg"></div>
     <div class="content"></div>
   </div>
-  <!-- ^ -->
   <div id="teal-background" class="bg-teal text-parchment">
     <Backend />
     <WebDevGrid />
-    <!-- TODO: 6/26-7/2: FINISH NEW_PACKAGES AND DYNAMIC_PACKAGE_CARD --v -->
-    <!-- *OG--V -->
-    <!-- <OGPackages /> -->
-    <!-- *OG--^ -->
-
-    <Packages />
-    <!-- TODO: ---------------------------------------------------------^-->
-
-    <BuildAuthority2 />
-    <!-- <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
+    <!--   <Packages />
+    <BuildAuthority2 /> -->
+    <!-- -----WEB DEV PG------^-->
+    <!-- 
+    <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
       <CenterPageBanner
-      BannerTitle="Writing"
-      paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
+        BannerTitle="Writing"
+        paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
       />
       <div
-      id="grid"
-      class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-8 gap-4 lg:px-[50px] px-3"
+        id="grid"
+        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-8 gap-4 lg:px-[50px] px-3"
       >
-      {
-        allSites.map((site) => (
-          <Card
-            title={site.frontmatter.title}F
-            image={site.frontmatter.image?.url}
-            alt={site.frontmatter.title}
-            testItem1={site.frontmatter.testItem1}
-            category1={site.frontmatter.category1}
-            category2={site.frontmatter.category2}
-            url={site.frontmatter.url}
-          />
-        ))
-      }
+        {
+          allSites.map((site) => (
+            <Card
+              title={site.frontmatter.title}
+              image={site.frontmatter.image?.url}
+              alt={site.frontmatter.title}
+              testItem1={site.frontmatter.testItem1}
+              category1={site.frontmatter.category1}
+              category2={site.frontmatter.category2}
+              url={site.frontmatter.url}
+            />
+          ))
+        }
+      </div>
     </div>
-  </div> -->
     <Contact />
+  </div> -->
   </div>
 </MainLayout>

@@ -1,5 +1,5 @@
 ---
-
+import DynamicParagraphs from "../DynamicParagraphs.astro";
 ---
 
 <div id="packages-section" class="bg- grid md:grid-cols-3 grid-cols-1">
@@ -17,32 +17,20 @@
       alt=""
       class="sq-styles 2xl:w-3/4 w-1/2 2xl:h-[320px] h-[200px]"
     />
-    <!-- <img
-      src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
-      alt=""
-      class="sq-styles w-[460px]"
-    /> -->
   </div>
 
   <div
     id="content-container"
     class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
   >
-    <h2 class="text-3xl 2xl:pt-5 2xl:mt-5 text-right font-bold underline">
-      backend
-    </h2>
-    <p class="bg-">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-      consectetur maiores provident, dicta magnam quia? Sequi similique, est
-      error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam
-      minima vitae libero!
-    </p>
-
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-      consectetur maiores provident, dicta magnam quia? Sequi similique, est
-      error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam
-      minima vitae libero!
-    </p>
+    <!-- TODO: DYNAMIC PARAGRAPHS V -->
+    <DynamicParagraphs
+      title="About"
+      paragraph1="This is the about page call-to-action."
+      paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+      link="/about"
+    />
+    <!-- *^ -->
+    <!-- TODO: DYNAMIC PARAGRAPHS ^ -->
   </div>
 </div>

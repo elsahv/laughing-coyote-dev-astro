@@ -1,0 +1,33 @@
+---
+import Packages from "../components/Packages.astro";
+import Backend from "../components/sections/Backend.astro";
+import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
+import Frontend from "../components/sections/Frontend.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import WebDevGrid from "../components/WebDevGrid.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <CenterPageBanner
+    BannerTitle="Web Development"
+    paragraph="(what LC offers)"
+  />
+  <WebDevGrid />
+  <Frontend />
+  <div class="md:absolute relative">
+    <WebDevGrid />
+  </div>
+  <!-- v -->
+  <div id="skewed-transition" class="skewed-wrapper">
+    <div class="skewed-bg"></div>
+    <div class="content"></div>
+  </div>
+  <!-- ^ -->
+  <div id="teal-background" class="bg-teal text-parchment">
+    <Backend />
+    <WebDevGrid />
+    <Packages />
+    <BuildAuthority2 />
+  </div>
+</MainLayout>

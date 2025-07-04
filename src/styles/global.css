@@ -88,7 +88,6 @@ li {
 
 @media only screen and (max-width: 600px) {
   .skewed-bg {
-    background: lightblue;
     position: relative;
   }
 }
