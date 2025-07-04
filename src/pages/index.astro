@@ -3,9 +3,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import WebsitesBanner from "../components/sections/WebsitesBanner.astro";
 import HowItWorks from "../components/HowItWorks.astro";
-import Backend from "../components/sections/Backend.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
-import Frontend from "../components/sections/Frontend.astro";
+import CTA1 from "../components/sections/CTA1.astro";
+import CTA2 from "../components/sections/CTA2.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
 import ProblemSolving from "../components/sections/ProblemSolving.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
@@ -32,7 +32,13 @@ const allSites = await Astro.glob("./websites/*.md");
 
   <!--  WEB DEV PG V-->
   <WebDevGrid />
-  <Frontend />
+  <CTA2
+    title="This is the web-development page call-to-action."
+    paragraph1="sum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+    link="/web-developmen"
+    paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+    link="/web-development"
+  />
   <div class="md:absolute relative">
     <WebDevGrid />
   </div>
@@ -41,7 +47,12 @@ const allSites = await Astro.glob("./websites/*.md");
     <div class="content"></div>
   </div>
   <div id="teal-background" class="bg-teal text-parchment">
-    <Backend />
+    <CTA1
+      title="About"
+      paragraph1="This is the about page call-to-action."
+      paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+      link="/about"
+    />
     <WebDevGrid />
     <!--   <Packages />
     <BuildAuthority2 /> -->

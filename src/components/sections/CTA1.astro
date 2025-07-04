@@ -1,5 +1,12 @@
 ---
-import DynamicParagraphs from "../DynamicParagraphs.astro";
+export interface Props {
+  title: string;
+  paragraph1: string;
+  paragraph2: string;
+  link: string;
+}
+
+const { title, paragraph1, paragraph2, link } = Astro.props as Props;
 ---
 
 <div id="packages-section" class="bg- grid md:grid-cols-3 grid-cols-1">
@@ -23,14 +30,12 @@ import DynamicParagraphs from "../DynamicParagraphs.astro";
     id="content-container"
     class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
   >
-    <!-- TODO: DYNAMIC PARAGRAPHS V -->
-    <DynamicParagraphs
-      title="About"
-      paragraph1="This is the about page call-to-action."
-      paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
-      link="/about"
-    />
-    <!-- *^ -->
-    <!-- TODO: DYNAMIC PARAGRAPHS ^ -->
+    <h2 class="text-3xl 2xl:pt-5 2xl:mt-5 text-left font-bold underline">
+      {title}
+    </h2>
+    <p>
+      <a class="text-" href={link}> {paragraph1}</a>
+    </p>
+    <p>{paragraph2}</p>
   </div>
 </div>

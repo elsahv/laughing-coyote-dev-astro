@@ -10,10 +10,10 @@ const allSites = await Astro.glob("./websites/*.md");
   <!-- <div id="banner-color-switch" class="border-t border-b border-onyx"> -->
   <CenterPageBanner BannerTitle="Writing" paragraph="(blog and services)" />
   <!-- </div> -->
-  <div id="writing" class="mb-5 pb-5 2xl:p-[105px] bg-">
+  <div id="writing" class="bg- mb-5 pb-5 2xl:p-5 bg-">
     <div
       id="grid"
-      class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl:gap-8 gap-4 lg:px-[50px] px-3"
+      class="bg- grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-y-6 gap-x-4 lg:px-[50px] px-3"
     >
       {
         allSites.map((site) => (

@@ -1,8 +1,8 @@
 ---
 import Packages from "../components/Packages.astro";
-import Backend from "../components/sections/Backend.astro";
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
-import Frontend from "../components/sections/Frontend.astro";
+import CTA1 from "../components/sections/CTA1.astro";
+import CTA2 from "../components/sections/CTA2.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import WebDevGrid from "../components/WebDevGrid.astro";
 import MainLayout from "../layouts/MainLayout.astro";
@@ -14,7 +14,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     paragraph="(what LC offers)"
   />
   <WebDevGrid />
-  <Frontend />
+  <CTA2
+    title="This is where frontend content goes"
+    paragraph1="sum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+    link="/web-developmen"
+    paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+    link="/web-development"
+  />
+  <div></div>
   <div class="md:absolute relative">
     <WebDevGrid />
   </div>
@@ -25,7 +32,12 @@ import MainLayout from "../layouts/MainLayout.astro";
   </div>
   <!-- ^ -->
   <div id="teal-background" class="bg-teal text-parchment">
-    <Backend />
+    <CTA1
+      title="This is where backend content goes"
+      paragraph1="r, sit amet consectetur adipisicing elit. Nostrum consectetur maiore"
+      paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
+      link="/about"
+    />
     <WebDevGrid />
     <Packages />
     <BuildAuthority2 />
