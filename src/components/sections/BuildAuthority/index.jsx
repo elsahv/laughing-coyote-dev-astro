@@ -8,7 +8,7 @@ import Sq6 from "./sq6";
 // ? UNSURE ABOUT A HREFS??
 const BuildAuthority = () => {
   return (
-    <div id="wrapper" class="2xl:opacity-80 opacity-100 bg-">
+    <div id="wrapper" class="2xl:opacity-80 opacity-100 py-5 my-5">
       <div id="" className="bg- md:mx-5 mx-0 2xl:px-[80px]">
         <div
           id="grid"

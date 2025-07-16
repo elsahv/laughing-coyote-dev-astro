@@ -22,15 +22,6 @@ const allSites = await Astro.glob("./websites/*.md");
   <Hero />
   <BuildAuthority />
   <WebsitesBanner />
-
-  <!--   ABOUT PG V-->
-  <!-- <ProblemSolving />
-  <Testimonial />
-  <HowItWorks />
-  <Testimonial />
-  <Portfolio /> -->
-
-  <!--  WEB DEV PG V-->
   <WebDevGrid />
   <CTA2
     title="This is the web-development page call-to-action."
@@ -54,35 +45,5 @@ const allSites = await Astro.glob("./websites/*.md");
       link="/about"
     />
     <WebDevGrid />
-    <!--   <Packages />
-    <BuildAuthority2 /> -->
-    <!-- -----WEB DEV PG------^-->
-    <!-- 
-    <div id="writing" class="mb-5 pb-5 2xl:px-[105px] bg-">
-      <CenterPageBanner
-        BannerTitle="Writing"
-        paragraph="pkgs-fdsfjsk fjlsljfksldjflk s slkfjslkf sdlkfjdskfjkjeksfjslk flkjsjk "
-      />
-      <div
-        id="grid"
-        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-8 gap-4 lg:px-[50px] px-3"
-      >
-        {
-          allSites.map((site) => (
-            <Card
-              title={site.frontmatter.title}
-              image={site.frontmatter.image?.url}
-              alt={site.frontmatter.title}
-              testItem1={site.frontmatter.testItem1}
-              category1={site.frontmatter.category1}
-              category2={site.frontmatter.category2}
-              url={site.frontmatter.url}
-            />
-          ))
-        }
-      </div>
-    </div>
-    <Contact />
-  </div> -->
   </div>
 </MainLayout>

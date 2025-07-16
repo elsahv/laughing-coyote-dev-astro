@@ -1,45 +1,86 @@
 ---
-import PackageCard from "./PackageCard";
-import CenterPageBanner from "./shared/CenterPageBanner.astro";
+export interface Props {
+  title: string;
+  pkgNo: string;
+  desc1: string;
+  desc2: string;
+  tag1: string;
+  tag2: string;
+  pkgParagraph: string;
+  sq2Paragraph: string;
+  sq1Img: string;
+  sq3Img: string;
+  sq3desc: string;
+}
+
+const {
+  title,
+  pkgNo,
+  desc1,
+  desc2,
+  tag1,
+  tag2,
+  pkgParagraph,
+  sq2Paragraph,
+  sq1Img,
+  sq3Img,
+  sq3desc,
+} = Astro.props as Props;
 ---
 
-<div class="mt-5 pt-5">
-  <CenterPageBanner
-    BannerTitle="Packages"
-    paragraph="I build custom applications for small businesses. "
-  />
-
-  <div id="packages" class="2xl:px-[110px] pt-5 px-2 lg:mx-5 mx-2 mt-5">
-    <div id="packages-wrapper" class="font-semibold">
-      <div
-        id="flex"
-        class="bg- flex md:flex-row flex-col lg:space-x-12 lg:space-y-0 space-y-12"
-      >
-        <div id="push-down" class="md:mt-[50px] md:pt-[50px]">
-          <PackageCard
-            pkgNo="1"
-            title="The Growing Pup"
-            desc="Basic landing page with 1x per month updates."
-            item1="a template catered towards people starting out"
-            item2="Fully responsive 1-page website (home, about, contact, etc."
-            item3="Mobile-friendly and modern design."
-            item4=" Basic animations/interactions with JavaScript, Contact form (optional)."
-            item5="Free hosting setup (Netlify or GitHub Pages). Delivery in 48hours after content is received"
-          />
-        </div>
-        <div id="push-up" class="md:mb-[50px] md:pb-[50px]">
-          <PackageCard
-            pkgNo="2"
-            title="The Rising Scout"
-            desc="Rising carnivore: 1x updates per week"
-            item1="a template catered towards people starting out"
-            item2="Fully responsive 1-page website (home, about, contact, etc."
-            item3="Mobile-friendly and modern design."
-            item4=" Basic animations/interactions with JavaScript, Contact form (optional)."
-            item5="Free hosting setup (Netlify or GitHub Pages). Delivery in 48hours after content is received"
-          />
-        </div>
-      </div>
+<div
+  id="package-card"
+  class="bg-parchment text-carribean p-5 mt-5 sq-styles grid xl:grid-cols-2 grid-cols-1 gap-2"
+>
+  <div id="sq1" class="bg-test p-5 flex justify-end items-center">
+    <!-- v -->
+    <!-- ^ -->
+    <div id="mainImg-wrapper" class="">
+      <img src={sq1Img} alt="" class="sq-styles 2xl:w-full w-3/4" />
     </div>
+  </div>
+  <div
+    id="sq2"
+    class="bg-papaya sq-styles-teal flex justify-center items-center"
+  >
+    <div id="sq-2-container" class="bg- sq-styles- p-5">
+      <span class="text-lg">{pkgNo}</span>
+      <h1 class="font-bold text-4xl">{title}</h1>
+      <p class="bg-teal text-parchment sq-styles-teal mt-1 my-2 py-3 px-2 pl-2">
+        {desc1}
+      </p>
+      <p class="py-3">{desc2}</p>
+      <ul class="bg- my-5 mb-1 flex space-x-6 text-md">
+        <li class="sq-styles-teal px-2 py-1 bg-lavender">{tag1}</li>
+        <li class="sq-styles-teal px-2 py-1 bg-orange">{tag2}</li>
+      </ul>
+      <p class="my-3">{pkgParagraph}</p>
+    </div>
+  </div>
+  <div id="sq3 " class="bg-">
+    <div class="mr-3 my-4 2xl:mt-0 mt-[50px] 2xl:pl-0 pl-5 flex justify-end">
+      <img
+        src={sq3Img}
+        alt=""
+        class="rounded-2xl border-2 border-onyx 2xl:w-full w-3/4"
+      />
+    </div>
+    <p class="2xl:text-left text-right">{sq3desc}</p>
+  </div>
+  <div id="sq4 " class="text- p-5">
+    <ul class="space-y-5">
+      <li>
+        item Lorem ipsum do sit amet, consectetur adipisicing elit. In tempora
+        ratione !
+      </li>
+      <li>item Lorem i ne !</li>
+      <li>
+        item Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+        tempora ratione !
+      </li>
+    </ul>
+    <!-- <p class="p-3 m-2">
+      {sq2Paragraph}
+    </p> -->
   </div>
 </div>

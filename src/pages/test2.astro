@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import mainImg from "../images/mainImg1.png";
+import test1Img from "../images/WebsiteScreenshots/test1.png";
+import test2Img from "../images/WebsiteScreenshots/test2.png";
+---
+
+<div
+  id="package-card"
+  class="2xl:w-1/2 bg-parchment text-teal mt-5 sq-styles grid grid-cols-2"
+>
+  <div id="sq1" class="bg-">
+    <div id="mainImg-wrapper" class="p-5">
+      <Image src={mainImg} alt="" class="rounded-2xl border-2 border-onyx" />
+    </div>
+  </div>
+  <div id="sq2" class="bg- pl-1">
+    <div id="sq-2-container" class="p-5">
+      <div class="text-lg">package 1</div>
+      <div class="font-bold text-4xl">The Growing Pup</div>
+      <div
+        class="bg-teal text-parchment sq-styles-teal mt-1 my-2 py-3 px-2 pl-2"
+      >
+        Basic landing page with 1x per month updates.
+      </div>
+      <p class="py-3">
+        a template catered towards people starting out, Fully responsive 1-page
+        website (home, about, contact, etc.
+      </p>
+      <ul class="bg- my-5 mb-1 flex space-x-6 text-md">
+        <li class="sq-styles-teal px-2 py-1 bg-">mobile-friendly</li>
+        <li class="sq-styles-teal px-2 py-1 bg-">free hosting setup</li>
+      </ul>
+      <p class="my-3">
+        This is a paragraph... still not sure what I'm putting here.
+      </p>
+      <div id="secondaryImgs-wrapper" class="bg-test py-1 mt-2 flex space-x-2">
+        <div class="mr-3 my-4">
+          <Image
+            src={test1Img}
+            alt=""
+            class="rounded-2xl border-2 border-onyx"
+          />
+          <p>img1 line</p>
+        </div>
+        <div class="ml-3">
+          <Image
+            src={test2Img}
+            alt=""
+            class="rounded-2xl border-2 border-onyx"
+          />
+
+          <p>img2 line</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

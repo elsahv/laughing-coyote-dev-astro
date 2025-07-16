@@ -18,7 +18,7 @@ const PackageCard = ({
         className="grid 2xl:grid-cols-2 px-2 my-4  bg-parchment rounded-2xl"
       >
         {/*//TODO v */}
-        <div id="sq1" class="bg- flex items-center">
+        <div id="sq1" class="bg-test1 flex items-start">
           <img
             src="https://images.pexels.com/photos/10986252/pexels-photo-10986252.jpeg"
             alt=""

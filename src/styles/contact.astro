@@ -1,0 +1,35 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import ContactForm from "../components/ContactForm";
+import WebDevGrid from "../components/WebDevGrid.astro";
+---
+
+<MainLayout>
+  <div class="pt-[50px] py-[70px]">
+    <CenterPageBanner
+      BannerTitle="Contact"
+      paragraph="I build custom applications for small businesses."
+    />
+    <div class="grid 2xl:grid-cols-2 pt-[90px] mt-5">
+      <div class="mr-5 mb-5">
+        <img
+          src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg"
+          alt=""
+          class="sq-styles mr-2 mt-5"
+        />
+      </div>
+      <ContactForm />
+    </div>
+  </div>
+
+  <!-- TRANSITION CSS HERE v-->
+  <div class="md:absolute relative">
+    <!-- <WebDevGrid /> -->
+  </div>
+  <div id="skewed-transition" class="skewed-wrapper">
+    <div class="skewed-bg"></div>
+    <div class="content"></div>
+  </div>
+  <!-- TRANSITION CSS HERE ^-->
+</MainLayout>
