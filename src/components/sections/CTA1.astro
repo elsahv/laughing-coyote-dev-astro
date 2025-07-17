@@ -33,9 +33,9 @@ const { title, paragraph1, paragraph2, link } = Astro.props as Props;
     <h2 class="text-3xl 2xl:pt-5 2xl:mt-5 text-left font-bold underline">
       {title}
     </h2>
-    <p>
+    <p>{paragraph2}</p>
+    <p class="text-test1 underline">
       <a class="text-" href={link}> {paragraph1}</a>
     </p>
-    <p>{paragraph2}</p>
   </div>
 </div>

@@ -2,15 +2,19 @@
 const items = [
   {
     title: "HoveyRoofing",
+    siteLink: "https://hoveyroofing.com",
   },
   {
     title: "Writing to Better Health",
+    siteLink: "https://writingtobetterhealth.com",
   },
   {
     title: "The Indoor Jungle Project",
+    siteLink: "https://theindoorjungleproject.com",
   },
   {
     title: "The Running Quail",
+    siteLink: "https://therunningquail.com",
   },
 ];
 ---
@@ -31,9 +35,12 @@ const items = [
       >
         {
           items.map((item) => (
-            <div id="sq" class="2xl:px-3 px-2 py-2 sq-styles-teal m-1">
+            <div
+              id="sq"
+              class="2xl:px-3 px-2 py-2 sq-styles-teal m-1 hover:bg-test2"
+            >
               <span class="font- flex justify-center items-center text-teal ">
-                {item.title}
+                <a href={item.siteLink}>{item.title}</a>
               </span>
             </div>
           ))

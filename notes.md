@@ -140,7 +140,6 @@ free value blog: tech assistance to senior citizens.??
    <!--*--*--*--*--*-"CURRENTLY DOING RIBBON" v-*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
 
-- 4/2/24
-  1.ABOUT[Hero(first impressions to customer), extra content]- , about business
+- 4/2/24 1.[Hero(first impressions to customer), extra content]- , about business
   2.CTA (WhatsIncluded)- what do you want customer to do?
   3.CONTACT
