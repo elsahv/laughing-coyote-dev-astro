@@ -39,24 +39,30 @@ const {
       <img src={sq1Img} alt="" class="sq-styles 2xl:w-full w-3/4" />
     </div>
   </div>
+
   <div
     id="sq2"
     class="bg-papaya sq-styles-teal flex justify-center items-center"
   >
     <div id="sq-2-container" class="bg- sq-styles- p-5">
-      <span class="text-lg">{pkgNo}</span>
-      <h1 class="font-bold text-4xl">{title}</h1>
-      <p class="bg-teal text-parchment sq-styles-teal mt-1 my-2 py-3 px-2 pl-2">
-        {desc1}
-      </p>
-      <p class="py-3">{desc2}</p>
-      <ul class="bg- my-5 mb-1 flex space-x-6 text-md">
-        <li class="sq-styles-teal px-2 py-1 bg-lavender">{tag1}</li>
-        <li class="sq-styles-teal px-2 py-1 bg-orange">{tag2}</li>
-      </ul>
-      <p class="my-3">{pkgParagraph}</p>
+      <a href="/test">
+        <span class="text-lg">{pkgNo}</span>
+        <h1 class="font-bold text-4xl">{title}</h1>
+        <p
+          class="bg-teal text-parchment sq-styles-teal mt-1 my-2 py-3 px-2 pl-2"
+        >
+          {desc1}
+        </p>
+        <p class="py-3">{desc2}</p>
+        <ul class="bg- my-5 mb-1 flex space-x-6 text-md">
+          <li class="sq-styles-teal px-2 py-1 bg-lavender">{tag1}</li>
+          <li class="sq-styles-teal px-2 py-1 bg-orange">{tag2}</li>
+        </ul>
+        <p class="my-3">{pkgParagraph}</p>
+      </a>
     </div>
   </div>
+
   <div id="sq3 " class="bg-">
     <div class="mr-3 my-4 2xl:mt-0 mt-[50px] 2xl:pl-0 pl-5 flex justify-end">
       <img
