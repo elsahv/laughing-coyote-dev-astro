@@ -56,41 +56,35 @@ const items = [
 <MainLayout>
   <CenterPageBanner BannerTitle="Writing" paragraph="( services)" />
 
-  <div id="how-it-works-wrapper" class="flex justify-end">
+  <div
+    id="how-it-works-wrapper"
+    class="bg- mt-5 2xl:pb-[150px] 2xl:px-[150px] pt-5"
+  >
     <div
-      id="how-it-works-container"
-      class="bg- mt-5 2xl:pb-[150px] 2xl:px-[150px] pt-5"
+      id="how-it-works-grid"
+      class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pl-5"
     >
-      <div
-        id="how-it-works-grid"
-        class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pl-5"
-      >
-        {
-          items.map((item) => (
-            <div
-              id="sq-wrapper"
-              class="flex justify-center bg-teal text-parchment sq-styles-teal px-2"
-            >
-              <div id="sq-container" class="p-3 w-full bg-">
-                <div class="flex items-center space-x-3">
-                  <h3 class="text-2xl font-bold pt-5">{item.title} </h3>
-                  <div
-                    id="icon-wrapper"
-                    class="bg-parchment p-1 sq-styles-teal"
-                  >
-                    <Image src={item.icon} alt="" width={40} height={40} />
-                  </div>
+      {
+        items.map((item) => (
+          <div
+            id="sq-wrapper"
+            class="flex justify-center bg-teal text-parchment sq-styles-teal px-2"
+          >
+            <div id="sq-container" class="p-3 w-full bg-">
+              <div class="flex items-center space-x-3">
+                <h3 class="text-2xl font-bold pt-5">{item.title} </h3>
+                <div id="icon-wrapper" class="bg-parchment p-1 sq-styles-teal">
+                  <Image src={item.icon} alt="" width={40} height={40} />
                 </div>
-
-                <p class="text-md  ">{item.description}</p>
               </div>
+
+              <p class="text-md  ">{item.description}</p>
             </div>
-          ))
-        }
-      </div>
+          </div>
+        ))
+      }
     </div>
   </div>
-
   <!-- TRANSITION CSS HERE -->
   <div class="md:absolute relative"></div>
   <div id="skewed-transition" class="skewed-wrapper">

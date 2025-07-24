@@ -1,6 +1,7 @@
 ---
-import HowItWorks from "../components/HowItWorks.astro";
-import ProblemSolving from "../components/sections/ProblemSolving.astro";
+import FourSQGrid from "../components/FourSQGrid.astro";
+import MainGoals from "../components/MainGoals.astro";
+import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import Testimonial from "../components/Testimonial.astro";
 import WebDevGrid from "../components/WebDevGrid.astro";
@@ -12,10 +13,11 @@ import MainLayout from "../layouts/MainLayout.astro";
     BannerTitle="About"
     paragraph="(Why LC exists)- Web design services focused on landing pages, and content creation for small business brand!"
   />
-  <WebDevGrid />
-  <ProblemSolving />
+  <MainGoals />
+  <!-- <WebDevGrid /> -->
+  <AddressKeyProblem />
   <Testimonial />
-  <HowItWorks />
+  <FourSQGrid />
   <!-- TRANSITION CSS HERE -->
   <div class="md:absolute relative"></div>
   <div id="skewed-transition" class="skewed-wrapper pt-5">

@@ -7,7 +7,7 @@ export interface Props {
   tag1: string;
   tag2: string;
   pkgParagraph: string;
-  sq2Paragraph: string;
+  pkgLink: string;
   sq1Img: string;
   sq3Img: string;
   sq3desc: string;
@@ -21,7 +21,7 @@ const {
   tag1,
   tag2,
   pkgParagraph,
-  sq2Paragraph,
+  pkgLink,
   sq1Img,
   sq3Img,
   sq3desc,
@@ -45,7 +45,7 @@ const {
     class="bg-papaya sq-styles-teal flex justify-center items-center"
   >
     <div id="sq-2-container" class="bg- sq-styles- p-5">
-      <a href="/test">
+      <a href={pkgLink}>
         <span class="text-lg">{pkgNo}</span>
         <h1 class="font-bold text-4xl">{title}</h1>
         <p

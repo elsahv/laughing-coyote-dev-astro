@@ -1,39 +1,21 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-import WebsitesBanner from "../components/sections/WebsitesBanner.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
-import CTA1 from "../components/sections/CTA1.astro";
-import CTA2 from "../components/sections/CTA2.astro";
-import WebDevGrid from "../components/WebDevGrid.astro";
+import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
+import SocialProof from "../components/sections/SocialProof.astro";
+import HowItWorks from "../components/sections/HowItWorks.astro";
+import WebDevCTA from "../components/sections/WebDevCTA.astro";
+import BuildAuthority3 from "../components/sections/BuildAuthority3.astro";
 ---
 
 <MainLayout>
   <Hero />
   <BuildAuthority />
-  <WebsitesBanner />
-  <WebDevGrid />
-  <CTA2
-    title="Web Development"
-    paragraph1="This is the web-development page call-to-action."
-    link="/web-development"
-    paragraph2="Hi there, I'm Elsa... I provide web design services focused on landing pages, and content creation for small business brand!"
-    link="/web-development"
-  />
-  <div class="md:absolute relative">
-    <WebDevGrid />
-  </div>
-  <div id="skewed-transition" class="skewed-wrapper">
-    <div class="skewed-bg"></div>
-    <div class="content"></div>
-  </div>
-  <div id="teal-background" class="bg-teal text-parchment">
-    <CTA1
-      title="About"
-      paragraph1="This is the about page call-to-action."
-      paragraph2="OR FOR HERE... -Hi there, I'm Elsa... I provide web design services focused on landing pages, and content creation for small business brand!"
-      link="/about"
-    />
-    <WebDevGrid />
-  </div>
+  <AddressKeyProblem />
+  <SocialProof />
+  <HowItWorks />
+  <WebDevCTA />
+  <BuildAuthority3 />
+  <!-- CONTACT cta-->
 </MainLayout>
