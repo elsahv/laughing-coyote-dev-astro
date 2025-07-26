@@ -1,11 +1,13 @@
 ---
-import FourSQGrid from "../components/FourSQGrid.astro";
-import MainGoals from "../components/MainGoals.astro";
+import DefineItemsGrid from "../components/DefineItemsGrid.astro";
 import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import Testimonial from "../components/Testimonial.astro";
 import WebDevGrid from "../components/WebDevGrid.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import FourSQGrid from "../components/FourSQGrid.astro";
+import MainGoals from "../components/MainGoals.astro";
+import TestWebsiteBanner from "../components/TestWebsiteBanner.astro";
 ---
 
 <MainLayout>
@@ -13,11 +15,26 @@ import MainLayout from "../layouts/MainLayout.astro";
     BannerTitle="About"
     paragraph="(Why LC exists)- Web design services focused on landing pages, and content creation for small business brand!"
   />
-  <MainGoals />
+  <!-- TODO USE DEFINE ITEMS GRID, MAKE DYNAMIC v -->
+  <div id="" class="bg-">
+    <MainGoals />
+
+    <!-- <MainGoals /> -->
+  </div>
+
+  <!-- TODO USE DEFINE ITEMS GRID, MAKE DYNAMIC ^ -->
+
   <!-- <WebDevGrid /> -->
+  <TestWebsiteBanner
+    title="websites built with..."
+    item1="astro framework "
+    item2="sanity.io "
+    item3="tailwind css"
+    item4="react javascript"
+  />
   <AddressKeyProblem />
   <Testimonial />
-  <FourSQGrid />
+  <!-- <FourSQGrid /> -->
   <!-- TRANSITION CSS HERE -->
   <div class="md:absolute relative"></div>
   <div id="skewed-transition" class="skewed-wrapper pt-5">

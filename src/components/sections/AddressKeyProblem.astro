@@ -1,12 +1,18 @@
 ---
+import ButtonProps from "../shared/ButtonProps.astro";
 import DynamicAboutCTA from "../shared/DynamicAboutCta";
+import TestWebsiteBanner from "../TestWebsiteBanner.astro";
 import WebsitesBanner from "./WebsitesBanner.astro";
 // import ButtonProps from "../shared/ButtonProps.astro";
 // import HowItWorks from "../HowItWorks.astro";
 ---
 
-<WebsitesBanner />
-
+<!-- <TestWebsiteBanner
+  item1="title test"
+  item2="title test"
+  item3="title test"
+  item4="title test"
+/> --><!-- <WebsitesBanner title="title" /> -->
 <div id="PROBLEM-SOLVING-wrapper" class="bg- py-5">
   <div id="container" class="2xl:mx-0 mx-5">
     <div id="about-me-grid" class="bg- grid md:grid-cols-2 grid-cols-1 gap-1">
@@ -53,10 +59,10 @@ import WebsitesBanner from "./WebsitesBanner.astro";
               </li>
             </li>
 
-            <!-- <ButtonProps
+            <ButtonProps
               btn1="view testimonial"
               btn1Link="/#view-testimonial"
-            /> -->
+            />
           </li>
         </ul>
       </div>

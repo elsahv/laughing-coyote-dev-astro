@@ -1,0 +1,37 @@
+---
+export interface Props {
+  title: string;
+  item1: string;
+  item2: string;
+  item3: string;
+  item4: string;
+}
+
+const { title, item1, item2, item3, item4 } = Astro.props as Props;
+---
+
+<!-- TODO: CHANGE HOW IT WORKS COMP TO BUILD AUTH BANNER SHOWCASING SITES??  -->
+<section id="how-it-works" class="opacity-8x0 md:p-5 p-1 mt-[155px] mb-[50px]">
+  <div id="title-banner" class="flex justify-center mt">
+    <h2 class="text-xl font- py-2 md:mx-5 md:px-5">{title}</h2>
+  </div>
+  <!--  -->
+  <div id="how-it-works-wrapper" class="p-1">
+    <div id="how-it-works-container" class="flex justify-center bg-test">
+      <div id="sq" class="flex space-x-6 2xl:px-3 px-2 py-2 m-1">
+        <span class="px-3 pb-1 sq-styles-teal text-teal">
+          {item1}
+        </span>
+        <span class="px-3 pb-1 sq-styles-teal text-teal">
+          {item2}
+        </span>
+        <span class="px-3 pb-1 sq-styles-teal text-teal">
+          {item3}
+        </span>
+        <span class="px-3 pb-1 sq-styles-teal text-teal">
+          {item4}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

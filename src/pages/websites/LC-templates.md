@@ -7,7 +7,6 @@ pubDate: 2022-07-01
 testItem1: "A web design subscription service for small business owners and creatives- focuses on landing pages and content"
 category1: "category1"
 category2: "category2"
-
 btn1: "business"
 btn2: "astro"
 author: "Astro Learner"

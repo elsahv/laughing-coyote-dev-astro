@@ -1,64 +1,67 @@
 ---
+import CenterPageBanner from "./shared/CenterPageBanner.astro";
+
 const items = [
-
-{
-  title:"Minimal Distractions",
-    p1: "Avoid autoplay** videos, pop-ups, or flickering elements.",
-    p2: "Limit animation or make it easy to pause/disable.",
-    p3: " Use clean layouts with generous whitespace."
-},
-
- {
-    title:"Clear Visual Hierarchy**",
-    p1: "Use **bold headings**, **short paragraphs**, and **bullet points** to chunk information.",
-    p2: "Highlight key actions (e.g. buttons, forms) clearly with contrast and spacing.",
-    p3: " Consistent layout and predictable placement of elements."
-  },
-
-
   {
-    title:"Simple, Intuitive Navigation**",
-    p1: " Use a **sticky nav bar** or breadcrumb trail.",
-    p2: "Keep navigation labels clear and concise (e.g., “Work” instead of “Our Portfolio of Past Collaborations”).",
-    p3: "Avoid hiding important links in drop-downs or hamburger menus unless necessary."
+    title: "Minimal Distractions",
+    description:
+      "Avoid autoplay** videos, pop-ups, or flickering elements. Limit animation or make it easy to pause/disable. Use clean layouts with generous whitespace. ",
   },
-
-
   {
-    title:" Focus Aids**",
-    p1:"Use **progress indicators**, **checklists**, or **step-by-step flows** when relevant",
-    p2: "Let users **collapse or expand content** (like accordions).",
-    p3: "  Provide clear CTAs (Call-to-Action) with one main goal per page."
+    title: "Clear Visual Hierarchy",
+    description:
+      "Use **bold headings**, **short paragraphs**, and **bullet points** to chunk information.Highlight key actions (e.g. buttons, forms) clearly with contrast and spacing.Consistent layout and predictable placement of elements.",
   },
-
-    {
-    title:"Accessible, Soothing Design**",
-    p1:" Gentle color palette with **high contrast** options for readability.",
-    p2: " Dyslexia-friendly fonts or defaults like **sans-serif** (e.g., Inter, Arial).",
-    p3: " Font size should be legible (16px+ body text)."
+  {
+    title: "Simple, Intuitive Navigation",
+    description:
+      " Use a **sticky nav bar** or breadcrumb trail.Keep navigation labels clear and concise (e.g., “Work” instead of “Our Portfolio of Past Collaborations”). Avoid hiding important links in drop-downs or hamburger menus unless necessary.",
   },
-     {
-    title:"Customizability (if possible)**",
-    p1:"Let users toggle **dark/light mode**, **font size**, or **reduced motion**.",
-    p2: " Give control over how much information is shown at once.",
-    p3: " So when you say you offer custom digital artistry, you're saying: “I don’t just build websites—I co-create digital experiences that feel like an extension of your creative work, using thoughtful design, expressive visuals, and personal attention."
+  {
+    title: " Focus Aids",
+    description:
+      "Use **progress indicators**, **checklists**, or **step-by-step flows** when relevant. Let users **collapse or expand content** (like accordions). Provide clear CTAs (Call-to-Action) with one main goal per page.",
   },
-]
+  {
+    title: "Accessible, Soothing Design",
+    description:
+      " Gentle color palette with **high contrast** options for readability. Dyslexia-friendly fonts or defaults like **sans-serif** (e.g., Inter, Arial).Font size should be legible (16px+ body text).",
+  },
+  {
+    title: "Customizability (if possible)**",
+    description:
+      "Let users toggle **dark/light mode**, **font size**, or **reduced motion**. Give control over how much information is shown at once. So when you say you offer custom digital artistry, you're saying: “I don’t just build websites—I co-create digital experiences that feel like an extension of your creative work",
+  },
+];
 ---
 
-<section id="MAIN-GOALS-SECTION" class="2xl:pl-4 my-5">
-  <div class="bg-gray-300 text-black border border-black py-5 pl-3 pr-2" id="MAIN GOAL OF SITE">
-    <h1 class="font-bold">Main Goals</h1>
- <h2>All sites are built with:</h2>
-     <div class="bg-">
-     {items.map((item) => (
-         <h2 class="pt-4 mt-2  pl-1">{item.title}</h2>
-         <div class="pl-1"> 
-         <p>{item.p1}</p>
-         <p>{item.p2}</p>
-         <p>{item.p3}</p>
+<div id="how-it-works-wrapper" class="">
+  <!-- <div class="bg-">
+    <CenterPageBanner
+      BannerTitle="Main Goals"
+      paragraph="All websites are built with”:"
+    /> -->
+</div>
+
+<div id="how-it-works-container" class="bg- mt-5 2xl:px-[150px] pt-5 px-5">
+  <div
+    id="how-it-works-grid"
+    class="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5"
+  >
+    {
+      items.map((item) => (
+        <div
+          id="sq-wrapper"
+          class="flex justify-center bg-teal text-parchment sq-styles px-2"
+        >
+          <div id="sq-container" class="p-3 w-full bg-">
+            <p class="text-md  ">{item.description}</p>
+            <h3 class="text-2xl font-bold flex justify-end pt-5">
+              {item.title}
+            </h3>
+          </div>
         </div>
-       ))}
-       </div>
+      ))
+    }
   </div>
-</section>
+</div>
