@@ -5,7 +5,10 @@ import Sq4 from "./sq4";
 import Sq5 from "./sq5";
 import Sq6 from "./sq6";
 
-// ? UNSURE ABOUT A HREFS??
+// ? CONTENT TO COME BACK TO V
+// ## FIND UNIQUE COMBINATIONS of skills, experiences, and personality (use to set self apart and become top 10% in industry)**
+// ? CONTENT TO COME BACK TO ^
+
 const BuildAuthority = () => {
   return (
     <div id="wrapper" class="2xl:opacity-80 opacity-100 py-5 my-5">

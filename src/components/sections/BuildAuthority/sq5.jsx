@@ -10,9 +10,9 @@ const Sq5 = () => {
           optimization. Few lean into artisanal design, emotional storytelling,
           and cozy aesthetics the way this concept (lc) does. " */}
         {/* </p> */}
-        <p>
-          Catered for creatives who are ready to take their business to the next
-          level
+        <p class="pr-1">
+          A custom website that fits your business, personality, goals... and
+          you alone.
         </p>
       </div>
       <div
