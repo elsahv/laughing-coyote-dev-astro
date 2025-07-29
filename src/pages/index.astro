@@ -2,29 +2,40 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import BuildAuthority from "../components/sections/BuildAuthority";
-import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
 import SocialProof from "../components/sections/SocialProof.astro";
-import HowItWorks from "../components/sections/HowItWorks.astro";
-import WebDevCTA from "../components/sections/WebDevCTA.astro";
-import BuildAuthority3 from "../components/sections/BuildAuthority3.astro";
-import TestWebsiteBanner from "../components/TestWebsiteBanner.astro";
+import Unsure from "../components/sections/Unsure.astro";
+import SubjectsBanner from "../components/SubjectsBanner.astro";
+import AboutPgCTA from "../components/AboutPgCTA.astro";
+import WebDevCTA from "../components/WebDevCTA.astro";
+import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
+import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
 ---
 
 <MainLayout>
   <Hero />
   <BuildAuthority />
-
-  <TestWebsiteBanner
+  <SubjectsBanner
     title="Laughing Coyote Dev offers..."
-    item1="web design "
-    item2="backend development"
-    item3="user stories"
-    item4="funnels"
+    item1="Address Key Problem"
+    item2="social-proof/ testimonial"
+    item3="about-pg cta"
+    item4="web-dev cta"
   />
-  <AddressKeyProblem />
-  <SocialProof />
-  <HowItWorks />
-  <WebDevCTA />
-  <BuildAuthority3 />
-  <!-- CONTACT cta-->
+
+  <div id="section1" class="h-screen bg">
+    <AddressKeyProblem />
+  </div>
+  <div id="section2" class="h-screen">
+    <SocialProof />
+  </div>
+  <div id="section3" class="h-screen">
+    <AboutPgCTA />
+  </div>
+  <div id="section4" class="h-screen">
+    <Unsure />
+    <WebDevCTA />
+  </div>
+  <!-- TODO: new CONTACT cta, combine with about-me v-->
+  <NewContactAboutMeCTA />
+  <!-- TODO: new CONTACT cta, combine with about-me ^-->
 </MainLayout>

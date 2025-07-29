@@ -3,11 +3,10 @@ import DefineItemsGrid from "../components/DefineItemsGrid.astro";
 import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import Testimonial from "../components/Testimonial.astro";
-import WebDevGrid from "../components/WebDevGrid.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import FourSQGrid from "../components/FourSQGrid.astro";
 import MainGoals from "../components/MainGoals.astro";
-import TestWebsiteBanner from "../components/TestWebsiteBanner.astro";
+import SubjectsBanner from "../components/SubjectsBanner.astro";
+import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
 ---
 
 <!-- ?CONSIDER --><!-- 
@@ -21,7 +20,50 @@ Pull in dynamic elements (e.g. testimonial slider, gallery) using React
 Deploy using Astro’s built-in static site generation (e.g. to Netlify, Vercel, or Cloudflare Pages)
 
 Offer updates via Git-based workflow (or connect to a CMS like Sanity or Contentful)
- --><!-- ?CONSIDER ^-->
+ 
+
+
+A. *LC SERVICES- Website Design: Crafting visually appealing and user-friendly website layouts.
+    -## Full-Stack Development: Combining front-end and back-end development skills to create complete web solutions. 
+B. - Web Application Development: Developing interactive web applications to perform specific tasks or provide services.
+    
+- API Development: Creating application programming interfaces (APIs) to enable communication between different software systems or services.
+    
+- Website Maintenance and Support: Providing ongoing updates, security patches, and technical assistance to ensure website reliability and performance.
+    
+- Search Engine Optimization (SEO): Optimizing websites to improve visibility and ranking on search engine results pages.
+    
+- Performance Optimization: Enhancing website speed, load times, and overall performance for better user experience.
+    
+- Security Audits and Enhancements: Conducting security assessments and implementing measures to protect websites from cyber threats and vulnerabilities.
+    
+- Accessibility Compliance: Ensuring websites are accessible to users with disabilities and comply with relevant accessibility standards (e.g., WCAG).
+    
+- User Experience (UX) Design: Focusing on creating intuitive, efficient, and enjoyable user experiences through research, prototyping, and testing.
+
+C.- ## Content Management System (CMS) Development: Building custom or utilizing existing platforms like WordPress, Drupal, or Joomla for managing website content.
+
+D. 🧰 Services Included
+Custom website design (no templates or semi-custom options)
+
+Mobile responsiveness
+
+Simple SEO setup
+
+Monthly content swaps (text/images)
+
+Blog or portfolio updates
+
+Technical maintenance (hosting, SSL, CMS updates)
+
+Analytics setup
+
+Email form integrations (Mailchimp, ConvertKit, etc.)
+
+## Responsive Web Design: Ensuring websites adapt and function well across various devices and screen sizes.
+
+
+-><!-- ?CONSIDER ^-->
 <MainLayout>
   <CenterPageBanner
     BannerTitle="About"
@@ -36,8 +78,7 @@ Offer updates via Git-based workflow (or connect to a CMS like Sanity or Content
 
   <!-- TODO USE DEFINE ITEMS GRID, MAKE DYNAMIC ^ -->
 
-  <!-- <WebDevGrid /> -->
-  <TestWebsiteBanner
+  <SubjectsBanner
     title="websites built with..."
     item1="astro framework "
     item2="sanity.io "
@@ -56,5 +97,6 @@ Offer updates via Git-based workflow (or connect to a CMS like Sanity or Content
   <div id="color-switch" class="bg-teal text-parchment pt-[120px]">
     <Testimonial />
   </div>
+  <NewContactAboutMeCTA />
   <!-- TRANSITION CSS HERE -->
 </MainLayout>

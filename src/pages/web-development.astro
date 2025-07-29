@@ -3,9 +3,10 @@ import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
 import CTA1 from "../components/sections/CTA1.astro";
 import CTA2 from "../components/sections/CTA2.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import WebDevGrid from "../components/WebDevGrid.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Packages from "../components/Packages.astro";
+import Unsure from "../components/sections/Unsure.astro";
+import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
 ---
 
 <!-- ?CONTENT TO CONSIDER V--><!-- 🔧 How to Use Astro + React in Your Service
@@ -65,7 +66,7 @@ Use MDX in Astro to let blog/portfolio content include styled React components
     BannerTitle="Web Development"
     paragraph="(what LC offers)- straight, and to-the-point website projects. Each not only gives your businesses more views... but also bring your attention to your ideas, and help them bring to life)..."
   />
-  <WebDevGrid />
+  <Unsure />
   <CTA2
     title="This is where frontend content goes"
     paragraph1="Palette Picker” Questionnaire: Help clients choose colors based on their work and style.gnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
@@ -75,7 +76,7 @@ Use MDX in Astro to let blog/portfolio content include styled React components
   />
   <div></div>
   <div class="md:absolute relative">
-    <WebDevGrid />
+    <Unsure />
   </div>
   <!-- v -->
   <div id="skewed-transition" class="skewed-wrapper">
@@ -90,7 +91,7 @@ Use MDX in Astro to let blog/portfolio content include styled React components
       paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
       link="/about"
     />
-    <WebDevGrid />
+    <Unsure />
     <BuildAuthority2 />
     <div class="mt-[200px]">
       <CenterPageBanner BannerTitle="Packages" paragraph="(what LC offers)" />
@@ -126,6 +127,7 @@ Use MDX in Astro to let blog/portfolio content include styled React components
           pkgLink="/test"
         />
       </div>
+      <NewContactAboutMeCTA />
     </div>
   </div>
 </MainLayout>
