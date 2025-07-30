@@ -1,41 +1,72 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-import BuildAuthority from "../components/sections/BuildAuthority";
-import SocialProof from "../components/sections/SocialProof.astro";
+import MasonryGrid from "../components/MasonryGrid";
 import Unsure from "../components/sections/Unsure.astro";
-import SubjectsBanner from "../components/SubjectsBanner.astro";
 import AboutPgCTA from "../components/AboutPgCTA.astro";
 import WebDevCTA from "../components/WebDevCTA.astro";
 import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
-import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
+import AboutSection1 from "../components/shared/AboutSection1.astro";
+import AboutSection2 from "../components/shared/AboutSection2.astro";
 ---
 
 <MainLayout>
   <Hero />
-  <BuildAuthority />
-  <SubjectsBanner
+  <MasonryGrid />
+  <!-- ?BANNER DISPLAYING LINKS TO CUSTOMER WEBSITES?? v-->
+  <!-- ?BANNER DISPLAYING LINKS TO CUSTOMER WEBSITES?? ^-->
+  <!-- !COME BACK TO AFTER FINALIZE LANDING PG CONTENT AND SECTIONS V-->
+  <!-- <SubjectsBanner
     title="Laughing Coyote Dev offers..."
     item1="Address Key Problem"
-    item2="social-proof/ testimonial"
-    item3="about-pg cta"
+    item2="social-proof/ AboutSection2"
+    item3="about-pg cta"x
     item4="web-dev cta"
-  />
+  /> -->
+  <!-- !COME BACK TO AFTER FINALIZE LANDING PG CONTENT AND SECTIONS ^-->
 
-  <div id="section1" class="h-screen bg">
-    <AddressKeyProblem />
+  <div id="test1 section1" class="bg-">
+    <!-- PROBLEM SOLVING v -->
+    <AboutSection1
+      title="Pain Points to Address:"
+      paragraph1="You’re an artist, not a tech coyote. No in-house web skills, and can't afford a large up-front website cost?"
+      paragraph2="You’d love a website to show off your work and draw in more clients—but who has time to chase code through the desert? - Need frequent updates (event calendars, promotions, new photos/products)"
+      paragraph3="Want something beautiful and functional, not generic? If building your own site feels like howling at the moon, don’t worry. You don’t need to do it all yourself."
+      paragraph4="Laughing Coyote Dev builds websites that let your creativity roam free—without charging you for a bunch of things you don’t need."
+    />
+    <!-- PROBLEM SOLVING ^ -->
+
+    <!-- *: 2/29/25- MAKE DYNAMIC v-->
+    <AboutSection2
+      title="Various styles"
+      subtitle="NEW AIDA"
+      paragraph1="Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]."
+    />
+    <!-- *: 2/29/25- MAKE DYNAMIC ^-->
+    <div class="bg-">
+      <AboutSection1
+        title="About Me"
+        paragraph1="paragraph1"
+        paragraph2='paragraph2""'
+        paragraph3="paragraph3"
+        paragraph4="paragraph4"
+      />
+    </div>
+    <div id="section2" class="">
+      <!-- <AIDA /> -->
+    </div>
+    <div id="section3" class="h-">
+      <h2 class="font- text-2xl pl-5">Endless Possibilities:</h2>
+      <AboutPgCTA />
+    </div>
+    <div id="section4- WHATS INCLUDED" class="h-">
+      <Unsure />
+      <WebDevCTA />
+    </div>
+    <!-- ? ROOF AboutSection2 HERE?? V-->
+    <!-- ? ROOF AboutSection2 HERE?? ^ -->
+    <!-- TODO: new CONTACT cta, combine with about-me v-->
+    <NewContactAboutMeCTA />
+    <!-- TODO: new CONTACT cta, combine with about-me ^-->
   </div>
-  <div id="section2" class="h-screen">
-    <SocialProof />
-  </div>
-  <div id="section3" class="h-screen">
-    <AboutPgCTA />
-  </div>
-  <div id="section4" class="h-screen">
-    <Unsure />
-    <WebDevCTA />
-  </div>
-  <!-- TODO: new CONTACT cta, combine with about-me v-->
-  <NewContactAboutMeCTA />
-  <!-- TODO: new CONTACT cta, combine with about-me ^-->
 </MainLayout>

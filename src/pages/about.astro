@@ -1,12 +1,12 @@
 ---
 import DefineItemsGrid from "../components/DefineItemsGrid.astro";
-import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import Testimonial from "../components/Testimonial.astro";
+import AboutSection2 from "../components/shared/AboutSection2.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import MainGoals from "../components/MainGoals.astro";
 import SubjectsBanner from "../components/SubjectsBanner.astro";
 import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
+import AboutSection1 from "../components/shared/AboutSection1.astro";
 ---
 
 <!-- ?CONSIDER --><!-- 
@@ -15,7 +15,7 @@ Client signs up + fills onboarding form
 
 You select a base layout or start custom in Astro
 
-Pull in dynamic elements (e.g. testimonial slider, gallery) using React
+Pull in dynamic elements (e.g. AboutSection2 slider, gallery) using React
 
 Deploy using Astro’s built-in static site generation (e.g. to Netlify, Vercel, or Cloudflare Pages)
 
@@ -85,8 +85,18 @@ Email form integrations (Mailchimp, ConvertKit, etc.)
     item3="tailwind css"
     item4="react javascript"
   />
-  <AddressKeyProblem />
-  <Testimonial />
+  <AboutSection1
+    title="About Me"
+    paragraph1="paragraph1"
+    paragraph2='paragraph2""'
+    paragraph3="paragraph3"
+    paragraph4="paragraph4"
+  />
+  <AboutSection2
+    title="Various styles"
+    subtitle="NEW AIDA"
+    paragraph1="Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]."
+  />
   <!-- <FourSQGrid /> -->
   <!-- TRANSITION CSS HERE -->
   <div class="md:absolute relative"></div>
@@ -95,7 +105,11 @@ Email form integrations (Mailchimp, ConvertKit, etc.)
     <div class="content"></div>
   </div>
   <div id="color-switch" class="bg-teal text-parchment pt-[120px]">
-    <Testimonial />
+    <AboutSection2
+      title="Various styles"
+      subtitle="NEW AIDA"
+      paragraph1="Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]."
+    />
   </div>
   <NewContactAboutMeCTA />
   <!-- TRANSITION CSS HERE -->
