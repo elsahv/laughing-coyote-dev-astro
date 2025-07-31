@@ -33,7 +33,7 @@ items.map((item) => (
 _---------------_
 _COPY/PASTE MAP FUNCTION--^_
 
--UNSURE WHAT TO PUT WHERE:
+-CssTealTransition WHAT TO PUT WHERE:
 My days are spent creating niche websites and solutions for small business owners and creatives.
 
             <!-- <p>

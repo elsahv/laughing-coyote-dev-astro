@@ -4,7 +4,7 @@ import Card from "../components/Card.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import DefineItemsGrid from "../components/DefineItemsGrid.astro";
-import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
+import ContactMe from "../components/sections/ContactMe.astro";
 
 const allSites = await Astro.glob("./websites/*.md");
 ---
@@ -44,7 +44,7 @@ const allSites = await Astro.glob("./websites/*.md");
         ))
       }
     </div>
-    <NewContactAboutMeCTA />
+    <ContactMe />
   </div>
   <!-- TRANSITION CSS HERE -->
 </MainLayout>

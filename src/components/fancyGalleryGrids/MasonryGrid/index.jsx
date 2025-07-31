@@ -9,7 +9,7 @@ import Sq6 from "./sq6";
 // ## FIND UNIQUE COMBINATIONS of skills, experiences, and personality (use to set self apart and become top 10% in industry)**
 // ? CONTENT TO COME BACK TO ^
 
-const BuildAuthority = () => {
+const MasonryGrid = () => {
   return (
     <div id="wrapper" class="2xl:opacity-80 opacity-100 py-5 my-5">
       <div id="" className="bg- md:mx-5 mx-0 2xl:px-[80px]">
@@ -33,4 +33,4 @@ const BuildAuthority = () => {
   );
 };
 
-export default BuildAuthority;
+export default MasonryGrid;

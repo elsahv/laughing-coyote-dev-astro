@@ -1,12 +1,11 @@
 ---
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
-import CTA1 from "../components/sections/CTA1.astro";
-import CTA2 from "../components/sections/CTA2.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Packages from "../components/Packages.astro";
-import Unsure from "../components/sections/Unsure.astro";
-import NewContactAboutMeCTA from "../components/NewContactAboutMeCTA.astro";
+import CssTealTransition from "../components/sections/CssTealTransition.astro";
+import SerpentineGrid from "../components/fancyGalleryGrids/SerpentineGrid.astro";
+import ContactMe from "../components/sections/ContactMe.astro";
 ---
 
 <!-- ?CONTENT TO CONSIDER V--><!-- 🔧 How to Use Astro + React in Your Service
@@ -75,32 +74,8 @@ Custom built ecommerce I’ve built have a guarantee written in
     BannerTitle="Web Development"
     paragraph="(what LC offers)- straight, and to-the-point website projects. Each not only gives your businesses more views... but also bring your attention to your ideas, and help them bring to life)..."
   />
-  <Unsure />
-  <CTA2
-    title="This is where frontend content goes"
-    paragraph1="Palette Picker” Questionnaire: Help clients choose colors based on their work and style.gnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
-    link="/web-developmen"
-    paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
-    link="/web-development"
-  />
-  <div></div>
-  <div class="md:absolute relative">
-    <Unsure />
-  </div>
-  <!-- v -->
-  <div id="skewed-transition" class="skewed-wrapper">
-    <div class="skewed-bg"></div>
-    <div class="content"></div>
-  </div>
-  <!-- ^ -->
-  <div id="teal-background" class="bg-teal text-parchment">
-    <CTA1
-      title="This is where backend content goes"
-      paragraph1="r, sit amet consectetur adipisicing elit. Nostrum consectetur maiore"
-      paragraph2="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consectetur maiores provident, dicta magnam quia? Sequi similique est error rerum nulla eum commodi reprehenderit ipsum veritatis quisquam minima vitae libero!"
-      link="/about"
-    />
-    <Unsure />
+  <SerpentineGrid />
+  <div id="teal" class="bg-teal text-parchment">
     <BuildAuthority2 />
     <div class="mt-[200px]">
       <CenterPageBanner BannerTitle="Packages" paragraph="(what LC offers)" />
@@ -136,7 +111,7 @@ Custom built ecommerce I’ve built have a guarantee written in
           pkgLink="/test"
         />
       </div>
-      <NewContactAboutMeCTA />
+      <ContactMe />
     </div>
   </div>
 </MainLayout>
