@@ -36,6 +36,19 @@ li {
 .sq-styles {
   border: 2px solid #35373d;
   border-radius: 25px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sq-styles-btn {
+  border: 2px solid #35373d;
+  border-radius: 20px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .sq-styles-teal {

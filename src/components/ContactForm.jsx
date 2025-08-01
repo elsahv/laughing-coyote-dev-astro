@@ -50,7 +50,7 @@ const ContactForm = () => {
                 {items.map((item) => (
                   <button
                     id={item.btn}
-                    className="w-[139px] sq-styles opacity-80 hover:opacity-100 hover:bg-test2 rounded border border-black mr-5 py-1 pl-2 text-center"
+                    className="sq-styles opacity-80 hover:opacity-100 hover:bg-test2 text-center"
                   >
                     {item.btn}
                   </button>

@@ -1,8 +1,7 @@
 ---
 // import FourImgBanner from "../FourImgBanner.astro";
-import CTA1 from "../shared/CTA1.astro";
+import CTA from "../shared/CTA.astro";
 import FourImgBanner from "../FourImgBanner.astro";
-import CTA2 from "../shared/CTA2.astro";
 import CssTealTransition from "../sections/CssTealTransition.astro";
 ---
 
@@ -14,13 +13,22 @@ import CssTealTransition from "../sections/CssTealTransition.astro";
       </div>
       <!--! content-section1 v-->
       <div id="flex" class="bg grid md:grid-cols-4 grid-cols-1">
-        <CTA1
-          title="This is the new about-(ME) page call-to-action."
-          paragraph1="expand on about pg"
-          link="/about"
-          paragraph2="I provide web design services focused on landing pages, and content creation for small business brand! I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
-          link="/about"
-        />
+        <div id="coral" class="bg- md:col-span-3 col-span-2">
+          <div class="bg flex justify-center 2xl:mt-[150px]">
+            <div
+              id="content-container"
+              class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
+            >
+              <CTA
+                title="This is the new about-(ME) page call-to-action."
+                paragraph1="expand on about pg"
+                link="/about"
+                paragraph2="I provide web design services focused on landing pages, and content creation for small business brand! I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
+              />
+            </div>
+          </div>
+        </div>
+
         <div
           id=""
           class="bg- flex md:flex-col flex-row px-2 lg:space-y-5 lg:gap-0 gap-4"
@@ -71,13 +79,17 @@ import CssTealTransition from "../sections/CssTealTransition.astro";
               class="sq-styles 2xl:w-3/4 w-1/2 2xl:h-[320px] h-[200px]"
             />
           </div>
-
-          <CTA2
-            title="This is the web-dev-pg cta"
-            paragraph1="expand on web dev pg, endless opportunities"
-            paragraph2=""
-            link="/web-development"
-          />
+          <div
+            id="content-container"
+            class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
+          >
+            <CTA
+              title="This is the new web-dev pg call-to-action."
+              paragraph1="expand on web dev pg"
+              link="/web-development"
+              paragraph2="web dev-test  I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
+            />
+          </div>
 
           <CssTealTransition />
         </div>
