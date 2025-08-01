@@ -1,10 +1,9 @@
 ---
-import DefineItemsGrid from "../components/DefineItemsGrid.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import AboutSection2 from "../components/shared/AboutSection2.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import MainGoals from "../components/MainGoals.astro";
-import SubjectsBanner from "../components/SubjectsBanner.astro";
+// import SubjectsBanner from "../components/SubjectsBanner.astro";
 import AboutSection1 from "../components/shared/AboutSection1.astro";
 import ContactMe from "../components/sections/ContactMe.astro";
 ---
@@ -69,14 +68,9 @@ Email form integrations (Mailchimp, ConvertKit, etc.)
     BannerTitle="About"
     paragraph="(Why LC exists)- Web design services focused on landing pages, and content creation for small business brand!"
   />
-  <!-- TODO USE DEFINE ITEMS GRID, MAKE DYNAMIC v -->
-  <div id="" class="bg-">
-    <MainGoals />
-
-    <!-- <MainGoals /> -->
-  </div>
-
-  <!-- TODO USE DEFINE ITEMS GRID, MAKE DYNAMIC ^ -->
+  <!-- ? USE DEFINE ITEMS GRID, MAKE DYNAMIC? v -->
+  <MainGoals />
+  <!-- ? USE DEFINE ITEMS GRID, MAKE DYNAMIC? ^ -->
   <!-- 
   <SubjectsBanner
     title="websites built with..."
@@ -92,12 +86,7 @@ Email form integrations (Mailchimp, ConvertKit, etc.)
     paragraph3="paragraph3"
     paragraph4="paragraph4"
   />
-  <!-- <AboutSection2
-    title="Various styles"
-    subtitle="NEW AIDA"
-    paragraph1="Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]."
-  /> -->
-  <!-- <FourSQGrid /> -->
+
   <!-- TRANSITION CSS HERE -->
   <div class="md:absolute relative"></div>
   <div id="skewed-transition" class="skewed-wrapper pt-5">
@@ -105,11 +94,11 @@ Email form integrations (Mailchimp, ConvertKit, etc.)
     <div class="content"></div>
   </div>
   <div id="color-switch" class="bg-teal text-parchment pt-[120px]">
-    <AboutSection2
+    <!-- <AboutSection2
       title="Various styles"
       subtitle="NEW AIDA"
       paragraph1="Before I was struggling with [problem,] and it made me feel [negative emotion]. Now I have acheived this [result], and I feel [positive emotion]."
-    />
+    /> -->
   </div>
   <ContactMe />
   <!-- TRANSITION CSS HERE -->

@@ -1,6 +1,7 @@
 ---
 import ButtonProps from "../shared/ButtonProps.astro";
-
+import Image from "astro/components/Image.astro";
+import SelfImg from "../../images/self.jpg";
 // import DynamicAboutCTA from "./shared/DynamicAboutCta";
 
 export interface Props {
@@ -29,11 +30,11 @@ const { title, paragraph1, paragraph2, paragraph3, paragraph4 } =
           </div>
         </div>
         <div id="sq2" class="bg- row-span-2">
-          <img
-            id="primary-img"
-            src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          <Image
+            id="self-img"
+            src={SelfImg}
             alt=""
-            class="sq-styles lg:p-5 p-2"
+            class="sq-styles lg:p-5 p-2 w-[450px] my-2 sq-styles"
           />
         </div>
 

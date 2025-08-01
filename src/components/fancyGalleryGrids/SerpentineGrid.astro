@@ -1,94 +1,90 @@
 ---
 // import FourImgBanner from "../FourImgBanner.astro";
 import CTA1 from "../shared/CTA1.astro";
-import CssTealTransition from "../sections/CssTealTransition.astro";
+import FourImgBanner from "../FourImgBanner.astro";
 import CTA2 from "../shared/CTA2.astro";
-
-const items = [
-  {
-    id: 1,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=7m58a2i4&dl=0",
-    title: "DISCOVERY PHASE",
-    link: "/ ",
-  },
-  {
-    id: 2,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0",
-    title: "CREATIVE PHASE",
-    link: "/ ",
-  },
-  {
-    id: 3,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/oraxtrdwq2apy6x4f87xj/fish-screenshot.jpg?rlkey=8woeczr9d8n7gqpqfbbnayb9e&st=bv1bc7kp&dl=0",
-
-    title: "DEVELOPMENT PHASE",
-    link: "/ ",
-  },
-  {
-    id: 4,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=vzxtp941&dl=0",
-
-    title: "LAUNCH PHASE",
-    link: "/ ",
-  },
-];
+import CssTealTransition from "../sections/CssTealTransition.astro";
 ---
 
 <div class="">
-  <div id="section3" class="">
-    <!--? CssTealTransition IF KEEPING FourImgBanner V-->
+  <div id="1st-half" class="bg-">
     <div class="0">
-      <div class="bg- pt-1 mx-1 bg-">
+      <div class="pt-1 mx-1 bg-">
+        <FourImgBanner />
+      </div>
+      <!--! content-section1 v-->
+      <div id="flex" class="bg grid md:grid-cols-4 grid-cols-1">
+        <CTA1
+          title="This is the new about-(ME) page call-to-action."
+          paragraph1="expand on about pg"
+          link="/about"
+          paragraph2="I provide web design services focused on landing pages, and content creation for small business brand! I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
+          link="/about"
+        />
         <div
-          id="gallery-grid"
-          class="2xl grid md:grid-cols-4 grid-cols-2 gap-4 py-4"
+          id=""
+          class="bg- flex md:flex-col flex-row px-2 lg:space-y-5 lg:gap-0 gap-4"
         >
-          {
-            items.map((item) => (
-              <div id="sq" class="">
-                <a href="/">
-                  {/* <p class=" p-2 text-teal  80  papaya  dropshadow-2xl text-2xl border border-black">
-            {item.title}
-          </p> */}
-                  <img
-                    src={item.image}
-                    alt=""
-                    class="w-full 2xl:h-[300px] h-[230px] sq-styles"
-                  />
-                </a>
-              </div>
-            ))
-          }
+          <img
+            src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
+            alt=""
+            class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+          />
+          <img
+            src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
+            alt=""
+            class="sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+          />
         </div>
       </div>
-      <!-- ctas to about pg -->
-      <!--! content-section v-->
-      <CTA1
-        title="This is the new about-(ME) page call-to-action."
-        paragraph1="expand on about pg"
-        link="/about"
-        paragraph2="I provide web design services focused on landing pages, and content creation for small business brand! I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
-        link="/about"
-      />
       <!-- ! ^^^^^^ ^-->
     </div>
-    <!--? CssTealTransition IF KEEPING FourImgBanner ^-->
   </div>
   <div id="section4- WHATS INCLUDED" class="">
-    <!-- ctas to about pg v-->
-    <!-- !content-section v-->
-    <CssTealTransition />
-    <!-- *: CREATE NEW dynamic CTA2 ^-->
-    <CTA2
-      title="This is the web-dev-pg cta"
-      paragraph1="expand on web dev pg, endless opportunities"
-      paragraph2=""
-      link="/web-development"
-    />
+    <div id="CSS-TEAL-TRANSITION" class="bg-">
+      <div class="md:absolute relative">
+        <FourImgBanner />
+      </div>
+      <div id="skewed-transition" class="skewed-wrapper">
+        <div class="skewed-bg"></div>
+        <div class="content"></div>
+      </div>
+    </div>
+
+    <!-- !content-section2 v-->
+    <div id="2nd-half teal-background" class="bg-teal">
+      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+      <div id="teal-background" class="bg- text-parchment">
+        <div id="packages-section" class="grid md:grid-cols-3 grid-cols-1">
+          <div
+            id=""
+            class="bg- flex md:flex-col flex-row items- mt-3 ml-1 px-2 lg:space-y-5 lg:gap-0 gap-4"
+          >
+            <img
+              src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
+              alt=""
+              class="sq-styles 2xl:w-3/4 w-1/2 2xl:h-[320px] h-[200px]"
+            />
+            <img
+              src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
+              alt=""
+              class="sq-styles 2xl:w-3/4 w-1/2 2xl:h-[320px] h-[200px]"
+            />
+          </div>
+
+          <CTA2
+            title="This is the web-dev-pg cta"
+            paragraph1="expand on web dev pg, endless opportunities"
+            paragraph2=""
+            link="/web-development"
+          />
+
+          <CssTealTransition />
+        </div>
+      </div>
+
+      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    </div>
     <!-- !^^^^^^ ^-->
   </div>
 </div>

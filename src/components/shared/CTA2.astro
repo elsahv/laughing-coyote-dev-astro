@@ -1,6 +1,4 @@
 ---
-import CssTealTransition from "../sections/CssTealTransition.astro";
-
 export interface Props {
   title: string;
   paragraph1: string;
@@ -21,46 +19,16 @@ are things that you enjoy learning about or creating endlessly? What energizes
 you or makes you lose track of time? ## What experience can I use? List
 transformation that you have achieved for yourself or others, that other people
 would like to achieve? B. What do you wish you had known 1, 3, or 5 years ago
-that you could help with now? Main difference is time spent working on it. --><!-- ?CONTENT TO CONSIDER ^ -->
-<div id="teal-background" class="bg-teal text-parchment">
-  <!-- <CTA1
-    title="This is the web-dev-pg cta"
-    paragraph1="expand on web dev pg"
-    paragraph2=""
-    link="/web-development"
-  />
- -->
-
-  <div id="packages-section" class="bg- grid md:grid-cols-3 grid-cols-1">
-    <div
-      id=""
-      class="bg- flex md:flex-col flex-row items- mt-3 ml-1 px-2 lg:space-y-5 lg:gap-0 gap-4"
-    >
-      <img
-        src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
-        alt=""
-        class="sq-styles 2xl:w-3/4 w-1/2 2xl:h-[320px] h-[200px]"
-      />
-      <img
-        src="https://dl.dropboxusercontent.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=g5s7cqo5&dl=0"
-        alt=""
-        class="sq-styles 2xl:w-3/4 w-1/2 2xl:h-[320px] h-[200px]"
-      />
-    </div>
-
-    <div
-      id="content-container"
-      class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
-    >
-      <h2 class="text-3xl 2xl:pt-5 2xl:mt-5 text-left font-bold underline">
-        {title}
-      </h2>
-      <p>{paragraph2}</p>
-      <p class="text-test1 underline">
-        <a class="text-" href={link}> {paragraph1}</a>
-      </p>
-    </div>
-  </div>
-
-  <CssTealTransition />
+that you could help with now? Main difference is time spent working on it. -->
+<div
+  id="content-container"
+  class="2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
+>
+  <h2 class="text-3xl 2xl:pt-5 2xl:mt-5 text-left font-bold underline">
+    {title}
+  </h2>
+  <p>{paragraph2}</p>
+  <p class="text-test1 underline">
+    <a class="text-" href={link}> {paragraph1}</a>
+  </p>
 </div>
