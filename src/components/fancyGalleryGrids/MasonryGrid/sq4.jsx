@@ -22,30 +22,23 @@ const Sq4 = () => {
   return (
     <div
       id="sq4"
-      className="col-span-2   my-4 rounded-lg -gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
+      className="bg- col-span-2 xl:my-4 my-1 rounded-lg -gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
     >
       <h2>Interactive LC TEMPLATES</h2>
-      <div id="wrapper" className="  ">
-        <div id="how-it-works-wrapper" className="">
+      <div id="grid" className="grid grid-cols-4 lg:gap-5 gap-3">
+        {items.map((item) => (
           <div
-            id="grid"
-            className="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 2xl gap-5 "
+            id="templates"
+            key={item.title}
+            className=" text-parchment rounded"
           >
-            {items.map((item) => (
-              <div
-                id="templates"
-                key={item.title}
-                className=" text-parchment rounded"
-              >
-                <img
-                  src={item.title}
-                  alt=""
-                  className="border border-carribean rounded-lg h-full"
-                />
-              </div>
-            ))}
+            <img
+              src={item.title}
+              alt=""
+              className="border border-carribean rounded-lg h-"
+            />
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

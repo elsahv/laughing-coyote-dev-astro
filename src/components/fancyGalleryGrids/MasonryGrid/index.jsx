@@ -11,19 +11,19 @@ import Sq6 from "./sq6";
 
 const MasonryGrid = () => {
   return (
-    <div id="wrapper" className="2xl:opacity-80 opacity-100 py-5 my-5">
+    <div id="wrapper" className="bg- 2xl:opacity-80 opacity-100 py-5 my-5">
       <div id="" className="bg- md:mx-5 mx-0 2xl:px-[80px]">
         <div
           id="grid"
           className="bg- grid grid-cols-3 2xl:gap-2 2xl:px-[100px] p-7"
         >
           <Sq1 />
-          <div id="flex" className="flex flex-row   col-span-2  ">
+          <div id="flex" className="flex col-span-2  ">
             <Sq2 />
             <Sq3 />
           </div>
           <Sq4 />
-          <div id="flex" className="flex  flex-row  md:space-x-4 col-span-3">
+          <div id="flex" className="flex md:space-x-4 col-span-3">
             <Sq5 />
             <Sq6 />
           </div>

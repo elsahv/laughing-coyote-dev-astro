@@ -1,16 +1,8 @@
 const Sq5 = () => {
   return (
-    <div id="sq5" className="bg- flex flex-row -5">
-      <div
-        id="left-side"
-        className="bg- flex md:justify- justify-center items-center"
-      >
-        {/* <p className="pr-2 font-medium md:text-lg text-md "> */}
-        {/* "Most web design services focus on tech, speed, or business
-          optimization. Few lean into artisanal design, emotional storytelling,
-          and cozy aesthetics the way this concept (lc) does. " */}
-        {/* </p> */}
-        <p className="pr-1">
+    <div id="sq5" className="bg-  flex flex-row -5">
+      <div id="left-side" className="bg- flex justify-center items-center">
+        <p className="pr-1 pl-1">
           A custom website that fits your business, personality, goals... and
           you alone.
         </p>
