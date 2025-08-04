@@ -2,7 +2,7 @@
 import BuildAuthority2 from "../components/sections/BuildAuthority2.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Packages from "../components/Packages.astro";
+import Packages from "../components/sections/Packages.astro";
 // import CssTealTransition from "../components/sections/CssTealTransition.astro";
 import SerpentineGrid from "../components/fancyGalleryGrids/SerpentineGrid.astro";
 import ContactMe from "../components/sections/ContactMe.astro";
@@ -92,44 +92,9 @@ Custom built ecommerce I’ve built have a guarantee written in
     img15="https://images.pexels.com/photos/31889976/pexels-photo-31889976.jpeg"
     img16="https://images.pexels.com/photos/31889976/pexels-photo-31889976.jpeg"
   />
-
   <div id="teal" class="bg-teal text-parchment">
     <BuildAuthority2 />
-    <div class="mt-[200px]">
-      <CenterPageBanner BannerTitle="Packages" paragraph="(what LC offers)" />
-    </div>
-    <div class="grid 2xl:grid-cols-2 grid-cols-1 gap-24 px-5 mx-5">
-      <div class="mt-[290px] mx-5">
-        <Packages
-          title="Growing Pup"
-          pkgNo="package 1"
-          desc1="   Basic landing page with 1x per month updates."
-          desc2="  This is the 2nd desc.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda labore corrupti vero repellendus quae id nobis fugiat possimus necessitatibus natus deserunt velit modi atque. Laboriosam voluptatibus soluta non unde."
-          tag1="mobile-friendly"
-          tag2="This is the 2nd desc"
-          pkgParagraph="This is a paragraph... still not sure what I'm putting here. "
-          sq1Img="https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg"
-          sq3Img="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg"
-          sq3desc="here is a line...."
-          pkgLink="/test"
-        />
-      </div>
-      <div class="">
-        <Packages
-          title="Rising Scout"
-          pkgNo="package 2"
-          desc1="Rising carnivore: 1x updates per week"
-          desc2="  This is also the 2nd desc.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda labore corrupti vero repellendus quae id nobis fugiat possimus necessitatibus natus deserunt velit modi atque. Laboriosam voluptatibus soluta non unde."
-          tag1="This is also the 2nd desc"
-          tag2=" hosting setup"
-          pkgParagraph=" This is also a paragraph... still not sure what I'm putting here. "
-          sq1Img="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg"
-          sq3Img="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
-          sq3desc="here is yet another line...."
-          pkgLink="/test"
-        />
-      </div>
-      <ContactMe />
-    </div>
+    <Packages />
   </div>
+  <ContactMe />
 </MainLayout>

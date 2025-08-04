@@ -1,0 +1,40 @@
+---
+import PackageCard from "../shared/PackageCard.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+---
+
+<div id="PACKAGES-SECTION" class="bg-pb-5">
+  <CenterPageBanner BannerTitle="Packages" paragraph="(what LC offers)" />
+  <div
+    class="bg- grid lg:grid-cols-2 grid-cols-1 2xl:gap-24 gap-5 px-5 2xl:mx-[120px] md:mx-3 mx-1"
+  >
+    <div class="lg:mt-[130px] md:mx-5">
+      <PackageCard
+        title="Growing Pup"
+        pkgNo="package 1"
+        desc1="   Basic landing page with 1x per month updates."
+        desc2="  This is the 2nd desc.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda labore corrupti vero repellendus quae id nobis fugiat possimus necessitatibus natus deserunt velit modi atque. Laboriosam voluptatibus soluta non unde."
+        tag1="mobile-friendly"
+        tag2="This is the 2nd desc"
+        pkgParagraph="This is a paragraph... still not sure what I'm putting here. "
+        sq1Img="https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg"
+        sq3Img="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg"
+        sq3desc="here is a line...."
+        pkgLink="/test"
+      />
+    </div>
+    <PackageCard
+      title="Rising Scout"
+      pkgNo="package 2"
+      desc1="Rising carnivore: 1x updates per week"
+      desc2="  This is also the 2nd desc.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda labore corrupti vero repellendus quae id nobis fugiat possimus necessitatibus natus deserunt velit modi atque. Laboriosam voluptatibus soluta non unde."
+      tag1="This is also the 2nd desc"
+      tag2=" hosting setup"
+      pkgParagraph=" This is also a paragraph... still not sure what I'm putting here. "
+      sq1Img="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg"
+      sq3Img="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
+      sq3desc="here is yet another line...."
+      pkgLink="/test"
+    />
+  </div>
+</div>

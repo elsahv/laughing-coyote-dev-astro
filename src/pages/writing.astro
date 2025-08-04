@@ -19,31 +19,36 @@ const allSites = await Astro.glob("./websites/*.md");
     <div class="content"></div>
   </div>
 
-  <div id="blog" class="bg-teal text-parchment pl-[90px]">
-    <h2
-      class="text-6xl text-papaya pb-5 w-1/4 lg:pl-[70px] px-3 font-extrabold"
-    >
-      Blog
-    </h2>
-    <div
-      id="grid"
-      class="pr-5 mr-5 grid md:grid-cols-2 grid-cols-1 gap-12 lg:pl-[50px]"
-    >
-      {
-        allSites.map((site) => (
-          <Card
-            title={site.frontmatter.title}
-            image={site.frontmatter.image?.url}
-            alt={site.frontmatter.title}
-            testItem1={site.frontmatter.testItem1}
-            category1={site.frontmatter.category1}
-            category2={site.frontmatter.category2}
-            url={site.frontmatter.url}
-          />
-        ))
-      }
+  <div
+    id="blog-wrapper"
+    class="flex justify-center bg-teal text-parchment pb-5 pl-2"
+  >
+    <div id="blog-container" class="max-w-[1400px] bg-">
+      <h2
+        class="md:text-6xl text-5xl text-papaya pb-5 w-1/4 md:pl-[70px] px-3 font-extrabold"
+      >
+        Blog
+      </h2>
+      <div
+        id="grid"
+        class="bg- pb-5 mb-5 md:pr-5 md:mr-5 grid md:grid-cols-2 grid-cols-1 gap-12 md:pl-[55px] pl-2"
+      >
+        {
+          allSites.map((site) => (
+            <Card
+              title={site.frontmatter.title}
+              image={site.frontmatter.image?.url}
+              alt={site.frontmatter.title}
+              testItem1={site.frontmatter.testItem1}
+              category1={site.frontmatter.category1}
+              category2={site.frontmatter.category2}
+              url={site.frontmatter.url}
+            />
+          ))
+        }
+      </div>
+      <ContactMe />
     </div>
-    <ContactMe />
   </div>
   <!-- TRANSITION CSS HERE -->
 </MainLayout>

@@ -4,10 +4,13 @@ import SelfImg from "../../images/self.jpg";
 import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div id="wrapper" class="bg- flex justify-center pt-[200px] px-[150px] mt-">
+<div
+  id="wrapper"
+  class="bg- flex justify-center lg:py-[200px] py-[70px] 2xl:px-[150px] md:px-[50px] px-2"
+>
   <div
     id="flex"
-    class="bg- max-w-[1000px] flex 2xl:flex-row flex-col-reverse space-x-8 2xl:p-5 p-2 2xl:mx-[170px] mx-3"
+    class="bg- 2xl:max-w-[1000px] flex lg:flex-row flex-col-reverse md:space-x-8 2xl:p-5 p-2 mx-3"
   >
     <!-- ? -->
     <!-- ! 2. PRODUCT DEF -->
@@ -37,6 +40,6 @@ import ButtonProps from "../shared/ButtonProps.astro";
       <!--blog cta offer to free content --v-->
       <ButtonProps btn1="blog" btn1Link="/about" />
     </section>
-    <Image src={SelfImg} alt="" class="w-[450px] my-2 sq-styles" />
+    <Image src={SelfImg} alt="" class="md:w-[450px] w-[350px] my-2 sq-styles" />
   </div>
 </div>
