@@ -22,7 +22,7 @@ const Sq4 = () => {
   return (
     <div
       id="sq4"
-      className="bg- col-span-2 xl:my-4 my-1 rounded-lg -gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
+      className="bg- col-span-2 2xl:my-4 my-2 rounded-lg -gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-5 p-1"
     >
       <h2>Interactive LC TEMPLATES</h2>
       <div id="grid" className="grid grid-cols-4 lg:gap-5 gap-3">

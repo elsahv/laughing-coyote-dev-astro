@@ -1,8 +1,8 @@
 const Sq5 = () => {
   return (
-    <div id="sq5" className="bg-  flex flex-row -5">
+    <div id="sq5" className="m-2 flex md:flex-row flex-col">
       <div id="left-side" className="bg- flex justify-center items-center">
-        <p className="pr-1 pl-1">
+        <p className="pr-1 pl-1 pb-2">
           A custom website that fits your business, personality, goals... and
           you alone.
         </p>

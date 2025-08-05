@@ -3,11 +3,12 @@ import ButtonProps from "../shared/ButtonProps.astro";
 
 export interface Props {
   title: string;
-  subtitle: string;
   paragraph1: string;
+  paragraph2: string;
+  paragraph3: string;
 }
 
-const { title, subtitle, paragraph1 } = Astro.props as Props;
+const { title, paragraph1, paragraph2, paragraph3 } = Astro.props as Props;
 ---
 
 <div class="bg- flex justify-center py-5 my-5">
@@ -23,10 +24,9 @@ const { title, subtitle, paragraph1 } = Astro.props as Props;
       <div id="sq2" class="ml-4 p-3">
         <div id="view-AboutSection2" class="">
           <h2 class="font- text-2xl">{title}</h2>
-          <h3 class="text-4xl font-extrabold">{subtitle}</h3>
           <p>{paragraph1}</p>
-
-          <p>-Glen</p>
+          <p>{paragraph2}</p>
+          <p>{paragraph3}</p>
           <ButtonProps
             btn1="see different styles"
             btn1Link="/#see-different-styles"
